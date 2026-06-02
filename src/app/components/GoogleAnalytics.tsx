@@ -26,7 +26,7 @@ export default function GoogleAnalytics({ measurementId }: GoogleAnalyticsProps)
 
     // Initialize GA4
     window.dataLayer = window.dataLayer || [];
-    function gtag(...args: any[]) {
+    function gtag(...args: unknown[]) {
       window.dataLayer!.push(args);
     }
     window.gtag = gtag;

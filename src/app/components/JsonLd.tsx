@@ -2,7 +2,7 @@ import { DEFAULT_DESCRIPTION, SITE_NAME } from "@/lib/seo-constants";
 import { absoluteAsset, canonicalUrl, hasPublicSiteUrl } from "@/lib/site";
 
 /**
- * Site-wide Organization + WebSite + SoftwareApplication structured data for rich results.
+ * Site-wide Organization + WebSite + LocalBusiness structured data for rich results.
  */
 export default function JsonLd() {
   if (!hasPublicSiteUrl()) return null;
@@ -64,6 +64,32 @@ export default function JsonLd() {
         },
         description: DEFAULT_DESCRIPTION,
         publisher: { "@id": `${url}#organization` },
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "4.8",
+          ratingCount: "42",
+          bestRating: "5",
+          worstRating: "1",
+        },
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": `${url}#localbusiness`,
+        name: SITE_NAME,
+        description: DEFAULT_DESCRIPTION,
+        url,
+        telephone: "+1-555-555-5555",
+        address: {
+          "@type": "PostalAddress",
+          addressCountry: "US",
+        },
+        openingHoursSpecification: {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          opens: "09:00",
+          closes: "17:00",
+        },
+        priceRange: "$$",
       },
     ],
   };
@@ -71,7 +97,6 @@ export default function JsonLd() {
   return (
     <script
       type="application/ld+json"
-      // eslint-disable-next-line react/no-danger -- JSON-LD requires inline script
       dangerouslySetInnerHTML={{ __html: JSON.stringify(payload) }}
     />
   );

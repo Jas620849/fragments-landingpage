@@ -6,11 +6,11 @@ export const dynamic = "force-static";
 
 const STATIC_PATHS = [
   { path: "/", priority: 1, changeFreq: "weekly" as const },
-  { path: "/about/", priority: 0.8, changeFreq: "monthly" as const },
-  { path: "/blog/", priority: 0.8, changeFreq: "weekly" as const },
-  { path: "/contact/", priority: 0.7, changeFreq: "monthly" as const },
-  { path: "/how-it-works/", priority: 0.9, changeFreq: "monthly" as const },
-  { path: "/pricing/", priority: 0.9, changeFreq: "monthly" as const },
+  { path: "/about/", priority: 0.9, changeFreq: "monthly" as const },
+  { path: "/blog/", priority: 0.9, changeFreq: "weekly" as const },
+  { path: "/contact/", priority: 0.8, changeFreq: "monthly" as const },
+  { path: "/how-it-works/", priority: 1, changeFreq: "monthly" as const },
+  { path: "/pricing/", priority: 1, changeFreq: "monthly" as const },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -32,7 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: canonicalUrl(`/blog/${post.slug}/`),
     lastModified: lastmod,
     changeFrequency: "monthly" as const,
-    priority: 0.65,
+    priority: 0.8,
   }));
 
   return [...staticEntries, ...blogPosts];

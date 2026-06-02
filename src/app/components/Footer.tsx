@@ -2,15 +2,12 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import AdSenseDisplay from "./AdSenseDisplay";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTwitter,
   faFacebook,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-
-const footerAdSlot = process.env.NEXT_PUBLIC_ADSENSE_SLOT_FOOTER ?? "";
 
 const linkClass =
   "text-sm text-slate-400 transition hover:text-white";
@@ -84,12 +81,12 @@ export default function Footer() {
             </h4>
             <ul className="mt-4 space-y-3">
               <li>
-                <Link href="#" className={linkClass}>
+                <Link href="/privacy/" className={linkClass}>
                   Privacy policy
                 </Link>
               </li>
               <li>
-                <Link href="#" className={linkClass}>
+                <Link href="/terms/" className={linkClass}>
                   Terms of service
                 </Link>
               </li>
@@ -142,14 +139,6 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-
-        {footerAdSlot ? (
-          <div className="mt-12 flex justify-center" aria-label="Advertisement">
-            <div className="w-full max-w-3xl rounded-2xl border border-white/10 bg-white/5 p-4">
-              <AdSenseDisplay slot={footerAdSlot} className="min-h-[100px]" />
-            </div>
-          </div>
-        ) : null}
 
         <div className="mt-12 border-t border-white/10 pt-8 text-center text-xs text-slate-500">
           © {new Date().getFullYear()} Fragments. All rights reserved.

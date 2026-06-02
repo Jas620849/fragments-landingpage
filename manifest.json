@@ -1,0 +1,18 @@
+{
+  "name": "Fragments - Academic Discussion Platform",
+  "short_name": "Fragments",
+  "description": "Academic discussion platform for classrooms: AI-moderated fragment trails with learner rewards and educator recognition.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#eff6ff",
+  "theme_color": "#eff6ff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo-no-bg.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

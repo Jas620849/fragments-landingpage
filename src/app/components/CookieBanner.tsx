@@ -74,9 +74,8 @@ export default function CookieBanner() {
               id="cookie-banner-desc"
               className="mt-2 text-xs leading-relaxed text-slate-600 sm:text-sm"
             >
-              We use cookies and similar technologies to run the site, measure
-              traffic, and (where enabled) serve ads through Google AdSense. By
-              clicking &quot;Accept all&quot;, you agree to optional cookies for
+              We use cookies and similar technologies to run the site and measure
+              traffic. By clicking &quot;Accept all&quot;, you agree to optional cookies for
               those purposes. &quot;Essential only&quot; keeps required cookies for
               security and basic functionality. See our{" "}
               <Link

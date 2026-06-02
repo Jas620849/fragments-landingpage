@@ -15,6 +15,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { frontendAppBaseUrl } from "../../utils/frontendAppBaseUrl";
+import HowToSchema from "../../components/HowToSchema";
 
 export default function HowItWorks() {
   const rules = [
@@ -145,8 +146,18 @@ export default function HowItWorks() {
     </aside>
   );
 
+  const howToSteps = rules.map((rule) => ({
+    name: rule.title,
+    text: rule.description,
+  }));
+
   return (
     <div>
+      <HowToSchema
+        name="How Fragments Works"
+        description="Rules and mechanisms that keep Fragments trustworthy for scholarly discourse in classrooms and cohorts"
+        steps={howToSteps}
+      />
       <section className="relative overflow-hidden border-b border-slate-200/80 bg-slate-900 py-10 sm:py-14">
         <div
           className="pointer-events-none absolute inset-0 opacity-30 bg-[url('/about_header.png')] bg-cover bg-center"

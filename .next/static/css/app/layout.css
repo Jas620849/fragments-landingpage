@@ -1209,9 +1209,6 @@ video {
 .inline-block {
   display: inline-block;
 }
-.inline {
-  display: inline;
-}
 .flex {
   display: flex;
 }
@@ -1311,23 +1308,14 @@ video {
 .max-h-\[min\(72vh\2c 28rem\)\] {
   max-height: min(72vh,28rem);
 }
-.min-h-\[100px\] {
-  min-height: 100px;
-}
 .min-h-\[10rem\] {
   min-height: 10rem;
-}
-.min-h-\[120px\] {
-  min-height: 120px;
 }
 .min-h-\[12rem\] {
   min-height: 12rem;
 }
 .min-h-\[200px\] {
   min-height: 200px;
-}
-.min-h-\[280px\] {
-  min-height: 280px;
 }
 .min-h-\[4\.5rem\] {
   min-height: 4.5rem;
@@ -1461,12 +1449,6 @@ video {
 .max-w-\[22rem\] {
   max-width: 22rem;
 }
-.max-w-\[300px\] {
-  max-width: 300px;
-}
-.max-w-\[320px\] {
-  max-width: 320px;
-}
 .max-w-\[52ch\] {
   max-width: 52ch;
 }
@@ -1544,6 +1526,9 @@ video {
   --tw-rotate: -4deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 @keyframes pulse {
 
   50% {
@@ -1618,9 +1603,6 @@ video {
 }
 .gap-1\.5 {
   gap: 0.375rem;
-}
-.gap-10 {
-  gap: 2.5rem;
 }
 .gap-12 {
   gap: 3rem;
@@ -1972,9 +1954,6 @@ video {
 .bg-white\/40 {
   background-color: rgb(255 255 255 / 0.4);
 }
-.bg-white\/5 {
-  background-color: rgb(255 255 255 / 0.05);
-}
 .bg-white\/50 {
   background-color: rgb(255 255 255 / 0.5);
 }
@@ -2271,10 +2250,6 @@ video {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
 .py-9 {
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
@@ -2422,9 +2397,6 @@ video {
 }
 .tracking-\[0\.16em\] {
   letter-spacing: 0.16em;
-}
-.tracking-\[0\.18em\] {
-  letter-spacing: 0.18em;
 }
 .tracking-\[0\.2em\] {
   letter-spacing: 0.2em;
@@ -3772,11 +3744,6 @@ html {
     padding-right: 4rem;
   }
 
-  .lg\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
   .lg\:py-24 {
     padding-top: 6rem;
     padding-bottom: 6rem;
@@ -3813,28 +3780,12 @@ html {
 }
 @media (min-width: 1280px) {
 
-  .xl\:sticky {
-    position: sticky;
-  }
-
-  .xl\:top-24 {
-    top: 6rem;
-  }
-
   .xl\:col-span-4 {
     grid-column: span 4 / span 4;
   }
 
   .xl\:col-span-8 {
     grid-column: span 8 / span 8;
-  }
-
-  .xl\:flex-row {
-    flex-direction: row;
-  }
-
-  .xl\:items-start {
-    align-items: flex-start;
   }
 
   .xl\:gap-1 {
@@ -3845,16 +3796,8 @@ html {
     gap: 2.5rem;
   }
 
-  .xl\:gap-12 {
-    gap: 3rem;
-  }
-
   .xl\:gap-3 {
     gap: 0.75rem;
-  }
-
-  .xl\:self-start {
-    align-self: flex-start;
   }
 
   .xl\:px-4 {

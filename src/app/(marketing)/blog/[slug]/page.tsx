@@ -5,6 +5,8 @@ import type { BlogPostMeta } from "../_data";
 import { BLOG_POSTS, getBlogPost } from "../_data";
 import { SITE_NAME } from "@/lib/seo-constants";
 import { absoluteAsset, canonicalUrl, hasPublicSiteUrl } from "@/lib/site";
+import ArticleSchema from "../../../components/ArticleSchema";
+import BreadcrumbSchema from "../../../components/BreadcrumbSchema";
 
 type PageProps = { params: Promise<{ slug: string }> };
 
@@ -22,6 +24,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: { absolute: pageTitle },
     description: post.description,
+    keywords: [
+      post.title.toLowerCase(),
+      "fragments blog",
+      "education technology",
+      "classroom discussion",
+      "teaching strategies",
+      "fragment trails",
+    ],
     alternates: hasPublicSiteUrl()
       ? { canonical: canonicalUrl(`/blog/${slug}/`) }
       : undefined,
@@ -31,11 +41,20 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description: post.description,
       publishedTime: post.publishedISO,
       url: hasPublicSiteUrl() ? canonicalUrl(`/blog/${slug}/`) : undefined,
+      images: [
+        {
+          url: "/logo-no-bg.png",
+          width: 512,
+          height: 512,
+          alt: SITE_NAME,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: post.title,
       description: post.description,
+      images: ["/logo-no-bg.png"],
     },
   };
 }
@@ -66,7 +85,6 @@ function BlogPostingJsonLd({ post, slug }: { post: BlogPostMeta; slug: string })
   return (
     <script
       type="application/ld+json"
-      // eslint-disable-next-line react/no-danger -- JSON-LD
       dangerouslySetInnerHTML={{ __html: JSON.stringify(payload) }}
     />
   );
@@ -133,6 +151,19 @@ export default async function BlogPostPage({ params }: PageProps) {
   return (
     <article className="border-b border-slate-200/80 bg-white">
       <BlogPostingJsonLd post={post} slug={slug} />
+      <ArticleSchema
+        title={post.title}
+        description={post.description}
+        publishedDate={post.publishedISO}
+        slug={slug}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Blog", path: "/blog/" },
+          { name: post.title, path: `/blog/${slug}/` },
+        ]}
+      />
       <div className="frag-container">
         <div className="mx-auto max-w-3xl py-12 sm:py-16">
           <Link

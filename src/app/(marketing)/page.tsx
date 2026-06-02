@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
-import { DEFAULT_DESCRIPTION, DEFAULT_TITLE } from "@/lib/seo-constants";
+import { DEFAULT_DESCRIPTION, DEFAULT_TITLE, DEFAULT_KEYWORDS } from "@/lib/seo-constants";
 import { canonicalUrl, hasPublicSiteUrl } from "@/lib/site";
 import MarketingHomeClient from "./MarketingHomeClient";
+import BreadcrumbSchema from "../components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: { absolute: DEFAULT_TITLE },
   description: DEFAULT_DESCRIPTION,
+  keywords: DEFAULT_KEYWORDS,
   alternates: hasPublicSiteUrl()
     ? { canonical: canonicalUrl("/") }
     : undefined,
@@ -20,7 +22,7 @@ export const metadata: Metadata = {
             url: "/logo-no-bg.png",
             width: 512,
             height: 512,
-            alt: "Fragments",
+            alt: "Fragments Logo",
           },
         ]
       : undefined,
@@ -29,9 +31,15 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: DEFAULT_TITLE,
     description: DEFAULT_DESCRIPTION,
+    images: hasPublicSiteUrl() ? ["/logo-no-bg.png"] : undefined,
   },
 };
 
 export default function HomePage() {
-  return <MarketingHomeClient />;
+  return (
+    <>
+      <BreadcrumbSchema items={[{ name: "Home", path: "/" }]} />
+      <MarketingHomeClient />
+    </>
+  );
 }

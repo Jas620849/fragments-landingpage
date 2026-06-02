@@ -2,7 +2,6 @@
 
 import { useEffect } from "react";
 import { config } from "@fortawesome/fontawesome-svg-core";
-import AdSenseDisplay from "../components/AdSenseDisplay";
 import Hero from "../components/landing/Hero";
 import TrustStrip from "../components/landing/TrustStrip";
 import WhyJoinSection from "../components/landing/WhyJoinSection";
@@ -34,21 +33,6 @@ export default function MarketingHomeClient() {
       <TrustStrip />
       <WhyJoinSection />
       <EngagementSection />
-
-      {process.env.NEXT_PUBLIC_ADSENSE_SLOT_LANDING ? (
-        <section
-          className="border-y border-slate-200/80 bg-white py-8"
-          aria-label="Advertisement"
-        >
-          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-            <AdSenseDisplay
-              slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_LANDING}
-              className="min-h-[120px]"
-            />
-          </div>
-        </section>
-      ) : null}
-
       <DemoVideoSection />
       <WorkflowSection />
       <FeaturesSection />

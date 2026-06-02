@@ -1,9 +1,16 @@
 import Link from "next/link";
 import { BLOG_POSTS } from "./_data";
+import BreadcrumbSchema from "../../components/BreadcrumbSchema";
 
 export default function BlogIndexPage() {
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Blog", path: "/blog/" },
+        ]}
+      />
       <section className="border-b border-slate-200/80 bg-slate-900 py-10 sm:py-14">
         <div className="frag-container">
           <p className="frag-hero-eyebrow">Blog</p>

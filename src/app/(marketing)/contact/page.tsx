@@ -190,7 +190,7 @@ export default function ContactPage() {
             <div className="relative mx-auto mb-8 h-32 w-32">
               <Image
                 src="/logo-no-bg.png"
-                alt="Fragments"
+                alt="Fragments Logo - Academic Discussion Platform"
                 fill
                 className="object-contain"
               />

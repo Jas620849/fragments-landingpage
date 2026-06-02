@@ -8,9 +8,7 @@ import {
   faTriangleExclamation,
 } from "@fortawesome/free-solid-svg-icons";
 import { frontendAppBaseUrl } from "../../utils/frontendAppBaseUrl";
-import UserPanelAdSense from "../../components/UserPanelAdSense";
-
-const userPanelAdSlot = process.env.NEXT_PUBLIC_ADSENSE_SLOT_USER_PANEL ?? "";
+import FAQSchema from "../../components/FAQSchema";
 
 type Plan = {
   id: string;
@@ -292,6 +290,12 @@ export default function PricingPage() {
 
   return (
     <>
+      <FAQSchema
+        faqs={faqs.map((faq) => ({
+          question: faq.q,
+          answer: faq.a,
+        }))}
+      />
       <section className="relative overflow-hidden border-b border-slate-200/80 bg-slate-900 py-10 sm:py-14">
         <div
           className="pointer-events-none absolute inset-0 opacity-40 bg-[radial-gradient(circle_at_20%_30%,rgba(45,212,191,0.35),transparent_45%),radial-gradient(circle_at_80%_20%,rgba(59,130,246,0.25),transparent_40%)]"
@@ -311,19 +315,8 @@ export default function PricingPage() {
 
       <div className="bg-slate-50/50">
         <div className="frag-container py-10 sm:py-12">
-          <div
-            className={
-              userPanelAdSlot
-                ? "flex flex-col gap-10 xl:flex-row xl:items-start xl:gap-12"
-                : "flex flex-col"
-            }
-          >
+          <div className="flex flex-col">
             {mainColumn}
-            {userPanelAdSlot ? (
-              <aside className="mx-auto w-full max-w-[320px] shrink-0 xl:sticky xl:top-24 xl:self-start">
-                <UserPanelAdSense />
-              </aside>
-            ) : null}
           </div>
         </div>
       </div>

@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{\"app/components/DeferredChatWidget.tsx -> ./ChatWidget\":{\"id\":\"app/components/DeferredChatWidget.tsx -> ./ChatWidget\",\"files\":[\"static/chunks/_app-pages-browser_src_app_components_ChatWidget_tsx.js\"]}}"
+self.__REACT_LOADABLE_MANIFEST='{"app/components/DeferredChatWidget.tsx -> ./ChatWidget":{"id":5597,"files":["static/chunks/870fdd6f-76e607cb0d2ffb8d.js","static/chunks/418-8a7ca317948a0907.js","static/chunks/597.fc1985ea793dc039.js"]}}';

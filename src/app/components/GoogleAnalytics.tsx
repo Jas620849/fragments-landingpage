@@ -5,7 +5,7 @@ import Script from "next/script";
 
 declare global {
   interface Window {
-    dataLayer?: any[];
+    dataLayer?: unknown[];
     gtag?: (command: string, targetId: string, config?: Record<string, string | number | boolean | undefined>) => void;
   }
 }

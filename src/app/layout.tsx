@@ -8,11 +8,13 @@ import JsonLd from "./components/JsonLd";
 import WebVitals from "./components/WebVitals";
 import GoogleAnalytics from "./components/GoogleAnalytics";
 import GoogleTagManager from "./components/GoogleTagManager";
+import MicrosoftClarity from "./components/MicrosoftClarity";
 import {
   DEFAULT_DESCRIPTION,
   DEFAULT_KEYWORDS,
   DEFAULT_TITLE,
   SITE_NAME,
+  TARGET_LOCALES,
 } from "@/lib/seo-constants";
 import { getMetadataBase, hasPublicSiteUrl } from "@/lib/site";
 
@@ -60,10 +62,9 @@ export const metadata: Metadata = {
   alternates: hasPublicSiteUrl()
     ? {
         canonical: "/",
-        languages: {
-          "en-US": "/",
-          "x-default": "/",
-        },
+        languages: Object.fromEntries(
+          TARGET_LOCALES.map((locale) => [locale.code, "/"])
+        ),
       }
     : undefined,
   openGraph: {
@@ -105,6 +106,9 @@ export const metadata: Metadata = {
     ...(process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
       ? { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION }
       : {}),
+    ...(process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION
+      ? { bing: process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION }
+      : {}),
   },
 };
 
@@ -117,6 +121,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${fontSans.variable} font-sans antialiased`}>
         <GoogleTagManager />
+        <MicrosoftClarity />
         <WebVitals />
         <JsonLd />
         <GoogleAnalytics />

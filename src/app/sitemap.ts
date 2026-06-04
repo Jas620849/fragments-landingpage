@@ -11,6 +11,11 @@ const STATIC_PATHS = [
   { path: "/contact/", priority: 0.8, changeFreq: "monthly" as const },
   { path: "/how-it-works/", priority: 1, changeFreq: "monthly" as const },
   { path: "/pricing/", priority: 1, changeFreq: "monthly" as const },
+  { path: "/services/classroom-discussion-platform/", priority: 0.9, changeFreq: "monthly" as const },
+  { path: "/services/ai-moderated-learning/", priority: 0.9, changeFreq: "monthly" as const },
+  { path: "/services/student-engagement-software/", priority: 0.9, changeFreq: "monthly" as const },
+  { path: "/services/educator-recognition-platform/", priority: 0.9, changeFreq: "monthly" as const },
+  { path: "/services/cohort-based-learning/", priority: 0.9, changeFreq: "monthly" as const },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

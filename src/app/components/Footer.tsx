@@ -48,28 +48,28 @@ export default function Footer() {
             </h4>
             <ul className="mt-4 space-y-3">
               <li>
-                <Link href="/about/" className={linkClass}>
-                  About
+                <Link href="/services/classroom-discussion-platform/" className={linkClass}>
+                  Classroom Discussion Platform
                 </Link>
               </li>
               <li>
-                <Link href="/blog/" className={linkClass}>
-                  Blog
+                <Link href="/services/ai-moderated-learning/" className={linkClass}>
+                  AI-Moderated Learning
                 </Link>
               </li>
               <li>
-                <Link href="/#explore" className={linkClass}>
-                  Features
+                <Link href="/services/student-engagement-software/" className={linkClass}>
+                  Student Engagement
                 </Link>
               </li>
               <li>
-                <Link href="/pricing/" className={linkClass}>
-                  Pricing
+                <Link href="/services/educator-recognition-platform/" className={linkClass}>
+                  Educator Recognition
                 </Link>
               </li>
               <li>
-                <Link href="/contact/" className={linkClass}>
-                  Contact
+                <Link href="/services/cohort-based-learning/" className={linkClass}>
+                  Cohort-Based Learning
                 </Link>
               </li>
             </ul>

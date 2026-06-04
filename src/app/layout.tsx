@@ -8,6 +8,7 @@ import JsonLd from "./components/JsonLd";
 import WebVitals from "./components/WebVitals";
 import GoogleAnalytics from "./components/GoogleAnalytics";
 import GoogleTagManager from "./components/GoogleTagManager";
+import MicrosoftClarity from "./components/MicrosoftClarity";
 import {
   DEFAULT_DESCRIPTION,
   DEFAULT_KEYWORDS,
@@ -117,6 +118,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${fontSans.variable} font-sans antialiased`}>
         <GoogleTagManager />
+        <MicrosoftClarity />
         <WebVitals />
         <JsonLd />
         <GoogleAnalytics />

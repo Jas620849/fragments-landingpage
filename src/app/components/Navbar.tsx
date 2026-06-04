@@ -84,6 +84,11 @@ export default function Navbar() {
               </button>
             </li>
             <li>
+              <Link href="/services/classroom-discussion-platform/" className={navLinkClass}>
+                Services
+              </Link>
+            </li>
+            <li>
               <Link href="/about/" className={navLinkClass}>
                 About
               </Link>

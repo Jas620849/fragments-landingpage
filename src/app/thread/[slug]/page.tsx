@@ -1,19 +1,59 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import { generateThreadMetadata } from "@/lib/metadata-generator";
-import { canonicalUrl } from "@/lib/site";
 import BreadcrumbSchema from "@/app/components/BreadcrumbSchema";
 import DiscussionForumSchema from "@/app/components/DiscussionForumSchema";
 import QAPageSchema from "@/app/components/QAPageSchema";
 
 interface ThreadPageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
+}
+
+interface Reply {
+  id: number;
+  author: string;
+  authorUrl: string;
+  content: string;
+  publishedAt: string;
+  upvoteCount: number;
+  isAccepted: boolean;
+}
+
+interface RelatedThread {
+  slug: string;
+  title: string;
+}
+
+interface FAQ {
+  question: string;
+  answer: string;
+}
+
+interface Thread {
+  title: string;
+  topicTitle: string;
+  topicSlug: string;
+  description: string;
+  author: string;
+  authorUrl: string;
+  publishedAt: string;
+  updatedAt: string;
+  replyCount: number;
+  viewCount: number;
+  upvoteCount: number;
+  category: string;
+  content: string;
+  replies: Reply[];
+  relatedThreads: RelatedThread[];
+  relatedTopics: string[];
+  faqs: FAQ[];
 }
 
 // Sample thread data - In production, this would come from your database
-const getThreadData = (slug: string) => {
-  const threads: Record<string, any> = {
+const getThreadData = (slug: string): Thread | null => {
+  const threads: Record<string, Thread> = {
     "understanding-electricity": {
       title: "Understanding Electricity Basics",
       topicTitle: "What Is Electricity",
@@ -101,7 +141,8 @@ const getThreadData = (slug: string) => {
 };
 
 export async function generateMetadata({ params }: ThreadPageProps): Promise<Metadata> {
-  const thread = getThreadData(params.slug);
+  const { slug } = await params;
+  const thread = getThreadData(slug);
   
   if (!thread) {
     return {
@@ -111,7 +152,7 @@ export async function generateMetadata({ params }: ThreadPageProps): Promise<Met
 
   return generateThreadMetadata({
     title: thread.title,
-    slug: params.slug,
+    slug: slug,
     topicTitle: thread.topicTitle,
     topicSlug: thread.topicSlug,
     description: thread.description,
@@ -123,15 +164,23 @@ export async function generateMetadata({ params }: ThreadPageProps): Promise<Met
   });
 }
 
-export default function ThreadPage({ params }: ThreadPageProps) {
-  const thread = getThreadData(params.slug);
+export function generateStaticParams() {
+  return [
+    { slug: "understanding-electricity" },
+    { slug: "what-is-an-electron" },
+  ];
+}
+
+export default async function ThreadPage({ params }: ThreadPageProps) {
+  const { slug } = await params;
+  const thread = getThreadData(slug);
 
   if (!thread) {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-4xl font-bold mb-4">Thread Not Found</h1>
-          <p className="text-gray-600">The discussion thread you're looking for doesn't exist.</p>
+          <p className="text-gray-600">The discussion thread you&apos;re looking for doesn&apos;t exist.</p>
         </div>
       </div>
     );
@@ -141,11 +190,11 @@ export default function ThreadPage({ params }: ThreadPageProps) {
     { name: "Home", path: "/" },
     { name: thread.category || "Topics", path: `/category/${thread.category || "all"}` },
     { name: thread.topicTitle, path: `/topic/${thread.topicSlug}` },
-    { name: thread.title, path: `/thread/${params.slug}` },
+    { name: thread.title, path: `/thread/${slug}` },
   ];
 
   // Convert replies to QAPage format
-  const qaAnswers = thread.replies.map((reply: any) => ({
+  const qaAnswers = thread.replies.map((reply: Reply) => ({
     text: reply.content,
     authorName: reply.author,
     authorUrl: reply.authorUrl,
@@ -158,7 +207,7 @@ export default function ThreadPage({ params }: ThreadPageProps) {
     <div className="min-h-screen">
       <BreadcrumbSchema items={breadcrumbItems} />
       <DiscussionForumSchema
-        threadUrl={`/thread/${params.slug}`}
+        threadUrl={`/thread/${slug}`}
         threadTitle={thread.title}
         threadText={thread.content}
         authorName={thread.author}
@@ -171,7 +220,7 @@ export default function ThreadPage({ params }: ThreadPageProps) {
         category={thread.category}
       />
       <QAPageSchema
-        questionUrl={`/thread/${params.slug}`}
+        questionUrl={`/thread/${slug}`}
         questionTitle={thread.title}
         questionText={thread.content}
         authorName={thread.author}
@@ -188,19 +237,19 @@ export default function ThreadPage({ params }: ThreadPageProps) {
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Breadcrumb Navigation */}
         <nav className="flex items-center space-x-2 text-sm text-gray-600 mb-6">
-          <a href="/" className="hover:text-blue-600">Home</a>
+          <Link href="/" className="hover:text-blue-600">Home</Link>
           <span>/</span>
           {thread.category && (
             <>
-              <a href={`/category/${thread.category}`} className="hover:text-blue-600 capitalize">
+              <Link href={`/category/${thread.category}`} className="hover:text-blue-600 capitalize">
                 {thread.category.replace("-", " ")}
-              </a>
+              </Link>
               <span>/</span>
             </>
           )}
-          <a href={`/topic/${thread.topicSlug}`} className="hover:text-blue-600">
+          <Link href={`/topic/${thread.topicSlug}`} className="hover:text-blue-600">
             {thread.topicTitle}
-          </a>
+          </Link>
           <span>/</span>
           <span className="text-gray-900">{thread.title}</span>
         </nav>
@@ -253,7 +302,7 @@ export default function ThreadPage({ params }: ThreadPageProps) {
         {/* Replies */}
         <div className="space-y-6 mb-8">
           <h2 className="text-2xl font-bold">Replies ({thread.replyCount})</h2>
-          {thread.replies.map((reply: any) => (
+          {thread.replies.map((reply: Reply) => (
             <div
               key={reply.id}
               className={`bg-white border rounded-lg p-6 ${reply.isAccepted ? "border-green-500" : ""}`}
@@ -310,14 +359,14 @@ export default function ThreadPage({ params }: ThreadPageProps) {
           <section className="mb-8 p-6 bg-gray-50 rounded-lg">
             <h2 className="text-2xl font-bold mb-4">Related Discussions</h2>
             <div className="space-y-4">
-              {thread.relatedThreads.map((related: any) => (
-                <a
+              {thread.relatedThreads.map((related: RelatedThread) => (
+                <Link
                   key={related.slug}
                   href={`/thread/${related.slug}`}
                   className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow"
                 >
                   <h3 className="font-semibold text-lg">{related.title}</h3>
-                </a>
+                </Link>
               ))}
             </div>
           </section>
@@ -329,7 +378,7 @@ export default function ThreadPage({ params }: ThreadPageProps) {
             <h2 className="text-2xl font-bold mb-4">Related Topics</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {thread.relatedTopics.map((relatedSlug: string) => (
-                <a
+                <Link
                   key={relatedSlug}
                   href={`/topic/${relatedSlug}`}
                   className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow"
@@ -337,7 +386,7 @@ export default function ThreadPage({ params }: ThreadPageProps) {
                   <h3 className="font-semibold text-lg capitalize">
                     {relatedSlug.replace(/-/g, " ")}
                   </h3>
-                </a>
+                </Link>
               ))}
             </div>
           </section>
@@ -348,7 +397,7 @@ export default function ThreadPage({ params }: ThreadPageProps) {
           <section className="mb-8">
             <h2 className="text-2xl font-bold mb-4">Frequently Asked Questions</h2>
             <div className="space-y-4">
-              {thread.faqs.map((faq: any, index: number) => (
+              {thread.faqs.map((faq: FAQ, index: number) => (
                 <div key={index} className="p-6 bg-gray-50 rounded-lg">
                   <h3 className="font-semibold text-lg mb-2">{faq.question}</h3>
                   <p className="text-gray-700">{faq.answer}</p>

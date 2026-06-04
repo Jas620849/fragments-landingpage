@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { BLOG_POSTS } from "./(marketing)/blog/_data";
-import { canonicalUrl, getSiteUrl } from "@/lib/site";
+import { getSiteUrl } from "@/lib/site";
 import { CONTENT_CATEGORIES } from "@/lib/seo-constants";
 
 export const dynamic = "force-static";

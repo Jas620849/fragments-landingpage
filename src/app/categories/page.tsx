@@ -1,6 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import { SITE_NAME, CONTENT_CATEGORIES } from "@/lib/seo-constants";
-import { canonicalUrl } from "@/lib/site";
 import BreadcrumbSchema from "@/app/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
@@ -48,7 +48,7 @@ export default function CategoriesPage() {
       <div className="max-w-6xl mx-auto px-4 py-8">
         {/* Breadcrumb Navigation */}
         <nav className="flex items-center space-x-2 text-sm text-gray-600 mb-6">
-          <a href="/" className="hover:text-blue-600">Home</a>
+          <Link href="/" className="hover:text-blue-600">Home</Link>
           <span>/</span>
           <span className="text-gray-900">Categories</span>
         </nav>
@@ -77,7 +77,7 @@ export default function CategoriesPage() {
           <h2 className="text-3xl font-bold mb-6">Science & Mathematics</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {SCIENCE_CATEGORIES.map((category) => (
-              <a
+              <Link
                 key={category.slug}
                 href={`/category/${category.slug}`}
                 className="block p-6 bg-white border rounded-lg hover:shadow-lg transition-shadow"
@@ -94,7 +94,7 @@ export default function CategoriesPage() {
                     </span>
                   ))}
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
         </section>
@@ -104,7 +104,7 @@ export default function CategoriesPage() {
           <h2 className="text-3xl font-bold mb-6">Technology & Computing</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {TECHNOLOGY_CATEGORIES.map((category) => (
-              <a
+              <Link
                 key={category.slug}
                 href={`/category/${category.slug}`}
                 className="block p-6 bg-white border rounded-lg hover:shadow-lg transition-shadow"
@@ -121,7 +121,7 @@ export default function CategoriesPage() {
                     </span>
                   ))}
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
         </section>
@@ -131,7 +131,7 @@ export default function CategoriesPage() {
           <h2 className="text-3xl font-bold mb-6">Engineering & Medicine</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {ENGINEERING_CATEGORIES.map((category) => (
-              <a
+              <Link
                 key={category.slug}
                 href={`/category/${category.slug}`}
                 className="block p-6 bg-white border rounded-lg hover:shadow-lg transition-shadow"
@@ -148,7 +148,7 @@ export default function CategoriesPage() {
                     </span>
                   ))}
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
         </section>
@@ -158,7 +158,7 @@ export default function CategoriesPage() {
           <h2 className="text-3xl font-bold mb-6">Social Sciences & Education</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {SOCIAL_SCIENCES_CATEGORIES.map((category) => (
-              <a
+              <Link
                 key={category.slug}
                 href={`/category/${category.slug}`}
                 className="block p-6 bg-white border rounded-lg hover:shadow-lg transition-shadow"
@@ -175,7 +175,7 @@ export default function CategoriesPage() {
                     </span>
                   ))}
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
         </section>
@@ -185,36 +185,36 @@ export default function CategoriesPage() {
           <h2 className="text-3xl font-bold mb-6">All Categories A-Z</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {CONTENT_CATEGORIES.map((category) => (
-              <a
+              <Link
                 key={category.slug}
                 href={`/category/${category.slug}`}
                 className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
               >
                 <h3 className="font-semibold">{category.name}</h3>
-              </a>
+              </Link>
             ))}
           </div>
         </section>
 
         {/* Start Discussion CTA */}
         <section className="mb-12 p-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg text-white">
-          <h2 className="text-3xl font-bold mb-4">Can't Find Your Category?</h2>
+          <h2 className="text-3xl font-bold mb-4">Can&apos;t Find Your Category?</h2>
           <p className="text-lg mb-6">
             Suggest a new category or start a discussion in an existing one
           </p>
           <div className="flex space-x-4">
-            <a
+            <Link
               href="/suggest-category"
               className="px-6 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
             >
               Suggest Category
-            </a>
-            <a
+            </Link>
+            <Link
               href="/search"
               className="px-6 py-3 bg-transparent border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors"
             >
               Search Topics
-            </a>
+            </Link>
           </div>
         </section>
       </div>

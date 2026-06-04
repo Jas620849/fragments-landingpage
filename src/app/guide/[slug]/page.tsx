@@ -1,23 +1,23 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import { generateProgrammaticMetadata } from "@/lib/metadata-generator";
-import { canonicalUrl } from "@/lib/site";
 import BreadcrumbSchema from "@/app/components/BreadcrumbSchema";
 import ArticleSchema from "@/app/components/ArticleSchema";
 import FAQPageSchema from "@/app/components/FAQPageSchema";
 
 interface GuidePageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 // Parse the slug to extract type and subject
 const parseSlug = (slug: string) => {
-  const types = ["what-is", "how-does", "difference-between", "advantages-of", "history-of"];
+  const types = ["what-is", "how-does", "difference-between", "advantages-of", "history-of"] as const;
   for (const type of types) {
     if (slug.startsWith(`${type}-`)) {
       const subject = slug.slice(type.length + 1).replace(/-/g, " ");
-      return { type: type as any, subject };
+      return { type, subject };
     }
   }
   return null;
@@ -192,7 +192,8 @@ const generateGuideContent = (type: string, subject: string) => {
 };
 
 export async function generateMetadata({ params }: GuidePageProps): Promise<Metadata> {
-  const parsed = parseSlug(params.slug);
+  const { slug } = await params;
+  const parsed = parseSlug(slug);
   
   if (!parsed) {
     return {
@@ -206,15 +207,25 @@ export async function generateMetadata({ params }: GuidePageProps): Promise<Meta
   });
 }
 
-export default function GuidePage({ params }: GuidePageProps) {
-  const parsed = parseSlug(params.slug);
+export function generateStaticParams() {
+  return [
+    { slug: "what-is-electricity" },
+    { slug: "how-does-electricity-work" },
+    { slug: "advantages-of-electricity" },
+    { slug: "history-of-electricity" },
+  ];
+}
+
+export default async function GuidePage({ params }: GuidePageProps) {
+  const { slug } = await params;
+  const parsed = parseSlug(slug);
 
   if (!parsed) {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-4xl font-bold mb-4">Guide Not Found</h1>
-          <p className="text-gray-600">The guide you're looking for doesn't exist.</p>
+          <p className="text-gray-600">The guide you&apos;re looking for doesn&apos;t exist.</p>
         </div>
       </div>
     );
@@ -225,7 +236,7 @@ export default function GuidePage({ params }: GuidePageProps) {
   const breadcrumbItems = [
     { name: "Home", path: "/" },
     { name: "Guides", path: "/guides" },
-    { name: title, path: `/guide/${params.slug}` },
+    { name: title, path: `/guide/${slug}` },
   ];
 
   const faqs = [
@@ -250,20 +261,18 @@ export default function GuidePage({ params }: GuidePageProps) {
         title={title}
         description={`Comprehensive guide about ${title}. Learn the fundamentals, applications, and importance of ${parsed.subject}.`}
         publishedDate={new Date().toISOString()}
-        slug={params.slug}
+        slug={slug}
       />
       <FAQPageSchema
-        pageUrl={`/guide/${params.slug}`}
-        pageName={title}
         faqs={faqs}
       />
 
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Breadcrumb Navigation */}
         <nav className="flex items-center space-x-2 text-sm text-gray-600 mb-6">
-          <a href="/" className="hover:text-blue-600">Home</a>
+          <Link href="/" className="hover:text-blue-600">Home</Link>
           <span>/</span>
-          <a href="/guides" className="hover:text-blue-600">Guides</a>
+          <Link href="/guides" className="hover:text-blue-600">Guides</Link>
           <span>/</span>
           <span className="text-gray-900">{title}</span>
         </nav>
@@ -293,18 +302,18 @@ export default function GuidePage({ params }: GuidePageProps) {
         <section className="mt-12 p-6 bg-blue-50 rounded-lg">
           <h2 className="text-2xl font-bold mb-4">Related Guides</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <a href={`/guide/what-is-${parsed.subject.replace(/\s+/g, "-")}`} className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow">
+            <Link href={`/guide/what-is-${parsed.subject.replace(/\s+/g, "-")}`} className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow">
               <h3 className="font-semibold">What Is {parsed.subject}</h3>
-            </a>
-            <a href={`/guide/how-does-${parsed.subject.replace(/\s+/g, "-")}`} className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow">
+            </Link>
+            <Link href={`/guide/how-does-${parsed.subject.replace(/\s+/g, "-")}`} className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow">
               <h3 className="font-semibold">How Does {parsed.subject} Work</h3>
-            </a>
-            <a href={`/guide/advantages-of-${parsed.subject.replace(/\s+/g, "-")}`} className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow">
+            </Link>
+            <Link href={`/guide/advantages-of-${parsed.subject.replace(/\s+/g, "-")}`} className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow">
               <h3 className="font-semibold">Advantages Of {parsed.subject}</h3>
-            </a>
-            <a href={`/guide/history-of-${parsed.subject.replace(/\s+/g, "-")}`} className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow">
+            </Link>
+            <Link href={`/guide/history-of-${parsed.subject.replace(/\s+/g, "-")}`} className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow">
               <h3 className="font-semibold">History Of {parsed.subject}</h3>
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -314,12 +323,12 @@ export default function GuidePage({ params }: GuidePageProps) {
           <p className="text-lg mb-6">
             Join our community to discuss ${parsed.subject}, ask questions, and share your knowledge
           </p>
-          <a
+          <Link
             href={`/topic/${parsed.subject.replace(/\s+/g, "-")}`}
             className="inline-block px-6 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
           >
             Start a Discussion
-          </a>
+          </Link>
         </section>
       </div>
     </div>

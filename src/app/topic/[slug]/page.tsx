@@ -1,18 +1,42 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import { generateTopicMetadata } from "@/lib/metadata-generator";
-import { canonicalUrl } from "@/lib/site";
 import BreadcrumbSchema from "@/app/components/BreadcrumbSchema";
 import FAQPageSchema from "@/app/components/FAQPageSchema";
 
 interface TopicPageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
+}
+
+interface Thread {
+  slug: string;
+  title: string;
+  replyCount: number;
+}
+
+interface FAQ {
+  question: string;
+  answer: string;
+}
+
+interface Topic {
+  title: string;
+  description: string;
+  category: string;
+  author: string;
+  publishedAt: string;
+  updatedAt: string;
+  content: string;
+  relatedTopics: string[];
+  threads: Thread[];
+  faqs: FAQ[];
 }
 
 // Sample topic data - In production, this would come from your database
-const getTopicData = (slug: string) => {
-  const topics: Record<string, any> = {
+const getTopicData = (slug: string): Topic | null => {
+  const topics: Record<string, Topic> = {
     "what-is-electricity": {
       title: "What Is Electricity",
       description: "Electricity is the flow of electric charge. It is a form of energy that powers our modern world, from lighting our homes to running complex machinery. Understanding electricity is fundamental to physics and engineering.",
@@ -89,7 +113,8 @@ const getTopicData = (slug: string) => {
 };
 
 export async function generateMetadata({ params }: TopicPageProps): Promise<Metadata> {
-  const topic = getTopicData(params.slug);
+  const { slug } = await params;
+  const topic = getTopicData(slug);
   
   if (!topic) {
     return {
@@ -99,7 +124,7 @@ export async function generateMetadata({ params }: TopicPageProps): Promise<Meta
 
   return generateTopicMetadata({
     title: topic.title,
-    slug: params.slug,
+    slug: slug,
     description: topic.description,
     category: topic.category,
     author: topic.author,
@@ -108,15 +133,23 @@ export async function generateMetadata({ params }: TopicPageProps): Promise<Meta
   });
 }
 
-export default function TopicPage({ params }: TopicPageProps) {
-  const topic = getTopicData(params.slug);
+export function generateStaticParams() {
+  return [
+    { slug: "what-is-electricity" },
+    { slug: "atomic-structure" },
+  ];
+}
+
+export default async function TopicPage({ params }: TopicPageProps) {
+  const { slug } = await params;
+  const topic = getTopicData(slug);
 
   if (!topic) {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-4xl font-bold mb-4">Topic Not Found</h1>
-          <p className="text-gray-600">The topic you're looking for doesn't exist.</p>
+          <p className="text-gray-600">The topic you&apos;re looking for doesn&apos;t exist.</p>
         </div>
       </div>
     );
@@ -125,7 +158,7 @@ export default function TopicPage({ params }: TopicPageProps) {
   const breadcrumbItems = [
     { name: "Home", path: "/" },
     { name: topic.category || "Topics", path: `/category/${topic.category || "all"}` },
-    { name: topic.title, path: `/topic/${params.slug}` },
+    { name: topic.title, path: `/topic/${slug}` },
   ];
 
   return (
@@ -133,8 +166,6 @@ export default function TopicPage({ params }: TopicPageProps) {
       <BreadcrumbSchema items={breadcrumbItems} />
       {topic.faqs.length > 0 && (
         <FAQPageSchema
-          pageUrl={`/topic/${params.slug}`}
-          pageName={topic.title}
           faqs={topic.faqs}
           category={topic.category}
         />
@@ -143,13 +174,13 @@ export default function TopicPage({ params }: TopicPageProps) {
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Breadcrumb Navigation */}
         <nav className="flex items-center space-x-2 text-sm text-gray-600 mb-6">
-          <a href="/" className="hover:text-blue-600">Home</a>
+          <Link href="/" className="hover:text-blue-600">Home</Link>
           <span>/</span>
           {topic.category && (
             <>
-              <a href={`/category/${topic.category}`} className="hover:text-blue-600 capitalize">
+              <Link href={`/category/${topic.category}`} className="hover:text-blue-600 capitalize">
                 {topic.category.replace("-", " ")}
-              </a>
+              </Link>
               <span>/</span>
             </>
           )}
@@ -177,7 +208,7 @@ export default function TopicPage({ params }: TopicPageProps) {
             <h2 className="text-2xl font-bold mb-4">Related Topics</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {topic.relatedTopics.map((relatedSlug: string) => (
-                <a
+                <Link
                   key={relatedSlug}
                   href={`/topic/${relatedSlug}`}
                   className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow"
@@ -185,7 +216,7 @@ export default function TopicPage({ params }: TopicPageProps) {
                   <h3 className="font-semibold text-lg capitalize">
                     {relatedSlug.replace(/-/g, " ")}
                   </h3>
-                </a>
+                </Link>
               ))}
             </div>
           </section>
@@ -196,24 +227,24 @@ export default function TopicPage({ params }: TopicPageProps) {
           <section className="mt-12">
             <h2 className="text-2xl font-bold mb-4">Discussion Threads</h2>
             <div className="space-y-4">
-              {topic.threads.map((thread: any) => (
-                <a
+              {topic.threads.map((thread: Thread) => (
+                <Link
                   key={thread.slug}
                   href={`/thread/${thread.slug}`}
                   className="block p-6 bg-white border rounded-lg hover:shadow-md transition-shadow"
                 >
                   <h3 className="font-semibold text-lg">{thread.title}</h3>
                   <p className="text-sm text-gray-600 mt-2">{thread.replyCount} replies</p>
-                </a>
+                </Link>
               ))}
             </div>
             <div className="mt-6">
-              <a
-                href={`/topic/${params.slug}/new-thread`}
+              <Link
+                href={`/topic/${slug}/new-thread`}
                 className="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
               >
                 Start a Discussion
-              </a>
+              </Link>
             </div>
           </section>
         )}
@@ -223,7 +254,7 @@ export default function TopicPage({ params }: TopicPageProps) {
           <section className="mt-12">
             <h2 className="text-2xl font-bold mb-4">Frequently Asked Questions</h2>
             <div className="space-y-4">
-              {topic.faqs.map((faq: any, index: number) => (
+              {topic.faqs.map((faq: FAQ, index: number) => (
                 <div key={index} className="p-6 bg-gray-50 rounded-lg">
                   <h3 className="font-semibold text-lg mb-2">{faq.question}</h3>
                   <p className="text-gray-700">{faq.answer}</p>

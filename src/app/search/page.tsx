@@ -1,6 +1,6 @@
 import { Metadata } from "next";
-import { SITE_NAME, DEFAULT_DESCRIPTION } from "@/lib/seo-constants";
-import { canonicalUrl } from "@/lib/site";
+import Link from "next/link";
+import { SITE_NAME } from "@/lib/seo-constants";
 import BreadcrumbSchema from "@/app/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
@@ -58,7 +58,7 @@ export default function SearchPage() {
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Breadcrumb Navigation */}
         <nav className="flex items-center space-x-2 text-sm text-gray-600 mb-6">
-          <a href="/" className="hover:text-blue-600">Home</a>
+          <Link href="/" className="hover:text-blue-600">Home</Link>
           <span>/</span>
           <span className="text-gray-900">Search</span>
         </nav>
@@ -89,13 +89,13 @@ export default function SearchPage() {
           <h2 className="text-2xl font-bold mb-4">Popular Searches</h2>
           <div className="flex flex-wrap gap-2">
             {POPULAR_SEARCHES.map((search) => (
-              <a
+              <Link
                 key={search}
                 href={`/search?q=${encodeURIComponent(search)}`}
                 className="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition-colors"
               >
                 {search}
-              </a>
+              </Link>
             ))}
           </div>
         </section>
@@ -105,7 +105,7 @@ export default function SearchPage() {
           <h2 className="text-2xl font-bold mb-4">Recent Topics</h2>
           <div className="space-y-4">
             {RECENT_TOPICS.map((topic) => (
-              <a
+              <Link
                 key={topic.slug}
                 href={`/topic/${topic.slug}`}
                 className="block p-6 bg-white border rounded-lg hover:shadow-md transition-shadow"
@@ -121,7 +121,7 @@ export default function SearchPage() {
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
         </section>
@@ -131,7 +131,7 @@ export default function SearchPage() {
           <h2 className="text-2xl font-bold mb-4">Recent Discussions</h2>
           <div className="space-y-4">
             {RECENT_THREADS.map((thread) => (
-              <a
+              <Link
                 key={thread.slug}
                 href={`/thread/${thread.slug}`}
                 className="block p-6 bg-white border rounded-lg hover:shadow-md transition-shadow"
@@ -147,7 +147,7 @@ export default function SearchPage() {
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
         </section>
@@ -160,7 +160,7 @@ export default function SearchPage() {
             <li>• Try different variations of your search term</li>
             <li>• Use quotes for exact phrase matches</li>
             <li>• Filter by category to narrow down results</li>
-            <li>• Browse categories if you're not sure what to search for</li>
+            <li>• Browse categories if you&apos;re not sure what to search for</li>
           </ul>
         </section>
 
@@ -168,14 +168,14 @@ export default function SearchPage() {
         <section className="text-center py-8">
           <h2 className="text-2xl font-bold mb-4">Browse by Category</h2>
           <p className="text-gray-600 mb-6">
-            Can't find what you're looking for? Browse our academic categories
+            Can&apos;t find what you&apos;re looking for? Browse our academic categories
           </p>
-          <a
+          <Link
             href="/categories"
             className="inline-block px-8 py-4 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors"
           >
             Browse All Categories
-          </a>
+          </Link>
         </section>
       </div>
     </div>

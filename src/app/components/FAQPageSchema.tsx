@@ -1,4 +1,4 @@
-import { canonicalUrl, hasPublicSiteUrl } from "@/lib/site";
+import { hasPublicSiteUrl } from "@/lib/site";
 
 interface FAQItem {
   question: string;
@@ -6,9 +6,6 @@ interface FAQItem {
 }
 
 interface FAQPageSchemaProps {
-  pageUrl: string;
-  pageName: string;
-  pageDescription?: string;
   faqs: FAQItem[];
   category?: string;
 }
@@ -18,15 +15,10 @@ interface FAQPageSchemaProps {
  * Helps Google understand FAQ content and display rich results in search
  */
 export default function FAQPageSchema({
-  pageUrl,
-  pageName,
-  pageDescription,
   faqs,
   category,
 }: FAQPageSchemaProps) {
   if (!hasPublicSiteUrl()) return null;
-
-  const url = canonicalUrl(pageUrl);
 
   const payload = {
     "@context": "https://schema.org",

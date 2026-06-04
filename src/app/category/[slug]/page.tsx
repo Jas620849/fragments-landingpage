@@ -1,18 +1,32 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import { CONTENT_CATEGORIES } from "@/lib/seo-constants";
 import { generateCategoryMetadata } from "@/lib/metadata-generator";
-import { canonicalUrl } from "@/lib/site";
 import BreadcrumbSchema from "@/app/components/BreadcrumbSchema";
 
 interface CategoryPageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
+}
+
+interface CategoryTopic {
+  slug: string;
+  title: string;
+  replyCount: number;
+  viewCount: number;
+}
+
+interface CategoryThread {
+  slug: string;
+  title: string;
+  replyCount: number;
+  viewCount: number;
 }
 
 // Sample topics per category - In production, this would come from your database
-const getCategoryTopics = (categorySlug: string) => {
-  const categoryTopics: Record<string, any[]> = {
+const getCategoryTopics = (categorySlug: string): CategoryTopic[] => {
+  const categoryTopics: Record<string, CategoryTopic[]> = {
     "physics": [
       { slug: "what-is-electricity", title: "What Is Electricity", replyCount: 45, viewCount: 2300 },
       { slug: "atomic-structure", title: "Atomic Structure", replyCount: 32, viewCount: 1800 },
@@ -39,8 +53,8 @@ const getCategoryTopics = (categorySlug: string) => {
 };
 
 // Sample threads per category - In production, this would come from your database
-const getCategoryThreads = (categorySlug: string) => {
-  const categoryThreads: Record<string, any[]> = {
+const getCategoryThreads = (categorySlug: string): CategoryThread[] => {
+  const categoryThreads: Record<string, CategoryThread[]> = {
     "physics": [
       { slug: "understanding-electricity", title: "Understanding Electricity Basics", replyCount: 15, viewCount: 1250 },
       { slug: "electron-behavior", title: "How Do Electrons Behave in Circuits?", replyCount: 23, viewCount: 1800 },
@@ -62,7 +76,8 @@ const getCategoryThreads = (categorySlug: string) => {
 };
 
 export async function generateMetadata({ params }: CategoryPageProps): Promise<Metadata> {
-  const category = CONTENT_CATEGORIES.find((c) => c.slug === params.slug);
+  const { slug } = await params;
+  const category = CONTENT_CATEGORIES.find((c) => c.slug === slug);
   
   if (!category) {
     return {
@@ -71,36 +86,46 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   }
 
   return generateCategoryMetadata({
-    slug: category.slug,
+    slug: slug,
     name: category.name,
     description: category.description,
-    topicCount: getCategoryTopics(category.slug).length,
+    topicCount: getCategoryTopics(slug).length,
   });
 }
 
-export default function CategoryPage({ params }: CategoryPageProps) {
-  const category = CONTENT_CATEGORIES.find((c) => c.slug === params.slug);
+export function generateStaticParams() {
+  return [
+    { slug: "physics" },
+    { slug: "chemistry" },
+    { slug: "computer-science" },
+    { slug: "machine-learning" },
+  ];
+}
+
+export default async function CategoryPage({ params }: CategoryPageProps) {
+  const { slug } = await params;
+  const category = CONTENT_CATEGORIES.find((c) => c.slug === slug);
 
   if (!category) {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-4xl font-bold mb-4">Category Not Found</h1>
-          <p className="text-gray-600">The category you're looking for doesn't exist.</p>
+          <p className="text-gray-600">The category you&apos;re looking for doesn&apos;t exist.</p>
         </div>
       </div>
     );
   }
 
-  const topics = getCategoryTopics(category.slug);
-  const threads = getCategoryThreads(category.slug);
+  const topics = getCategoryTopics(slug);
+  const threads = getCategoryThreads(slug);
   const topicCount = topics.length;
   const threadCount = threads.length;
 
   const breadcrumbItems = [
     { name: "Home", path: "/" },
     { name: "Categories", path: "/categories" },
-    { name: category.name, path: `/category/${category.slug}` },
+    { name: category.name, path: `/category/${slug}` },
   ];
 
   return (
@@ -110,9 +135,9 @@ export default function CategoryPage({ params }: CategoryPageProps) {
       <div className="max-w-6xl mx-auto px-4 py-8">
         {/* Breadcrumb Navigation */}
         <nav className="flex items-center space-x-2 text-sm text-gray-600 mb-6">
-          <a href="/" className="hover:text-blue-600">Home</a>
+          <Link href="/" className="hover:text-blue-600">Home</Link>
           <span>/</span>
-          <a href="/categories" className="hover:text-blue-600">Categories</a>
+          <Link href="/categories" className="hover:text-blue-600">Categories</Link>
           <span>/</span>
           <span className="text-gray-900">{category.name}</span>
         </nav>
@@ -150,13 +175,13 @@ export default function CategoryPage({ params }: CategoryPageProps) {
         <section className="mb-12">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-3xl font-bold">Featured Topics</h2>
-            <a href={`/category/${category.slug}/topics`} className="text-blue-600 hover:underline">
+            <Link href={`/category/${slug}/topics`} className="text-blue-600 hover:underline">
               View All Topics →
-            </a>
+            </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {topics.slice(0, 4).map((topic) => (
-              <a
+              <Link
                 key={topic.slug}
                 href={`/topic/${topic.slug}`}
                 className="block p-6 bg-white border rounded-lg hover:shadow-lg transition-shadow"
@@ -167,7 +192,7 @@ export default function CategoryPage({ params }: CategoryPageProps) {
                   <span>•</span>
                   <span>{topic.viewCount} views</span>
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
         </section>
@@ -176,13 +201,13 @@ export default function CategoryPage({ params }: CategoryPageProps) {
         <section className="mb-12">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-3xl font-bold">Popular Discussions</h2>
-            <a href={`/category/${category.slug}/threads`} className="text-blue-600 hover:underline">
+            <Link href={`/category/${slug}/threads`} className="text-blue-600 hover:underline">
               View All Discussions →
-            </a>
+            </Link>
           </div>
           <div className="space-y-4">
             {threads.slice(0, 5).map((thread) => (
-              <a
+              <Link
                 key={thread.slug}
                 href={`/thread/${thread.slug}`}
                 className="block p-6 bg-white border rounded-lg hover:shadow-md transition-shadow"
@@ -193,7 +218,7 @@ export default function CategoryPage({ params }: CategoryPageProps) {
                   <span>•</span>
                   <span>{thread.viewCount} views</span>
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
         </section>
@@ -206,17 +231,17 @@ export default function CategoryPage({ params }: CategoryPageProps) {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {CONTENT_CATEGORIES
-              .filter((c) => c.slug !== category.slug)
+              .filter((c) => c.slug !== slug)
               .slice(0, 3)
               .map((relatedCategory) => (
-                <a
+                <Link
                   key={relatedCategory.slug}
                   href={`/category/${relatedCategory.slug}`}
                   className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow"
                 >
                   <h3 className="font-semibold text-lg">{relatedCategory.name}</h3>
                   <p className="text-sm text-gray-600 mt-1">{relatedCategory.description}</p>
-                </a>
+                </Link>
               ))}
           </div>
         </section>
@@ -228,18 +253,18 @@ export default function CategoryPage({ params }: CategoryPageProps) {
             Share your knowledge, ask questions, and connect with the community
           </p>
           <div className="flex space-x-4">
-            <a
-              href={`/category/${category.slug}/new-topic`}
+            <Link
+              href={`/category/${slug}/new-topic`}
               className="px-6 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
             >
               Create New Topic
-            </a>
-            <a
-              href={`/category/${category.slug}/new-thread`}
+            </Link>
+            <Link
+              href={`/category/${slug}/new-thread`}
               className="px-6 py-3 bg-transparent border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors"
             >
               Start Discussion
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -280,12 +305,12 @@ export default function CategoryPage({ params }: CategoryPageProps) {
 
         {/* All Categories Link */}
         <section className="text-center py-8">
-          <a
+          <Link
             href="/categories"
             className="inline-block px-8 py-4 bg-gray-800 text-white rounded-lg font-semibold hover:bg-gray-900 transition-colors"
           >
             Browse All Categories
-          </a>
+          </Link>
         </section>
       </div>
     </div>

@@ -14,6 +14,7 @@ import {
   DEFAULT_KEYWORDS,
   DEFAULT_TITLE,
   SITE_NAME,
+  TARGET_LOCALES,
 } from "@/lib/seo-constants";
 import { getMetadataBase, hasPublicSiteUrl } from "@/lib/site";
 
@@ -61,10 +62,9 @@ export const metadata: Metadata = {
   alternates: hasPublicSiteUrl()
     ? {
         canonical: "/",
-        languages: {
-          "en-US": "/",
-          "x-default": "/",
-        },
+        languages: Object.fromEntries(
+          TARGET_LOCALES.map((locale) => [locale.code, "/"])
+        ),
       }
     : undefined,
   openGraph: {
@@ -105,6 +105,9 @@ export const metadata: Metadata = {
   verification: {
     ...(process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
       ? { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION }
+      : {}),
+    ...(process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION
+      ? { bing: process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION }
       : {}),
   },
 };

@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{}"
+self.__REACT_LOADABLE_MANIFEST="{\"app/components/DeferredChatWidget.tsx -> ./ChatWidget\":{\"id\":\"app/components/DeferredChatWidget.tsx -> ./ChatWidget\",\"files\":[\"static/chunks/_app-pages-browser_src_app_components_ChatWidget_tsx.js\"]}}"

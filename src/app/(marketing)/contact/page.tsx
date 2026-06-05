@@ -88,8 +88,8 @@ export default function ContactPage() {
     }`;
 
   return (
-    <>
-      {loading ? <Loader /> : null}
+    <React.Fragment>
+      {loading && <Loader />}
       <section className="border-b border-slate-200/80 bg-slate-900 py-10 sm:py-14">
         <div className="frag-container">
           <p className="frag-hero-eyebrow">Contact</p>
@@ -179,6 +179,7 @@ export default function ContactPage() {
               <button
                 type="submit"
                 className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-amber-500 to-orange-600 py-3.5 text-sm font-bold text-white shadow-lg shadow-orange-500/25 transition hover:from-amber-400 hover:to-orange-500 sm:w-auto sm:px-10"
+                aria-label="Submit contact form"
               >
                 <FontAwesomeIcon icon={faPaperPlane} className="h-4 w-4" />
                 Submit
@@ -210,6 +211,6 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-    </>
+    </React.Fragment>
   );
 }

@@ -41,7 +41,7 @@ export default function GoogleAnalytics({ measurementId }: GoogleAnalyticsProps)
     <>
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
-        strategy="afterInteractive"
+        strategy="lazyOnload"
       />
       <noscript>
         <iframe

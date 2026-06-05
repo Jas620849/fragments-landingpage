@@ -92,6 +92,7 @@ export default function CookieBanner() {
               type="button"
               className="rounded-xl bg-slate-900 px-4 py-2.5 text-center text-sm font-bold text-white transition hover:bg-slate-800"
               onClick={() => save("all")}
+              aria-label="Accept all cookies"
             >
               Accept all
             </button>
@@ -99,6 +100,7 @@ export default function CookieBanner() {
               type="button"
               className="rounded-xl border border-slate-300 bg-white px-4 py-2.5 text-center text-sm font-bold text-slate-800 transition hover:bg-slate-50"
               onClick={() => save("essential")}
+              aria-label="Accept only essential cookies"
             >
               Essential only
             </button>

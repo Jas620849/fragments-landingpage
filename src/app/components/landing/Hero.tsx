@@ -17,9 +17,9 @@ import { scrollToSection } from "../../utils/navigation";
 import { frontendAppBaseUrl } from "../../utils/frontendAppBaseUrl";
 
 const heroBullets = [
-  "What it is: a discussion platform where each cohort follows one fragment trail—not a scattered social feed.",
-  "What you get: AI screening plus human review before posts go wide to the class.",
-  "Who wins: learners earn visible participation; educators who elevate discussion get recognized.",
+  "Structured interview scoring with AI-powered moderation and bias reduction",
+  "Comprehensive candidate evaluation and comparison for scholarship selection",
+  "Fair, consistent assessment workflows for education institutions and scholarship programs",
 ];
 
 const chips = [
@@ -189,25 +189,23 @@ export default function Hero() {
           {/* Left: 7 cols on large */}
           <div className="col-span-12 flex flex-col text-center lg:col-span-7 lg:pr-2 lg:text-left">
             <p className="mb-2 inline-flex items-center justify-center gap-2 self-center rounded-full border border-highlight/25 bg-white/80 px-3 py-1 text-[9px] font-bold uppercase tracking-[0.2em] text-highlight-dark shadow-sm sm:text-[10px] lg:self-start">
-              Academic discussion for classrooms & cohorts
+              Scholarship interview & candidate evaluation platform
             </p>
 
             <h1 className="text-balance text-2xl font-bold tracking-tight text-secondary sm:text-3xl lg:text-[2rem] lg:leading-tight">
-              One <span className="text-highlight-dark">scholarly trail</span> per
-              class—<span className="text-accent">moderated</span>, measurable, and
-              fair to educators who lead
+              Scholarship Interview & <span className="text-highlight-dark">Candidate Evaluation Platform</span>
             </h1>
 
             <p className="mx-auto mt-3 max-w-[52ch] text-sm font-medium leading-snug text-textDark sm:text-[0.9375rem] lg:mx-0">
-              <strong className="font-bold text-secondary">Fragments</strong> replaces
-              noisy feeds with ordered fragment trails, two-step review (AI then
-              humans), and clear credit for learners and educators.
+              <strong className="font-bold text-secondary">FragmentTrails</strong> streamlines
+              scholarship interviews, candidate scoring, and evaluation workflows with
+              structured assessment tools for education institutions and scholarship programs.
             </p>
 
             <p className="mx-auto mt-2 max-w-[52ch] text-xs font-medium leading-relaxed text-textMuted sm:text-sm lg:mx-0">
-              If you teach or run a program, you get a surface that reads like serious
-              coursework—sources in line, real debate, and a story you can defend to
-              families and admins.
+              Improve fairness, consistency, and decision-making with AI-powered moderation,
+              bias reduction, and comprehensive candidate comparison tools for scholarship
+              selection and admissions.
             </p>
 
             <ul className="mx-auto mt-3 max-w-[52ch] space-y-2 text-left text-xs font-medium leading-snug text-textDark sm:text-sm lg:mx-0">
@@ -388,13 +386,13 @@ export default function Hero() {
                         key={s.id}
                         type="button"
                         onClick={() => setStep(i)}
+                        aria-label={`Show trail step ${i + 1}: ${s.phase}`}
+                        aria-pressed={step === i}
                         className={`h-2 rounded-full transition-all duration-300 ${
                           i === step
                             ? "w-7 bg-highlight"
                             : "w-2 bg-slate-300 hover:bg-slate-400"
                         }`}
-                        aria-label={`Show trail step ${i + 1}: ${s.phase}`}
-                        aria-current={i === step}
                       />
                     ))}
                   </div>

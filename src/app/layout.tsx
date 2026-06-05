@@ -24,6 +24,7 @@ const fontSans = Plus_Jakarta_Sans({
   adjustFontFallback: true,
   variable: "--font-main",
   weight: ["400", "500", "600", "700", "800"],
+  fallback: ["system-ui", "sans-serif"],
 });
 
 export const viewport: Viewport = {
@@ -98,8 +99,11 @@ export const metadata: Metadata = {
       : {}),
   },
   icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/logo-no-bg.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: "/logo-no-bg.png",
   },
   manifest: "/manifest.json",
   verification: {
@@ -119,15 +123,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.clarity.ms" />
+      </head>
       <body className={`${fontSans.variable} font-sans antialiased`}>
-        <GoogleTagManager />
-        <MicrosoftClarity />
         <WebVitals />
         <JsonLd />
-        <GoogleAnalytics />
         {children}
         <ToastContainer />
         <CookieBanner />
+        <GoogleTagManager />
+        <MicrosoftClarity />
+        <GoogleAnalytics />
         <DeferredChatWidget />
       </body>
     </html>

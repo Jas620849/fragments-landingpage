@@ -348,7 +348,7 @@ export default async function ThreadPage({ params }: ThreadPageProps) {
             placeholder="Share your knowledge and contribute to the discussion..."
           />
           <div className="mt-4 flex justify-end">
-            <button className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+            <button className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors" aria-label="Submit your reply">
               Submit Reply
             </button>
           </div>

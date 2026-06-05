@@ -1,38 +1,31 @@
-export const SITE_NAME = "Fragment Trails";
+export const SITE_NAME = "FragmentTrails";
 
 export const DEFAULT_TITLE =
-  "Fragment Trails | Academic Discussion Platform & Knowledge Sharing Community";
+  "FragmentTrails | Scholarship Interview & Candidate Evaluation Platform";
 
 export const DEFAULT_DESCRIPTION =
-  "Join Fragment Trails, the leading academic discussion platform for students, researchers, and educators. Share knowledge, create topics, and engage in scholarly discussions across science, technology, engineering, and more.";
+  "Streamline scholarship interviews, candidate scoring, and evaluation workflows with FragmentTrails. Improve fairness, consistency, and decision-making using structured assessment tools for education institutions and scholarship programs.";
 
 export const DEFAULT_KEYWORDS = [
-  "academic discussion platform",
-  "knowledge sharing platform",
-  "student discussion forum",
-  "research discussion platform",
-  "educational discussion website",
-  "science discussion forum",
-  "academic collaboration platform",
-  "research community",
-  "student learning platform",
-  "knowledge exchange platform",
-  "educational forum",
-  "online learning discussion",
-  "research knowledge sharing",
-  "academic question and answer",
-  "discussion based learning platform",
-  "Fragment Trails",
+  "scholarship interview platform",
+  "scholarship interview software",
+  "scholarship assessment platform",
+  "candidate evaluation software",
+  "applicant scoring system",
+  "scholarship selection software",
+  "student interview platform",
+  "admissions interview software",
+  "interview evaluation platform",
+  "interview moderation software",
+  "bias free candidate evaluation",
+  "structured interview assessment",
+  "scholarship review process",
+  "interview panel management",
   "education technology",
-  "class discussion",
-  "K-12",
   "higher education",
-  "scholarly discourse",
-  "educator recognition",
-  "student engagement",
-  "learning rewards",
-  "moderation",
-  "online learning",
+  "scholarship programs",
+  "admissions workflow",
+  "FragmentTrails",
 ];
 
 // Target countries for international SEO

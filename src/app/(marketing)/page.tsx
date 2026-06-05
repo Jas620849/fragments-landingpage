@@ -3,6 +3,7 @@ import { DEFAULT_DESCRIPTION, DEFAULT_TITLE, DEFAULT_KEYWORDS } from "@/lib/seo-
 import { canonicalUrl, hasPublicSiteUrl } from "@/lib/site";
 import MarketingHomeClient from "./MarketingHomeClient";
 import BreadcrumbSchema from "../components/BreadcrumbSchema";
+import ScholarshipPlatformSchema from "../components/ScholarshipPlatformSchema";
 
 export const metadata: Metadata = {
   title: { absolute: DEFAULT_TITLE },
@@ -39,6 +40,7 @@ export default function HomePage() {
   return (
     <>
       <BreadcrumbSchema items={[{ name: "Home", path: "/" }]} />
+      <ScholarshipPlatformSchema />
       <MarketingHomeClient />
     </>
   );

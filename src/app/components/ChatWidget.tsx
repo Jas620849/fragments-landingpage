@@ -201,6 +201,7 @@ export default function ChatWidget() {
                   key={q}
                   type="button"
                   onClick={() => quickSend(q)}
+                  aria-label={`Quick send: ${q}`}
                   disabled={typing}
                   className="rounded-full border border-slate-200 bg-white px-2.5 py-1 text-[10px] font-semibold text-secondary transition hover:border-highlight hover:bg-primary disabled:opacity-50"
                 >

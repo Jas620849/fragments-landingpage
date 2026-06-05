@@ -266,6 +266,7 @@ export default function PricingPage() {
                   className="flex w-full items-center justify-between gap-3 px-4 py-3 text-left text-xs font-semibold text-secondary transition hover:bg-primary/40 sm:px-5 sm:py-3.5 sm:text-sm"
                   onClick={() => setOpenFaq(open ? null : n)}
                   aria-expanded={open}
+                  aria-controls={`faq-answer-${n}`}
                 >
                   <span>{item.q}</span>
                   <FontAwesomeIcon

@@ -36,7 +36,7 @@ export default function SuggestDisciplineSection() {
               placeholder="e.g., AP Environmental Science, Logic, Astronomy"
               className="frag-input text-center text-base font-medium"
             />
-            <button type="button" className="frag-btn-primary mt-4 w-full py-3.5">
+            <button type="button" className="frag-btn-primary mt-4 w-full py-3.5" aria-label="Send discipline suggestion request">
               Send request
             </button>
           </div>

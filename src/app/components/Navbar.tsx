@@ -191,6 +191,7 @@ export default function Navbar() {
                 type="button"
                 className="block w-full rounded-xl px-3 py-3 text-left text-sm font-medium text-slate-800 hover:bg-slate-50"
                 onClick={goExplore}
+                aria-label="View product tour"
               >
                 Product tour
               </button>

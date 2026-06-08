@@ -35,39 +35,6 @@ const STATIC_PATHS = [
   { path: "/search/", priority: 0.8, changeFreq: "daily" as const },
 ];
 
-// Sample topics - In production, this would come from your database
-const SAMPLE_TOPICS = [
-  { slug: "what-is-electricity", updatedAt: "2024-01-15" },
-  { slug: "atomic-structure", updatedAt: "2024-01-16" },
-  { slug: "newton-laws", updatedAt: "2024-01-17" },
-  { slug: "photosynthesis", updatedAt: "2024-01-18" },
-  { slug: "machine-learning-basics", updatedAt: "2024-01-19" },
-  { slug: "python-programming", updatedAt: "2024-01-20" },
-  { slug: "quantum-physics-introduction", updatedAt: "2024-01-21" },
-  { slug: "data-science-fundamentals", updatedAt: "2024-01-22" },
-];
-
-// Sample threads - In production, this would come from your database
-const SAMPLE_THREADS = [
-  { slug: "understanding-electricity", topicSlug: "what-is-electricity", updatedAt: "2024-01-15" },
-  { slug: "what-is-an-electron", topicSlug: "atomic-structure", updatedAt: "2024-01-16" },
-  { slug: "importance-of-neutrons", topicSlug: "atomic-structure", updatedAt: "2024-01-17" },
-  { slug: "newton-first-law-explained", topicSlug: "newton-laws", updatedAt: "2024-01-18" },
-  { slug: "how-photosynthesis-works", topicSlug: "photosynthesis", updatedAt: "2024-01-19" },
-];
-
-// Sample programmatic SEO guides - In production, this would come from your database
-const SAMPLE_GUIDES = [
-  { slug: "what-is-electricity", updatedAt: "2024-01-15" },
-  { slug: "how-does-electricity-work", updatedAt: "2024-01-16" },
-  { slug: "advantages-of-electricity", updatedAt: "2024-01-17" },
-  { slug: "history-of-electricity", updatedAt: "2024-01-18" },
-  { slug: "what-is-machine-learning", updatedAt: "2024-01-19" },
-  { slug: "how-does-machine-learning-work", updatedAt: "2024-01-20" },
-  { slug: "advantages-of-machine-learning", updatedAt: "2024-01-21" },
-  { slug: "history-of-machine-learning", updatedAt: "2024-01-22" },
-];
-
 // Programmatic SEO: Scholarship pages by country
 const SCHOLARSHIP_COUNTRIES = [
   { code: "pakistan", name: "Pakistan" },
@@ -101,6 +68,31 @@ const USE_CASES = [
   { code: "fair-candidate-evaluation", name: "Fair Candidate Evaluation" },
   { code: "panel-calibration", name: "Panel Calibration" },
   { code: "data-driven-selection", name: "Data-Driven Selection" },
+];
+
+// Programmatic SEO: Platform integration pages
+const PLATFORMS = [
+  { code: "product-hunt", name: "Product Hunt" },
+  { code: "reddit", name: "Reddit" },
+  { code: "indie-hackers", name: "Indie Hackers" },
+  { code: "hacker-news", name: "Hacker News" },
+  { code: "betalist", name: "BetaList" },
+  { code: "alternativeto", name: "AlternativeTo" },
+  { code: "g2", name: "G2" },
+  { code: "capterra", name: "Capterra" },
+  { code: "getapp", name: "GetApp" },
+  { code: "software-advice", name: "Software Advice" },
+  { code: "saashub", name: "SaaSHub" },
+  { code: "startupbase", name: "StartupBase" },
+  { code: "microlaunch", name: "Microlaunch" },
+  { code: "uneed", name: "Uneed" },
+  { code: "fazier", name: "Fazier" },
+  { code: "launching-next", name: "Launching Next" },
+  { code: "theres-an-ai-for-that", name: "There's An AI For That" },
+  { code: "futurepedia", name: "Futurepedia" },
+  { code: "ai-tool-hunt", name: "AI Tool Hunt" },
+  { code: "topai-tools", name: "TopAI Tools" },
+  { code: "toolify-ai", name: "Toolify AI" },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -138,30 +130,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
-  // Topic pages
-  const topicEntries: MetadataRoute.Sitemap = SAMPLE_TOPICS.map((topic) => ({
-    url: makeUrl(`/topic/${topic.slug}`),
-    lastModified: new Date(topic.updatedAt),
-    changeFrequency: "weekly" as const,
-    priority: 0.9,
-  }));
-
-  // Thread pages
-  const threadEntries: MetadataRoute.Sitemap = SAMPLE_THREADS.map((thread) => ({
-    url: makeUrl(`/thread/${thread.slug}`),
-    lastModified: new Date(thread.updatedAt),
-    changeFrequency: "daily" as const,
-    priority: 0.8,
-  }));
-
-  // Guide pages (programmatic SEO)
-  const guideEntries: MetadataRoute.Sitemap = SAMPLE_GUIDES.map((guide) => ({
-    url: makeUrl(`/guide/${guide.slug}`),
-    lastModified: new Date(guide.updatedAt),
-    changeFrequency: "weekly" as const,
-    priority: 0.85,
-  }));
-
   // Scholarship pages by country (programmatic SEO)
   const scholarshipCountryEntries: MetadataRoute.Sitemap = SCHOLARSHIP_COUNTRIES.map((country) => ({
     url: makeUrl(`/scholarship/${country.code}/`),
@@ -186,15 +154,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
+  // Platform integration pages (programmatic SEO)
+  const platformEntries: MetadataRoute.Sitemap = PLATFORMS.map((platform) => ({
+    url: makeUrl(`/platform/${platform.code}/`),
+    lastModified: lastmod,
+    changeFrequency: "weekly" as const,
+    priority: 0.8,
+  }));
+
   return [
     ...staticEntries,
     ...blogPosts,
     ...categoryEntries,
-    ...topicEntries,
-    ...threadEntries,
-    ...guideEntries,
     ...scholarshipCountryEntries,
     ...industryEntries,
     ...useCaseEntries,
+    ...platformEntries,
   ];
 }

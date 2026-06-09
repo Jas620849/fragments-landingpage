@@ -7,6 +7,36 @@ import { SITE_NAME } from "@/lib/seo-constants";
 import { absoluteAsset, canonicalUrl, hasPublicSiteUrl } from "@/lib/site";
 import ArticleSchema from "../../../components/ArticleSchema";
 import BreadcrumbSchema from "../../../components/BreadcrumbSchema";
+import HowToReduceBiasInScholarshipInterviews from "../content/how-to-reduce-bias-in-scholarship-interviews";
+import ScholarshipInterviewScoringBestPractices from "../content/scholarship-interview-scoring-best-practices";
+import StructuredVsUnstructuredInterviews from "../content/structured-vs-unstructured-interviews";
+import AIPoweredInterviewEvaluation from "../content/ai-powered-interview-evaluation";
+import InterviewerTrainingBestPractices from "../content/interviewer-training-best-practices";
+import DiversityInScholarshipSelection from "../content/diversity-in-scholarship-selection";
+import MeasuringScholarshipSuccess from "../content/measuring-scholarship-success";
+import VirtualScholarshipInterviews from "../content/virtual-scholarship-interviews";
+import ScholarshipProgramManagement from "../content/scholarship-program-management";
+import ScholarshipAlumniEngagement from "../content/scholarship-alumni-engagement";
+import ScholarshipRecipientSupport from "../content/scholarship-recipient-support";
+import ScholarshipApplicationProcess from "../content/scholarship-application-process";
+import ScholarshipOutreachStrategies from "../content/scholarship-outreach-strategies";
+import ScholarshipDonorRelations from "../content/scholarship-donor-relations";
+import ScholarshipFinancialLiteracy from "../content/scholarship-financial-literacy";
+import ScholarshipMentorshipPrograms from "../content/scholarship-mentorship-programs";
+import ScholarshipRenewalCriteria from "../content/scholarship-renewal-criteria";
+import ScholarshipSelectionCommittee from "../content/scholarship-selection-committee";
+import ScholarshipEssayEvaluation from "../content/scholarship-essay-evaluation";
+import ScholarshipInterviewPreparation from "../content/scholarship-interview-preparation";
+import ScholarshipTechnologySolutions from "../content/scholarship-technology-solutions";
+import ScholarshipImpactMeasurement from "../content/scholarship-impact-measurement";
+import ScholarshipEquityInclusion from "../content/scholarship-equity-inclusion";
+import ScholarshipCollaborationPartnerships from "../content/scholarship-collaboration-partnerships";
+import ScholarshipCrisisManagement from "../content/scholarship-crisis-management";
+import ScholarshipSustainabilityGrowth from "../content/scholarship-sustainability-growth";
+import ScholarshipLegalCompliance from "../content/scholarship-legal-compliance";
+import ScholarshipInnovationFuture from "../content/scholarship-innovation-future";
+import ScholarshipGlobalPerspectives from "../content/scholarship-global-perspectives";
+import ScholarshipBestPracticesSummary from "../content/scholarship-best-practices-summary";
 
 type PageProps = { params: Promise<{ slug: string }> };
 
@@ -92,6 +122,66 @@ function BlogPostingJsonLd({ post, slug }: { post: BlogPostMeta; slug: string })
 
 function PostBody({ slug }: { slug: string }) {
   switch (slug) {
+    case "how-to-reduce-bias-in-scholarship-interviews":
+      return <HowToReduceBiasInScholarshipInterviews />;
+    case "scholarship-interview-scoring-best-practices":
+      return <ScholarshipInterviewScoringBestPractices />;
+    case "structured-vs-unstructured-interviews":
+      return <StructuredVsUnstructuredInterviews />;
+    case "ai-powered-interview-evaluation":
+      return <AIPoweredInterviewEvaluation />;
+    case "interviewer-training-best-practices":
+      return <InterviewerTrainingBestPractices />;
+    case "diversity-in-scholarship-selection":
+      return <DiversityInScholarshipSelection />;
+    case "measuring-scholarship-success":
+      return <MeasuringScholarshipSuccess />;
+    case "virtual-scholarship-interviews":
+      return <VirtualScholarshipInterviews />;
+    case "scholarship-program-management":
+      return <ScholarshipProgramManagement />;
+    case "scholarship-alumni-engagement":
+      return <ScholarshipAlumniEngagement />;
+    case "scholarship-recipient-support":
+      return <ScholarshipRecipientSupport />;
+    case "scholarship-application-process":
+      return <ScholarshipApplicationProcess />;
+    case "scholarship-outreach-strategies":
+      return <ScholarshipOutreachStrategies />;
+    case "scholarship-donor-relations":
+      return <ScholarshipDonorRelations />;
+    case "scholarship-financial-literacy":
+      return <ScholarshipFinancialLiteracy />;
+    case "scholarship-mentorship-programs":
+      return <ScholarshipMentorshipPrograms />;
+    case "scholarship-renewal-criteria":
+      return <ScholarshipRenewalCriteria />;
+    case "scholarship-selection-committee":
+      return <ScholarshipSelectionCommittee />;
+    case "scholarship-essay-evaluation":
+      return <ScholarshipEssayEvaluation />;
+    case "scholarship-interview-preparation":
+      return <ScholarshipInterviewPreparation />;
+    case "scholarship-technology-solutions":
+      return <ScholarshipTechnologySolutions />;
+    case "scholarship-impact-measurement":
+      return <ScholarshipImpactMeasurement />;
+    case "scholarship-equity-inclusion":
+      return <ScholarshipEquityInclusion />;
+    case "scholarship-collaboration-partnerships":
+      return <ScholarshipCollaborationPartnerships />;
+    case "scholarship-crisis-management":
+      return <ScholarshipCrisisManagement />;
+    case "scholarship-sustainability-growth":
+      return <ScholarshipSustainabilityGrowth />;
+    case "scholarship-legal-compliance":
+      return <ScholarshipLegalCompliance />;
+    case "scholarship-innovation-future":
+      return <ScholarshipInnovationFuture />;
+    case "scholarship-global-perspectives":
+      return <ScholarshipGlobalPerspectives />;
+    case "scholarship-best-practices-summary":
+      return <ScholarshipBestPracticesSummary />;
     case "welcome-to-fragments":
       return (
         <>
@@ -137,7 +227,16 @@ function PostBody({ slug }: { slug: string }) {
         </>
       );
     default:
-      return null;
+      return (
+        <div className="space-y-6">
+          <p className="text-lg font-semibold text-secondary">
+            Comprehensive 7000-word article coming soon. This blog post is being expanded to provide in-depth insights on {slug.replace(/-/g, " ")}.
+          </p>
+          <p>
+            We are currently enhancing our blog content to provide comprehensive, detailed articles that cover important topics in scholarship interviews, candidate evaluation, and educational assessment. Each article will include detailed analysis, practical strategies, FAQs, and actionable insights. Check back soon for the complete 7000-word article.
+          </p>
+        </div>
+      );
   }
 }
 

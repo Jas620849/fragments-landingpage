@@ -62,7 +62,7 @@ export const metadata: Metadata = {
   },
   alternates: hasPublicSiteUrl()
     ? {
-        canonical: "/",
+        canonical: getMetadataBase(),
         languages: Object.fromEntries(
           TARGET_LOCALES.map((locale) => [locale.code, "/"])
         ),
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
     description: DEFAULT_DESCRIPTION,
     ...(hasPublicSiteUrl()
       ? {
-          url: "/",
+          url: getMetadataBase(),
           images: [
             {
               url: "/logo-no-bg.png",

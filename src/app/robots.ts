@@ -5,7 +5,6 @@ export const dynamic = "force-static";
 
 export default function robots(): MetadataRoute.Robots {
   const base = getSiteUrl();
-  // Fallback to fragmenttrails.com if environment variable is not set
   const siteUrl = base || "https://fragmenttrails.com";
 
   return {
@@ -13,17 +12,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: [
-          "/api/",
-          "/dashboard/",
-          "/settings",
-          "/jobs",
-          "/emails",
-          "/applications",
-          "/resume",
-          "/analytics",
-          "/profile",
-        ],
+        disallow: ["/api/"],
       },
     ],
     sitemap: `${siteUrl}/sitemap.xml`,

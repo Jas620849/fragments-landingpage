@@ -11,7 +11,6 @@ import {
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import { scrollToSection } from "../utils/navigation";
-import { frontendAppBaseUrl } from "../utils/frontendAppBaseUrl";
 
 const navLinkClass =
   "rounded-lg px-3 py-2 text-xs font-medium text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 sm:text-sm";

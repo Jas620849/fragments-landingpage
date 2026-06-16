@@ -7,6 +7,10 @@ import {
   faTwitter,
   faFacebook,
   faLinkedin,
+  faMedium,
+  faProductHunt,
+  faQuora,
+  faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
 const linkClass =
@@ -105,18 +109,51 @@ export default function Footer() {
             <ul className="mt-4 space-y-3">
               <li>
                 <Link
-                  href="https://twitter.com/fragments"
+                  href="https://x.com/fragmenttrail"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`${linkClass} inline-flex items-center gap-2`}
                 >
                   <FontAwesomeIcon icon={faTwitter} className="h-4 w-4 text-slate-500" />
-                  Twitter
+                  X
                 </Link>
               </li>
               <li>
                 <Link
-                  href="https://facebook.com/fragments"
+                  href="https://medium.com/@fragmentswebsite"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${linkClass} inline-flex items-center gap-2`}
+                >
+                  <FontAwesomeIcon icon={faMedium} className="h-4 w-4 text-slate-500" />
+                  Medium
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.producthunt.com/@jas_sara"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${linkClass} inline-flex items-center gap-2`}
+                >
+                  <FontAwesomeIcon icon={faProductHunt} className="h-4 w-4 text-slate-500" />
+                  Product Hunt
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.quora.com/profile/Fragments-Trails"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${linkClass} inline-flex items-center gap-2`}
+                >
+                  <FontAwesomeIcon icon={faQuora} className="h-4 w-4 text-slate-500" />
+                  Quora
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.facebook.com/profile.php?id=61590392447978"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`${linkClass} inline-flex items-center gap-2`}
@@ -127,7 +164,18 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="https://linkedin.com/company/fragments"
+                  href="https://www.instagram.com/fragmentswebsite/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${linkClass} inline-flex items-center gap-2`}
+                >
+                  <FontAwesomeIcon icon={faInstagram} className="h-4 w-4 text-slate-500" />
+                  Instagram
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.linkedin.com/in/fragments-trails-b02202417/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`${linkClass} inline-flex items-center gap-2`}

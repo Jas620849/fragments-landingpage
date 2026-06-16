@@ -11,7 +11,6 @@ import {
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import { scrollToSection } from "../utils/navigation";
-import { frontendAppBaseUrl } from "../utils/frontendAppBaseUrl";
 
 const navLinkClass =
   "rounded-lg px-3 py-2 text-xs font-medium text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 sm:text-sm";
@@ -149,13 +148,13 @@ export default function Navbar() {
 
           <div className="flex items-center gap-2 border-l border-slate-200/90 pl-4 xl:gap-3 xl:pl-5">
             <a
-              href={`${frontendAppBaseUrl}/auth/login`}
+              href='https://app.fragmenttrails.com/auth/login'
               className="rounded-xl px-3 py-2 text-sm font-semibold text-slate-700 ring-1 ring-slate-200/90 transition hover:bg-slate-50 xl:px-4"
             >
               Sign in
             </a>
             <a
-              href={`${frontendAppBaseUrl}/auth/register`}
+              href='https://app.fragmenttrails.com/auth/register'
               className="rounded-xl bg-accent px-3 py-2 text-sm font-bold text-white shadow-md shadow-orange-500/25 transition hover:bg-accent-dark xl:px-4"
             >
               Get started
@@ -249,13 +248,13 @@ export default function Navbar() {
           </ul>
           <div className="mt-4 flex flex-col gap-2 border-t border-slate-100 pt-4">
             <a
-              href={`${frontendAppBaseUrl}/auth/login`}
+              href='https://app.fragmenttrails.com/auth/login'
               className="block rounded-xl py-3 text-center text-sm font-semibold text-slate-800 ring-1 ring-slate-200"
             >
               Sign in
             </a>
             <a
-              href={`${frontendAppBaseUrl}/auth/register`}
+              href='https://app.fragmenttrails.com/auth/register'
               className="block rounded-xl bg-accent py-3 text-center text-sm font-bold text-white shadow-md shadow-orange-500/20 transition hover:bg-accent-dark"
             >
               Get started

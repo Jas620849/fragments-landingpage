@@ -18,7 +18,7 @@ import { frontendAppBaseUrl } from "../../utils/frontendAppBaseUrl";
 
 const heroBullets = [
   "Structured interview scoring with AI-powered moderation and bias reduction",
-  "Comprehensive candidate evaluation and comparison for scholarship selection",
+  "Comprehensive scholarship tracking and review system for efficient candidate evaluation",
   "Fair, consistent assessment workflows for education institutions and scholarship programs",
 ];
 

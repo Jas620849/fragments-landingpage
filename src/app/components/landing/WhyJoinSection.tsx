@@ -20,7 +20,7 @@ const pillars = [
     icon: faGift,
     title: "Rewards for showing up well",
     body:
-      "Participation is visible: quality replies, evidence-backed posts, and steady contribution show up in the trail—useful for rubrics, honors reviews, and celebrating growth.",
+      "Participation is visible: quality replies, evidence-backed posts, and steady contribution show up in the trail—useful for rubrics, honors reviews, scholarship tracking and review system workflows, and celebrating growth.",
     iconBg: "bg-accent/15 text-accent-darker ring-1 ring-accent/25",
   },
   {

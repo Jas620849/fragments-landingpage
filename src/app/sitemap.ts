@@ -11,6 +11,7 @@ const STATIC_PATHS = [
   { path: "/contact/", priority: 0.8, changeFreq: "monthly" as const },
   { path: "/how-it-works/", priority: 1, changeFreq: "monthly" as const },
   { path: "/pricing/", priority: 1, changeFreq: "monthly" as const },
+  { path: "/scholarship-tracking-and-review-system/", priority: 0.95, changeFreq: "weekly" as const },
   { path: "/scholarship-interview-software/", priority: 0.95, changeFreq: "weekly" as const },
   { path: "/candidate-evaluation-platform/", priority: 0.95, changeFreq: "weekly" as const },
   { path: "/student-interview-management/", priority: 0.9, changeFreq: "weekly" as const },

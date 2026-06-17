@@ -37,7 +37,7 @@ export default function FeaturesSection() {
             <p className="mt-2 max-w-xl text-sm font-medium leading-relaxed text-textMuted">
               Package your best thinking into short, sourced fragments that kick off
               a trail. Students extend it with questions and debate, so the whole
-              class can see how ideas evolve, week after week.
+              class can see how ideas evolve, week after week. Perfect for scholarship tracking and review system workflows.
             </p>
             </article>
           </AnimateOnScroll>

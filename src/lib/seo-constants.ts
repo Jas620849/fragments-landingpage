@@ -7,6 +7,17 @@ export const DEFAULT_DESCRIPTION =
   "Streamline scholarship interviews, candidate scoring, and evaluation workflows with FragmentTrails. Improve fairness, consistency, and decision-making using structured assessment tools for education institutions and scholarship programs.";
 
 export const DEFAULT_KEYWORDS = [
+  "scholarship tracking and review system",
+  "scholarship management software",
+  "scholarship application tracking",
+  "scholarship review workflow",
+  "scholarship committee management",
+  "scholarship evaluation platform",
+  "scholarship applicant review system",
+  "scholarship administration software",
+  "scholarship selection process",
+  "higher education scholarship management",
+  "scholarship review dashboard",
   "scholarship interview platform",
   "scholarship interview software",
   "scholarship assessment platform",

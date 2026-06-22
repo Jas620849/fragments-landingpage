@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import type { BlogPostMeta } from "../_data";
 import { BLOG_POSTS, getBlogPost } from "../_data";
@@ -271,6 +272,19 @@ export default async function BlogPostPage({ params }: PageProps) {
           >
             ← Back to blog
           </Link>
+          
+          {/* Featured Image */}
+          <div className="relative mt-6 aspect-video overflow-hidden rounded-2xl bg-slate-100">
+            <Image
+              src={post.image}
+              alt={post.title}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 800px"
+              className="object-cover"
+              priority
+            />
+          </div>
+
           <p className="mt-6 text-xs font-semibold uppercase tracking-wide text-textMuted">
             {post.date} · {post.read}
           </p>

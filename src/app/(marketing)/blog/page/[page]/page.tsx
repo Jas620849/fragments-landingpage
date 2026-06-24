@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { BLOG_POSTS } from "./_data";
-import BreadcrumbSchema from "../../components/BreadcrumbSchema";
-import BlogCard from "../../components/blog/BlogCard";
-import Pagination from "../../components/blog/Pagination";
+import { BLOG_POSTS } from "../../_data";
+import BreadcrumbSchema from "../../../../components/BreadcrumbSchema";
+import BlogCard from "../../../../components/blog/BlogCard";
+import Pagination from "../../../../components/blog/Pagination";
 
 export const metadata: Metadata = {
   title: "Blog | FragmentTrails - Scholarship Interview & Evaluation Insights",
@@ -26,8 +26,21 @@ export const metadata: Metadata = {
 
 const POSTS_PER_PAGE = 9;
 
-export default function BlogIndexPage() {
-  const currentPage = 1;
+export function generateStaticParams() {
+  const totalPages = Math.ceil(BLOG_POSTS.length / POSTS_PER_PAGE);
+  // Start from page 2 since page 1 is at /blog
+  return Array.from({ length: totalPages - 1 }, (_, i) => ({
+    page: (i + 2).toString(),
+  }));
+}
+
+export default async function BlogPageIndex({
+  params,
+}: {
+  params: Promise<{ page: string }>;
+}) {
+  const { page } = await params;
+  const currentPage = Number(page);
   const totalPages = Math.ceil(BLOG_POSTS.length / POSTS_PER_PAGE);
   
   const startIndex = (currentPage - 1) * POSTS_PER_PAGE;
@@ -40,6 +53,7 @@ export default function BlogIndexPage() {
         items={[
           { name: "Home", path: "/" },
           { name: "Blog", path: "/blog/" },
+          { name: `Page ${currentPage}`, path: `/blog/page/${currentPage}/` },
         ]}
       />
       

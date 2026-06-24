@@ -50,7 +50,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/80 backdrop-blur-xl">
-      <nav className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between gap-4 px-8 lg:px-16">
+      <nav className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8 xl:px-16">
         <Link
           href="/"
           className="flex shrink-0 items-center gap-2.5 font-bold tracking-tight text-slate-900"
@@ -102,6 +102,11 @@ export default function Navbar() {
                 Pricing
               </Link>
             </li>
+            <li>
+              <Link href="/blog/" className={navLinkClass}>
+                Blog
+              </Link>
+            </li>
             <li className="relative" ref={moreWrapRef}>
               <button
                 type="button"
@@ -121,16 +126,6 @@ export default function Navbar() {
                   className="absolute right-0 top-full z-50 mt-1 min-w-[10.5rem] rounded-xl border border-slate-200/90 bg-white py-1 shadow-lg ring-1 ring-slate-100/90"
                   role="menu"
                 >
-                  <li role="none">
-                    <Link
-                      href="/blog/"
-                      className={moreItemClass}
-                      role="menuitem"
-                      onClick={() => setMoreOpen(false)}
-                    >
-                      Blog
-                    </Link>
-                  </li>
                   <li role="none">
                     <Link
                       href="/contact/"
@@ -174,7 +169,7 @@ export default function Navbar() {
       </nav>
 
       {open ? (
-        <div className="border-t border-slate-200/80 bg-white px-8 py-4 lg:hidden">
+        <div className="border-t border-slate-200/80 bg-white px-4 sm:px-6 py-4 lg:hidden">
           <ul className="flex flex-col gap-1">
             <li>
               <Link
@@ -221,11 +216,6 @@ export default function Navbar() {
               >
                 Pricing
               </Link>
-            </li>
-            <li>
-              <p className="px-3 pb-1 pt-2 text-xs font-bold uppercase tracking-wide text-slate-400">
-                More
-              </p>
             </li>
             <li>
               <Link

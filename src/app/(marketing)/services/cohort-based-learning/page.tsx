@@ -71,26 +71,26 @@ export default function CohortBasedLearningPage() {
         <section className="border-b border-slate-200/80 bg-white py-12 sm:py-16">
           <div className="frag-container">
             <h2 className="frag-title text-center">Why Cohort-Based Learning?</h2>
-            <p className="frag-lead mx-auto mt-4 max-w-2xl text-center">
-              Cohort-based learning increases completion rates, builds community, and creates lasting professional networks.
+            <p className="frag-lead mx-auto mt-4 max-w-3xl">
+              Cohort-based learning increases completion rates, builds community, and creates lasting professional networks. Unlike self-paced learning where students study in isolation, cohort-based programs create shared experiences that drive motivation, accountability, and deeper learning through peer interaction.
             </p>
             <div className="mx-auto mt-8 grid max-w-5xl gap-6 md:grid-cols-3">
               <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-6 ring-1 ring-slate-100">
                 <h3 className="text-lg font-semibold text-secondary">Higher Completion</h3>
                 <p className="mt-3 text-base font-medium leading-relaxed text-slate-600">
-                  Students in cohorts are more likely to complete courses and achieve learning objectives.
+                  Students in cohorts are more likely to complete courses and achieve learning objectives. Peer accountability and shared schedules create motivation that self-paced learning cannot match.
                 </p>
               </div>
               <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-6 ring-1 ring-slate-100">
                 <h3 className="text-lg font-semibold text-secondary">Peer Learning</h3>
                 <p className="mt-3 text-base font-medium leading-relaxed text-slate-600">
-                  Collaborative environments enable students to learn from each other&apos;s experiences and perspectives.
+                  Collaborative environments enable students to learn from each other&apos;s experiences and perspectives. Diverse cohort backgrounds enrich discussions and provide multiple viewpoints on course material.
                 </p>
               </div>
               <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-6 ring-1 ring-slate-100">
                 <h3 className="text-lg font-semibold text-secondary">Community Building</h3>
                 <p className="mt-3 text-base font-medium leading-relaxed text-slate-600">
-                  Cohorts create lasting professional networks and support systems that extend beyond the course.
+                  Cohorts create lasting professional networks and support systems that extend beyond the course. Students form relationships that continue to provide value long after program completion.
                 </p>
               </div>
             </div>
@@ -100,7 +100,7 @@ export default function CohortBasedLearningPage() {
         <section className="bg-slate-50 py-12 sm:py-16">
           <div className="frag-container">
             <h2 className="frag-title text-center">Cohort Features</h2>
-            <div className="mx-auto mt-8 max-w-3xl space-y-6">
+            <div className="mx-auto mt-8 max-w-4xl space-y-6">
               <div className="flex gap-4">
                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue-100 text-blue-600">
                   <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -110,7 +110,7 @@ export default function CohortBasedLearningPage() {
                 <div>
                   <h3 className="text-lg font-semibold text-secondary">Group Discussions</h3>
                   <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
-                    Structured discussion threads that keep cohort conversations organized and on-topic.
+                    Structured discussion threads that keep cohort conversations organized and on-topic. Fragment trails ensure discussions remain productive and aligned with learning objectives while allowing for organic exploration of ideas.
                   </p>
                 </div>
               </div>
@@ -123,7 +123,7 @@ export default function CohortBasedLearningPage() {
                 <div>
                   <h3 className="text-lg font-semibold text-secondary">Shared Progress</h3>
                   <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
-                    Track cohort progress collectively and identify areas where the group needs additional support.
+                    Track cohort progress collectively and identify areas where the group needs additional support. Visual progress dashboards show completion rates, engagement levels, and learning milestones for the entire cohort.
                   </p>
                 </div>
               </div>
@@ -136,7 +136,20 @@ export default function CohortBasedLearningPage() {
                 <div>
                   <h3 className="text-lg font-semibold text-secondary">Peer Feedback</h3>
                   <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
-                    Enable peer-to-peer feedback and evaluation to enhance learning outcomes.
+                    Enable peer-to-peer feedback and evaluation to enhance learning outcomes. Structured peer review processes help students develop critical thinking skills and learn from evaluating others&apos; work.
+                  </p>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-amber-100 text-amber-600">
+                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-secondary">Collaboration Tools</h3>
+                  <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
+                    Built-in collaboration features enable group projects, shared documents, and team assignments. Foster teamwork skills while ensuring individual accountability within group settings.
                   </p>
                 </div>
               </div>

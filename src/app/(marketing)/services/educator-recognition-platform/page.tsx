@@ -71,26 +71,26 @@ export default function EducatorRecognitionPlatformPage() {
         <section className="border-b border-slate-200/80 bg-white py-12 sm:py-16">
           <div className="frag-container">
             <h2 className="frag-title text-center">Why Recognition Matters</h2>
-            <p className="frag-lead mx-auto mt-4 max-w-2xl text-center">
-              Recognizing educators improves retention, boosts morale, and encourages continuous improvement in teaching quality.
+            <p className="frag-lead mx-auto mt-4 max-w-3xl">
+              Recognizing educators improves retention, boosts morale, and encourages continuous improvement in teaching quality. Many institutions struggle to identify and reward teaching excellence systematically. FragmentTrails provides data-driven recognition that highlights genuine contributions to student success.
             </p>
             <div className="mx-auto mt-8 grid max-w-5xl gap-6 md:grid-cols-3">
               <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-6 ring-1 ring-slate-100">
                 <h3 className="text-lg font-semibold text-secondary">Increased Retention</h3>
                 <p className="mt-3 text-base font-medium leading-relaxed text-slate-600">
-                  Recognized educators are more likely to stay committed to their institution and students.
+                  Recognized educators are more likely to stay committed to their institution and students. Recognition programs reduce teacher turnover by up to 40% and build institutional loyalty.
                 </p>
               </div>
               <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-6 ring-1 ring-slate-100">
                 <h3 className="text-lg font-semibold text-secondary">Higher Morale</h3>
                 <p className="mt-3 text-base font-medium leading-relaxed text-slate-600">
-                  Appreciation boosts teacher satisfaction and creates a positive learning environment.
+                  Appreciation boosts teacher satisfaction and creates a positive learning environment. When educators feel valued, they bring more energy and enthusiasm to their teaching.
                 </p>
               </div>
               <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-6 ring-1 ring-slate-100">
                 <h3 className="text-lg font-semibold text-secondary">Quality Improvement</h3>
                 <p className="mt-3 text-base font-medium leading-relaxed text-slate-600">
-                  Recognition encourages educators to continuously improve their teaching methods.
+                  Recognition encourages educators to continuously improve their teaching methods. Data-driven recognition identifies best practices that can be shared across the institution.
                 </p>
               </div>
             </div>
@@ -100,7 +100,7 @@ export default function EducatorRecognitionPlatformPage() {
         <section className="bg-slate-50 py-12 sm:py-16">
           <div className="frag-container">
             <h2 className="frag-title text-center">Recognition Features</h2>
-            <div className="mx-auto mt-8 max-w-3xl space-y-6">
+            <div className="mx-auto mt-8 max-w-4xl space-y-6">
               <div className="flex gap-4">
                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue-100 text-blue-600">
                   <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -110,7 +110,7 @@ export default function EducatorRecognitionPlatformPage() {
                 <div>
                   <h3 className="text-lg font-semibold text-secondary">Quality Badges</h3>
                   <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
-                    Educators earn badges for leading high-quality discussions and scholarly contributions.
+                    Educators earn badges for leading high-quality discussions and scholarly contributions. Badges are awarded based on objective metrics including discussion quality, student engagement, and learning outcomes.
                   </p>
                 </div>
               </div>
@@ -123,7 +123,7 @@ export default function EducatorRecognitionPlatformPage() {
                 <div>
                   <h3 className="text-lg font-semibold text-secondary">Performance Metrics</h3>
                   <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
-                    Track and display educator performance metrics to highlight teaching excellence.
+                    Track and display educator performance metrics to highlight teaching excellence. Comprehensive dashboards show discussion quality scores, student engagement rates, and improvement over time.
                   </p>
                 </div>
               </div>
@@ -136,7 +136,20 @@ export default function EducatorRecognitionPlatformPage() {
                 <div>
                   <h3 className="text-lg font-semibold text-secondary">Rewards System</h3>
                   <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
-                    Financial rewards and recognition for educators who consistently deliver quality teaching.
+                    Financial rewards and recognition for educators who consistently deliver quality teaching. Implement tiered reward programs that incentivize continuous improvement and celebrate teaching excellence.
+                  </p>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-amber-100 text-amber-600">
+                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-secondary">Peer Recognition</h3>
+                  <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
+                    Enable educators to recognize and appreciate their colleagues&apos; contributions. Build a culture of appreciation where teaching excellence is celebrated by the entire faculty community.
                   </p>
                 </div>
               </div>

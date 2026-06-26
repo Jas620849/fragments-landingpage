@@ -71,23 +71,26 @@ export default function ClassroomDiscussionPlatformPage() {
         <section className="border-b border-slate-200/80 bg-white py-12 sm:py-16">
           <div className="frag-container">
             <h2 className="frag-title text-center">Why Choose Fragments?</h2>
+            <p className="frag-lead mx-auto mt-4 max-w-3xl">
+              Traditional classroom discussions often suffer from unequal participation, lack of structure, and difficulty assessing quality. FragmentTrails transforms discussions with AI-moderated fragment trails that ensure every student has a voice and contributions are meaningfully evaluated.
+            </p>
             <div className="mx-auto mt-8 grid max-w-5xl gap-6 md:grid-cols-3">
               <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-6 ring-1 ring-slate-100">
                 <h3 className="text-lg font-semibold text-secondary">AI-Moderated Discussions</h3>
                 <p className="mt-3 text-base font-medium leading-relaxed text-slate-600">
-                  Advanced AI ensures quality, fairness, and meaningful engagement in every classroom discussion.
+                  Advanced AI ensures quality, fairness, and meaningful engagement in every classroom discussion. Detect off-topic content, encourage participation, and maintain scholarly discourse standards.
                 </p>
               </div>
               <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-6 ring-1 ring-slate-100">
                 <h3 className="text-lg font-semibold text-secondary">Educator Recognition</h3>
                 <p className="mt-3 text-base font-medium leading-relaxed text-slate-600">
-                  Reward knowledgeable and dedicated educators who lead quality discussions in their classrooms.
+                  Reward knowledgeable and dedicated educators who lead quality discussions in their classrooms. Recognize teaching excellence and provide incentives for continuous improvement.
                 </p>
               </div>
               <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-6 ring-1 ring-slate-100">
                 <h3 className="text-lg font-semibold text-secondary">Quality at Scale</h3>
                 <p className="mt-3 text-base font-medium leading-relaxed text-slate-600">
-                  Maintain high standards across cohorts and classrooms with our fragment trail system.
+                  Maintain high standards across cohorts and classrooms with our fragment trail system. Scale quality discussions from individual classrooms to district-wide implementations.
                 </p>
               </div>
             </div>
@@ -97,7 +100,7 @@ export default function ClassroomDiscussionPlatformPage() {
         <section className="bg-slate-50 py-12 sm:py-16">
           <div className="frag-container">
             <h2 className="frag-title text-center">Key Features</h2>
-            <div className="mx-auto mt-8 max-w-3xl space-y-6">
+            <div className="mx-auto mt-8 max-w-4xl space-y-6">
               <div className="flex gap-4">
                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue-100 text-blue-600">
                   <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -107,7 +110,7 @@ export default function ClassroomDiscussionPlatformPage() {
                 <div>
                   <h3 className="text-lg font-semibold text-secondary">Quality Assurance</h3>
                   <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
-                    AI-powered moderation ensures discussions remain scholarly and productive.
+                    AI-powered moderation ensures discussions remain scholarly and productive. Automatically detect and flag inappropriate content, encourage constructive dialogue, and maintain academic standards across all discussions.
                   </p>
                 </div>
               </div>
@@ -120,7 +123,7 @@ export default function ClassroomDiscussionPlatformPage() {
                 <div>
                   <h3 className="text-lg font-semibold text-secondary">Rewards & Recognition</h3>
                   <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
-                    Educators earn recognition and rewards for leading quality discussions.
+                    Educators earn recognition and rewards for leading quality discussions. Implement badge systems, performance metrics, and incentive programs that motivate teaching excellence and continuous improvement.
                   </p>
                 </div>
               </div>
@@ -133,7 +136,20 @@ export default function ClassroomDiscussionPlatformPage() {
                 <div>
                   <h3 className="text-lg font-semibold text-secondary">Scalable for Cohorts</h3>
                   <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
-                    Perfect for individual classrooms, district-wide implementations, and cohort-based learning.
+                    Perfect for individual classrooms, district-wide implementations, and cohort-based learning. Scale from small seminars to large lecture halls while maintaining discussion quality and engagement standards.
+                  </p>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-amber-100 text-amber-600">
+                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-secondary">Analytics & Insights</h3>
+                  <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
+                    Track participation rates, discussion quality metrics, and learning outcomes. Generate reports that demonstrate the impact of structured discussions on student engagement and academic performance.
                   </p>
                 </div>
               </div>

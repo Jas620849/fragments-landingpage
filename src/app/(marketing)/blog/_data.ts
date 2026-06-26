@@ -9,6 +9,8 @@ export type BlogPostMeta = {
   publishedISO: string;
   /** Image URL for blog card */
   image: string;
+  /** Blog post category */
+  category: string;
 };
 
 export const BLOG_POSTS: BlogPostMeta[] = [
@@ -21,6 +23,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Implement structured evaluation frameworks and AI-powered tools to reduce bias in scholarship interviews.",
     publishedISO: "2026-06-05",
     image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop",
+    category: "Interview Evaluation",
   },
   {
     slug: "scholarship-interview-scoring-best-practices",
@@ -31,6 +34,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Standardize your scoring process with proven rubrics and evaluation criteria for scholarship interviews.",
     publishedISO: "2026-06-04",
     image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&h=600&fit=crop",
+    category: "Interview Evaluation",
   },
   {
     slug: "structured-vs-unstructured-interviews",
@@ -41,6 +45,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Structured interviews provide more reliable and fair assessments for scholarship candidate evaluation.",
     publishedISO: "2026-06-03",
     image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
+    category: "Interview Evaluation",
   },
   {
     slug: "ai-powered-interview-evaluation",
@@ -51,6 +56,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "AI technology provides objective, data-driven assessments that complement human insight in interview evaluation.",
     publishedISO: "2026-06-01",
     image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&h=600&fit=crop",
+    category: "Technology & Innovation",
   },
   {
     slug: "interviewer-training-best-practices",
@@ -61,6 +67,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Well-trained interviewers are essential for implementing structured interview protocols and reducing bias.",
     publishedISO: "2026-05-31",
     image: "https://images.unsplash.com/photo-1544531586-fde5298cdd40?w=800&h=600&fit=crop",
+    category: "Interview Evaluation",
   },
   {
     slug: "diversity-in-scholarship-selection",
@@ -71,6 +78,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Achieve diversity through holistic review, bias-aware evaluation, and comprehensive support systems.",
     publishedISO: "2026-05-30",
     image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&h=600&fit=crop",
+    category: "Scholarship Management",
   },
   {
     slug: "measuring-scholarship-success",
@@ -81,6 +89,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Track academic, professional, and personal outcomes to demonstrate scholarship program impact.",
     publishedISO: "2026-05-29",
     image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&h=600&fit=crop",
+    category: "Scholarship Management",
   },
   {
     slug: "virtual-scholarship-interviews",
@@ -91,6 +100,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Master virtual interview formats, technology, and evaluation strategies for remote scholarship selection.",
     publishedISO: "2026-05-28",
     image: "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=800&h=600&fit=crop",
+    category: "Interview Evaluation",
   },
   {
     slug: "scholarship-program-management",
@@ -101,6 +111,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Master scholarship program operations, staffing, technology, and stakeholder management.",
     publishedISO: "2026-05-27",
     image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
+    category: "Scholarship Management",
   },
   {
     slug: "scholarship-alumni-engagement",
@@ -111,6 +122,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Build alumni networks that provide mentorship, advocacy, and financial support for your scholarship program.",
     publishedISO: "2026-05-26",
     image: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=800&h=600&fit=crop",
+    category: "Scholarship Management",
   },
   {
     slug: "scholarship-recipient-support",
@@ -121,6 +133,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Provide academic, financial, mentoring, and career support to maximize scholarship impact.",
     publishedISO: "2026-05-25",
     image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&h=600&fit=crop",
+    category: "Scholarship Management",
   },
   {
     slug: "scholarship-application-process",
@@ -131,6 +144,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Create accessible, efficient application processes that support equity and candidate success.",
     publishedISO: "2026-05-24",
     image: "https://images.unsplash.com/photo-1456324504439-367cee3b3c32?w=800&h=600&fit=crop",
+    category: "Scholarship Management",
   },
   {
     slug: "scholarship-outreach-strategies",
@@ -141,6 +155,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Build strong applicant pools through targeted outreach that reaches underrepresented communities.",
     publishedISO: "2026-05-23",
     image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=600&fit=crop",
+    category: "Scholarship Management",
   },
   {
     slug: "scholarship-donor-relations",
@@ -151,6 +166,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Build lasting donor relationships that sustain and grow your scholarship program.",
     publishedISO: "2026-05-22",
     image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=600&fit=crop",
+    category: "Scholarship Management",
   },
   {
     slug: "scholarship-financial-literacy",
@@ -161,6 +177,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Help scholarship recipients develop financial skills that support educational and career success.",
     publishedISO: "2026-05-21",
     image: "https://images.unsplash.com/photo-1554224155-6796b819f578?w=800&h=600&fit=crop",
+    category: "Scholarship Management",
   },
   {
     slug: "scholarship-mentorship-programs",
@@ -171,6 +188,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Transform scholarship impact through mentorship that provides guidance, support, and connections.",
     publishedISO: "2026-05-20",
     image: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=800&h=600&fit=crop",
+    category: "Scholarship Management",
   },
   {
     slug: "scholarship-renewal-criteria",
@@ -181,6 +199,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Create renewal processes that support recipient success while maintaining accountability.",
     publishedISO: "2026-05-19",
     image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&h=600&fit=crop",
+    category: "Scholarship Management",
   },
   {
     slug: "scholarship-selection-committee",
@@ -191,6 +210,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Create committees that make excellent, equitable scholarship selection decisions.",
     publishedISO: "2026-05-18",
     image: "https://images.unsplash.com/photo-1531545514256-b1400bc00f31?w=800&h=600&fit=crop",
+    category: "Scholarship Management",
   },
   {
     slug: "scholarship-essay-evaluation",
@@ -201,6 +221,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Evaluate essays effectively with clear criteria, structured processes, and bias awareness.",
     publishedISO: "2026-05-17",
     image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&h=600&fit=crop",
+    category: "Candidate Assessment",
   },
   {
     slug: "scholarship-interview-preparation",
@@ -211,6 +232,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Prepare effectively for scholarship interviews with strategies for all interview formats.",
     publishedISO: "2026-05-16",
     image: "https://images.unsplash.com/photo-1560439514-4e9645039924?w=800&h=600&fit=crop",
+    category: "Interview Evaluation",
   },
   {
     slug: "scholarship-technology-solutions",
@@ -221,6 +243,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Leverage technology to improve efficiency, fairness, and impact in scholarship programs.",
     publishedISO: "2026-05-15",
     image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=600&fit=crop",
+    category: "Technology & Innovation",
   },
   {
     slug: "scholarship-impact-measurement",
@@ -231,6 +254,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Demonstrate scholarship impact through robust measurement and compelling storytelling.",
     publishedISO: "2026-05-14",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+    category: "Scholarship Management",
   },
   {
     slug: "scholarship-equity-inclusion",
@@ -241,6 +265,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Build scholarship programs that advance equity and create inclusive environments for all recipients.",
     publishedISO: "2026-05-13",
     image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&h=600&fit=crop",
+    category: "Scholarship Management",
   },
   {
     slug: "scholarship-collaboration-partnerships",
@@ -251,6 +276,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Leverage partnerships to enhance scholarship programs through collaboration and shared resources.",
     publishedISO: "2026-05-12",
     image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&h=600&fit=crop",
+    category: "Scholarship Management",
   },
   {
     slug: "scholarship-crisis-management",
@@ -261,6 +287,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Build crisis management capabilities to protect recipients and program integrity during emergencies.",
     publishedISO: "2026-05-11",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+    category: "Scholarship Management",
   },
   {
     slug: "scholarship-sustainability-growth",
@@ -271,6 +298,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Create sustainable scholarship programs that can grow and thrive over the long term.",
     publishedISO: "2026-05-10",
     image: "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800&h=600&fit=crop",
+    category: "Scholarship Management",
   },
   {
     slug: "scholarship-legal-compliance",
@@ -281,6 +309,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Ensure scholarship program compliance with tax, privacy, and anti-discrimination regulations.",
     publishedISO: "2026-05-09",
     image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=600&fit=crop",
+    category: "Scholarship Management",
   },
   {
     slug: "scholarship-innovation-future",
@@ -291,6 +320,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Prepare for the future of scholarships with insights on technology, new models, and evolving approaches.",
     publishedISO: "2026-05-08",
     image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&h=600&fit=crop",
+    category: "Technology & Innovation",
   },
   {
     slug: "scholarship-global-perspectives",
@@ -301,6 +331,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Understand scholarship programs worldwide and apply international best practices locally.",
     publishedISO: "2026-05-07",
     image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=600&fit=crop",
+    category: "Scholarship Management",
   },
   {
     slug: "scholarship-best-practices-summary",
@@ -311,6 +342,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Implement evidence-based best practices to maximize scholarship program impact and excellence.",
     publishedISO: "2026-05-06",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop",
+    category: "Best Practices",
   },
   {
     slug: "how-universities-evaluate-applicants",
@@ -321,6 +353,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Modern universities use multi-dimensional evaluation approaches for fair and comprehensive applicant assessment.",
     publishedISO: "2026-06-02",
     image: "https://images.unsplash.com/photo-1562774053-701939374585?w=800&h=600&fit=crop",
+    category: "Candidate Assessment",
   },
   {
     slug: "interview-rubrics-for-scholarship-programs",
@@ -331,6 +364,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Well-designed rubrics improve consistency and reduce bias in scholarship interview evaluations.",
     publishedISO: "2026-06-01",
     image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&h=600&fit=crop",
+    category: "Interview Evaluation",
   },
   {
     slug: "candidate-evaluation-frameworks",
@@ -341,6 +375,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Structured evaluation frameworks provide systematic approaches to fair candidate assessment.",
     publishedISO: "2026-05-31",
     image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
+    category: "Candidate Assessment",
   },
   {
     slug: "digital-scholarship-assessment-guide",
@@ -351,6 +386,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Digital assessment tools improve efficiency, consistency, and fairness in scholarship evaluations.",
     publishedISO: "2026-05-30",
     image: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=800&h=600&fit=crop",
+    category: "Technology & Innovation",
   },
   {
     slug: "common-interview-scoring-mistakes",
@@ -361,6 +397,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Learn from common scoring mistakes to improve the reliability of your interview evaluations.",
     publishedISO: "2026-05-29",
     image: "https://images.unsplash.com/photo-1544531586-fde5298cdd40?w=800&h=600&fit=crop",
+    category: "Interview Evaluation",
   },
   {
     slug: "interview-panel-best-practices",
@@ -371,6 +408,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Effective panel management ensures consistent scoring and fair collaborative decision-making.",
     publishedISO: "2026-05-28",
     image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&h=600&fit=crop",
+    category: "Interview Evaluation",
   },
   {
     slug: "measuring-candidate-potential",
@@ -381,6 +419,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Beyond current achievements, learn to evaluate future potential in scholarship candidates.",
     publishedISO: "2026-05-27",
     image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&h=600&fit=crop",
+    category: "Candidate Assessment",
   },
   {
     slug: "admissions-interview-process-guide",
@@ -391,6 +430,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Streamline your admissions interviews with proven process design and implementation strategies.",
     publishedISO: "2026-05-26",
     image: "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=800&h=600&fit=crop",
+    category: "Interview Evaluation",
   },
   {
     slug: "fair-candidate-assessment-methods",
@@ -401,6 +441,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Implement fair assessment methods that promote equity and reduce bias in evaluations.",
     publishedISO: "2026-05-25",
     image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
+    category: "Candidate Assessment",
   },
   {
     slug: "scholarship-selection-criteria",
@@ -411,6 +452,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Clear, aligned selection criteria improve the effectiveness and fairness of scholarship programs.",
     publishedISO: "2026-05-24",
     image: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=800&h=600&fit=crop",
+    category: "Candidate Assessment",
   },
   {
     slug: "building-evaluation-rubrics",
@@ -421,6 +463,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Well-constructed rubrics provide the foundation for consistent, fair candidate evaluations.",
     publishedISO: "2026-05-23",
     image: "https://images.unsplash.com/photo-1456324504439-367cee3b3c32?w=800&h=600&fit=crop",
+    category: "Interview Evaluation",
   },
   {
     slug: "interview-moderation-explained",
@@ -431,6 +474,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Effective moderation maintains quality and fairness throughout the interview process.",
     publishedISO: "2026-05-22",
     image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=600&fit=crop",
+    category: "Interview Evaluation",
   },
   {
     slug: "applicant-ranking-systems",
@@ -441,6 +485,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Objective ranking systems support data-driven decision-making in candidate selection.",
     publishedISO: "2026-05-21",
     image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=600&fit=crop",
+    category: "Candidate Assessment",
   },
   {
     slug: "improving-scholarship-decisions",
@@ -451,6 +496,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Data-driven approaches improve the quality and defensibility of scholarship decisions.",
     publishedISO: "2026-05-20",
     image: "https://images.unsplash.com/photo-1554224155-6796b819f578?w=800&h=600&fit=crop",
+    category: "Candidate Assessment",
   },
   {
     slug: "university-selection-processes",
@@ -461,6 +507,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Understanding university selection processes helps improve your own evaluation methodologies.",
     publishedISO: "2026-05-19",
     image: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=800&h=600&fit=crop",
+    category: "Candidate Assessment",
   },
   {
     slug: "digital-interview-assessment",
@@ -471,6 +518,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Digital assessment tools enhance efficiency, consistency, and data collection in interviews.",
     publishedISO: "2026-05-18",
     image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&h=600&fit=crop",
+    category: "Technology & Innovation",
   },
   {
     slug: "candidate-comparison-techniques",
@@ -481,6 +529,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Systematic comparison techniques support fair and informed candidate selection decisions.",
     publishedISO: "2026-05-17",
     image: "https://images.unsplash.com/photo-1531545514256-b1400bc00f31?w=800&h=600&fit=crop",
+    category: "Candidate Assessment",
   },
   {
     slug: "evaluator-calibration-methods",
@@ -491,6 +540,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Proper calibration ensures consistency and fairness across different evaluators and panels.",
     publishedISO: "2026-05-16",
     image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&h=600&fit=crop",
+    category: "Interview Evaluation",
   },
   {
     slug: "interview-data-analytics",
@@ -501,6 +551,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Analytics provide valuable insights for continuous improvement of interview processes.",
     publishedISO: "2026-05-15",
     image: "https://images.unsplash.com/photo-1560439514-4e9645039924?w=800&h=600&fit=crop",
+    category: "Technology & Innovation",
   },
   {
     slug: "scholarship-management-technology",
@@ -511,6 +562,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Modern technology solutions streamline scholarship management and improve evaluation efficiency.",
     publishedISO: "2026-05-14",
     image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=600&fit=crop",
+    category: "Technology & Innovation",
   },
   {
     slug: "educational-assessment-tools",
@@ -521,6 +573,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "The right assessment tools improve the effectiveness and fairness of educational evaluations.",
     publishedISO: "2026-05-13",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+    category: "Technology & Innovation",
   },
   {
     slug: "interview-workflow-automation",
@@ -531,6 +584,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Workflow automation reduces administrative burden and improves process consistency.",
     publishedISO: "2026-05-12",
     image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&h=600&fit=crop",
+    category: "Technology & Innovation",
   },
   {
     slug: "fair-selection-systems",
@@ -541,6 +595,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Fair selection systems build trust and ensure equitable opportunities for all candidates.",
     publishedISO: "2026-05-11",
     image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&h=600&fit=crop",
+    category: "Candidate Assessment",
   },
   {
     slug: "higher-education-evaluation-trends",
@@ -551,6 +606,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Stay ahead of evolving evaluation trends in higher education to improve your practices.",
     publishedISO: "2026-05-10",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+    category: "Best Practices",
   },
   {
     slug: "modern-scholarship-platforms",
@@ -561,6 +617,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Modern platforms offer powerful tools for improving scholarship program effectiveness.",
     publishedISO: "2026-05-09",
     image: "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800&h=600&fit=crop",
+    category: "Technology & Innovation",
   },
   {
     slug: "interview-governance-frameworks",
@@ -571,6 +628,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Strong governance frameworks ensure interview processes meet quality and compliance standards.",
     publishedISO: "2026-05-08",
     image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=600&fit=crop",
+    category: "Best Practices",
   },
   {
     slug: "future-of-scholarship-assessments",
@@ -581,9 +639,19 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: "Stay informed about future developments in scholarship assessment methodologies and technologies.",
     publishedISO: "2026-05-07",
     image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&h=600&fit=crop",
+    category: "Technology & Innovation",
   },
 ];
 
 export function getBlogPost(slug: string): BlogPostMeta | undefined {
   return BLOG_POSTS.find((p) => p.slug === slug);
+}
+
+export function getCategories(): string[] {
+  const categories = new Set(BLOG_POSTS.map((p) => p.category));
+  return Array.from(categories).sort();
+}
+
+export function getPostsByCategory(category: string): BlogPostMeta[] {
+  return BLOG_POSTS.filter((p) => p.category === category);
 }

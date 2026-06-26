@@ -71,7 +71,10 @@ export default function AIModeratedLearningPage() {
         <section className="border-b border-slate-200/80 bg-white py-12 sm:py-16">
           <div className="frag-container">
             <h2 className="frag-title text-center">How AI Moderation Works</h2>
-            <div className="mx-auto mt-8 max-w-3xl space-y-6">
+            <p className="frag-lead mx-auto mt-4 max-w-3xl">
+              FragmentTrails uses advanced artificial intelligence to analyze, evaluate, and moderate educational discussions in real-time. Our AI system is trained on academic discourse patterns and educational best practices to ensure quality, fairness, and meaningful engagement.
+            </p>
+            <div className="mx-auto mt-8 max-w-4xl space-y-6">
               <div className="flex gap-4">
                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue-100 text-blue-600 font-bold">
                   1
@@ -79,7 +82,7 @@ export default function AIModeratedLearningPage() {
                 <div>
                   <h3 className="text-lg font-semibold text-secondary">Content Analysis</h3>
                   <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
-                    AI analyzes student contributions for quality, relevance, and scholarly merit in real-time.
+                    AI analyzes student contributions for quality, relevance, and scholarly merit in real-time. Natural language processing identifies key concepts, argumentation quality, evidence usage, and academic tone to assess contribution value.
                   </p>
                 </div>
               </div>
@@ -90,7 +93,7 @@ export default function AIModeratedLearningPage() {
                 <div>
                   <h3 className="text-lg font-semibold text-secondary">Quality Scoring</h3>
                   <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
-                    Each contribution is scored based on academic standards and discussion guidelines.
+                    Each contribution is scored based on academic standards and discussion guidelines. Multi-dimensional scoring evaluates critical thinking, evidence support, clarity, relevance, and constructive engagement with peers.
                   </p>
                 </div>
               </div>
@@ -101,7 +104,7 @@ export default function AIModeratedLearningPage() {
                 <div>
                   <h3 className="text-lg font-semibold text-secondary">Fair Assessment</h3>
                   <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
-                    Consistent and unbiased evaluation ensures every student receives fair feedback.
+                    Consistent and unbiased evaluation ensures every student receives fair feedback. AI eliminates human bias in assessment, applying the same standards to all students regardless of background, writing style, or participation patterns.
                   </p>
                 </div>
               </div>
@@ -112,7 +115,7 @@ export default function AIModeratedLearningPage() {
                 <div>
                   <h3 className="text-lg font-semibold text-secondary">Continuous Improvement</h3>
                   <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
-                    The system learns and improves over time, adapting to your specific educational context.
+                    The system learns and improves over time, adapting to your specific educational context. Machine learning algorithms refine scoring models based on educator feedback, course-specific patterns, and institutional standards.
                   </p>
                 </div>
               </div>
@@ -127,25 +130,25 @@ export default function AIModeratedLearningPage() {
               <div className="rounded-xl border border-slate-200/90 bg-white p-6 ring-1 ring-slate-100">
                 <h3 className="text-lg font-semibold text-secondary">Save Time</h3>
                 <p className="mt-3 text-base font-medium leading-relaxed text-slate-600">
-                  Automate moderation and focus on teaching instead of managing discussions.
+                  Automate moderation and focus on teaching instead of managing discussions. AI handles routine evaluation tasks, freeing educators to provide high-value feedback on complex issues and facilitate deeper learning.
                 </p>
               </div>
               <div className="rounded-xl border border-slate-200/90 bg-white p-6 ring-1 ring-slate-100">
                 <h3 className="text-lg font-semibold text-secondary">Consistent Standards</h3>
                 <p className="mt-3 text-base font-medium leading-relaxed text-slate-600">
-                  Apply the same quality standards across all students and discussions.
+                  Apply the same quality standards across all students and discussions. Eliminate subjective variations in grading and ensure every student is evaluated against the same academic criteria.
                 </p>
               </div>
               <div className="rounded-xl border border-slate-200/90 bg-white p-6 ring-1 ring-slate-100">
                 <h3 className="text-lg font-semibold text-secondary">Data-Driven Insights</h3>
                 <p className="mt-3 text-base font-medium leading-relaxed text-slate-600">
-                  Get detailed analytics on student engagement and discussion quality.
+                  Get detailed analytics on student engagement and discussion quality. Identify struggling students early, track learning progress, and make data-informed decisions about curriculum adjustments.
                 </p>
               </div>
               <div className="rounded-xl border border-slate-200/90 bg-white p-6 ring-1 ring-slate-100">
                 <h3 className="text-lg font-semibold text-secondary">Scalable Solution</h3>
                 <p className="mt-3 text-base font-medium leading-relaxed text-slate-600">
-                    Handle large cohorts and multiple classrooms without additional resources.
+                  Handle large cohorts and multiple classrooms without additional resources. AI moderation scales effortlessly from small seminars to massive online courses while maintaining quality.
                 </p>
               </div>
             </div>

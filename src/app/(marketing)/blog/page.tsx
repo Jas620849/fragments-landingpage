@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { BLOG_POSTS } from "./_data";
+import { BLOG_POSTS, getCategories } from "./_data";
 import BreadcrumbSchema from "../../components/BreadcrumbSchema";
 import BlogCard from "../../components/blog/BlogCard";
 import Pagination from "../../components/blog/Pagination";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Blog | FragmentTrails - Scholarship Interview & Evaluation Insights",
@@ -29,6 +30,7 @@ const POSTS_PER_PAGE = 9;
 export default function BlogIndexPage() {
   const currentPage = 1;
   const totalPages = Math.ceil(BLOG_POSTS.length / POSTS_PER_PAGE);
+  const categories = getCategories();
   
   const startIndex = (currentPage - 1) * POSTS_PER_PAGE;
   const endIndex = startIndex + POSTS_PER_PAGE;
@@ -61,6 +63,25 @@ export default function BlogIndexPage() {
       {/* Blog Grid Section */}
       <section className="py-12 sm:py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          {/* Category Filter */}
+          <div className="mb-10 flex flex-wrap gap-3">
+            <Link
+              href="/blog/"
+              className="rounded-full bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-blue-700"
+            >
+              All Posts
+            </Link>
+            {categories.map((category) => (
+              <Link
+                key={category}
+                href={`/blog/category/${category.toLowerCase().replace(/\s+/g, '-')}/`}
+                className="rounded-full border border-slate-300 bg-white px-5 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:border-blue-500 hover:text-blue-600"
+              >
+                {category}
+              </Link>
+            ))}
+          </div>
+
           {/* Grid Layout: 3 desktop, 2 tablet, 1 mobile */}
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {currentPosts.map((post) => (

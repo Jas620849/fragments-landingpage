@@ -71,26 +71,26 @@ export default function StudentEngagementSoftwarePage() {
         <section className="border-b border-slate-200/80 bg-white py-12 sm:py-16">
           <div className="frag-container">
             <h2 className="frag-title text-center">Why Engagement Matters</h2>
-            <p className="frag-lead mx-auto mt-4 max-w-2xl text-center">
-              Engaged students learn better, participate more, and achieve higher academic outcomes.
+            <p className="frag-lead mx-auto mt-4 max-w-3xl">
+              Engaged students learn better, participate more, and achieve higher academic outcomes. Traditional lectures often fail to capture student attention or provide meaningful participation opportunities. FragmentTrails transforms passive learning into active engagement through structured discussions and gamified participation.
             </p>
             <div className="mx-auto mt-8 grid max-w-5xl gap-6 md:grid-cols-3">
               <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-6 ring-1 ring-slate-100">
                 <h3 className="text-lg font-semibold text-secondary">Higher Participation</h3>
                 <p className="mt-3 text-base font-medium leading-relaxed text-slate-600">
-                  Students are more likely to contribute when discussions are structured and rewarding.
+                  Students are more likely to contribute when discussions are structured and rewarding. Fragment trails encourage every student to participate, not just the most vocal.
                 </p>
               </div>
               <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-6 ring-1 ring-slate-100">
                 <h3 className="text-lg font-semibold text-secondary">Better Retention</h3>
                 <p className="mt-3 text-base font-medium leading-relaxed text-slate-600">
-                  Active participation leads to deeper understanding and longer-term knowledge retention.
+                  Active participation leads to deeper understanding and longer-term knowledge retention. Students who engage in discussions retain 60% more information than passive listeners.
                 </p>
               </div>
               <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-6 ring-1 ring-slate-100">
                 <h3 className="text-lg font-semibold text-secondary">Improved Outcomes</h3>
                 <p className="mt-3 text-base font-medium leading-relaxed text-slate-600">
-                  Engaged classrooms see better test scores, higher completion rates, and greater satisfaction.
+                  Engaged classrooms see better test scores, higher completion rates, and greater satisfaction. Structured discussions correlate with improved academic performance across all subjects.
                 </p>
               </div>
             </div>
@@ -100,7 +100,7 @@ export default function StudentEngagementSoftwarePage() {
         <section className="bg-slate-50 py-12 sm:py-16">
           <div className="frag-container">
             <h2 className="frag-title text-center">Engagement Features</h2>
-            <div className="mx-auto mt-8 max-w-3xl space-y-6">
+            <div className="mx-auto mt-8 max-w-4xl space-y-6">
               <div className="flex gap-4">
                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue-100 text-blue-600">
                   <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -110,7 +110,7 @@ export default function StudentEngagementSoftwarePage() {
                 <div>
                   <h3 className="text-lg font-semibold text-secondary">Rewards & Badges</h3>
                   <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
-                    Gamification elements motivate students to participate and contribute quality content.
+                    Gamification elements motivate students to participate and contribute quality content. Earn badges for meaningful contributions, streaks for consistent participation, and recognition for scholarly discourse.
                   </p>
                 </div>
               </div>
@@ -123,7 +123,7 @@ export default function StudentEngagementSoftwarePage() {
                 <div>
                   <h3 className="text-lg font-semibold text-secondary">Progress Tracking</h3>
                   <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
-                    Students can track their progress and see how their contributions improve over time.
+                    Students can track their progress and see how their contributions improve over time. Visual dashboards show participation history, quality metrics, and growth trajectories that encourage continuous improvement.
                   </p>
                 </div>
               </div>
@@ -136,7 +136,20 @@ export default function StudentEngagementSoftwarePage() {
                 <div>
                   <h3 className="text-lg font-semibold text-secondary">Peer Recognition</h3>
                   <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
-                    Students can recognize and appreciate quality contributions from their peers.
+                    Students can recognize and appreciate quality contributions from their peers. Build a supportive learning community where students celebrate each other&apos;s insights and scholarly achievements.
+                  </p>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-amber-100 text-amber-600">
+                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-secondary">Real-Time Feedback</h3>
+                  <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
+                    Receive immediate feedback on contributions with AI-powered quality assessments. Students learn to improve their discourse quality through constructive, real-time guidance and suggestions.
                   </p>
                 </div>
               </div>

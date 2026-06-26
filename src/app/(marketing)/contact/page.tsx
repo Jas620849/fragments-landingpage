@@ -205,8 +205,32 @@ export default function ContactPage() {
               <ContactInfo
                 icon={faEnvelope}
                 title="Our email"
-                content="support [at] fragments [dot] com"
+                content="support@fragmenttrails.com"
               />
+              <ContactInfo
+                icon={faEnvelope}
+                title="Phone"
+                content="+1 (555) 123-4567"
+              />
+              <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-5 ring-1 ring-slate-100">
+                <h3 className="text-sm font-bold uppercase tracking-wide text-textMuted">
+                  Office Address
+                </h3>
+                <p className="mt-2 font-semibold text-secondary">
+                  123 Education Lane, Suite 400<br />
+                  San Francisco, CA 94102<br />
+                  United States
+                </p>
+              </div>
+              <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-5 ring-1 ring-slate-100">
+                <h3 className="text-sm font-bold uppercase tracking-wide text-textMuted">
+                  Business Hours
+                </h3>
+                <p className="mt-2 font-semibold text-secondary">
+                  Monday - Friday: 9:00 AM - 6:00 PM PST<br />
+                  Saturday - Sunday: Closed
+                </p>
+              </div>
             </div>
           </div>
         </div>

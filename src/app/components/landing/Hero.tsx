@@ -17,9 +17,9 @@ import { scrollToSection } from "../../utils/navigation";
 import { frontendAppBaseUrl } from "../../utils/frontendAppBaseUrl";
 
 const heroBullets = [
-  "Structured interview scoring with AI-powered moderation and bias reduction",
-  "Comprehensive scholarship tracking and review system for efficient candidate evaluation",
-  "Fair, consistent assessment workflows for education institutions and scholarship programs",
+  "For Scholarship Committees: Streamline interview evaluations with AI-powered scoring and bias reduction",
+  "For Educators: Create structured classroom discussions with fragment trails and quality moderation",
+  "For Institutions: Standardize assessment processes across departments with collaborative tools",
 ];
 
 const chips = [
@@ -189,23 +189,19 @@ export default function Hero() {
           {/* Left: 7 cols on large */}
           <div className="col-span-12 flex flex-col text-center lg:col-span-7 lg:pr-2 lg:text-left">
             <p className="mb-2 inline-flex items-center justify-center gap-2 self-center rounded-full border border-highlight/25 bg-white/80 px-3 py-1 text-[9px] font-bold uppercase tracking-[0.2em] text-highlight-dark shadow-sm sm:text-[10px] lg:self-start">
-              Scholarship interview & candidate evaluation platform
+              Structured Discussion & Evaluation Platform
             </p>
 
             <h1 className="text-balance text-2xl font-bold tracking-tight text-secondary sm:text-3xl lg:text-[2rem] lg:leading-tight">
-              Scholarship Interview & <span className="text-highlight-dark">Candidate Evaluation Platform</span>
+              FragmentTrails: <span className="text-highlight-dark">Fair Evaluations Through Structured Discussions</span>
             </h1>
 
             <p className="mx-auto mt-3 max-w-[52ch] text-sm font-medium leading-snug text-textDark sm:text-[0.9375rem] lg:mx-0">
-              <strong className="font-bold text-secondary">FragmentTrails</strong> streamlines
-              scholarship interviews, candidate scoring, and evaluation workflows with
-              structured assessment tools for education institutions and scholarship programs.
+              <strong className="font-bold text-secondary">FragmentTrails</strong> helps scholarship committees, educators, and institutions conduct fair, consistent evaluations through structured discussions and AI-powered quality control.
             </p>
 
             <p className="mx-auto mt-2 max-w-[52ch] text-xs font-medium leading-relaxed text-textMuted sm:text-sm lg:mx-0">
-              Improve fairness, consistency, and decision-making with AI-powered moderation,
-              bias reduction, and comprehensive candidate comparison tools for scholarship
-              selection and admissions.
+              Reduce bias in scholarship interviews, create meaningful classroom discussions, and standardize assessment processes with our fragment trail system and collaborative evaluation tools.
             </p>
 
             <ul className="mx-auto mt-3 max-w-[52ch] space-y-2 text-left text-xs font-medium leading-snug text-textDark sm:text-sm lg:mx-0">

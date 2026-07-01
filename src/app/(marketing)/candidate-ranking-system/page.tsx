@@ -5,15 +5,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSortNumericDown, faBalanceScale, faChartBar, faFilter, faListOl } from "@fortawesome/free-solid-svg-icons";
 
 export const metadata: Metadata = {
-  title: "Candidate Ranking System | FragmentTrails",
-  description: "Objective candidate ranking system for scholarship and admission selection. Data-driven ranking algorithms for fair candidate comparison and transparent decisions.",
+  title: "Candidate Ranking System | FragmentTrails - Multi-Criteria Decision Analysis",
+  description: "Implement sophisticated candidate ranking with FragmentTrails. Our system supports multi-criteria decision analysis, weighted scoring models, sensitivity analysis, and transparent ranking methodologies for defensible selection decisions.",
   keywords: [
     "candidate ranking system",
-    "applicant ranking software",
-    "candidate comparison platform",
+    "multi-criteria decision analysis",
+    "weighted scoring models",
+    "ranking sensitivity analysis",
+    "transparent ranking methodology",
     "scholarship ranking tools",
     "admissions ranking system",
-    "objective candidate scoring",
   ],
   alternates: hasPublicSiteUrl()
     ? { canonical: canonicalUrl("/candidate-ranking-system/") }

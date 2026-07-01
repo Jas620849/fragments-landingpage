@@ -34,7 +34,7 @@ export default function PrivacyPolicyPage() {
           <p className="frag-hero-eyebrow">Legal</p>
           <h1 className="frag-hero-h1 mt-1.5">Privacy Policy</h1>
           <p className="frag-hero-lead max-w-2xl">
-            Last updated: January 1, 2026. FragmentTrails is committed to protecting your privacy and ensuring the security of your personal information.
+            Last updated: January 1, 2026. FragmentTrails is committed to protecting your privacy and ensuring the security of your personal information in compliance with GDPR, CCPA, and other applicable data protection regulations.
           </p>
         </div>
       </section>
@@ -114,11 +114,29 @@ export default function PrivacyPolicyPage() {
             <p>We may update our privacy policy from time to time. We will notify you of any changes by posting the new privacy policy on this page and updating the &quot;Last updated&quot; date. You are advised to review this privacy policy periodically for any changes. Changes to this privacy policy are effective when they are posted on this page.</p>
 
             <h2>11. Contact Us</h2>
-            <p>If you have any questions about this privacy policy, please contact us at:</p>
+            <p>If you have any questions about this privacy policy, our data practices, or your rights under data protection laws, please contact us at:</p>
             <ul>
               <li>Email: support@fragmenttrails.com</li>
-              <li>Address: [Your Business Address]</li>
-              <li>Phone: [Your Phone Number]</li>
+              <li>Address: 123 Education Lane, Suite 400, San Francisco, CA 94102, United States</li>
+              <li>Phone: +1 (555) 123-4567</li>
+            </ul>
+
+            <h2>12. California Consumer Privacy Act (CCPA)</h2>
+            <p>If you are a resident of California, you have specific rights regarding your personal information under the CCPA:</p>
+            <ul>
+              <li><strong>Right to know:</strong> You may request details about the categories of personal information we have collected about you.</li>
+              <li><strong>Right to delete:</strong> You may request that we delete your personal information, subject to certain exceptions.</li>
+              <li><strong>Right to opt-out:</strong> You may request that we not sell your personal information. FragmentTrails does not sell personal information.</li>
+              <li><strong>Right to non-discrimination:</strong> We will not discriminate against you for exercising your privacy rights.</li>
+            </ul>
+
+            <h2>13. General Data Protection Regulation (GDPR)</h2>
+            <p>For users in the European Union, we comply with GDPR requirements. Your rights under GDPR include:</p>
+            <ul>
+              <li><strong>Lawful basis for processing:</strong> We process your data based on consent, contract performance, legitimate interests, or legal obligations.</li>
+              <li><strong>Data protection officer:</strong> You may contact our data protection officer for privacy-related inquiries.</li>
+              <li><strong>Cross-border data transfers:</strong> We ensure appropriate safeguards when transferring data outside the EEA.</li>
+              <li><strong>Breach notification:</strong> We will notify you within 72 hours if we become aware of a data breach affecting your personal information.</li>
             </ul>
           </div>
         </div>

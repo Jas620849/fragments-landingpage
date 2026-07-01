@@ -11,27 +11,28 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
-const title = "Resources | FragmentTrails - Educational Resources & Guides";
+const title = "Resources | FragmentTrails - Assessment Documentation & Guides";
 const description =
-  "Access educational resources, guides, documentation, and support materials for FragmentTrails. Learn best practices for AI-moderated learning and fair evaluation.";
+  "Access FragmentTrails resources: implementation guides, evaluation frameworks, documentation, and support materials for scholarship committees and educational institutions.";
 
 export const metadata: Metadata = {
   title,
   description,
   keywords: [
-    "fragments resources",
-    "educational guides",
-    "documentation",
-    "best practices",
-    "tutorials",
-    "support materials",
-    "learning resources",
+    "fragmenttrails resources",
+    "scholarship evaluation guides",
+    "assessment documentation",
+    "implementation guides",
+    "evaluation frameworks",
+    "bias reduction resources",
+    "institutional assessment tools",
+    "scholarship interview guides",
   ],
   alternates: hasPublicSiteUrl()
     ? { canonical: canonicalUrl("/resources/") }
     : undefined,
   openGraph: {
-    title: `${title} | Fragments`,
+    title: `${title} | FragmentTrails`,
     description,
     type: "website",
     url: hasPublicSiteUrl() ? canonicalUrl("/resources/") : undefined,
@@ -40,13 +41,13 @@ export const metadata: Metadata = {
         url: "/logo-no-bg.png",
         width: 512,
         height: 512,
-        alt: "Fragments Logo",
+        alt: "FragmentTrails Logo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${title} | Fragments`,
+    title: `${title} | FragmentTrails`,
     description,
     images: ["/logo-no-bg.png"],
   },
@@ -73,11 +74,10 @@ export default function ResourcesPage() {
             Resources
           </p>
           <h1 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-            Learning Resources & Support
+            Assessment Resources & Implementation Guides
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-slate-300 sm:text-xl">
-            Access guides, documentation, tutorials, and best practices to maximize
-            your success with FragmentTrails.
+            Documentation, evaluation frameworks, and implementation guides for scholarship committees, university admissions, and educational institutions adopting structured assessment platforms.
           </p>
         </div>
       </section>

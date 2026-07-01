@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { canonicalUrl, hasPublicSiteUrl } from "@/lib/site";
 import BreadcrumbSchema from "../../components/BreadcrumbSchema";
 import {
-  faRobot,
   faComments,
   faUsers,
   faChartBar,
@@ -15,28 +14,28 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
-const title = "Features | FragmentTrails - AI-Moderated Educational Platform";
+const title = "Features | FragmentTrails - Structured Discussion Platform for Education";
 const description =
-  "Discover the powerful features of FragmentTrails: AI moderation, fragment trails, cohort-based learning, educator recognition, and more.";
+  "Explore FragmentTrails features: structured fragment trails, two-stage quality moderation, collaborative evaluation tools, and defensible assessment records for scholarship committees and educators.";
 
 export const metadata: Metadata = {
   title,
   description,
   keywords: [
-    "fragments features",
-    "AI moderation",
-    "fragment trails",
-    "cohort-based learning",
-    "educator recognition",
-    "student engagement",
-    "discussion platform",
-    "educational technology",
+    "fragmenttrails features",
+    "structured discussion platform",
+    "scholarship interview tools",
+    "evidence-based assessment",
+    "collaborative evaluation",
+    "quality moderation",
+    "bias reduction tools",
+    "educational assessment software",
   ],
   alternates: hasPublicSiteUrl()
     ? { canonical: canonicalUrl("/features/") }
     : undefined,
   openGraph: {
-    title: `${title} | Fragments`,
+    title: `${title} | FragmentTrails`,
     description,
     type: "website",
     url: hasPublicSiteUrl() ? canonicalUrl("/features/") : undefined,
@@ -45,13 +44,13 @@ export const metadata: Metadata = {
         url: "/logo-no-bg.png",
         width: 512,
         height: 512,
-        alt: "Fragments Logo",
+        alt: "FragmentTrails Logo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${title} | Fragments`,
+    title: `${title} | FragmentTrails`,
     description,
     images: ["/logo-no-bg.png"],
   },
@@ -78,11 +77,10 @@ export default function FeaturesPage() {
             Features
           </p>
           <h1 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-            Powerful Tools for Modern Education
+            Platform Features for Fair Educational Assessments
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-slate-300 sm:text-xl">
-            AI-powered moderation, structured discussions, and educator recognition
-            designed to transform online learning.
+            Structured discussion trails, two-stage quality moderation, and collaborative evaluation tools designed for scholarship committees, educators, and institutions conducting defensible assessments.
           </p>
         </div>
       </section>
@@ -90,66 +88,60 @@ export default function FeaturesPage() {
       {/* Core Features */}
       <section className="border-b border-slate-200/80 bg-white py-12 sm:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="frag-title text-center">Core Features</h2>
+          <h2 className="frag-title text-center">Core Assessment Features</h2>
           <div className="mx-auto mt-12 grid max-w-5xl gap-8 md:grid-cols-2 lg:grid-cols-3">
-            <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-6 ring-1 ring-slate-100">
-              <FontAwesomeIcon icon={faRobot} className="h-10 w-10 text-blue-600" />
-              <h3 className="mt-4 text-lg font-semibold text-secondary">
-                AI-Powered Moderation
-              </h3>
-              <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
-                Advanced artificial intelligence analyzes discussions in real-time,
-                ensuring quality, fairness, and scholarly discourse standards.
-              </p>
-            </div>
             <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-6 ring-1 ring-slate-100">
               <FontAwesomeIcon icon={faComments} className="h-10 w-10 text-teal-600" />
               <h3 className="mt-4 text-lg font-semibold text-secondary">
-                Fragment Trails
+                Structured Fragment Trails
               </h3>
               <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
-                Structured discussion paths that guide learning through interconnected
-                topics and meaningful scholarly exchanges.
-              </p>
-            </div>
-            <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-6 ring-1 ring-slate-100">
-              <FontAwesomeIcon icon={faUsers} className="h-10 w-10 text-amber-600" />
-              <h3 className="mt-4 text-lg font-semibold text-secondary">
-                Cohort-Based Learning
-              </h3>
-              <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
-                Collaborative learning environments that build community, increase
-                engagement, and improve completion rates.
-              </p>
-            </div>
-            <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-6 ring-1 ring-slate-100">
-              <FontAwesomeIcon icon={faChartBar} className="h-10 w-10 text-purple-600" />
-              <h3 className="mt-4 text-lg font-semibold text-secondary">
-                Analytics & Insights
-              </h3>
-              <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
-                Comprehensive dashboards track participation, discussion quality,
-                and learning outcomes for data-driven decisions.
+                Educators create sourced opening fragments with specific questions. Students extend trails with evidence-based responses, creating visible chains of reasoning suitable for evaluation and administrative review.
               </p>
             </div>
             <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-6 ring-1 ring-slate-100">
               <FontAwesomeIcon icon={faShieldAlt} className="h-10 w-10 text-green-600" />
               <h3 className="mt-4 text-lg font-semibold text-secondary">
-                Quality Assurance
+                Two-Stage Quality Moderation
               </h3>
               <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
-                Multi-layered quality control with AI moderation, expert review, and
-                verified contributor authentication.
+                Automated screening for plagiarism and baseline quality, followed by human review for tone and academic alignment, ensures all content meets scholarly standards before publication.
+              </p>
+            </div>
+            <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-6 ring-1 ring-slate-100">
+              <FontAwesomeIcon icon={faUsers} className="h-10 w-10 text-blue-600" />
+              <h3 className="mt-4 text-lg font-semibold text-secondary">
+                Collaborative Evaluation
+              </h3>
+              <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
+                Multiple reviewers can assess contributions simultaneously with consistent criteria, enabling fair scholarship interviews and classroom assessments with defensible evaluation records.
+              </p>
+            </div>
+            <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-6 ring-1 ring-slate-100">
+              <FontAwesomeIcon icon={faChartBar} className="h-10 w-10 text-purple-600" />
+              <h3 className="mt-4 text-lg font-semibold text-secondary">
+                AI-Powered Scoring
+              </h3>
+              <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
+                Machine learning algorithms evaluate response quality, evidence usage, and argument structure to provide consistent scoring that reduces unconscious bias in scholarship and admissions decisions.
+              </p>
+            </div>
+            <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-6 ring-1 ring-slate-100">
+              <FontAwesomeIcon icon={faCheckCircle} className="h-10 w-10 text-amber-600" />
+              <h3 className="mt-4 text-lg font-semibold text-secondary">
+                Defensible Audit Trails
+              </h3>
+              <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
+                Complete records of discussions, evaluations, and decision-making processes provide documentation that administrators can present to accreditors, stakeholders, and legal reviewers.
               </p>
             </div>
             <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-6 ring-1 ring-slate-100">
               <FontAwesomeIcon icon={faBolt} className="h-10 w-10 text-orange-600" />
               <h3 className="mt-4 text-lg font-semibold text-secondary">
-                Real-Time Feedback
+                Bias Reduction Frameworks
               </h3>
               <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
-                Immediate quality assessments help students improve their discourse
-                skills through constructive guidance.
+                Structured evaluation criteria and anonymized review processes help minimize unconscious bias, ensuring fair outcomes for scholarship candidates and student assessments.
               </p>
             </div>
           </div>
@@ -159,7 +151,7 @@ export default function FeaturesPage() {
       {/* Educator Features */}
       <section className="border-b border-slate-200/80 bg-slate-50 py-12 sm:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="frag-title text-center">For Educators</h2>
+          <h2 className="frag-title text-center">For Scholarship Committees</h2>
           <div className="mx-auto mt-12 grid max-w-5xl gap-8 md:grid-cols-2">
             <div className="flex gap-4">
               <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue-100 text-blue-600">
@@ -167,11 +159,10 @@ export default function FeaturesPage() {
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-secondary">
-                  Financial Rewards
+                  Standardized Interview Process
                 </h3>
                 <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
-                  Earn compensation for quality contributions. Turn your expertise into
-                  income while helping others learn and grow.
+                  Create consistent interview structures across all candidates with predefined questions and evaluation rubrics that ensure fair comparison.
                 </p>
               </div>
             </div>
@@ -181,11 +172,10 @@ export default function FeaturesPage() {
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-secondary">
-                  Recognition System
+                  Multi-Reviewer Collaboration
                 </h3>
                 <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
-                  Build your reputation through badges, achievements, and public
-                  recognition for teaching excellence and scholarly contributions.
+                  Enable panel members to review and score candidate responses independently while maintaining consistent evaluation criteria across all reviewers.
                 </p>
               </div>
             </div>
@@ -195,11 +185,10 @@ export default function FeaturesPage() {
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-secondary">
-                  Time Savings
+                  Evidence-Based Evaluation
                 </h3>
                 <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
-                  AI handles routine moderation tasks, freeing educators to focus on
-                  high-value teaching and mentorship activities.
+                  Require candidates to support responses with evidence and sources, creating defensible evaluation records suitable for administrative and legal review.
                 </p>
               </div>
             </div>
@@ -209,11 +198,10 @@ export default function FeaturesPage() {
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-secondary">
-                  Scalable Impact
+                  Automated Scoring Assistance
                 </h3>
                 <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
-                  Reach thousands of students without additional resources. Scale your
-                  teaching impact from individual classrooms to global audiences.
+                  AI-powered scoring suggestions help reviewers maintain consistency while allowing final human judgment on all award decisions.
                 </p>
               </div>
             </div>
@@ -224,36 +212,33 @@ export default function FeaturesPage() {
       {/* Platform Capabilities */}
       <section className="bg-white py-12 sm:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="frag-title text-center">Platform Capabilities</h2>
+          <h2 className="frag-title text-center">Institutional Capabilities</h2>
           <div className="mx-auto mt-12 grid max-w-5xl gap-8 md:grid-cols-3">
             <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-6 ring-1 ring-slate-100">
               <FontAwesomeIcon icon={faGlobe} className="h-10 w-10 text-blue-600" />
               <h3 className="mt-4 text-lg font-semibold text-secondary">
-                Global Accessibility
+                Institutional Scalability
               </h3>
               <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
-                Accessible from anywhere with an internet connection. Support for
-                multiple languages and international educational contexts.
-              </p>
-            </div>
-            <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-6 ring-1 ring-slate-100">
-              <FontAwesomeIcon icon={faMobileAlt} className="h-10 w-10 text-teal-600" />
-              <h3 className="mt-4 text-lg font-semibold text-secondary">
-                Mobile Responsive
-              </h3>
-              <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
-                Fully responsive design works seamlessly on desktop, tablet, and
-                mobile devices for learning on the go.
+                From single scholarship committees to university-wide assessment programs, the platform scales while maintaining consistent evaluation standards across departments.
               </p>
             </div>
             <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-6 ring-1 ring-slate-100">
               <FontAwesomeIcon icon={faShieldAlt} className="h-10 w-10 text-green-600" />
               <h3 className="mt-4 text-lg font-semibold text-secondary">
-                Enterprise Security
+                FERPA Compliance
               </h3>
               <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
-                Bank-level security with encryption, compliance with educational data
-                privacy regulations, and robust access controls.
+                Built-in compliance with educational data privacy regulations including FERPA, ensuring student and candidate data protection for institutional use.
+              </p>
+            </div>
+            <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-6 ring-1 ring-slate-100">
+              <FontAwesomeIcon icon={faMobileAlt} className="h-10 w-10 text-teal-600" />
+              <h3 className="mt-4 text-lg font-semibold text-secondary">
+                Integration Ready
+              </h3>
+              <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
+                API access and integration capabilities allow connection with existing student information systems, CRM platforms, and institutional databases.
               </p>
             </div>
           </div>
@@ -263,10 +248,9 @@ export default function FeaturesPage() {
       {/* CTA Section */}
       <section className="border-b border-slate-200/80 bg-slate-50 py-12 sm:py-16">
         <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-          <h2 className="frag-title">Ready to Transform Your Learning?</h2>
+          <h2 className="frag-title">Ready to Implement Fair Assessments?</h2>
           <p className="frag-lead mx-auto mt-3 max-w-2xl">
-            Join thousands of educators and learners already using FragmentTrails to
-            create meaningful educational experiences.
+            Contact our team to learn how FragmentTrails can help your scholarship committee, educational institution, or assessment program implement structured, defensible evaluation processes.
           </p>
           <div className="mt-8 flex justify-center gap-4">
             <Link

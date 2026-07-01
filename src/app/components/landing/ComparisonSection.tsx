@@ -5,17 +5,17 @@ import { faCheck, faXmark } from "@fortawesome/free-solid-svg-icons";
 import AnimateOnScroll from "./AnimateOnScroll";
 
 const ours = [
-  "Structured fragment trails, not endless scroll",
-  "Two-step moderation: AI screening + human judgment",
-  "Educators rewarded when the room levels up",
-  "Transparent, syllabus-friendly discussion",
+  "Structured fragment trails maintain discussion context and prevent information loss",
+  "Two-stage moderation combines automated screening with human academic judgment",
+  "Educator recognition based on discussion quality and learning outcomes",
+  "Transparent discussion records suitable for academic evaluation and administrative review",
 ];
 
 const theirs = [
-  "Hot takes drown out careful explanations",
-  "Spam and off-topic replies burn instructor time",
-  "Great teaching rarely gets recognized",
-  "Hard to show rigor to admins or families",
+  "Unstructured feeds where thoughtful contributions get buried under rapid-fire responses",
+  "Manual moderation struggles with spam, off-topic content, and quality control",
+  "Teaching effectiveness measured by participation counts rather than learning impact",
+  "Difficult to demonstrate academic rigor to administrators, accreditors, or families",
 ];
 
 export default function ComparisonSection() {
@@ -25,11 +25,10 @@ export default function ComparisonSection() {
         <AnimateOnScroll className="mx-auto max-w-2xl text-center">
           <p className="frag-eyebrow">Why switch</p>
           <h2 className="frag-title mt-3">
-            Built for serious learners, not generic social feeds
+            Purpose-built for academic discourse versus generic social platforms
           </h2>
           <p className="frag-lead mt-4">
-            If you have ever moderated a class forum that went sideways, you
-            already know why Fragments exists.
+            FragmentTrails addresses the specific challenges of educational discussions by providing structure, quality control, and evaluation capabilities that standard forums and social platforms cannot deliver.
           </p>
         </AnimateOnScroll>
 

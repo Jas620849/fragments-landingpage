@@ -16,26 +16,26 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const title = "About Fragments | AI-Moderated Educational Platform";
+const title = "About FragmentTrails | Structured Discussion Platform for Education";
 const description =
-  "Learn about Fragments - the AI-moderated educational platform that encourages scholarly discourse while financially rewarding knowledgeable educators. Discover our mission, history, and team.";
+  "Learn about FragmentTrails - the structured discussion platform enabling fair evaluations through evidence-based academic discourse. Discover our mission to transform educational assessments and scholarship interviews.";
 
 export const metadata: Metadata = {
   title,
   description,
   keywords: [
-    "about fragments",
-    "fragments company history",
-    "educational platform mission",
-    "scholarly discourse platform",
-    "AI-moderated learning",
-    "fragment trails",
+    "about fragmenttrails",
+    "structured discussion platform",
+    "educational assessment tools",
+    "scholarship interview software",
+    "academic discourse platform",
+    "evidence-based learning",
   ],
   alternates: hasPublicSiteUrl()
     ? { canonical: canonicalUrl("/about/") }
     : undefined,
   openGraph: {
-    title: `${title} | Fragments`,
+    title: `${title} | FragmentTrails`,
     description,
     type: "website",
     url: hasPublicSiteUrl() ? canonicalUrl("/about/") : undefined,
@@ -44,13 +44,13 @@ export const metadata: Metadata = {
         url: "/logo-no-bg.png",
         width: 512,
         height: 512,
-        alt: "Fragments Logo",
+        alt: "FragmentTrails Logo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${title} | Fragments`,
+    title: `${title} | FragmentTrails`,
     description,
     images: ["/logo-no-bg.png"],
   },
@@ -66,8 +66,8 @@ export default function AboutPage() {
         ]}
       />
       <OrganizationSchema
-        name="Fragments"
-        description="AI-moderated educational platform that encourages scholarly discourse while financially rewarding knowledgeable educators."
+        name="FragmentTrails"
+        description="Structured discussion platform enabling fair evaluations through evidence-based academic discourse for scholarship committees, educators, and institutions."
         url={hasPublicSiteUrl() ? canonicalUrl("/") : "https://fragmenttrails.com"}
         logo="https://fragmenttrails.com/logo-no-bg.png"
         sameAs={[
@@ -89,10 +89,9 @@ export default function AboutPage() {
         <div className="relative frag-container">
           <div className="max-w-lg">
             <p className="frag-hero-eyebrow">About us</p>
-            <h1 className="frag-hero-h1 mt-1.5">About Fragments</h1>
+            <h1 className="frag-hero-h1 mt-1.5">About FragmentTrails</h1>
             <p className="frag-hero-lead max-w-none">
-              The only platform online that encourages scholarly discourse while
-              financially rewarding knowledgeable and dedicated educators.
+              A structured discussion platform enabling scholarship committees, educators, and institutions to conduct fair, evidence-based evaluations through academic discourse.
             </p>
           </div>
         </div>
@@ -100,21 +99,18 @@ export default function AboutPage() {
 
       <section className="border-b border-slate-200/80 bg-white py-12 sm:py-16">
         <div className="frag-container text-center">
-          <h2 className="frag-title">We invite…</h2>
+          <h2 className="frag-title">Who We Serve</h2>
           <div className="mx-auto mt-8 grid max-w-5xl gap-6 md:grid-cols-3 md:gap-8">
             <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-5 ring-1 ring-slate-100 sm:p-6">
               <FontAwesomeIcon icon={faBook} className="mx-auto h-9 w-9 text-amber-500" />
               <p className="mt-3 text-sm font-medium leading-relaxed text-slate-700">
-                <span className="font-bold text-amber-700">Educators</span> to share
-                their expertise with fragments of information.
+                <span className="font-bold text-amber-700">Scholarship Committees</span> seeking fair, structured interview processes with AI-powered scoring and bias reduction tools.
               </p>
             </div>
             <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-5 ring-1 ring-slate-100 sm:p-6">
               <FontAwesomeIcon icon={faComments} className="mx-auto h-9 w-9 text-teal-600" />
               <p className="mt-3 text-sm font-medium leading-relaxed text-slate-700">
-                <span className="font-bold text-teal-700">Learners</span> to ask
-                questions and participate in scholarly discussion to extend the
-                trail of fragments.
+                <span className="font-bold text-teal-700">Educators</span> building evidence-based classroom discussions where students learn to construct arguments using sources.
               </p>
             </div>
             <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-5 ring-1 ring-slate-100 sm:p-6">
@@ -123,8 +119,7 @@ export default function AboutPage() {
                 className="mx-auto h-9 w-9 text-blue-700"
               />
               <p className="mt-3 text-sm font-medium leading-relaxed text-slate-700">
-                <span className="font-bold text-blue-800">Reviewers</span> to provide
-                feedback in the spirit of knowledge sharing.
+                <span className="font-bold text-blue-800">Institutions</span> standardizing assessment processes across departments with collaborative evaluation tools and defensible records.
               </p>
             </div>
           </div>
@@ -133,16 +128,16 @@ export default function AboutPage() {
 
       <section className="border-b border-slate-200/80 bg-slate-50 py-12 sm:py-16">
         <div className="frag-container">
-          <h2 className="frag-title text-center">Our Story</h2>
+          <h2 className="frag-title text-center">Our Mission</h2>
           <div className="mx-auto mt-8 max-w-3xl">
             <p className="text-base font-medium leading-relaxed text-slate-600">
-              Fragments was founded with a simple yet powerful vision: to create an educational platform that truly values and rewards the expertise of educators while providing learners with access to high-quality, scholarly discourse.
+              FragmentTrails was founded to address a critical challenge in educational assessment: the need for fair, consistent, and defensible evaluation processes. Traditional interviews and unstructured discussions often introduce bias, lack standardization, and fail to provide administrators with clear documentation of decision-making processes.
             </p>
             <p className="mt-4 text-base font-medium leading-relaxed text-slate-600">
-              We recognized that traditional educational platforms often fail to adequately compensate educators for their knowledge and time. At the same time, learners struggle to find reliable, well-moderated discussions that enhance their understanding. Fragments bridges this gap by creating an ecosystem where educators are financially rewarded for quality contributions, and learners benefit from structured, AI-moderated scholarly discussions.
+              Our founders recognized that scholarship committees, educators, and institutions needed tools to conduct evidence-based evaluations where every response requires supporting documentation and every contribution undergoes quality review. We built FragmentTrails to replace subjective assessments with structured discussions that create transparent audit trails.
             </p>
             <p className="mt-4 text-base font-medium leading-relaxed text-slate-600">
-              Our platform leverages cutting-edge artificial intelligence to moderate discussions, ensure quality, and maintain academic standards. This allows us to scale scholarly discourse while preserving the human element that makes education meaningful.
+              Today, FragmentTrails serves scholarship committees conducting fair interviews, educators building evidence-based classroom discussions, and institutions standardizing assessment processes across departments. Our platform combines AI-powered quality screening with human academic judgment to ensure discussions maintain rigor while remaining accessible.
             </p>
           </div>
         </div>
@@ -154,23 +149,23 @@ export default function AboutPage() {
           <div className="mx-auto mt-8 grid max-w-5xl gap-6 md:grid-cols-3">
             <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-6 ring-1 ring-slate-100">
               <FontAwesomeIcon icon={faScaleBalanced} className="h-8 w-8 text-blue-600" />
-              <h3 className="mt-3 text-lg font-semibold text-secondary">Fair Compensation</h3>
+              <h3 className="mt-3 text-lg font-semibold text-secondary">Fair Evaluation</h3>
               <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
-                Educators deserve to be paid for their expertise. We ensure fair financial rewards for quality contributions that benefit the learning community.
+                Every assessment should be objective and defensible. Our structured discussion framework reduces bias and creates transparent documentation for administrative review.
               </p>
             </div>
             <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-6 ring-1 ring-slate-100">
               <FontAwesomeIcon icon={faLock} className="h-8 w-8 text-teal-600" />
-              <h3 className="mt-3 text-lg font-semibold text-secondary">Quality First</h3>
+              <h3 className="mt-3 text-lg font-semibold text-secondary">Academic Rigor</h3>
               <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
-                AI-powered moderation and expert review ensure that all content meets high academic standards and provides genuine educational value.
+                Evidence-based discussions require sources, logical reasoning, and quality screening. Our two-stage moderation ensures content meets scholarly standards.
               </p>
             </div>
             <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-6 ring-1 ring-slate-100">
               <FontAwesomeIcon icon={faUsers} className="h-8 w-8 text-amber-600" />
-              <h3 className="mt-3 text-lg font-semibold text-secondary">Community Driven</h3>
+              <h3 className="mt-3 text-lg font-semibold text-secondary">Institutional Trust</h3>
               <p className="mt-2 text-base font-medium leading-relaxed text-slate-600">
-                We believe in the power of community. Our platform thrives on the collective knowledge and collaborative spirit of educators and learners.
+                Administrators need defensible records and consistent processes. FragmentTrails provides audit trails that stand up to scrutiny from accreditors and stakeholders.
               </p>
             </div>
           </div>
@@ -181,7 +176,7 @@ export default function AboutPage() {
         <div className="frag-container">
           <h2 className="frag-title text-center">Our Team</h2>
           <p className="frag-lead mx-auto mt-3 max-w-2xl">
-            A passionate team of educators, technologists, and innovators committed to transforming online education.
+            A dedicated team combining expertise in educational assessment, artificial intelligence, and academic administration.
           </p>
           <div className="mx-auto mt-8 grid max-w-4xl gap-6 md:grid-cols-2">
             <div className="rounded-xl border border-slate-200/90 bg-white p-6 ring-1 ring-slate-100">
@@ -191,11 +186,11 @@ export default function AboutPage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-secondary">Founding Team</h3>
-                  <p className="text-sm font-medium text-slate-600">Education & Technology Experts</p>
+                  <p className="text-sm font-medium text-slate-600">Educational Assessment Experts</p>
                 </div>
               </div>
               <p className="mt-4 text-base font-medium leading-relaxed text-slate-600">
-                Our founders bring decades of combined experience in education technology, academic research, and software development. They envisioned a platform that truly values educational expertise.
+                Our founders bring extensive experience in scholarship administration, academic assessment design, and educational technology. They recognized the need for structured evaluation tools that reduce bias while maintaining academic rigor.
               </p>
             </div>
             <div className="rounded-xl border border-slate-200/90 bg-white p-6 ring-1 ring-slate-100">
@@ -209,7 +204,7 @@ export default function AboutPage() {
                 </div>
               </div>
               <p className="mt-4 text-base font-medium leading-relaxed text-slate-600">
-                Our engineering team specializes in artificial intelligence, natural language processing, and scalable platform architecture. They build the technology that powers our AI-moderated discussions.
+                Our engineering team specializes in natural language processing, machine learning for educational applications, and secure platform architecture. They build the infrastructure that powers structured academic discussions.
               </p>
             </div>
             <div className="rounded-xl border border-slate-200/90 bg-white p-6 ring-1 ring-slate-100">
@@ -223,7 +218,7 @@ export default function AboutPage() {
                 </div>
               </div>
               <p className="mt-4 text-base font-medium leading-relaxed text-slate-600">
-                Our academic advisors ensure that our platform maintains the highest standards of scholarly discourse. They guide content quality and educational best practices.
+                Our academic advisors ensure that evaluation frameworks align with best practices in scholarship selection and classroom assessment. They guide the development of fair, evidence-based evaluation criteria.
               </p>
             </div>
             <div className="rounded-xl border border-slate-200/90 bg-white p-6 ring-1 ring-slate-100">
@@ -232,12 +227,12 @@ export default function AboutPage() {
                   CS
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-secondary">Community Support</h3>
-                  <p className="text-sm font-medium text-slate-600">User Success Team</p>
+                  <h3 className="text-lg font-semibold text-secondary">Customer Success</h3>
+                  <p className="text-sm font-medium text-slate-600">Implementation & Support</p>
                 </div>
               </div>
               <p className="mt-4 text-base font-medium leading-relaxed text-slate-600">
-                Our community support team ensures that every user has a positive experience on Fragments. They provide guidance, resolve issues, and foster a welcoming learning environment.
+                Our customer success team helps institutions implement FragmentTrails effectively, providing training for administrators and educators while ensuring smooth integration with existing assessment processes.
               </p>
             </div>
           </div>
@@ -246,43 +241,43 @@ export default function AboutPage() {
 
       <section className="bg-white py-12 sm:py-16">
         <div className="frag-container">
-          <h2 className="frag-title text-center">Platform features</h2>
+          <h2 className="frag-title text-center">Platform Capabilities</h2>
           <div className="mx-auto mt-8 grid max-w-5xl gap-5 md:grid-cols-2">
             {[
               {
                 icon: faCog,
-                title: "Fragment trails",
-                body: "Create and follow educational paths curated by expert contributors. Navigate complex topics through structured, interconnected discussions.",
+                title: "Structured fragment trails",
+                body: "Educators create discussion trails with sourced opening fragments. Students extend these with evidence-based responses, creating visible chains of reasoning suitable for evaluation.",
                 border: "border-l-teal-500",
               },
               {
                 icon: faUsers,
-                title: "Community engagement",
-                body: "Connect with fellow learners and educators in your field of interest. Build networks and collaborate on educational projects.",
+                title: "Collaborative evaluation",
+                body: "Multiple reviewers can assess contributions simultaneously with consistent criteria, enabling fair scholarship interviews and classroom assessments.",
                 border: "border-l-amber-500",
               },
               {
                 icon: faLock,
-                title: "Quality assurance",
-                body: "AI-powered moderation and expert review process ensure all content meets high academic standards and provides genuine value.",
+                title: "Two-stage quality moderation",
+                body: "Automated screening for plagiarism and baseline quality, followed by human review for tone and academic alignment, ensures all content meets standards.",
                 border: "border-l-blue-600",
               },
               {
                 icon: faCertificate,
-                title: "Verified contributors",
-                body: "Content created by authenticated subject matter experts. Trust that you're learning from qualified educators and professionals.",
+                title: "Defensible evaluation records",
+                body: "Complete audit trails of discussions and evaluations provide documentation that administrators can present to accreditors and stakeholders.",
                 border: "border-l-amber-500",
               },
               {
                 icon: faRocket,
-                title: "Scalable learning",
-                body: "From individual classrooms to massive online courses, our platform scales to meet your educational needs without compromising quality.",
+                title: "Institutional scalability",
+                body: "From single scholarship committees to university-wide assessment programs, the platform scales while maintaining consistent evaluation standards.",
                 border: "border-l-purple-500",
               },
               {
                 icon: faDollarSign,
-                title: "Financial rewards",
-                body: "Educators earn compensation for quality contributions. Turn your expertise into income while helping others learn.",
+                title: "Bias reduction tools",
+                body: "AI-powered scoring and structured evaluation frameworks help reduce unconscious bias in scholarship interviews and academic assessments.",
                 border: "border-l-green-500",
               },
             ].map((f) => (

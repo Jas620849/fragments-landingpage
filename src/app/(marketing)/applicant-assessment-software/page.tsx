@@ -5,15 +5,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClipboardCheck, faUsers, faBrain, faChartBar } from "@fortawesome/free-solid-svg-icons";
 
 export const metadata: Metadata = {
-  title: "Applicant Assessment Software | FragmentTrails",
-  description: "Comprehensive applicant assessment software for scholarship and admission programs. AI-powered evaluation, scoring, and candidate comparison tools.",
+  title: "Applicant Assessment Software | FragmentTrails - Multi-Stage Candidate Evaluation",
+  description: "Streamline multi-stage applicant assessment with FragmentTrails. From initial screening to final selection, our software supports holistic review across academic achievements, extracurricular activities, essays, and interviews for scholarship and admission programs.",
   keywords: [
     "applicant assessment software",
-    "candidate assessment platform",
-    "applicant evaluation software",
+    "multi-stage candidate evaluation",
+    "holistic applicant review",
     "scholarship assessment tools",
     "admissions assessment platform",
-    "holistic applicant review",
+    "candidate screening workflow",
+    "portfolio-based assessment",
   ],
   alternates: hasPublicSiteUrl()
     ? { canonical: canonicalUrl("/applicant-assessment-software/") }
@@ -34,37 +35,37 @@ export default function ApplicantAssessmentSoftwarePage() {
           <p className="frag-hero-eyebrow">Assessment Tools</p>
           <h1 className="frag-hero-h1 mt-1.5">Applicant Assessment Software</h1>
           <p className="frag-hero-lead max-w-2xl">
-            Evaluate scholarship and admission applicants with comprehensive assessment software. AI-powered tools provide structured evaluation, fair scoring, and data-driven candidate comparisons.
+            Manage the complete applicant assessment lifecycle from initial screening through final selection. Our software supports multi-stage evaluation workflows, portfolio review, and holistic assessment for scholarship and admission programs.
           </p>
         </div>
       </section>
 
       <section className="border-b border-slate-200/80 bg-white py-12 sm:py-16">
         <div className="frag-container">
-          <h2 className="frag-title text-center">The Challenge of Applicant Assessment</h2>
+          <h2 className="frag-title text-center">Complexity of Multi-Stage Assessment</h2>
           <p className="frag-lead mx-auto mt-4 max-w-3xl">
-            Assessing applicants for scholarships and admissions requires evaluating diverse qualifications, experiences, and potential. Traditional assessment methods often struggle with consistency, bias, and the complexity of holistic review processes.
+            Modern applicant assessment requires managing multiple evaluation stages: initial eligibility screening, document review, qualitative assessment, interviews, and final selection. Each stage demands different criteria, evaluators, and workflows. Without integrated software, coordinating these stages becomes fragmented and error-prone.
           </p>
           <div className="mx-auto mt-8 grid max-w-5xl gap-6 md:grid-cols-3">
             <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-6 ring-1 ring-slate-100">
               <FontAwesomeIcon icon={faClipboardCheck} className="h-8 w-8 text-highlight" />
-              <h3 className="mt-4 text-lg font-semibold text-secondary">Inconsistent Criteria</h3>
+              <h3 className="mt-4 text-lg font-semibold text-secondary">Stage Fragmentation</h3>
               <p className="mt-2 text-sm leading-relaxed text-slate-600">
-                Different evaluators apply different standards, making fair comparisons across applicants challenging.
+                Different assessment stages often use disconnected systems, causing data loss, communication gaps, and difficulty tracking applicant progress through the pipeline.
               </p>
             </div>
             <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-6 ring-1 ring-slate-100">
               <FontAwesomeIcon icon={faUsers} className="h-8 w-8 text-highlight" />
-              <h3 className="mt-4 text-lg font-semibold text-secondary">Holistic Complexity</h3>
+              <h3 className="mt-4 text-lg font-semibold text-secondary">Workflow Bottlenecks</h3>
               <p className="mt-2 text-sm leading-relaxed text-slate-600">
-                Evaluating academics, extracurriculars, essays, and interviews requires sophisticated assessment frameworks.
+                Manual handoffs between stages create delays, lost applications, and unclear responsibilities. Applicants fall through cracks when processes lack automation.
               </p>
             </div>
             <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-6 ring-1 ring-slate-100">
               <FontAwesomeIcon icon={faChartBar} className="h-8 w-8 text-highlight" />
-              <h3 className="mt-4 text-lg font-semibold text-secondary">Limited Insights</h3>
+              <h3 className="mt-4 text-lg font-semibold text-secondary">Pipeline Visibility</h3>
               <p className="mt-2 text-sm leading-relaxed text-slate-600">
-                Manual assessment lacks the analytics needed to identify patterns, improve processes, or demonstrate outcomes.
+                Without centralized tracking, administrators cannot see where applicants are in the process, identify bottlenecks, or predict completion timelines for decision-making.
               </p>
             </div>
           </div>
@@ -73,9 +74,9 @@ export default function ApplicantAssessmentSoftwarePage() {
 
       <section className="border-b border-slate-200/80 bg-slate-50 py-12 sm:py-16">
         <div className="frag-container">
-          <h2 className="frag-title text-center">Comprehensive Assessment Framework</h2>
+          <h2 className="frag-title text-center">Integrated Multi-Stage Assessment</h2>
           <p className="frag-lead mx-auto mt-4 max-w-3xl">
-            FragmentTrails provides a complete applicant assessment platform that supports holistic evaluation across all dimensions of candidate qualifications.
+            FragmentTrails unifies all assessment stages into a single platform, from automated screening through final selection. Each stage feeds into the next, maintaining data continuity and providing complete visibility into applicant progress.
           </p>
           <div className="mx-auto mt-10 max-w-4xl space-y-8">
             <div className="flex gap-4">
@@ -83,9 +84,9 @@ export default function ApplicantAssessmentSoftwarePage() {
                 <FontAwesomeIcon icon={faClipboardCheck} className="h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-secondary">Multi-Dimensional Evaluation</h3>
+                <h3 className="text-lg font-semibold text-secondary">Automated Screening Stage</h3>
                 <p className="mt-2 text-sm leading-relaxed text-slate-600">
-                  Assess applicants across multiple dimensions including academic achievement, extracurricular involvement, leadership experience, personal statements, and interview performance. Combine quantitative and qualitative assessments for holistic review.
+                  Configure automated eligibility screening based on GPA thresholds, test scores, residency requirements, or custom criteria. Automatically advance qualified applicants to review stages while flagging edge cases for manual review. Reduce initial screening workload by up to 80%.
                 </p>
               </div>
             </div>
@@ -94,9 +95,9 @@ export default function ApplicantAssessmentSoftwarePage() {
                 <FontAwesomeIcon icon={faChartBar} className="h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-secondary">Customizable Assessment Criteria</h3>
+                <h3 className="text-lg font-semibold text-secondary">Document Review Stage</h3>
                 <p className="mt-2 text-sm leading-relaxed text-slate-600">
-                  Design assessment rubrics tailored to your program&apos;s priorities. Define weighted criteria for different scholarship types or admission tracks. Ensure consistency while maintaining flexibility for diverse applicant pools.
+                  Centralize all applicant documents including transcripts, essays, recommendations, and portfolios. Enable reviewers to access complete materials with annotation tools, comparison views, and version tracking. Track which documents have been reviewed by which evaluators.
                 </p>
               </div>
             </div>
@@ -105,9 +106,9 @@ export default function ApplicantAssessmentSoftwarePage() {
                 <FontAwesomeIcon icon={faUsers} className="h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-secondary">Collaborative Assessment Workflows</h3>
+                <h3 className="text-lg font-semibold text-secondary">Qualitative Assessment Stage</h3>
                 <p className="mt-2 text-sm leading-relaxed text-slate-600">
-                  Enable multiple evaluators to assess applicants independently or collaboratively. Share observations, discuss assessments, and reach consensus through structured workflows. Track evaluator participation and ensure balanced perspectives.
+                  Implement structured rubric-based evaluation for essays, personal statements, and qualitative materials. Support multiple reviewers per applicant with automated score aggregation and outlier detection. Enable blind review options to reduce bias in subjective assessments.
                 </p>
               </div>
             </div>
@@ -116,9 +117,9 @@ export default function ApplicantAssessmentSoftwarePage() {
                 <FontAwesomeIcon icon={faBrain} className="h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-secondary">AI-Assisted Evaluation</h3>
+                <h3 className="text-lg font-semibold text-secondary">Interview Stage Integration</h3>
                 <p className="mt-2 text-sm leading-relaxed text-slate-600">
-                  Leverage AI to analyze written responses, essays, and interview transcripts. Get objective insights that supplement human evaluation while maintaining final decision authority with your team.
+                  Seamlessly integrate interview scheduling, conduct, and scoring into the assessment pipeline. Interview scores automatically feed into composite candidate evaluations. Support multiple interview formats with consistent evaluation criteria across all stages.
                 </p>
               </div>
             </div>
@@ -128,30 +129,30 @@ export default function ApplicantAssessmentSoftwarePage() {
 
       <section className="border-b border-slate-200/80 bg-white py-12 sm:py-16">
         <div className="frag-container">
-          <h2 className="frag-title text-center">Assessment Features</h2>
+          <h2 className="frag-title text-center">Pipeline Management Features</h2>
           <div className="mx-auto mt-10 grid max-w-5xl gap-6 md:grid-cols-2">
             <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-6 ring-1 ring-slate-100">
-              <h3 className="text-lg font-semibold text-secondary">Automated Screening</h3>
+              <h3 className="text-lg font-semibold text-secondary">Stage Transition Automation</h3>
               <p className="mt-3 text-sm leading-relaxed text-slate-600">
-                Set minimum qualification thresholds and automatically screen applicants. Focus evaluator time on qualified candidates while ensuring no promising applicant is overlooked.
+                Configure automated transitions between assessment stages based on completion criteria, score thresholds, or committee decisions. Eliminate manual status updates and ensure applicants progress smoothly through the pipeline.
               </p>
             </div>
             <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-6 ring-1 ring-slate-100">
-              <h3 className="text-lg font-semibold text-secondary">Candidate Comparison</h3>
+              <h3 className="text-lg font-semibold text-secondary">Pipeline Analytics Dashboard</h3>
               <p className="mt-3 text-sm leading-relaxed text-slate-600">
-                Compare applicants side-by-side across evaluation criteria. Visualize score distributions, identify top performers, and make data-driven selection decisions.
+                Visualize applicant flow through all assessment stages with real-time dashboards. Identify bottlenecks, track stage conversion rates, and predict completion timelines. Allocate resources based on pipeline volume and velocity.
               </p>
             </div>
             <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-6 ring-1 ring-slate-100">
-              <h3 className="text-lg font-semibold text-secondary">Portfolio Assessment</h3>
+              <h3 className="text-lg font-semibold text-secondary">Cross-Stage Data Continuity</h3>
               <p className="mt-3 text-sm leading-relaxed text-slate-600">
-                Support portfolio-based assessment where applicants showcase their best work. Enable holistic review of achievements, projects, and capabilities.
+                All assessment data flows seamlessly between stages. Screening results inform document review, which feeds into qualitative assessment and interview scoring. Build comprehensive applicant profiles that accumulate insights across the entire pipeline.
               </p>
             </div>
             <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-6 ring-1 ring-slate-100">
-              <h3 className="text-lg font-semibold text-secondary">Reporting & Analytics</h3>
+              <h3 className="text-lg font-semibold text-secondary">Final Selection Stage</h3>
               <p className="mt-3 text-sm leading-relaxed text-slate-600">
-                Generate detailed reports on assessment outcomes, evaluator performance, and selection decisions. Use analytics to improve your assessment process.
+                Aggregate all assessment data for final selection decisions. Support committee voting, ranking exercises, and consensus-building tools. Generate selection reports documenting the complete assessment journey for each selected candidate.
               </p>
             </div>
           </div>

@@ -41,11 +41,10 @@ export default function DisciplinesSection() {
         <AnimateOnScroll className="mx-auto max-w-2xl text-center">
           <p className="frag-eyebrow">Subject coverage</p>
           <h2 className="frag-title mt-3">
-            Map trails to the courses you already teach
+            Adaptable across academic disciplines and use cases
           </h2>
           <p className="frag-lead mt-4">
-            From AP-style rigor to upper-division seminars. Start with a familiar
-            discipline or request the one your department needs next.
+            FragmentTrails supports evidence-based discussions across humanities, sciences, mathematics, and professional programs. The structured trail format works whether analyzing historical documents, solving mathematical proofs, conducting scientific debates, or evaluating literary texts.
           </p>
         </AnimateOnScroll>
 

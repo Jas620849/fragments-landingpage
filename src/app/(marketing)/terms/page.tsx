@@ -33,7 +33,7 @@ export default function TermsOfServicePage() {
           <p className="frag-hero-eyebrow">Legal</p>
           <h1 className="frag-hero-h1 mt-1.5">Terms of Service</h1>
           <p className="frag-hero-lead max-w-2xl">
-            Last updated: January 1, 2026. By using FragmentTrails, you agree to these terms. Please read them carefully.
+            Last updated: January 1, 2026. By using FragmentTrails, you agree to these terms governing your use of our structured discussion platform for educational assessments and scholarship interviews.
           </p>
         </div>
       </section>
@@ -118,18 +118,24 @@ export default function TermsOfServicePage() {
             <p>You agree to indemnify and hold harmless FragmentTrails and its affiliates, officers, directors, employees, agents, and partners from and against any claims, damages, obligations, losses, liabilities, costs, or debt, and expenses (including but not limited to attorney&apos;s fees), resulting from or arising out of your use of our service or violation of these terms.</p>
 
             <h2>10. Governing Law</h2>
-            <p>These terms shall be governed by and construed in accordance with the laws of [Your Jurisdiction], without regard to its conflict of law provisions.</p>
+            <p>These terms shall be governed by and construed in accordance with the laws of the State of California, United States, without regard to its conflict of law provisions. Any disputes arising under these terms shall be resolved in the federal or state courts located in San Francisco, California.</p>
 
             <h2>11. Changes to Terms</h2>
-            <p>We reserve the right to modify these terms at any time. We will notify users of any material changes by posting the new terms on this page. Your continued use of our service after such modifications constitutes your acceptance of the new terms.</p>
+            <p>We reserve the right to modify these terms at any time. We will notify users of any material changes by posting the new terms on this page and sending email notifications to registered users. Your continued use of our service after such modifications constitutes your acceptance of the new terms.</p>
 
             <h2>12. Contact Information</h2>
             <p>If you have any questions about these Terms of Service, please contact us at:</p>
             <ul>
               <li>Email: support@fragmenttrails.com</li>
-              <li>Address: [Your Business Address]</li>
-              <li>Phone: [Your Phone Number]</li>
+              <li>Address: 123 Education Lane, Suite 400, San Francisco, CA 94102, United States</li>
+              <li>Phone: +1 (555) 123-4567</li>
             </ul>
+
+            <h2>13. Educational Use Compliance</h2>
+            <p>Users utilizing FragmentTrails for educational institutions, scholarship programs, or assessment purposes agree to comply with all applicable educational regulations, including FERPA (Family Educational Rights and Privacy Act) in the United States and equivalent data protection laws in other jurisdictions. Institutions are responsible for obtaining necessary consents and maintaining compliance with their own institutional policies.</p>
+
+            <h2>14. Service Level Agreement</h2>
+            <p>For institutional subscribers, we commit to maintaining 99.5% service availability, excluding scheduled maintenance windows. In the event of significant service disruptions affecting evaluation processes, we will provide affected institutions with documentation suitable for administrative review and extension of subscription terms as appropriate.</p>
           </div>
         </div>
       </section>

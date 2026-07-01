@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTwitter,
   faFacebook,
-  faLinkedin,
   faMedium,
   faProductHunt,
   faQuora,
@@ -171,17 +170,6 @@ export default function Footer() {
                 >
                   <FontAwesomeIcon icon={faInstagram} className="h-4 w-4 text-slate-500" />
                   Instagram
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="https://www.linkedin.com/in/fragments-trails-b02202417/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`${linkClass} inline-flex items-center gap-2`}
-                >
-                  <FontAwesomeIcon icon={faLinkedin} className="h-4 w-4 text-slate-500" />
-                  LinkedIn
                 </Link>
               </li>
             </ul>

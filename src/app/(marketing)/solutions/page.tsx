@@ -10,27 +10,28 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
-const title = "Solutions | FragmentTrails - Educational Platform Solutions";
+const title = "Solutions | FragmentTrails - Assessment Solutions for Education";
 const description =
-  "Explore FragmentTrails solutions for universities, scholarship programs, educational institutions, and educators. AI-powered tools for fair evaluation and engagement.";
+  "Discover FragmentTrails solutions for scholarship committees, university admissions, educational institutions, and classroom assessments. Structured evaluation tools for fair, defensible decisions.";
 
 export const metadata: Metadata = {
   title,
   description,
   keywords: [
-    "fragments solutions",
-    "university solutions",
-    "scholarship program solutions",
-    "educational institution tools",
-    "educator platform",
-    "AI evaluation",
-    "fair selection",
+    "fragmenttrails solutions",
+    "scholarship committee solutions",
+    "university admissions tools",
+    "educational assessment software",
+    "classroom discussion platforms",
+    "evidence-based evaluation",
+    "fair selection tools",
+    "institutional assessment",
   ],
   alternates: hasPublicSiteUrl()
     ? { canonical: canonicalUrl("/solutions/") }
     : undefined,
   openGraph: {
-    title: `${title} | Fragments`,
+    title: `${title} | FragmentTrails`,
     description,
     type: "website",
     url: hasPublicSiteUrl() ? canonicalUrl("/solutions/") : undefined,
@@ -39,13 +40,13 @@ export const metadata: Metadata = {
         url: "/logo-no-bg.png",
         width: 512,
         height: 512,
-        alt: "Fragments Logo",
+        alt: "FragmentTrails Logo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${title} | Fragments`,
+    title: `${title} | FragmentTrails`,
     description,
     images: ["/logo-no-bg.png"],
   },
@@ -72,12 +73,10 @@ export default function SolutionsPage() {
             Solutions
           </p>
           <h1 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-            Tailored Solutions for Every Educational Need
+            Assessment Solutions for Educational Institutions
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-slate-300 sm:text-xl">
-            From scholarship programs to university admissions, FragmentTrails
-            provides AI-powered tools for fair, efficient, and engaging educational
-            experiences.
+            Structured discussion platforms and evaluation tools designed for scholarship committees, university admissions, and educational institutions requiring fair, defensible assessment processes.
           </p>
         </div>
       </section>
@@ -85,7 +84,7 @@ export default function SolutionsPage() {
       {/* Solutions Grid */}
       <section className="border-b border-slate-200/80 bg-white py-12 sm:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="frag-title text-center">Our Solutions</h2>
+          <h2 className="frag-title text-center">Specialized Solutions</h2>
           <div className="mx-auto mt-12 grid max-w-5xl gap-8 md:grid-cols-2">
             {/* Scholarship Programs */}
             <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-8 ring-1 ring-slate-100">

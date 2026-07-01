@@ -17,9 +17,9 @@ import { scrollToSection } from "../../utils/navigation";
 import { frontendAppBaseUrl } from "../../utils/frontendAppBaseUrl";
 
 const heroBullets = [
-  "For Scholarship Committees: Streamline interview evaluations with AI-powered scoring and bias reduction",
-  "For Educators: Create structured classroom discussions with fragment trails and quality moderation",
-  "For Institutions: Standardize assessment processes across departments with collaborative tools",
+  "Scholarship committees reduce interview bias with AI-powered scoring and structured evaluation frameworks",
+  "Educators build evidence-based classroom discussions where students support arguments with sources",
+  "Universities standardize assessment processes across departments with collaborative evaluation tools",
 ];
 
 const chips = [
@@ -193,15 +193,15 @@ export default function Hero() {
             </p>
 
             <h1 className="text-balance text-2xl font-bold tracking-tight text-secondary sm:text-3xl lg:text-[2rem] lg:leading-tight">
-              FragmentTrails: <span className="text-highlight-dark">Fair Evaluations Through Structured Discussions</span>
+              A Discussion Platform Where <span className="text-highlight-dark">Evidence and Structure Matter</span>
             </h1>
 
             <p className="mx-auto mt-3 max-w-[52ch] text-sm font-medium leading-snug text-textDark sm:text-[0.9375rem] lg:mx-0">
-              <strong className="font-bold text-secondary">FragmentTrails</strong> helps scholarship committees, educators, and institutions conduct fair, consistent evaluations through structured discussions and AI-powered quality control.
+              <strong className="font-bold text-secondary">FragmentTrails</strong> enables scholarship committees, educators, and institutions to conduct fair evaluations through structured discussions where every response requires evidence and every post undergoes quality review.
             </p>
 
             <p className="mx-auto mt-2 max-w-[52ch] text-xs font-medium leading-relaxed text-textMuted sm:text-sm lg:mx-0">
-              Reduce bias in scholarship interviews, create meaningful classroom discussions, and standardize assessment processes with our fragment trail system and collaborative evaluation tools.
+              Replace unstructured interviews and chaotic discussion forums with fragment trails that guide learning, ensure academic rigor, and provide administrators with defensible evaluation records.
             </p>
 
             <ul className="mx-auto mt-3 max-w-[52ch] space-y-2 text-left text-xs font-medium leading-snug text-textDark sm:text-sm lg:mx-0">
@@ -239,20 +239,13 @@ export default function Hero() {
             {readMore ? (
               <div className="mx-auto mt-2 max-w-[52ch] space-y-2.5 border-l-2 border-highlight/40 pl-3 text-left text-xs font-medium leading-relaxed text-textMuted sm:text-sm lg:mx-0">
                 <p>
-                  Fragments is built for serious learners and the educators who guide
-                  them: fragment trails keep rigor visible, and two-step moderation
-                  gives admins a story they can defend.
+                  FragmentTrails replaces unstructured evaluation methods with a system where every discussion follows a clear path, every claim requires supporting evidence, and every contribution undergoes quality screening before publication.
                 </p>
                 <p>
-                  District and department leads get a surface that looks like serious
-                  coursework—sources in line, clear prompts, and a path families can
-                  follow—without the doom-scroll patterns baked into generic social
-                  apps.
+                  Scholarship committees gain defensible evaluation records that stand up to scrutiny. Educators create classroom environments where students learn to construct arguments using sources rather than opinions. Administrators receive audit trails showing exactly how decisions were made.
                 </p>
                 <p>
-                  Start with a public trail, invite your cohort when you are ready,
-                  and scale from a single section to a whole program without changing
-                  tools.
+                  Start with a single discussion trail, scale to entire programs, and maintain consistency without changing platforms. The fragment trail system works whether you are evaluating 10 candidates or managing 10,000 students across multiple departments.
                 </p>
               </div>
             ) : null}

@@ -18,11 +18,10 @@ export default function FeaturesSection() {
         <AnimateOnScroll className="mx-auto max-w-2xl text-center">
           <p className="frag-eyebrow">Platform</p>
           <h2 className="frag-title mt-3">
-            Everything you need to run discussions you are proud of
+            Purpose-built tools for structured academic discourse
           </h2>
           <p className="frag-lead mt-4">
-            Purpose-built for depth, accountability, and outcomes, not vanity
-            metrics or endless notifications.
+            FragmentTrails provides the infrastructure needed to transform unstructured discussions into evidence-based learning experiences with built-in quality control and evaluation capabilities.
           </p>
         </AnimateOnScroll>
 
@@ -33,11 +32,9 @@ export default function FeaturesSection() {
             <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary text-highlight-dark ring-1 ring-border-light">
               <FontAwesomeIcon icon={faProjectDiagram} className="h-5 w-5" />
             </div>
-            <h3 className="text-lg font-bold text-secondary sm:text-xl">Fragment trails</h3>
+            <h3 className="text-lg font-bold text-secondary sm:text-xl">Structured fragment trails</h3>
             <p className="mt-2 max-w-xl text-sm font-medium leading-relaxed text-textMuted">
-              Package your best thinking into short, sourced fragments that kick off
-              a trail. Students extend it with questions and debate, so the whole
-              class can see how ideas evolve, week after week. Perfect for scholarship tracking and review system workflows.
+              Educators create discussion trails by posting sourced fragments with specific questions. Students extend these trails by contributing evidence-based responses, creating a visible chain of reasoning that shows how ideas develop from initial prompts through supporting evidence to conclusions.
             </p>
             </article>
           </AnimateOnScroll>
@@ -47,10 +44,9 @@ export default function FeaturesSection() {
             <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary text-secondary ring-1 ring-border-light">
               <FontAwesomeIcon icon={faUsers} className="h-5 w-5" />
             </div>
-            <h3 className="text-lg font-bold text-secondary sm:text-xl">Peer-powered learning</h3>
+            <h3 className="text-lg font-bold text-secondary sm:text-xl">Collaborative peer learning</h3>
             <p className="mt-2 flex-1 text-sm font-medium leading-relaxed text-textMuted">
-              Learners teach each other in the open. You get a living record of who
-              contributed rigor, which is great for participation rubrics and honors reviews.
+              Students learn from each other by responding to peer contributions with counterarguments, supporting evidence, and constructive feedback. This collaborative approach creates a dynamic learning environment where multiple perspectives emerge and students develop critical thinking through engagement with diverse viewpoints.
             </p>
             </article>
           </AnimateOnScroll>
@@ -62,13 +58,10 @@ export default function FeaturesSection() {
             </div>
             <div>
               <h3 className="text-lg font-bold text-secondary sm:text-xl">
-                Moderation you can stand behind
+                Two-stage quality moderation
               </h3>
               <p className="mt-2 text-sm font-medium leading-relaxed text-textMuted lg:max-w-3xl">
-                Every fragment is checked for plagiarism and baseline quality before
-                it goes wide. Human reviewers handle nuance, tone, and academic
-                fit, so your program stays aligned with district policies and your
-                own standards.
+                Every contribution undergoes automated screening for plagiarism, academic integrity, and baseline quality before publication. Human reviewers then assess tone, nuance, and alignment with institutional standards, ensuring all published content meets both technical and qualitative requirements for academic discourse.
               </p>
             </div>
             </article>

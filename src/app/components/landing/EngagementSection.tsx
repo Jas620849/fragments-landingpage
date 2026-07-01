@@ -11,23 +11,23 @@ import AnimateOnScroll from "./AnimateOnScroll";
 const items = [
   {
     icon: faFlagCheckered,
-    title: "Challenges & themed prompts",
+    title: "Themed discussion challenges",
     body:
-      "Kick off trails around a topic, a text, or a weekly challenge so the cohort has a shared focal point—and a clear finish line for discussion.",
+      "Educators launch focused discussion trails around specific texts, current events, or weekly themes. These structured challenges give cohorts clear objectives and defined endpoints, making participation purposeful rather than open-ended.",
     iconBg: "bg-primary text-secondary ring-1 ring-border-light",
   },
   {
     icon: faArrowTrendUp,
-    title: "Momentum on topics that matter",
+    title: "Visible conversation momentum",
     body:
-      "Replies stack in order on the trail, so learners feel where the conversation is heating up inside your class—without random algorithmic trending from the wider web.",
+      "Replies appear sequentially within each fragment trail, allowing participants to see where discussion energy is concentrated within their specific cohort. This visibility helps identify engaging topics without relying on external algorithmic trending from unrelated content.",
     iconBg: "bg-primary text-highlight-dark ring-1 ring-border-light",
   },
   {
     icon: faUserPlus,
-    title: "Referrals & controlled growth",
+    title: "Controlled community expansion",
     body:
-      "Invite partner classrooms, colleagues, and trusted learners with links and cohorts you govern—grow participation without losing moderation or context.",
+      "Institutional administrators manage cohort invitations through controlled access links, ensuring that new participants join with appropriate context and moderation oversight. This approach supports growth while maintaining discussion quality and institutional standards.",
     iconBg: "bg-accent/15 text-accent-darker ring-1 ring-accent/25",
   },
 ] as const;
@@ -42,12 +42,10 @@ export default function EngagementSection() {
         <AnimateOnScroll className="mx-auto max-w-2xl text-center">
           <p className="frag-eyebrow">Engagement</p>
           <h2 className="frag-title mt-3">
-            Features learners feel—and admins can steer
+            Engagement features that maintain academic focus
           </h2>
           <p className="frag-lead mt-4">
-            Challenges, topical energy, and referrals work best when they live
-            inside a serious discussion surface. Fragments is built around trails,
-            review, and invites you control.
+            FragmentTrails provides structured engagement tools that keep discussions purposeful, visible within cohorts, and under institutional control—avoiding the distraction and unpredictability of open social platforms.
           </p>
         </AnimateOnScroll>
 

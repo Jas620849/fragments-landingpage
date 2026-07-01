@@ -11,23 +11,23 @@ import AnimateOnScroll from "./AnimateOnScroll";
 const pillars = [
   {
     icon: faBookOpenReader,
-    title: "Learning that sticks",
+    title: "Visible learning progression",
     body:
-      "Fragment trails keep sources, questions, and debate in one readable thread—so students see how ideas build instead of losing them in a noisy feed.",
+      "Every contribution appears in context within the fragment trail, allowing students to trace how ideas develop from the opening prompt through supporting evidence to final conclusions. This visibility helps learners understand argument structure and see their own growth over time.",
     iconBg: "bg-primary text-highlight-dark ring-1 ring-border-light",
   },
   {
     icon: faGift,
-    title: "Rewards for showing up well",
+    title: "Measurable participation quality",
     body:
-      "Participation is visible: quality replies, evidence-backed posts, and steady contribution show up in the trail—useful for rubrics, honors reviews, scholarship tracking and review system workflows, and celebrating growth.",
+      "Unlike traditional forums where quantity dominates, FragmentTrails evaluates the substance of each contribution. Students receive recognition for evidence-based arguments, thoughtful responses to peers, and consistent engagement that advances the discussion meaningfully.",
     iconBg: "bg-accent/15 text-accent-darker ring-1 ring-accent/25",
   },
   {
     icon: faMedal,
-    title: "Recognition for educators",
+    title: "Educator impact recognition",
     body:
-      "Educators who set the tone, moderate with care, and raise the level of the room get credit for it—not buried under vanity metrics from generic social apps.",
+      "The platform tracks the quality of discussions educators facilitate, highlighting those who consistently guide students toward deeper analysis and evidence-based reasoning. This recognition goes beyond participation counts to measure actual teaching effectiveness through discussion outcomes.",
     iconBg: "bg-primary text-secondary ring-1 ring-border-light",
   },
 ] as const;
@@ -42,12 +42,10 @@ export default function WhyJoinSection() {
         <AnimateOnScroll className="mx-auto max-w-2xl text-center">
           <p className="frag-eyebrow">Why join</p>
           <h2 className="frag-title mt-3">
-            Learning, rewards, and recognition—on purpose
+            Visible learning, measurable quality, recognized impact
           </h2>
           <p className="frag-lead mt-4">
-            Fragments is for cohorts that want depth and accountability: students
-            learn in the open, effort is legible, and educators who lead great
-            discussions are seen.
+            FragmentTrails creates an environment where student contributions remain in context, participation quality gets measured beyond simple counts, and educators receive recognition for the discussions they facilitate effectively.
           </p>
         </AnimateOnScroll>
 

@@ -5,17 +5,21 @@ import { faCheck, faXmark } from "@fortawesome/free-solid-svg-icons";
 import AnimateOnScroll from "./AnimateOnScroll";
 
 const ours = [
-  "Structured fragment trails maintain discussion context and prevent information loss",
-  "Two-stage moderation combines automated screening with human academic judgment",
-  "Educator recognition based on discussion quality and learning outcomes",
-  "Transparent discussion records suitable for academic evaluation and administrative review",
+  "Structured fragment trails maintain discussion context and prevent information loss by preserving the logical relationships between contributions",
+  "Two-stage moderation combines automated screening with human academic judgment, ensuring both efficiency and quality in content review",
+  "Educator recognition based on discussion quality and learning outcomes rather than simple participation metrics or activity counts",
+  "Transparent discussion records suitable for academic evaluation, administrative review, and compliance documentation requirements",
+  "Evidence requirements ensure every contribution includes supporting sources, developing research skills and academic rigor",
+  "Cohort-based organization maintains appropriate context and prevents the fragmentation common in open social platforms",
 ];
 
 const theirs = [
-  "Unstructured feeds where thoughtful contributions get buried under rapid-fire responses",
-  "Manual moderation struggles with spam, off-topic content, and quality control",
-  "Teaching effectiveness measured by participation counts rather than learning impact",
-  "Difficult to demonstrate academic rigor to administrators, accreditors, or families",
+  "Unstructured feeds where thoughtful contributions get buried under rapid-fire responses, making it difficult to follow the development of ideas",
+  "Manual moderation struggles with spam, off-topic content, and quality control at scale, leading to inconsistent enforcement of standards",
+  "Teaching effectiveness measured by participation counts rather than learning impact, failing to capture actual educational value",
+  "Difficult to demonstrate academic rigor to administrators, accreditors, or families due to lack of structured evaluation records",
+  "No requirement for supporting evidence allows superficial contributions that don't develop research or argumentation skills",
+  "Open access leads to information overload and context collapse, making it hard to maintain appropriate academic discourse norms",
 ];
 
 export default function ComparisonSection() {

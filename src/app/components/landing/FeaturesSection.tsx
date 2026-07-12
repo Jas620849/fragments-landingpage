@@ -34,7 +34,7 @@ export default function FeaturesSection() {
             </div>
             <h3 className="text-lg font-bold text-secondary sm:text-xl">Structured fragment trails</h3>
             <p className="mt-2 max-w-xl text-sm font-medium leading-relaxed text-textMuted">
-              Educators create discussion trails by posting sourced fragments with specific questions. Students extend these trails by contributing evidence-based responses, creating a visible chain of reasoning that shows how ideas develop from initial prompts through supporting evidence to conclusions.
+              Educators create discussion trails by posting sourced fragments with specific questions. Students extend these trails by contributing evidence-based responses, creating a visible chain of reasoning that shows how ideas develop from initial prompts through supporting evidence to conclusions. This structured approach transforms chaotic forum discussions into coherent academic dialogues where every contribution builds upon previous work. Fragment trails maintain the logical structure of arguments, allowing students to see how evidence supports claims, how counterpoints address opposing views, and how consensus emerges through reasoned debate. The visual representation of discussion threads helps both students and educators track the evolution of ideas, identify gaps in reasoning, and recognize when discussions have reached meaningful conclusions or require additional exploration.
             </p>
             </article>
           </AnimateOnScroll>
@@ -46,7 +46,7 @@ export default function FeaturesSection() {
             </div>
             <h3 className="text-lg font-bold text-secondary sm:text-xl">Collaborative peer learning</h3>
             <p className="mt-2 flex-1 text-sm font-medium leading-relaxed text-textMuted">
-              Students learn from each other by responding to peer contributions with counterarguments, supporting evidence, and constructive feedback. This collaborative approach creates a dynamic learning environment where multiple perspectives emerge and students develop critical thinking through engagement with diverse viewpoints.
+              Students learn from each other by responding to peer contributions with counterarguments, supporting evidence, and constructive feedback. This collaborative approach creates a dynamic learning environment where multiple perspectives emerge and students develop critical thinking through engagement with diverse viewpoints. Research in collaborative learning demonstrates that peer-to-peer interaction significantly improves understanding and retention compared to passive learning methods. FragmentTrails structures these interactions to ensure they remain productive and academically rigorous. Students must support their responses to peers with evidence, preventing superficial agreement or disagreement and forcing deeper engagement with the material. The platform tracks peer interaction patterns, helping educators identify students who consistently contribute valuable insights and those who may need guidance in constructive peer engagement. This data enables targeted interventions to improve collaborative skills and ensure all students benefit from peer learning opportunities.
             </p>
             </article>
           </AnimateOnScroll>
@@ -61,7 +61,7 @@ export default function FeaturesSection() {
                 Two-stage quality moderation
               </h3>
               <p className="mt-2 text-sm font-medium leading-relaxed text-textMuted lg:max-w-3xl">
-                Every contribution undergoes automated screening for plagiarism, academic integrity, and baseline quality before publication. Human reviewers then assess tone, nuance, and alignment with institutional standards, ensuring all published content meets both technical and qualitative requirements for academic discourse.
+                Every contribution undergoes automated screening for plagiarism, academic integrity, and baseline quality before publication. Human reviewers then assess tone, nuance, and alignment with institutional standards, ensuring all published content meets both technical and qualitative requirements for academic discourse. The automated stage uses advanced natural language processing to detect potential plagiarism, verify citation accuracy, and assess basic writing quality including grammar, clarity, and coherence. This initial screening filters out submissions that fail to meet minimum standards, allowing human reviewers to focus on qualitative assessment rather than mechanical corrections. The human review stage evaluates content for academic tone, appropriate level of complexity, alignment with discussion objectives, and adherence to institutional discourse norms. Reviewers can provide specific feedback for improvement or approve content for publication, creating a learning opportunity for students while maintaining quality standards. This two-stage approach balances efficiency with educational value, ensuring scalable quality control without sacrificing the personalized feedback essential for learning.
               </p>
             </div>
             </article>

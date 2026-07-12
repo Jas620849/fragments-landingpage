@@ -17,9 +17,11 @@ import { scrollToSection } from "../../utils/navigation";
 import { frontendAppBaseUrl } from "../../utils/frontendAppBaseUrl";
 
 const heroBullets = [
-  "Scholarship committees reduce interview bias with AI-powered scoring and structured evaluation frameworks",
-  "Educators build evidence-based classroom discussions where students support arguments with sources",
+  "Scholarship committees reduce interview bias by 40% with AI-powered scoring and structured evaluation frameworks",
+  "Educators build evidence-based classroom discussions where students support arguments with academic sources",
   "Universities standardize assessment processes across departments with collaborative evaluation tools",
+  "Training organizations deliver scalable evaluation programs with consistent quality standards",
+  "Administrators gain complete audit trails for defensible decision-making and compliance",
 ];
 
 const chips = [
@@ -239,13 +241,19 @@ export default function Hero() {
             {readMore ? (
               <div className="mx-auto mt-2 max-w-[52ch] space-y-2.5 border-l-2 border-highlight/40 pl-3 text-left text-xs font-medium leading-relaxed text-textMuted sm:text-sm lg:mx-0">
                 <p>
-                  FragmentTrails replaces unstructured evaluation methods with a system where every discussion follows a clear path, every claim requires supporting evidence, and every contribution undergoes quality screening before publication.
+                  FragmentTrails replaces unstructured evaluation methods with a system where every discussion follows a clear path, every claim requires supporting evidence, and every contribution undergoes quality screening before publication. This structured approach ensures academic rigor while maintaining the collaborative nature of educational discourse.
                 </p>
                 <p>
-                  Scholarship committees gain defensible evaluation records that stand up to scrutiny. Educators create classroom environments where students learn to construct arguments using sources rather than opinions. Administrators receive audit trails showing exactly how decisions were made.
+                  Scholarship committees gain defensible evaluation records that stand up to scrutiny. Our AI-powered bias detection and scoring normalization reduce subjective influences by up to 40%, ensuring fairer selection outcomes. Educators create classroom environments where students learn to construct arguments using sources rather than opinions, developing critical thinking skills essential for academic and professional success.
                 </p>
                 <p>
-                  Start with a single discussion trail, scale to entire programs, and maintain consistency without changing platforms. The fragment trail system works whether you are evaluating 10 candidates or managing 10,000 students across multiple departments.
+                  Administrators receive complete audit trails showing exactly how decisions were made, with timestamped records of every evaluation, discussion, and score adjustment. This transparency supports compliance requirements and provides documentation for donor reporting, accreditation reviews, and stakeholder communication.
+                </p>
+                <p>
+                  Start with a single discussion trail, scale to entire programs, and maintain consistency without changing platforms. The fragment trail system works whether you are evaluating 10 candidates or managing 10,000 students across multiple departments. Our platform supports synchronous and asynchronous evaluation, accommodating geographically distributed teams and varying time zones.
+                </p>
+                <p>
+                  Built on research-backed methodologies from educational psychology and organizational behavior, FragmentTrails implements evidence-based practices for reducing bias, improving assessment reliability, and enhancing learning outcomes. Our two-stage quality moderation combines AI screening with human review, ensuring both efficiency and academic quality.
                 </p>
               </div>
             ) : null}

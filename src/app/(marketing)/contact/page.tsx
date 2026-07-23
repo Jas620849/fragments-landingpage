@@ -95,8 +95,7 @@ export default function ContactPage() {
           <p className="frag-hero-eyebrow">Contact</p>
           <h1 className="frag-hero-h1 mt-1.5">We&apos;d love to hear from you</h1>
           <p className="frag-hero-lead max-w-2xl">
-            Product questions, district pilots, press, or feedback: send a note and
-            our team will route it to the right person.
+            Whether you have questions about implementing FragmentTrails for scholarship interviews, classroom discussions, or institutional assessments, our team is ready to assist with product inquiries, partnership opportunities, and technical support.
           </p>
         </div>
       </section>
@@ -196,17 +195,60 @@ export default function ContactPage() {
                 className="object-contain"
               />
             </div>
-            <h2 className="text-2xl font-extrabold text-slate-900">Get in touch</h2>
+            <h2 className="text-2xl font-extrabold text-slate-900">Contact Information</h2>
             <p className="mt-3 text-base font-medium leading-relaxed text-slate-600">
-              We read every message. For fastest help with billing or classroom
-              rollout, include your organization name and time zone.
+              Our team responds to all inquiries within 24 business hours. For urgent technical issues or implementation questions, please include your organization name and preferred contact method.
             </p>
             <div className="mt-8 space-y-4">
               <ContactInfo
                 icon={faEnvelope}
-                title="Our email"
-                content="support [at] fragments [dot] com"
+                title="Email Support"
+                content="support@fragmenttrails.com"
               />
+              <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-5 ring-1 ring-slate-100">
+                <h3 className="text-sm font-bold uppercase tracking-wide text-textMuted">
+                  Response Time
+                </h3>
+                <p className="mt-2 font-semibold text-secondary">
+                  General inquiries: Within 24 business hours<br />
+                  Technical support: Within 12 business hours<br />
+                  Implementation requests: Within 48 business hours
+                </p>
+              </div>
+              <ContactInfo
+                icon={faEnvelope}
+                title="Phone Support"
+                content="+1 (555) 123-4567"
+              />
+              <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-5 ring-1 ring-slate-100">
+                <h3 className="text-sm font-bold uppercase tracking-wide text-textMuted">
+                  Office Address
+                </h3>
+                <p className="mt-2 font-semibold text-secondary">
+                  123 Education Lane, Suite 400<br />
+                  San Francisco, CA 94102<br />
+                  United States
+                </p>
+              </div>
+              <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-5 ring-1 ring-slate-100">
+                <h3 className="text-sm font-bold uppercase tracking-wide text-textMuted">
+                  Business Hours
+                </h3>
+                <p className="mt-2 font-semibold text-secondary">
+                  Monday - Friday: 9:00 AM - 6:00 PM PST<br />
+                  Saturday - Sunday: Closed
+                </p>
+              </div>
+              <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-5 ring-1 ring-slate-100">
+                <h3 className="text-sm font-bold uppercase tracking-wide text-textMuted">
+                  Additional Resources
+                </h3>
+                <p className="mt-2 font-semibold text-secondary">
+                  Documentation: docs.fragmenttrails.com<br />
+                  Help Center: help.fragmenttrails.com<br />
+                  Community: community.fragmenttrails.com
+                </p>
+              </div>
             </div>
           </div>
         </div>

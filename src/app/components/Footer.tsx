@@ -1,5 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faTwitter,
+  faFacebook,
+  faMedium,
+  faProductHunt,
+  faQuora,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 import { SITE_NAME } from "@/lib/seo-constants";
 
 const linkClass =
@@ -60,39 +69,6 @@ export default function Footer() {
 
           <div>
             <h4 className="text-xs font-semibold uppercase tracking-wider text-slate-500">
-              Quick links
-            </h4>
-            <ul className="mt-4 space-y-3">
-              <li>
-                <Link href="/services/classroom-discussion-platform/" className={linkClass}>
-                  Classroom Discussion Platform
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/ai-moderated-learning/" className={linkClass}>
-                  AI-Moderated Learning
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/student-engagement-software/" className={linkClass}>
-                  Student Engagement
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/educator-recognition-platform/" className={linkClass}>
-                  Educator Recognition
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/cohort-based-learning/" className={linkClass}>
-                  Cohort-Based Learning
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-xs font-semibold uppercase tracking-wider text-slate-500">
               Legal
             </h4>
             <ul className="mt-4 space-y-3">
@@ -114,6 +90,80 @@ export default function Footer() {
               <li>
                 <Link href="/disclaimer/" className={linkClass}>
                   Disclaimer
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-xs font-semibold uppercase tracking-wider text-slate-500">
+              Follow us
+            </h4>
+            <ul className="mt-4 space-y-3">
+              <li>
+                <Link
+                  href="https://x.com/fragmenttrail"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${linkClass} inline-flex items-center gap-2`}
+                >
+                  <FontAwesomeIcon icon={faTwitter} className="h-4 w-4 text-slate-500" />
+                  X
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://medium.com/@fragmentswebsite"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${linkClass} inline-flex items-center gap-2`}
+                >
+                  <FontAwesomeIcon icon={faMedium} className="h-4 w-4 text-slate-500" />
+                  Medium
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.producthunt.com/@jas_sara"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${linkClass} inline-flex items-center gap-2`}
+                >
+                  <FontAwesomeIcon icon={faProductHunt} className="h-4 w-4 text-slate-500" />
+                  Product Hunt
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.quora.com/profile/Fragments-Trails"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${linkClass} inline-flex items-center gap-2`}
+                >
+                  <FontAwesomeIcon icon={faQuora} className="h-4 w-4 text-slate-500" />
+                  Quora
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.facebook.com/profile.php?id=61590392447978"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${linkClass} inline-flex items-center gap-2`}
+                >
+                  <FontAwesomeIcon icon={faFacebook} className="h-4 w-4 text-slate-500" />
+                  Facebook
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.instagram.com/fragmentswebsite/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${linkClass} inline-flex items-center gap-2`}
+                >
+                  <FontAwesomeIcon icon={faInstagram} className="h-4 w-4 text-slate-500" />
+                  Instagram
                 </Link>
               </li>
             </ul>

@@ -12,6 +12,7 @@ import FeaturesSection from "../components/landing/FeaturesSection";
 import ComparisonSection from "../components/landing/ComparisonSection";
 import PilotVoicesSection from "../components/landing/PilotVoicesSection";
 import DisciplinesSection from "../components/landing/DisciplinesSection";
+import FAQSection from "../components/landing/FAQSection";
 import SuggestDisciplineSection from "../components/landing/SuggestDisciplineSection";
 import FinalCtaSection from "../components/landing/FinalCtaSection";
 
@@ -39,6 +40,7 @@ export default function MarketingHomeClient() {
       <ComparisonSection />
       <PilotVoicesSection />
       <DisciplinesSection />
+      <FAQSection />
       <SuggestDisciplineSection />
       <FinalCtaSection />
     </>

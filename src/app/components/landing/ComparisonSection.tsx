@@ -5,17 +5,21 @@ import { faCheck, faXmark } from "@fortawesome/free-solid-svg-icons";
 import AnimateOnScroll from "./AnimateOnScroll";
 
 const ours = [
-  "Structured fragment trails, not endless scroll",
-  "Two-step moderation: AI screening + human judgment",
-  "Educators rewarded when the room levels up",
-  "Transparent, syllabus-friendly discussion",
+  "Structured fragment trails maintain discussion context and prevent information loss by preserving the logical relationships between contributions",
+  "Two-stage moderation combines automated screening with human academic judgment, ensuring both efficiency and quality in content review",
+  "Educator recognition based on discussion quality and learning outcomes rather than simple participation metrics or activity counts",
+  "Transparent discussion records suitable for academic evaluation, administrative review, and compliance documentation requirements",
+  "Evidence requirements ensure every contribution includes supporting sources, developing research skills and academic rigor",
+  "Cohort-based organization maintains appropriate context and prevents the fragmentation common in open social platforms",
 ];
 
 const theirs = [
-  "Hot takes drown out careful explanations",
-  "Spam and off-topic replies burn instructor time",
-  "Great teaching rarely gets recognized",
-  "Hard to show rigor to admins or families",
+  "Unstructured feeds where thoughtful contributions get buried under rapid-fire responses, making it difficult to follow the development of ideas",
+  "Manual moderation struggles with spam, off-topic content, and quality control at scale, leading to inconsistent enforcement of standards",
+  "Teaching effectiveness measured by participation counts rather than learning impact, failing to capture actual educational value",
+  "Difficult to demonstrate academic rigor to administrators, accreditors, or families due to lack of structured evaluation records",
+  "No requirement for supporting evidence allows superficial contributions that don't develop research or argumentation skills",
+  "Open access leads to information overload and context collapse, making it hard to maintain appropriate academic discourse norms",
 ];
 
 export default function ComparisonSection() {
@@ -25,11 +29,10 @@ export default function ComparisonSection() {
         <AnimateOnScroll className="mx-auto max-w-2xl text-center">
           <p className="frag-eyebrow">Why switch</p>
           <h2 className="frag-title mt-3">
-            Built for serious learners, not generic social feeds
+            Purpose-built for academic discourse versus generic social platforms
           </h2>
           <p className="frag-lead mt-4">
-            If you have ever moderated a class forum that went sideways, you
-            already know why Fragments exists.
+            FragmentTrails addresses the specific challenges of educational discussions by providing structure, quality control, and evaluation capabilities that standard forums and social platforms cannot deliver.
           </p>
         </AnimateOnScroll>
 

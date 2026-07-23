@@ -1,20 +1,40 @@
-import Link from "next/link";
-import { BLOG_POSTS } from "./_data";
+import type { Metadata } from "next";
+import { BLOG_POSTS, getCategories } from "./_data";
 import BreadcrumbSchema from "../../components/BreadcrumbSchema";
+import BlogCard from "../../components/blog/BlogCard";
+import Pagination from "../../components/blog/Pagination";
+import Link from "next/link";
 
-const FEATURED_SLUGS = [
-  "interview-moderation-explained",
-  "educational-assessment-tools",
-  "ai-powered-interview-evaluation",
-  "building-evaluation-rubrics",
-  "how-to-reduce-bias-in-scholarship-interviews",
-  "structured-vs-unstructured-interviews",
-];
+export const metadata: Metadata = {
+  title: "Blog | FragmentTrails - Scholarship Interview & Evaluation Insights",
+  description: "Expert insights on scholarship interviews, candidate evaluation, bias reduction, and fair selection processes. Stay updated with the latest best practices.",
+  keywords: [
+    "scholarship interview blog",
+    "candidate evaluation insights",
+    "bias reduction strategies",
+    "scholarship selection best practices",
+    "interview scoring methods",
+    "fair assessment techniques",
+    "scholarship program management",
+    "higher education evaluation",
+  ],
+  openGraph: {
+    title: "Blog | FragmentTrails",
+    description: "Expert insights on scholarship interviews, candidate evaluation, and fair selection processes.",
+    type: "website",
+  },
+};
+
+const POSTS_PER_PAGE = 9;
 
 export default function BlogIndexPage() {
-  const featured = FEATURED_SLUGS.map((slug) =>
-    BLOG_POSTS.find((p) => p.slug === slug)
-  ).filter(Boolean);
+  const currentPage = 1;
+  const totalPages = Math.ceil(BLOG_POSTS.length / POSTS_PER_PAGE);
+  const categories = getCategories();
+  
+  const startIndex = (currentPage - 1) * POSTS_PER_PAGE;
+  const endIndex = startIndex + POSTS_PER_PAGE;
+  const currentPosts = BLOG_POSTS.slice(startIndex, endIndex);
 
   return (
     <>
@@ -24,86 +44,61 @@ export default function BlogIndexPage() {
           { name: "Blog", path: "/blog/" },
         ]}
       />
-      <section className="border-b border-slate-200/80 bg-slate-900 py-10 sm:py-14">
-        <div className="frag-container">
-          <p className="frag-hero-eyebrow">Blog</p>
-          <h1 className="frag-hero-h1 mt-1.5">
-            Classroom discussion and fair evaluation
+      
+      {/* Hero Section */}
+      <section className="border-b border-slate-200/80 bg-slate-900 py-16 sm:py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <p className="text-sm font-semibold uppercase tracking-wider text-orange-400 sm:text-base">
+            Blog
+          </p>
+          <h1 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
+            Ideas for Better Discussions
           </h1>
-          <p className="frag-hero-lead max-w-2xl">
-            A small set of practical guides for teachers and educators: moderated
-            discussion trails, discussion quality, responsible AI checks, rubrics, and
-            bias-aware evaluation. Edited by FragmentTrails—home of Fragments.
+          <p className="mt-4 max-w-2xl text-lg text-slate-300 sm:text-xl">
+            Product updates, teaching tips, and how teams use Fragments in the wild.
           </p>
         </div>
       </section>
 
-      <section className="border-b border-slate-200/80 bg-white py-10 sm:py-12">
-        <div className="frag-container max-w-3xl">
-          <h2 className="text-lg font-bold text-secondary sm:text-xl">Start here</h2>
-          <p className="mt-2 text-sm font-medium leading-relaxed text-textMuted">
-            Six cornerstone pieces. Each has a distinct job—moderation, assessment, AI
-            limits, rubrics, bias controls, and interview structure.
-          </p>
-          <ul className="mt-6 space-y-4">
-            {featured.map((post) =>
-              post ? (
-                <li key={post.slug}>
-                  <Link
-                    href={`/blog/${post.slug}/`}
-                    className="block rounded-xl border border-slate-200/90 bg-slate-50/80 p-4 transition hover:border-highlight/40 hover:bg-white sm:p-5"
-                  >
-                    <h3 className="text-base font-bold text-secondary sm:text-lg">
-                      {post.title}
-                    </h3>
-                    <p className="mt-1.5 text-sm font-medium text-textMuted">
-                      {post.excerpt}
-                    </p>
-                  </Link>
-                </li>
-              ) : null
-            )}
-          </ul>
-        </div>
-      </section>
-
-      <section className="py-12 sm:py-16">
-        <div className="frag-container">
-          <div className="mx-auto max-w-3xl">
-            <h2 className="text-lg font-bold text-secondary sm:text-xl">All guides</h2>
-            <p className="mt-2 text-sm font-medium text-textMuted">
-              {BLOG_POSTS.length} indexable articles after final editorial consolidation.
-            </p>
-            <ul className="mt-6 space-y-6">
-              {BLOG_POSTS.map((post) => (
-                <li key={post.slug}>
-                  <article className="rounded-xl border border-slate-200/90 bg-white p-5 shadow-sm ring-1 ring-slate-100 transition hover:-translate-y-0.5 hover:shadow-lg sm:p-6">
-                    <p className="text-[10px] font-semibold uppercase tracking-wide text-textMuted sm:text-xs">
-                      {post.date}
-                      {post.updatedISO ? " · Updated Jul 23, 2026" : ""} · {post.read}
-                    </p>
-                    <h2 className="mt-1.5 text-lg font-bold text-secondary sm:text-xl">
-                      <Link
-                        href={`/blog/${post.slug}/`}
-                        className="transition hover:text-highlight-dark"
-                      >
-                        {post.title}
-                      </Link>
-                    </h2>
-                    <p className="mt-2 text-sm font-medium leading-relaxed text-textMuted">
-                      {post.excerpt}
-                    </p>
-                    <Link
-                      href={`/blog/${post.slug}/`}
-                      className="mt-4 inline-flex text-sm font-bold text-highlight-dark hover:text-secondary"
-                    >
-                      Read article →
-                    </Link>
-                  </article>
-                </li>
-              ))}
-            </ul>
+      {/* Blog Grid Section */}
+      <section className="py-12 sm:py-16 lg:py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          {/* Category Filter */}
+          <div className="mb-10 flex flex-wrap gap-3">
+            <Link
+              href="/blog/"
+              className="rounded-full bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-blue-700"
+            >
+              All Posts
+            </Link>
+            {categories.map((category) => (
+              <Link
+                key={category}
+                href={`/blog/category/${category.toLowerCase().replace(/\s+/g, '-')}/`}
+                className="rounded-full border border-slate-300 bg-white px-5 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:border-blue-500 hover:text-blue-600"
+              >
+                {category}
+              </Link>
+            ))}
           </div>
+
+          {/* Grid Layout: 3 desktop, 2 tablet, 1 mobile */}
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {currentPosts.map((post) => (
+              <BlogCard key={post.slug} post={post} />
+            ))}
+          </div>
+
+          {/* Pagination */}
+          {totalPages > 1 && (
+            <div className="mt-12 flex justify-center">
+              <Pagination
+                currentPage={currentPage}
+                totalPages={totalPages}
+                basePath="/blog/page"
+              />
+            </div>
+          )}
         </div>
       </section>
     </>

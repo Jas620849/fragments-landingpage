@@ -11,7 +11,6 @@ import {
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import { scrollToSection } from "../utils/navigation";
-import { frontendAppBaseUrl } from "../utils/frontendAppBaseUrl";
 
 const navLinkClass =
   "rounded-lg px-3 py-2 text-xs font-medium text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 sm:text-sm";
@@ -51,7 +50,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/80 backdrop-blur-xl">
-      <nav className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between gap-4 px-8 lg:px-16">
+      <nav className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8 xl:px-16">
         <Link
           href="/"
           className="flex shrink-0 items-center gap-2.5 font-bold tracking-tight text-slate-900"
@@ -103,6 +102,11 @@ export default function Navbar() {
                 Pricing
               </Link>
             </li>
+            <li>
+              <Link href="/blog/" className={navLinkClass}>
+                Blog
+              </Link>
+            </li>
             <li className="relative" ref={moreWrapRef}>
               <button
                 type="button"
@@ -124,16 +128,6 @@ export default function Navbar() {
                 >
                   <li role="none">
                     <Link
-                      href="/blog/"
-                      className={moreItemClass}
-                      role="menuitem"
-                      onClick={() => setMoreOpen(false)}
-                    >
-                      Blog
-                    </Link>
-                  </li>
-                  <li role="none">
-                    <Link
                       href="/contact/"
                       className={moreItemClass}
                       role="menuitem"
@@ -149,13 +143,13 @@ export default function Navbar() {
 
           <div className="flex items-center gap-2 border-l border-slate-200/90 pl-4 xl:gap-3 xl:pl-5">
             <a
-              href={`${frontendAppBaseUrl}/auth/login`}
+              href='https://app.fragmenttrails.com/auth/login'
               className="rounded-xl px-3 py-2 text-sm font-semibold text-slate-700 ring-1 ring-slate-200/90 transition hover:bg-slate-50 xl:px-4"
             >
               Sign in
             </a>
             <a
-              href={`${frontendAppBaseUrl}/auth/register`}
+              href='https://app.fragmenttrails.com/auth/register'
               className="rounded-xl bg-accent px-3 py-2 text-sm font-bold text-white shadow-md shadow-orange-500/25 transition hover:bg-accent-dark xl:px-4"
             >
               Get started
@@ -175,7 +169,7 @@ export default function Navbar() {
       </nav>
 
       {open ? (
-        <div className="border-t border-slate-200/80 bg-white px-8 py-4 lg:hidden">
+        <div className="border-t border-slate-200/80 bg-white px-4 sm:px-6 py-4 lg:hidden">
           <ul className="flex flex-col gap-1">
             <li>
               <Link
@@ -224,11 +218,6 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <p className="px-3 pb-1 pt-2 text-xs font-bold uppercase tracking-wide text-slate-400">
-                More
-              </p>
-            </li>
-            <li>
               <Link
                 href="/blog/"
                 className="block rounded-xl px-3 py-3 text-sm font-medium text-slate-800 hover:bg-slate-50"
@@ -249,13 +238,13 @@ export default function Navbar() {
           </ul>
           <div className="mt-4 flex flex-col gap-2 border-t border-slate-100 pt-4">
             <a
-              href={`${frontendAppBaseUrl}/auth/login`}
+              href='https://app.fragmenttrails.com/auth/login'
               className="block rounded-xl py-3 text-center text-sm font-semibold text-slate-800 ring-1 ring-slate-200"
             >
               Sign in
             </a>
             <a
-              href={`${frontendAppBaseUrl}/auth/register`}
+              href='https://app.fragmenttrails.com/auth/register'
               className="block rounded-xl bg-accent py-3 text-center text-sm font-bold text-white shadow-md shadow-orange-500/20 transition hover:bg-accent-dark"
             >
               Get started

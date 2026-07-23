@@ -2,20 +2,20 @@
 
 const steps = [
   {
-    title: "Launch or join a trail",
-    body: "Teachers post a sourced opening fragment. Students pick trails that match their course, interests, or prep goals.",
+    title: "Create or join discussion trails",
+    body: "Educators initiate fragment trails by posting sourced opening fragments with specific discussion questions. Students select trails aligned with their coursework, research interests, or preparation objectives for scholarships and academic programs. The creation process allows educators to set specific learning objectives, define required evidence types, and establish evaluation criteria upfront. Students can browse available trails by discipline, topic, or skill level, ensuring they engage with discussions relevant to their learning goals. This targeted approach increases engagement and ensures that participation directly supports academic development rather than serving as generic discussion practice.",
   },
   {
-    title: "Keep the bar high",
-    body: "Questions, counter-evidence, and clarifications stack in one readable thread: civil, on-topic, and easier to grade later.",
+    title: "Contribute evidence-based responses",
+    body: "Participants extend trails by submitting questions, counter-evidence, and clarifications that appear sequentially within the discussion thread. This structure maintains civil, on-topic discourse while creating an organized record suitable for later evaluation. Each contribution must include supporting evidence from academic sources, forcing students to engage deeply with course material and develop research skills. The sequential structure prevents the fragmentation common in traditional forums where multiple conversations occur simultaneously. Instead, fragment trails maintain a single coherent thread where each contribution builds upon previous work, creating a comprehensive record of collective reasoning that can be analyzed for learning outcomes.",
   },
   {
-    title: "Moderation you can defend",
-    body: "AI flags plagiarism and low-effort noise. Human reviewers handle tone, depth, and academic fit, so admins get a clear paper trail.",
+    title: "Quality screening before publication",
+    body: "Automated systems screen each contribution for plagiarism detection and baseline quality standards. Human reviewers then assess tone, depth, and academic alignment, ensuring administrators receive defensible documentation of all published content. The automated screening uses machine learning models trained on academic writing to detect potential plagiarism, verify citation accuracy, and assess writing mechanics. This initial filter reduces the workload for human reviewers while maintaining quality standards. Human reviewers focus on qualitative assessment including academic tone, argument strength, evidence relevance, and alignment with discussion objectives. The review process includes specific feedback for rejected submissions, creating learning opportunities for students while maintaining publication standards.",
   },
   {
-    title: "Credit where it is due",
-    body: "When educators consistently raise the level of the room, Fragments recognizes that work, because retention starts with respect.",
+    title: "Recognition for effective facilitation",
+    body: "The platform identifies educators who consistently elevate discussion quality and guide students toward rigorous academic discourse. This recognition system values teaching impact that creates meaningful learning environments rather than simple participation metrics. The recognition algorithm analyzes multiple factors including student engagement depth, evidence quality in student responses, argument development sophistication, and peer interaction patterns. Educators receive detailed analytics on their facilitation effectiveness, with specific metrics showing how their guidance influences discussion outcomes. This data supports professional development by highlighting effective practices and identifying areas for improvement. Recognition is based on demonstrated impact on student learning rather than activity metrics, ensuring that the system rewards teaching effectiveness rather than mere participation.",
   },
 ];
 
@@ -30,8 +30,7 @@ export default function WorkflowSection() {
           <p className="frag-eyebrow">Workflow</p>
           <h2 className="frag-title mt-3">How It Works</h2>
           <p className="frag-lead mt-4">
-            Run fragment trails from the first post to recognition in four
-            straightforward steps.
+            FragmentTrails operates through a structured four-step process that transforms individual contributions into coherent, evidence-based discussions with built-in quality assurance and recognition systems.
           </p>
         </header>
 

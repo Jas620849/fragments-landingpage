@@ -11,23 +11,23 @@ import AnimateOnScroll from "./AnimateOnScroll";
 const items = [
   {
     icon: faFlagCheckered,
-    title: "Challenges & themed prompts",
+    title: "Themed discussion challenges",
     body:
-      "Kick off trails around a topic, a text, or a weekly challenge so the cohort has a shared focal point—and a clear finish line for discussion.",
+      "Educators launch focused discussion trails around specific texts, current events, or weekly themes. These structured challenges give cohorts clear objectives and defined endpoints, making participation purposeful rather than open-ended. Themed challenges can be aligned with curriculum schedules, current events, or preparation timelines for standardized tests and scholarship applications. Educators can set specific learning objectives for each challenge, such as analyzing primary sources, evaluating argument structures, or practicing evidence-based reasoning. The platform tracks participation and completion rates, providing educators with data on student engagement and identifying students who may need additional support. Challenges can be designed with varying difficulty levels, allowing educators to scaffold learning experiences and progressively increase complexity as students develop their skills.",
     iconBg: "bg-primary text-secondary ring-1 ring-border-light",
   },
   {
     icon: faArrowTrendUp,
-    title: "Momentum on topics that matter",
+    title: "Visible conversation momentum",
     body:
-      "Replies stack in order on the trail, so learners feel where the conversation is heating up inside your class—without random algorithmic trending from the wider web.",
+      "Replies appear sequentially within each fragment trail, allowing participants to see where discussion energy is concentrated within their specific cohort. This visibility helps identify engaging topics without relying on external algorithmic trending from unrelated content. The momentum visualization shows which trails are actively developing, which have reached natural conclusions, and which may benefit from additional educator intervention. Unlike social media platforms where trending content is determined by engagement metrics across the entire user base, FragmentTrails surfaces momentum within specific cohorts and disciplines, ensuring that visibility remains relevant to educational objectives. Educators can use momentum data to identify topics that particularly engage students, adjust their teaching strategies based on demonstrated interests, and recognize when discussions have achieved sufficient depth or require additional prompting.",
     iconBg: "bg-primary text-highlight-dark ring-1 ring-border-light",
   },
   {
     icon: faUserPlus,
-    title: "Referrals & controlled growth",
+    title: "Controlled community expansion",
     body:
-      "Invite partner classrooms, colleagues, and trusted learners with links and cohorts you govern—grow participation without losing moderation or context.",
+      "Institutional administrators manage cohort invitations through controlled access links, ensuring that new participants join with appropriate context and moderation oversight. This approach supports growth while maintaining discussion quality and institutional standards. The invitation system allows administrators to set specific permissions for different user roles, ensuring that new participants have appropriate access levels based on their relationship to the institution. Cohort-based organization prevents the fragmentation that occurs in open platforms where discussions can become overwhelmed by participants without relevant background or context. Administrators can monitor growth patterns, identify optimal cohort sizes for effective discussion, and manage transitions as students progress through programs. This controlled expansion ensures that quality standards are maintained even as the user base grows, supporting scalability without sacrificing the intimate, focused environment essential for meaningful academic discourse.",
     iconBg: "bg-accent/15 text-accent-darker ring-1 ring-accent/25",
   },
 ] as const;
@@ -42,12 +42,10 @@ export default function EngagementSection() {
         <AnimateOnScroll className="mx-auto max-w-2xl text-center">
           <p className="frag-eyebrow">Engagement</p>
           <h2 className="frag-title mt-3">
-            Features learners feel—and admins can steer
+            Engagement features that maintain academic focus
           </h2>
           <p className="frag-lead mt-4">
-            Challenges, topical energy, and referrals work best when they live
-            inside a serious discussion surface. Fragments is built around trails,
-            review, and invites you control.
+            FragmentTrails provides structured engagement tools that keep discussions purposeful, visible within cohorts, and under institutional control—avoiding the distraction and unpredictability of open social platforms.
           </p>
         </AnimateOnScroll>
 

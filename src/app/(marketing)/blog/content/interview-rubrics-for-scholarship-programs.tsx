@@ -124,7 +124,7 @@ export default function InterviewRubricsForScholarshipPrograms() {
         <div>
           <h3 className="font-bold text-secondary">How can technology support rubric implementation?</h3>
           <p className="mt-2">
-            Technology platforms like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> provide digital rubrics, automated scoring, calibration tools, and analytics that improve consistency and efficiency. Technology reduces administrative burden while enhancing evaluation quality.
+            Evaluation tooling and structured workflows (see our <Link href="/blog/" className="text-highlight-dark underline">guides</Link>) provide digital rubrics, automated scoring, calibration tools, and analytics that improve consistency and efficiency. Technology reduces administrative burden while enhancing evaluation quality.
           </p>
         </div>
         <div>
@@ -167,7 +167,10 @@ export default function InterviewRubricsForScholarshipPrograms() {
         Effective rubrics require ongoing attention—training, calibration, review, and refinement are not one-time activities but continuous processes. Programs that commit to rubric excellence create evaluation systems that identify talent fairly, make defensible decisions, and build stakeholder confidence.
       </p>
       <p>
-        Ready to implement effective interview rubrics in your scholarship program? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform supports rubric-based evaluation with customizable rubrics, automated scoring, calibration tools, and analytics that ensure consistent, fair candidate assessment.
+        Continue with related guides on this blog, or learn how{" "}
+        <Link href="/how-it-works/" className="text-highlight-dark underline">Fragments</Link>{" "}
+        supports rigorous classroom discussion. Questions about these articles:{" "}
+        <Link href="/contact/" className="text-highlight-dark underline">contact us</Link>.
       </p>
     </div>
   );

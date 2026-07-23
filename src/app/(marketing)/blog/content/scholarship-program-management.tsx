@@ -37,7 +37,7 @@ export default function ScholarshipProgramManagement() {
         Technology has transformed scholarship program management, offering capabilities that were previously impossible or prohibitively expensive. Application management systems streamline the application process, reduce administrative burden, and improve data quality. Selection platforms support structured interviews, standardized scoring, and bias-aware evaluation. Financial management systems automate award distribution, track expenditures, and generate reports. Alumni management systems maintain relationships with recipients and facilitate ongoing engagement.
       </p>
       <p>
-        Integrated platforms that connect these various functions provide additional benefits. When application data flows seamlessly into selection systems, and selection data informs support services, programs can operate more efficiently and effectively. Data analytics across systems provide insights into program performance and identify opportunities for improvement. Platforms like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> offer integrated solutions that support the full scholarship lifecycle.
+        Integrated platforms that connect these various functions provide additional benefits. When application data flows seamlessly into selection systems, and selection data informs support services, programs can operate more efficiently and effectively. Data analytics across systems provide insights into program performance and identify opportunities for improvement. Approaches covered in our <Link href="/blog/" className="text-highlight-dark underline">guides</Link> offer integrated solutions that support the full scholarship lifecycle.
       </p>
       <p>
         However, technology implementation requires careful planning and change management. Systems must be selected based on program needs rather than feature lists. Implementation requires staff training, process redesign, and data migration. Ongoing maintenance and support are essential. Programs should avoid the temptation to implement technology for its own sake and instead focus on solving real problems and creating measurable value.
@@ -162,7 +162,10 @@ export default function ScholarshipProgramManagement() {
         As scholarship programs face increasing demands for accountability, impact, and efficiency, management practices must continue to evolve. Programs that invest in robust management systems, develop skilled staff, leverage technology thoughtfully, and maintain focus on mission will be well-positioned to thrive. The investment in effective management yields substantial returns in program impact, stakeholder satisfaction, and long-term sustainability.
       </p>
       <p>
-        Ready to enhance your scholarship program management? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform supports program management with integrated application and selection systems, financial management tools, donor communication features, and comprehensive analytics. Our solution helps you manage your scholarship program efficiently and effectively.
+        Continue with related guides on this blog, or learn how{" "}
+        <Link href="/how-it-works/" className="text-highlight-dark underline">Fragments</Link>{" "}
+        supports rigorous classroom discussion. Questions about these articles:{" "}
+        <Link href="/contact/" className="text-highlight-dark underline">contact us</Link>.
       </p>
     </div>
   );

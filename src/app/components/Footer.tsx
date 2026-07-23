@@ -1,13 +1,6 @@
-"use client";
-
 import Link from "next/link";
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTwitter,
-  faFacebook,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+import { SITE_NAME } from "@/lib/seo-constants";
 
 const linkClass =
   "text-sm text-slate-400 transition hover:text-white";
@@ -26,20 +19,43 @@ export default function Footer() {
               <span className="flex h-9 w-9 items-center justify-center overflow-hidden rounded-xl bg-white/10 ring-1 ring-white/10">
                 <Image
                   src="/logo-no-bg.png"
-                  alt="Fragments Logo"
+                  alt={`${SITE_NAME} Logo`}
                   width={36}
                   height={36}
                   sizes="36px"
                   className="object-contain p-1"
                 />
               </span>
-              Fragments
+              {SITE_NAME}
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-slate-400/95">
-              The discussion platform for U.S. schools and serious learners: guided
-              trails, transparent moderation, and credit for educators who show
-              up with rigor.
+              Home of Fragments—the discussion platform for U.S. schools and
+              serious learners: guided trails, transparent moderation, and
+              credit for educators who show up with rigor.
             </p>
+          </div>
+
+          <div>
+            <h4 className="text-xs font-semibold uppercase tracking-wider text-slate-500">
+              Company
+            </h4>
+            <ul className="mt-4 space-y-3">
+              <li>
+                <Link href="/about/" className={linkClass}>
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog/" className={linkClass}>
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact/" className={linkClass}>
+                  Contact
+                </Link>
+              </li>
+            </ul>
           </div>
 
           <div>
@@ -91,49 +107,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link id="cookie-policy" href="/#cookie-policy" className={linkClass}>
+                <Link href="/cookies/" className={linkClass}>
                   Cookie policy
                 </Link>
               </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-xs font-semibold uppercase tracking-wider text-slate-500">
-              Follow us
-            </h4>
-            <ul className="mt-4 space-y-3">
               <li>
-                <Link
-                  href="https://twitter.com/fragments"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`${linkClass} inline-flex items-center gap-2`}
-                >
-                  <FontAwesomeIcon icon={faTwitter} className="h-4 w-4 text-slate-500" />
-                  Twitter
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="https://facebook.com/fragments"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`${linkClass} inline-flex items-center gap-2`}
-                >
-                  <FontAwesomeIcon icon={faFacebook} className="h-4 w-4 text-slate-500" />
-                  Facebook
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="https://linkedin.com/company/fragments"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`${linkClass} inline-flex items-center gap-2`}
-                >
-                  <FontAwesomeIcon icon={faLinkedin} className="h-4 w-4 text-slate-500" />
-                  LinkedIn
+                <Link href="/disclaimer/" className={linkClass}>
+                  Disclaimer
                 </Link>
               </li>
             </ul>
@@ -141,7 +121,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 border-t border-white/10 pt-8 text-center text-xs text-slate-500">
-          © {new Date().getFullYear()} Fragments. All rights reserved.
+          © {new Date().getFullYear()} {SITE_NAME}. All rights reserved.
         </div>
       </div>
     </footer>

@@ -152,7 +152,10 @@ export default function ScholarshipGlobalPerspectives() {
         Understanding global scholarship landscapes provides both inspiration and practical guidance. Cross-cultural learning enables programs to adopt proven practices while avoiding pitfalls. International partnerships expand reach and impact. As scholarship programs increasingly operate across borders, global perspective becomes essential.
       </p>
       <p>
-        Ready to bring global perspectives to your scholarship program? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform supports international programs with multi-language capabilities, cross-border communication tools, and flexible features that adapt to diverse contexts. Our solution helps you learn from global best practices while designing approaches that work in your specific context.
+        Continue with related guides on this blog, or learn how{" "}
+        <Link href="/how-it-works/" className="text-highlight-dark underline">Fragments</Link>{" "}
+        supports rigorous classroom discussion. Questions about these articles:{" "}
+        <Link href="/contact/" className="text-highlight-dark underline">contact us</Link>.
       </p>
     </div>
   );

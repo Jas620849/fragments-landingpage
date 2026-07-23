@@ -45,7 +45,7 @@ export default function ScholarshipAlumniEngagement() {
 
       <h2 className="text-2xl font-bold text-secondary">Technology for Alumni Engagement</h2>
       <p>
-        Technology platforms enable efficient alumni engagement at scale. Alumni management systems track contact information, engagement history, preferences, and giving history. These systems enable targeted communication, event management, and relationship tracking. Integrated platforms like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> can connect alumni data with program operations, creating comprehensive views of the scholarship lifecycle from application through alumni engagement.
+        Technology platforms enable efficient alumni engagement at scale. Alumni management systems track contact information, engagement history, preferences, and giving history. These systems enable targeted communication, event management, and relationship tracking. Integrated platforms like <Link href="/blog/" className="text-blue-600 hover:underline">FragmentTrails</Link> can connect alumni data with program operations, creating comprehensive views of the scholarship lifecycle from application through alumni engagement.
       </p>
       <p>
         Communication platforms facilitate regular outreach through email newsletters, social media, and program websites. Automated communication sequences can welcome new alumni, share updates, and invite participation in events. Personalization based on alumni data increases relevance and engagement. Analytics on communication effectiveness help programs refine their strategies over time.
@@ -159,7 +159,10 @@ export default function ScholarshipAlumniEngagement() {
         The investment in alumni engagement yields substantial returns that compound over time. As alumni networks grow and strengthen, they become increasingly valuable assets for programs. Programs that cultivate engaged alumni communities position themselves for long-term success, creating ecosystems that support current recipients while engaging those who have already benefited from the program.
       </p>
       <p>
-        Ready to enhance your alumni engagement strategy? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform supports alumni engagement with comprehensive alumni management, communication tools, mentorship matching, and community features. Our solution helps you build lasting relationships with alumni that strengthen your program for the long term.
+        Continue with related guides on this blog, or learn how{" "}
+        <Link href="/how-it-works/" className="text-highlight-dark underline">Fragments</Link>{" "}
+        supports rigorous classroom discussion. Questions about these articles:{" "}
+        <Link href="/contact/" className="text-highlight-dark underline">contact us</Link>.
       </p>
     </div>
   );

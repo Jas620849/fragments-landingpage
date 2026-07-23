@@ -1,5 +1,4 @@
 /* eslint-disable react/no-unescaped-entities */
-import Link from "next/link";
 
 export default function EvaluatorCalibrationMethods() {
   return (
@@ -57,112 +56,56 @@ export default function EvaluatorCalibrationMethods() {
         Individualized feedback addresses specific evaluator needs. Rather than generic feedback, programs should provide targeted guidance based on each evaluator's patterns. Individualized feedback is more effective for improvement.
       </p>
 
-      <h2 className="text-2xl font-bold text-secondary">Technology Support</h2>
+      <h2 className="text-2xl font-bold text-secondary">Keep tooling simple</h2>
       <p>
-        Digital calibration platforms facilitate efficient calibration at scale. Technology like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> provides tools for administering calibration exercises, analyzing results, and tracking evaluator performance over time.
-      </p>
-      <p>
-        Analytics dashboards provide real-time insights into calibration status. Dashboards can show inter-rater reliability, score distributions, evaluator comparisons, and trends over time. Visibility enables proactive calibration management.
-      </p>
-      <p>
-        Automated calibration exercises can be administered asynchronously, allowing evaluators to complete calibration at their convenience while still providing comparative data. Asynchronous calibration increases efficiency.
-      </p>
-      <p>
-        Calibration record-keeping tracks evaluator performance over time. Historical data shows whether evaluators improve with calibration, which calibration methods work best, and when additional support is needed.
+        Shared score sheets, recorded sample responses, and a simple reliability check after
+        each cycle are enough for most teams—no special platform required. Visibility into
+        inter-rater agreement matters more than dashboards.
       </p>
 
-      <h2 className="text-2xl font-bold text-secondary">FAQs</h2>
+      <h2 className="text-2xl font-bold text-secondary">A short training outline (before live scoring)</h2>
+      <ol className="list-decimal space-y-2 pl-6">
+        <li>Walk the rubric anchors out loud with examples of a 2 vs a 4.</li>
+        <li>Score one sample response independently; compare without arguing first.</li>
+        <li>Reconcile differences: evidence cited, not “I just felt they were stronger.”</li>
+        <li>Repeat with a second sample; note anyone who still drifts by two points.</li>
+        <li>Agree on when to escalate borderline cases to a second reader.</li>
+      </ol>
+      <p>
+        That outline replaces a long training curriculum page. Refresh it whenever the
+        rubric changes.
+      </p>
+
+      
+      <h2 className="text-2xl font-bold text-secondary">Common questions</h2>
       <div className="space-y-6">
-        <div>
+<div>
           <h3 className="font-bold text-secondary">What is evaluator calibration and why is it important?</h3>
           <p className="mt-2">
             Calibration ensures that different evaluators apply criteria consistently and reach similar conclusions. Without calibration, scores can vary significantly based on which evaluator a candidate encounters, undermining fairness.
           </p>
         </div>
-        <div>
+<div>
           <h3 className="font-bold text-secondary">What are the main calibration methods?</h3>
           <p className="mt-2">
             Main methods include live calibration sessions, anchor materials with benchmark scores, statistical analysis of score patterns, and peer calibration. The best approach combines multiple methods for comprehensive calibration.
           </p>
         </div>
-        <div>
+<div>
           <h3 className="font-bold text-secondary">How often should calibration be conducted?</h3>
           <p className="mt-2">
             Calibration should be ongoing—before evaluation begins, during the evaluation process, and after completion. Regular sessions prevent drift and maintain consistency. Frequency depends on evaluator experience and evaluation complexity.
           </p>
         </div>
-        <div>
+<div>
           <h3 className="font-bold text-secondary">How can programs measure calibration effectiveness?</h3>
           <p className="mt-2">
             Effectiveness measurement includes inter-rater reliability analysis, score distribution analysis, and qualitative assessment of discussion quality. Regular measurement ensures calibration achieves its goals.
           </p>
         </div>
-        <div>
-          <h3 className="font-bold text-secondary">What technology supports evaluator calibration?</h3>
-          <p className="mt-2">
-            Technology platforms provide calibration exercise administration, analytics dashboards, automated scoring comparison, and performance tracking. Platforms like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> enable efficient calibration at scale.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">How should programs handle evaluators who don't calibrate well?</h3>
-          <p className="mt-2">
-            Programs should provide additional training and support, monitor performance closely, and if issues persist, remove the evaluator from the process. Consistent application of standards is essential for fairness.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">What role do anchor materials play in calibration?</h3>
-          <p className="mt-2">
-            Anchor materials provide standardized examples with established benchmark scores that all evaluators assess independently. Comparing ratings to anchors identifies calibration needs and provides concrete examples for discussion.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">How can programs make calibration sessions effective?</h3>
-          <p className="mt-2">
-            Effective sessions require clear objectives, well-chosen materials, skilled facilitation, and focus on evidence and criteria rather than opinions. Sessions should be structured but allow for open discussion.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">What is inter-rater reliability and how is it measured?</h3>
-          <p className="mt-2">
-            Inter-rater reliability measures how consistently different evaluators assess the same materials. It's calculated using statistical methods that compare ratings across evaluators. High reliability indicates good calibration.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">How can new evaluators be calibrated quickly?</h3>
-          <p className="mt-2">
-            New evaluators need intensive initial calibration through training, practice scoring with feedback, and close monitoring. Pairing new evaluators with experienced mentors accelerates calibration.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">What common mistakes undermine calibration efforts?</h3>
-          <p className="mt-2">
-            Common mistakes include insufficient frequency, poor facilitation, unclear materials, lack of follow-up, and failure to track results. Calibration requires ongoing commitment and resources.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">How can programs maintain calibration over time?</h3>
-          <p className="mt-2">
-            Maintenance requires regular calibration sessions, ongoing monitoring of evaluator performance, refresher training, and adaptation to changing needs. Calibration is not a one-time event but a continuous process.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">What role does facilitation play in calibration sessions?</h3>
-          <p className="mt-2">
-            Skilled facilitation ensures sessions stay focused, all voices are heard, discussion remains constructive, and consensus is reached. Good facilitation makes the difference between productive and wasted calibration time.
-          </p>
-        </div>
       </div>
 
-      <h2 className="text-2xl font-bold text-secondary">Conclusion</h2>
-      <p>
-        Evaluator calibration is essential for ensuring fair, consistent assessment. Through live sessions, anchor materials, statistical analysis, and ongoing monitoring, programs can build and maintain evaluator consistency. The investment in calibration yields substantial returns in evaluation quality and program credibility.
-      </p>
-      <p>
-        Effective calibration requires ongoing commitment—regular sessions, measurement, feedback, and adaptation are continuous processes. Programs that prioritize calibration create evaluation systems that treat candidates fairly and produce reliable decisions.
-      </p>
-      <p>
-        Ready to implement effective evaluator calibration in your program? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform supports calibration with automated exercises, analytics dashboards, performance tracking, and tools that ensure consistent evaluation.
-      </p>
+      
     </div>
   );
 }

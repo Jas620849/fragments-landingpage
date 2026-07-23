@@ -17,7 +17,7 @@ export default function ScholarshipInnovationFuture() {
 
       <h2 className="text-2xl font-bold text-secondary">Emerging Technologies</h2>
       <p>
-        Artificial intelligence is transforming scholarship operations in multiple ways. AI can assist with application screening, predict recipient success, personalize support services, and automate routine tasks. AI-powered evaluation tools like those offered by <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> can reduce bias and improve consistency. However, AI must be implemented with careful attention to fairness, transparency, and the preservation of human judgment.
+        Artificial intelligence is transforming scholarship operations in multiple ways. AI can assist with application screening, predict recipient success, personalize support services, and automate routine tasks. AI-powered evaluation tools like those offered by <Link href="/blog/" className="text-blue-600 hover:underline">FragmentTrails</Link> can reduce bias and improve consistency. However, AI must be implemented with careful attention to fairness, transparency, and the preservation of human judgment.
       </p>
       <p>
         Blockchain technology offers new possibilities for secure, transparent credential verification and fund disbursement. Blockchain could enable instant verification of academic achievements, reduce fraud in application processes, and facilitate direct fund transfers to recipients. While still emerging, blockchain has significant potential to transform scholarship administration.
@@ -153,7 +153,10 @@ export default function ScholarshipInnovationFuture() {
         Programs that embrace thoughtful innovation will be better positioned to maximize impact and remain relevant. However, innovation must serve mission and equity, not be pursued for its own sake. The most effective programs will balance openness to new approaches with commitment to proven values and human connection. As the educational landscape evolves, scholarship programs must evolve while remaining true to their core purpose of expanding opportunity.
       </p>
       <p>
-        Ready to prepare your scholarship program for the future? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform supports innovation with AI-powered evaluation, predictive analytics, data-driven equity tools, and flexible technology that adapts to emerging needs. Our solution helps you embrace the future of scholarships while staying true to your mission.
+        Continue with related guides on this blog, or learn how{" "}
+        <Link href="/how-it-works/" className="text-highlight-dark underline">Fragments</Link>{" "}
+        supports rigorous classroom discussion. Questions about these articles:{" "}
+        <Link href="/contact/" className="text-highlight-dark underline">contact us</Link>.
       </p>
     </div>
   );

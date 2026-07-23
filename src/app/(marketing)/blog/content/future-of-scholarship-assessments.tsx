@@ -45,7 +45,7 @@ export default function FutureOfScholarshipAssessments() {
 
       <h2 className="text-2xl font-bold text-secondary">Data and Analytics</h2>
       <p>
-        Comprehensive data collection captures detailed information about applicants, evaluation processes, and outcomes. Digital platforms like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> enable data collection at scale that manual processes cannot match.
+        Comprehensive data collection captures detailed information about applicants, evaluation processes, and outcomes. Digital evaluation workflows covered in our <Link href="/blog/" className="text-highlight-dark underline">guides</Link> enable data collection at scale that manual processes cannot match.
       </p>
       <p>
         Learning analytics track recipient progress and outcomes over time. By linking assessment data to subsequent success, programs can validate their criteria and refine their approaches. Continuous learning improves assessment quality.
@@ -106,7 +106,7 @@ export default function FutureOfScholarshipAssessments() {
         <div>
           <h3 className="font-bold text-secondary">What technology platforms support future assessment approaches?</h3>
           <p className="mt-2">
-            Platforms like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> provide AI-assisted evaluation, comprehensive data collection, analytics dashboards, and features that enable modern assessment approaches.
+            Approaches covered in our <Link href="/blog/" className="text-highlight-dark underline">guides</Link> provide AI-assisted evaluation, comprehensive data collection, analytics dashboards, and features that enable modern assessment approaches.
           </p>
         </div>
         <div>
@@ -149,7 +149,10 @@ export default function FutureOfScholarshipAssessments() {
         Programs that embrace these innovations can better identify talent, reduce bias, and demonstrate impact. The future of assessment is more dynamic, equitable, and insightful than traditional approaches.
       </p>
       <p>
-        Ready to prepare your program for the future of assessment? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform supports modern assessment with AI-assisted evaluation, comprehensive analytics, and features that enable fair, effective selection.
+        Continue with related guides on this blog, or learn how{" "}
+        <Link href="/how-it-works/" className="text-highlight-dark underline">Fragments</Link>{" "}
+        supports rigorous classroom discussion. Questions about these articles:{" "}
+        <Link href="/contact/" className="text-highlight-dark underline">contact us</Link>.
       </p>
     </div>
   );

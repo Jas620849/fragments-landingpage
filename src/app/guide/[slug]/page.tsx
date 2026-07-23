@@ -4,6 +4,8 @@ import { generateProgrammaticMetadata } from "@/lib/metadata-generator";
 import BreadcrumbSchema from "@/app/components/BreadcrumbSchema";
 import ArticleSchema from "@/app/components/ArticleSchema";
 import FAQPageSchema from "@/app/components/FAQPageSchema";
+import { NOINDEX_ROBOTS } from "@/lib/seo-constants";
+import ThinPageNotice from "@/app/components/ThinPageNotice";
 
 interface GuidePageProps {
   params: Promise<{
@@ -198,13 +200,17 @@ export async function generateMetadata({ params }: GuidePageProps): Promise<Meta
   if (!parsed) {
     return {
       title: "Guide Not Found | Fragment Trails",
+      robots: NOINDEX_ROBOTS,
     };
   }
 
-  return generateProgrammaticMetadata({
-    type: parsed.type,
-    subject: parsed.subject,
-  });
+  return {
+    ...generateProgrammaticMetadata({
+      type: parsed.type,
+      subject: parsed.subject,
+    }),
+    robots: NOINDEX_ROBOTS,
+  };
 }
 
 export function generateStaticParams() {
@@ -268,6 +274,7 @@ export default async function GuidePage({ params }: GuidePageProps) {
       />
 
       <div className="max-w-4xl mx-auto px-4 py-8">
+        <ThinPageNotice variant="sample" />
         {/* Breadcrumb Navigation */}
         <nav className="flex items-center space-x-2 text-sm text-gray-600 mb-6">
           <Link href="/" className="hover:text-blue-600">Home</Link>

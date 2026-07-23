@@ -134,7 +134,7 @@ export default function ScholarshipCrisisManagement() {
         <div>
           <h3 className="font-bold text-secondary">How can technology support crisis management?</h3>
           <p className="mt-2">
-            Technology enables rapid communication, remote operations, data collection, and coordination. Platforms like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> provide tools for reaching recipients, tracking needs, and managing responses. Technology should be tested and reliable before crises occur.
+            Technology enables rapid communication, remote operations, data collection, and coordination. Approaches covered in our <Link href="/blog/" className="text-highlight-dark underline">guides</Link> provide tools for reaching recipients, tracking needs, and managing responses. Technology should be tested and reliable before crises occur.
           </p>
         </div>
         <div>
@@ -153,7 +153,10 @@ export default function ScholarshipCrisisManagement() {
         The investment in crisis management yields substantial returns. Prepared programs respond more effectively, minimize harm, and emerge stronger. Recipients feel supported during difficult times, strengthening loyalty. Donors and stakeholders see programs as responsible and reliable. Each crisis becomes an opportunity to demonstrate commitment and improve operations.
       </p>
       <p>
-        Ready to strengthen your program's crisis management capabilities? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform supports crisis management with communication tools, recipient tracking, flexible program management, and features that enable rapid response. Our solution helps you protect recipients and program integrity through effective crisis management.
+        Continue with related guides on this blog, or learn how{" "}
+        <Link href="/how-it-works/" className="text-highlight-dark underline">Fragments</Link>{" "}
+        supports rigorous classroom discussion. Questions about these articles:{" "}
+        <Link href="/contact/" className="text-highlight-dark underline">contact us</Link>.
       </p>
     </div>
   );

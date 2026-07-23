@@ -79,10 +79,17 @@ export default function CookieBanner() {
               those purposes. &quot;Essential only&quot; keeps required cookies for
               security and basic functionality. See our{" "}
               <Link
-                href="/#cookie-policy"
+                href="/cookies/"
                 className="font-semibold text-highlight-dark underline decoration-highlight/30 underline-offset-2 hover:text-secondary"
               >
                 Cookie policy
+              </Link>{" "}
+              and{" "}
+              <Link
+                href="/privacy/"
+                className="font-semibold text-highlight-dark underline decoration-highlight/30 underline-offset-2 hover:text-secondary"
+              >
+                Privacy policy
               </Link>{" "}
               for details.
             </p>

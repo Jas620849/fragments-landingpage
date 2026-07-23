@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { canonicalUrl, hasPublicSiteUrl } from "@/lib/site";
+import { NOINDEX_ROBOTS } from "@/lib/seo-constants";
+import ThinPageNotice from "@/app/components/ThinPageNotice";
 
 export const metadata: Metadata = {
+  robots: NOINDEX_ROBOTS,
   title: "Scholarship Review Process | FragmentTrails",
   description: "Streamline your scholarship review process with AI-powered tools. Efficient candidate evaluation, collaborative workflows, and data-driven decision making for scholarship programs.",
   keywords: [
@@ -20,6 +23,7 @@ export default function ScholarshipReviewProcessPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-primary to-white">
       <div className="mx-auto max-w-7xl px-8 py-24 lg:px-16">
+        <ThinPageNotice variant="product" />
         <h1 className="text-4xl font-bold text-secondary sm:text-5xl lg:text-6xl">
           Scholarship Review Process
         </h1>

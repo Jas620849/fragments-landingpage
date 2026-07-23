@@ -142,7 +142,7 @@ export default function HowUniversitiesEvaluateApplicants() {
         <div>
           <h3 className="font-bold text-secondary">What technologies support modern evaluation processes?</h3>
           <p className="mt-2">
-            Technology supports application processing, reader training, rubric application, and data analysis. Platforms like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> provide structured evaluation tools that improve consistency while maintaining human judgment. Technology enhances efficiency without replacing human insight.
+            Technology supports application processing, reader training, rubric application, and data analysis. Approaches covered in our <Link href="/blog/" className="text-highlight-dark underline">guides</Link> provide structured evaluation tools that improve consistency while maintaining human judgment. Technology enhances efficiency without replacing human insight.
           </p>
         </div>
         <div>
@@ -167,7 +167,10 @@ export default function HowUniversitiesEvaluateApplicants() {
         Understanding these evaluation approaches benefits applicants seeking to present themselves effectively, scholarship programs designing selection processes, and educational institutions seeking to improve their assessment systems. As evaluation continues to evolve, the commitment to fairness, diversity, and identifying genuine potential remains constant.
       </p>
       <p>
-        Ready to implement university-inspired evaluation approaches in your organization? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform supports holistic evaluation with structured rubrics, contextual assessment tools, trained evaluator management, and analytics that ensure fair, comprehensive candidate assessment.
+        Continue with related guides on this blog, or learn how{" "}
+        <Link href="/how-it-works/" className="text-highlight-dark underline">Fragments</Link>{" "}
+        supports rigorous classroom discussion. Questions about these articles:{" "}
+        <Link href="/contact/" className="text-highlight-dark underline">contact us</Link>.
       </p>
     </div>
   );

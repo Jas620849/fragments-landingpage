@@ -116,7 +116,7 @@ export default function ScholarshipSelectionCommittee() {
         <div>
           <h3 className="font-bold text-secondary">How can technology support committee processes?</h3>
           <p className="mt-2">
-            Technology can facilitate application review, scoring, discussion, and decision-making. Platforms like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> provide structured review tools, scoring rubrics, discussion forums, and decision tracking. Technology improves efficiency, consistency, and documentation of processes.
+            Technology can facilitate application review, scoring, discussion, and decision-making. Approaches covered in our <Link href="/blog/" className="text-highlight-dark underline">guides</Link> provide structured review tools, scoring rubrics, discussion forums, and decision tracking. Technology improves efficiency, consistency, and documentation of processes.
           </p>
         </div>
         <div>
@@ -153,7 +153,10 @@ export default function ScholarshipSelectionCommittee() {
         The investment in committee development yields substantial returns. Well-structured committees make better decisions that advance program goals. Fair processes enhance program credibility and attract strong applicant pools. Diverse committees ensure that excellence is recognized across all backgrounds. As scholarship programs face increasing expectations for equity and accountability, effective committee design becomes increasingly essential.
       </p>
       <p>
-        Ready to enhance your scholarship selection committee processes? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform supports committee management with structured review tools, calibration features, conflict tracking, and decision documentation. Our solution helps you build committees that make excellent, equitable decisions.
+        Continue with related guides on this blog, or learn how{" "}
+        <Link href="/how-it-works/" className="text-highlight-dark underline">Fragments</Link>{" "}
+        supports rigorous classroom discussion. Questions about these articles:{" "}
+        <Link href="/contact/" className="text-highlight-dark underline">contact us</Link>.
       </p>
     </div>
   );

@@ -4,6 +4,8 @@ import { generateThreadMetadata } from "@/lib/metadata-generator";
 import BreadcrumbSchema from "@/app/components/BreadcrumbSchema";
 import DiscussionForumSchema from "@/app/components/DiscussionForumSchema";
 import QAPageSchema from "@/app/components/QAPageSchema";
+import { NOINDEX_ROBOTS } from "@/lib/seo-constants";
+import ThinPageNotice from "@/app/components/ThinPageNotice";
 
 interface ThreadPageProps {
   params: Promise<{
@@ -147,21 +149,25 @@ export async function generateMetadata({ params }: ThreadPageProps): Promise<Met
   if (!thread) {
     return {
       title: "Thread Not Found | Fragment Trails",
+      robots: NOINDEX_ROBOTS,
     };
   }
 
-  return generateThreadMetadata({
-    title: thread.title,
-    slug: slug,
-    topicTitle: thread.topicTitle,
-    topicSlug: thread.topicSlug,
-    description: thread.description,
-    author: thread.author,
-    replyCount: thread.replyCount,
-    viewCount: thread.viewCount,
-    publishedAt: thread.publishedAt,
-    updatedAt: thread.updatedAt,
-  });
+  return {
+    ...generateThreadMetadata({
+      title: thread.title,
+      slug: slug,
+      topicTitle: thread.topicTitle,
+      topicSlug: thread.topicSlug,
+      description: thread.description,
+      author: thread.author,
+      replyCount: thread.replyCount,
+      viewCount: thread.viewCount,
+      publishedAt: thread.publishedAt,
+      updatedAt: thread.updatedAt,
+    }),
+    robots: NOINDEX_ROBOTS,
+  };
 }
 
 export function generateStaticParams() {
@@ -235,6 +241,7 @@ export default async function ThreadPage({ params }: ThreadPageProps) {
       />
 
       <div className="max-w-4xl mx-auto px-4 py-8">
+        <ThinPageNotice variant="sample" />
         {/* Breadcrumb Navigation */}
         <nav className="flex items-center space-x-2 text-sm text-gray-600 mb-6">
           <Link href="/" className="hover:text-blue-600">Home</Link>

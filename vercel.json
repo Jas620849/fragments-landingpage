@@ -22,10 +22,6 @@
         {
           "key": "Permissions-Policy",
           "value": "camera=(), microphone=(), geolocation=()"
-        },
-        {
-          "key": "X-Robots-Tag",
-          "value": "index, follow"
         }
       ]
     },
@@ -82,6 +78,708 @@
           "value": "public, max-age=3600"
         }
       ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/scholarship/:path*",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/industry/:path*",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/use-case/:path*",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/platform/:path*",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/guide/:path*",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/topic/:path*",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/thread/:path*",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/category/:path*",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/categories",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/categories/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/search",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/search/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/candidate-evaluation-platform",
+      "destination": "/how-it-works/",
+      "permanent": true
+    },
+    {
+      "source": "/candidate-evaluation-platform/",
+      "destination": "/how-it-works/",
+      "permanent": true
+    },
+    {
+      "source": "/student-interview-management",
+      "destination": "/how-it-works/",
+      "permanent": true
+    },
+    {
+      "source": "/student-interview-management/",
+      "destination": "/how-it-works/",
+      "permanent": true
+    },
+    {
+      "source": "/scholarship-selection-software",
+      "destination": "/how-it-works/",
+      "permanent": true
+    },
+    {
+      "source": "/scholarship-selection-software/",
+      "destination": "/how-it-works/",
+      "permanent": true
+    },
+    {
+      "source": "/interview-scoring-system",
+      "destination": "/how-it-works/",
+      "permanent": true
+    },
+    {
+      "source": "/interview-scoring-system/",
+      "destination": "/how-it-works/",
+      "permanent": true
+    },
+    {
+      "source": "/interview-moderation-platform",
+      "destination": "/how-it-works/",
+      "permanent": true
+    },
+    {
+      "source": "/interview-moderation-platform/",
+      "destination": "/how-it-works/",
+      "permanent": true
+    },
+    {
+      "source": "/admissions-interview-software",
+      "destination": "/how-it-works/",
+      "permanent": true
+    },
+    {
+      "source": "/admissions-interview-software/",
+      "destination": "/how-it-works/",
+      "permanent": true
+    },
+    {
+      "source": "/bias-free-candidate-evaluation",
+      "destination": "/how-it-works/",
+      "permanent": true
+    },
+    {
+      "source": "/bias-free-candidate-evaluation/",
+      "destination": "/how-it-works/",
+      "permanent": true
+    },
+    {
+      "source": "/scholarship-review-process",
+      "destination": "/how-it-works/",
+      "permanent": true
+    },
+    {
+      "source": "/scholarship-review-process/",
+      "destination": "/how-it-works/",
+      "permanent": true
+    },
+    {
+      "source": "/interview-panel-management",
+      "destination": "/how-it-works/",
+      "permanent": true
+    },
+    {
+      "source": "/interview-panel-management/",
+      "destination": "/how-it-works/",
+      "permanent": true
+    },
+    {
+      "source": "/applicant-assessment-software",
+      "destination": "/how-it-works/",
+      "permanent": true
+    },
+    {
+      "source": "/applicant-assessment-software/",
+      "destination": "/how-it-works/",
+      "permanent": true
+    },
+    {
+      "source": "/student-evaluation-platform",
+      "destination": "/how-it-works/",
+      "permanent": true
+    },
+    {
+      "source": "/student-evaluation-platform/",
+      "destination": "/how-it-works/",
+      "permanent": true
+    },
+    {
+      "source": "/candidate-ranking-system",
+      "destination": "/how-it-works/",
+      "permanent": true
+    },
+    {
+      "source": "/candidate-ranking-system/",
+      "destination": "/how-it-works/",
+      "permanent": true
+    },
+    {
+      "source": "/fair-selection-platform",
+      "destination": "/how-it-works/",
+      "permanent": true
+    },
+    {
+      "source": "/fair-selection-platform/",
+      "destination": "/how-it-works/",
+      "permanent": true
+    },
+    {
+      "source": "/structured-interview-software",
+      "destination": "/how-it-works/",
+      "permanent": true
+    },
+    {
+      "source": "/structured-interview-software/",
+      "destination": "/how-it-works/",
+      "permanent": true
+    },
+    {
+      "source": "/scholarship-interview-software",
+      "destination": "/how-it-works/",
+      "permanent": true
+    },
+    {
+      "source": "/scholarship-interview-software/",
+      "destination": "/how-it-works/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/digital-interview-assessment",
+      "destination": "/blog/ai-powered-interview-evaluation/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/digital-interview-assessment/",
+      "destination": "/blog/ai-powered-interview-evaluation/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/interview-data-analytics",
+      "destination": "/blog/educational-assessment-tools/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/interview-data-analytics/",
+      "destination": "/blog/educational-assessment-tools/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/interview-governance-frameworks",
+      "destination": "/blog/interview-moderation-explained/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/interview-governance-frameworks/",
+      "destination": "/blog/interview-moderation-explained/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/university-selection-processes",
+      "destination": "/blog/building-evaluation-rubrics/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/university-selection-processes/",
+      "destination": "/blog/building-evaluation-rubrics/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/measuring-candidate-potential",
+      "destination": "/blog/building-evaluation-rubrics/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/measuring-candidate-potential/",
+      "destination": "/blog/building-evaluation-rubrics/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-essay-evaluation",
+      "destination": "/blog/building-evaluation-rubrics/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-essay-evaluation/",
+      "destination": "/blog/building-evaluation-rubrics/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/virtual-scholarship-interviews",
+      "destination": "/blog/structured-vs-unstructured-interviews/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/virtual-scholarship-interviews/",
+      "destination": "/blog/structured-vs-unstructured-interviews/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/admissions-interview-process-guide",
+      "destination": "/blog/how-to-reduce-bias-in-scholarship-interviews/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/admissions-interview-process-guide/",
+      "destination": "/blog/how-to-reduce-bias-in-scholarship-interviews/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-selection-criteria",
+      "destination": "/blog/building-evaluation-rubrics/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-selection-criteria/",
+      "destination": "/blog/building-evaluation-rubrics/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-equity-inclusion",
+      "destination": "/blog/how-to-reduce-bias-in-scholarship-interviews/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-equity-inclusion/",
+      "destination": "/blog/how-to-reduce-bias-in-scholarship-interviews/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/applicant-ranking-systems",
+      "destination": "/blog/building-evaluation-rubrics/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/applicant-ranking-systems/",
+      "destination": "/blog/building-evaluation-rubrics/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/interview-panel-best-practices",
+      "destination": "/blog/how-to-reduce-bias-in-scholarship-interviews/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/interview-panel-best-practices/",
+      "destination": "/blog/how-to-reduce-bias-in-scholarship-interviews/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/interviewer-training-best-practices",
+      "destination": "/blog/evaluator-calibration-methods/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/interviewer-training-best-practices/",
+      "destination": "/blog/evaluator-calibration-methods/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-interview-scoring-best-practices",
+      "destination": "/blog/common-interview-scoring-mistakes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-interview-scoring-best-practices/",
+      "destination": "/blog/common-interview-scoring-mistakes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/digital-scholarship-assessment-guide",
+      "destination": "/blog/ai-powered-interview-evaluation/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/digital-scholarship-assessment-guide/",
+      "destination": "/blog/ai-powered-interview-evaluation/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-universities-evaluate-applicants",
+      "destination": "/blog/building-evaluation-rubrics/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-universities-evaluate-applicants/",
+      "destination": "/blog/building-evaluation-rubrics/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-selection-committee",
+      "destination": "/blog/how-to-reduce-bias-in-scholarship-interviews/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-selection-committee/",
+      "destination": "/blog/how-to-reduce-bias-in-scholarship-interviews/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/candidate-comparison-techniques",
+      "destination": "/blog/building-evaluation-rubrics/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/candidate-comparison-techniques/",
+      "destination": "/blog/building-evaluation-rubrics/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/improving-scholarship-decisions",
+      "destination": "/blog/building-evaluation-rubrics/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/improving-scholarship-decisions/",
+      "destination": "/blog/building-evaluation-rubrics/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/diversity-in-scholarship-selection",
+      "destination": "/blog/how-to-reduce-bias-in-scholarship-interviews/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/diversity-in-scholarship-selection/",
+      "destination": "/blog/how-to-reduce-bias-in-scholarship-interviews/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/candidate-evaluation-frameworks",
+      "destination": "/blog/building-evaluation-rubrics/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/candidate-evaluation-frameworks/",
+      "destination": "/blog/building-evaluation-rubrics/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/interview-rubrics-for-scholarship-programs",
+      "destination": "/blog/building-evaluation-rubrics/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/interview-rubrics-for-scholarship-programs/",
+      "destination": "/blog/building-evaluation-rubrics/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/fair-candidate-assessment-methods",
+      "destination": "/blog/how-to-reduce-bias-in-scholarship-interviews/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/fair-candidate-assessment-methods/",
+      "destination": "/blog/how-to-reduce-bias-in-scholarship-interviews/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/fair-selection-systems",
+      "destination": "/blog/how-to-reduce-bias-in-scholarship-interviews/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/fair-selection-systems/",
+      "destination": "/blog/how-to-reduce-bias-in-scholarship-interviews/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/measuring-scholarship-success",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/measuring-scholarship-success/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-program-management",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-program-management/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-alumni-engagement",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-alumni-engagement/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-recipient-support",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-recipient-support/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-application-process",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-application-process/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-outreach-strategies",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-outreach-strategies/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-donor-relations",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-donor-relations/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-financial-literacy",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-financial-literacy/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-mentorship-programs",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-mentorship-programs/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-renewal-criteria",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-renewal-criteria/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-interview-preparation",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-interview-preparation/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-technology-solutions",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-technology-solutions/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-impact-measurement",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-impact-measurement/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-collaboration-partnerships",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-collaboration-partnerships/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-crisis-management",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-crisis-management/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-sustainability-growth",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-sustainability-growth/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-legal-compliance",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-legal-compliance/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-innovation-future",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-innovation-future/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-global-perspectives",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-global-perspectives/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-best-practices-summary",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-best-practices-summary/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-management-technology",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scholarship-management-technology/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/modern-scholarship-platforms",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/modern-scholarship-platforms/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/higher-education-evaluation-trends",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/higher-education-evaluation-trends/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/future-of-scholarship-assessments",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/future-of-scholarship-assessments/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/interview-workflow-automation",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/interview-workflow-automation/",
+      "destination": "/blog/",
+      "permanent": true
     }
   ],
   "rewrites": [

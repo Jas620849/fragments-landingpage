@@ -1,18 +1,22 @@
 /* eslint-disable react/no-unescaped-entities */
 import Link from "next/link";
-
 export default function InterviewerTrainingBestPractices() {
   return (
     <div className="space-y-8">
-      <h2 className="text-2xl font-bold text-secondary">The Critical Role of Interviewer Training</h2>
+      <h2 className="text-2xl font-bold text-secondary">Train interviewers to use the sheet—not their gut</h2>
       <p>
-        Interviewer training is the foundation of fair, reliable, and effective scholarship selection processes. Even the most well-designed interview protocols and scoring rubrics will fail if interviewers are not properly trained to use them. Training ensures that interviewers understand the evaluation criteria, can apply scoring rubrics consistently, are aware of potential biases, and have the skills to conduct interviews that allow candidates to demonstrate their true abilities. Without comprehensive training, selection decisions become dependent on individual interviewer preferences and unconscious biases rather than candidate merit.
-      </p>
-      <p>
-        The importance of interviewer training cannot be overstated. Research consistently shows that trained interviewers achieve higher inter-rater reliability, make more accurate predictions of candidate success, and are less susceptible to common biases. Training transforms interviewers from well-meaning volunteers into skilled evaluators who can implement structured interview protocols effectively. This transformation is essential for scholarship programs that need to make defensible, fair selection decisions that can withstand scrutiny from stakeholders, donors, and the public.
-      </p>
-      <p>
-        Effective interviewer training goes beyond simple orientation or review of interview questions. It encompasses understanding the scholarship's mission and values, mastering evaluation criteria, developing interviewing skills, recognizing and overcoming biases, and practicing with feedback. Training should be viewed as an ongoing process rather than a one-time event, with regular refreshers, calibration sessions, and continuous improvement based on feedback and outcomes data.
+        A rubric without training becomes optional decoration. Interviewers need practice
+        asking the locked questions, scoring against anchors, and catching their own
+        shortcuts. This guide is a training outline: what to cover in the first session,
+        which drills change behavior, and how often to recalibrate. Pair it with{" "}
+        <Link href="/blog/evaluator-calibration-methods/" className="text-highlight-dark underline">
+          calibration methods
+        </Link>{" "}
+        and{" "}
+        <Link href="/blog/common-interview-scoring-mistakes/" className="text-highlight-dark underline">
+          scoring mistakes
+        </Link>
+        .
       </p>
 
       <h2 className="text-2xl font-bold text-secondary">Core Components of Interviewer Training</h2>
@@ -73,104 +77,36 @@ export default function InterviewerTrainingBestPractices() {
         External evaluators, such as professionals from partner organizations, may bring diverse perspectives but lack familiarity with the specific scholarship. Their training should provide comprehensive orientation to the scholarship's mission and criteria, extensive practice with the interview protocol, and clear guidance on their role and responsibilities. External evaluators may also need more initial supervision to ensure alignment with program standards.
       </p>
 
-      <h2 className="text-2xl font-bold text-secondary">FAQs</h2>
+      
+      <h2 className="text-2xl font-bold text-secondary">Common questions</h2>
       <div className="space-y-6">
-        <div>
+<div>
           <h3 className="font-bold text-secondary">How long should interviewer training be?</h3>
           <p className="mt-2">
             Training duration depends on the complexity of the interview protocol and the experience level of interviewers. For new interviewers implementing structured interviews for the first time, training typically ranges from 4-8 hours of initial training plus ongoing calibration sessions. Experienced interviewers may need 2-4 hours of refresher training. The key is ensuring mastery rather than meeting a minimum time requirement. Programs should assess interviewer competence through practice exercises and calibration rather than assuming completion of training hours equals readiness.
           </p>
         </div>
-        <div>
+<div>
           <h3 className="font-bold text-secondary">What should be included in interviewer training?</h3>
           <p className="mt-2">
             Comprehensive training should include: understanding the scholarship's mission and values, mastery of interview protocols and scoring rubrics, bias awareness and mitigation strategies, interviewing skills development, practice with feedback, and calibration exercises. Training should also cover logistical aspects such as interview scheduling, technology use, and documentation requirements. The specific content should be tailored to the program's needs and the interviewers' experience levels.
           </p>
         </div>
-        <div>
+<div>
           <h3 className="font-bold text-secondary">How often should interviewers receive training?</h3>
           <p className="mt-2">
             Initial training should be provided before interviewers conduct their first interviews. Ongoing training should occur regularly throughout the interview season, with calibration sessions at least monthly and refresher training annually. Additional training should be provided when the interview protocol or rubric is revised, when new research or best practices emerge, or when performance data indicates areas for improvement. Training frequency should balance the need for consistency with the practical constraints of interviewer availability.
           </p>
         </div>
-        <div>
+<div>
           <h3 className="font-bold text-secondary">How can programs assess interviewer effectiveness?</h3>
           <p className="mt-2">
             Programs should assess interviewer effectiveness through multiple metrics: inter-rater reliability (consistency with other interviewers), score distributions (avoiding leniency or severity bias), feedback from candidates and other interviewers, and correlation with outcomes (do their scores predict success?). Regular performance reviews should provide constructive feedback and identify areas for improvement. Programs should also track whether interviewers are following protocols and maintaining documentation standards.
           </p>
         </div>
-        <div>
-          <h3 className="font-bold text-secondary">What are common training mistakes to avoid?</h3>
-          <p className="mt-2">
-            Common mistakes include treating training as a one-time event rather than ongoing development, focusing only on logistics rather than evaluation skills, providing insufficient practice opportunities, neglecting bias awareness, and failing to tailor training to different interviewer types. Programs should also avoid assuming that subject matter expertise translates to evaluation skill, or that experienced interviewers don't need training. Training should be evidence-based, practice-oriented, and continuously improved based on outcomes.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">How can small programs with limited resources provide effective training?</h3>
-          <p className="mt-2">
-            Small programs can provide effective training by focusing on core components, using train-the-trainer approaches to leverage experienced interviewers, collaborating with other programs to share resources, and using online training modules to reduce costs. Even simple training on evaluation criteria and bias awareness can significantly improve consistency. Small programs may also benefit from closer relationships between interviewers and administrators, facilitating more personalized training and feedback.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">How does interviewer training impact candidate experience?</h3>
-          <p className="mt-2">
-            Well-trained interviewers create better candidate experiences by conducting interviews that are professional, fair, and focused on relevant criteria. Candidates perceive trained interviewers as more competent and the process as more fair. Training helps interviewers build rapport while maintaining structure, ask clear questions, and provide constructive feedback. These elements reduce candidate anxiety and help them perform their best. Poor training can lead to awkward interviews, unclear questions, and perceptions of unfairness, negatively impacting the candidate experience and the program's reputation.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">What role does calibration play in interviewer training?</h3>
-          <p className="mt-2">
-            Calibration is essential for developing shared understanding of how to apply evaluation criteria consistently. During calibration, interviewers score the same responses and discuss discrepancies, identifying ambiguous aspects of the rubric and clarifying interpretations. Calibration should occur before the interview season to establish baseline consistency, periodically during the season to maintain it, and after any changes to the protocol. Calibration is both a training tool and a quality assurance mechanism.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">How can programs address interviewer resistance to training?</h3>
-          <p className="mt-2">
-            Resistance often stems from perceptions that training is unnecessary or that structured approaches limit professional judgment. Programs should address this by demonstrating the value of training through data on improved reliability and fairness, framing training as professional development rather than remediation, and involving experienced interviewers in designing and delivering training. Highlighting how training protects interviewers and the program from legal challenges can also build buy-in. Recognition for training completion and ongoing skill development can create positive incentives.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">How can technology support interviewer training?</h3>
-          <p className="mt-2">
-            Technology can support training through online learning modules, virtual practice simulations, automated scoring feedback, and data analytics on interviewer performance. AI-powered platforms can provide real-time feedback during practice interviews, flag potential biases, and suggest calibration exercises. Learning management systems can track training completion and provide refresher content. Technology makes training more accessible, consistent, and data-driven, particularly for programs with geographically dispersed interviewers.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">What are the legal implications of inadequate interviewer training?</h3>
-          <p className="mt-2">
-            Inadequate training can expose programs to legal risk if biased or inconsistent evaluations lead to discrimination claims. Courts and regulators may examine whether interviewers were properly trained on evaluation criteria and bias awareness. Documentation of training can provide important evidence of good faith efforts to ensure fair selection. Programs that receive federal funding may have specific training requirements. Investing in comprehensive training is both good practice and risk management.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">How can programs measure training effectiveness?</h3>
-          <p className="mt-2">
-            Training effectiveness should be measured through multiple indicators: improvements in inter-rater reliability, reductions in score variance between interviewers, feedback from interviewers about training quality, and correlation between training completion and performance metrics. Programs should also track whether trained interviewers achieve better outcomes (do their scores predict success more accurately?). Pre- and post-training assessments can measure knowledge gain. Ongoing monitoring ensures training continues to be effective over time.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">How should training evolve based on outcomes data?</h3>
-          <p className="mt-2">
-            Programs should use outcomes data to continuously improve training. If certain criteria consistently show low inter-rater reliability, additional training on those criteria may be needed. If bias patterns emerge across demographic groups, enhanced bias awareness training may be required. If selected candidates don't demonstrate expected qualities, training on identifying those qualities may need revision. Training should be a living process that evolves based on what the data reveals about interviewer performance and selection outcomes.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">What is the return on investment for interviewer training?</h3>
-          <p className="mt-2">
-            The ROI for training comes from improved selection decisions, reduced legal risk, enhanced program reputation, and better candidate experiences. Trained interviewers make more accurate evaluations, leading to better selection of deserving candidates. Fair, consistent processes protect against discrimination claims and build stakeholder trust. Professional interviews enhance the program's brand and attract stronger applicant pools. While training requires investment, the costs of poor selection decisions, legal challenges, and reputational damage far exceed training costs.
-          </p>
-        </div>
       </div>
 
-      <h2 className="text-2xl font-bold text-secondary">Conclusion</h2>
-      <p>
-        Interviewer training is the foundation of fair, reliable, and effective scholarship selection processes. Comprehensive training that covers mission understanding, evaluation criteria, bias awareness, and interviewing skills transforms well-meaning volunteers into skilled evaluators who can implement structured interview protocols effectively. Ongoing training and calibration ensure that interviewers maintain high standards throughout the interview season and continue to improve over time.
-      </p>
-      <p>
-        The investment in interviewer training yields substantial returns in improved selection decisions, reduced legal risk, enhanced program reputation, and better candidate experiences. As scholarship programs face increasing demands for accountability and fairness, robust interviewer training will be essential for demonstrating commitment to excellence and equity in selection processes.
-      </p>
-      <p>
-        Ready to enhance your interviewer training program? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform can support your training efforts with automated calibration, performance analytics, bias detection tools, and comprehensive training resources. Our solution helps you develop skilled interviewers who can conduct fair, consistent, and effective evaluations.
-      </p>
+      
     </div>
   );
 }

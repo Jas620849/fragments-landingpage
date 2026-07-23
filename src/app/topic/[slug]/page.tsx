@@ -3,6 +3,8 @@ import Link from "next/link";
 import { generateTopicMetadata } from "@/lib/metadata-generator";
 import BreadcrumbSchema from "@/app/components/BreadcrumbSchema";
 import FAQPageSchema from "@/app/components/FAQPageSchema";
+import { NOINDEX_ROBOTS } from "@/lib/seo-constants";
+import ThinPageNotice from "@/app/components/ThinPageNotice";
 
 interface TopicPageProps {
   params: Promise<{
@@ -119,18 +121,22 @@ export async function generateMetadata({ params }: TopicPageProps): Promise<Meta
   if (!topic) {
     return {
       title: "Topic Not Found | Fragment Trails",
+      robots: NOINDEX_ROBOTS,
     };
   }
 
-  return generateTopicMetadata({
-    title: topic.title,
-    slug: slug,
-    description: topic.description,
-    category: topic.category,
-    author: topic.author,
-    publishedAt: topic.publishedAt,
-    updatedAt: topic.updatedAt,
-  });
+  return {
+    ...generateTopicMetadata({
+      title: topic.title,
+      slug: slug,
+      description: topic.description,
+      category: topic.category,
+      author: topic.author,
+      publishedAt: topic.publishedAt,
+      updatedAt: topic.updatedAt,
+    }),
+    robots: NOINDEX_ROBOTS,
+  };
 }
 
 export function generateStaticParams() {
@@ -172,6 +178,7 @@ export default async function TopicPage({ params }: TopicPageProps) {
       )}
 
       <div className="max-w-4xl mx-auto px-4 py-8">
+        <ThinPageNotice variant="sample" />
         {/* Breadcrumb Navigation */}
         <nav className="flex items-center space-x-2 text-sm text-gray-600 mb-6">
           <Link href="/" className="hover:text-blue-600">Home</Link>

@@ -4,15 +4,25 @@ import Link from "next/link";
 export default function CommonInterviewScoringMistakes() {
   return (
     <div className="space-y-8">
-      <h2 className="text-2xl font-bold text-secondary">Common Interview Scoring Mistakes: How to Avoid Them</h2>
+      <h2 className="text-2xl font-bold text-secondary">Most scoring problems are predictable</h2>
       <p>
-        Interview scoring mistakes can undermine the fairness, accuracy, and defensibility of scholarship and admission decisions. Even well-intentioned evaluators fall prey to common cognitive biases, procedural errors, and judgment pitfalls that compromise evaluation quality. This guide identifies the most frequent scoring mistakes, explains why they occur, and provides practical strategies for avoiding them.
+        After enough cycles, the same mistakes show up: someone falls in love with polish
+        (halo), someone avoids extremes (central tendency), someone scores harder after a
+        star candidate (contrast), and someone writes notes that do not match the number they
+        circled. This article is a field guide to those failure modes—not another sermon on
+        “be fair.”
       </p>
       <p>
-        The impact of scoring mistakes extends beyond individual decisions. When errors become systematic, they can perpetuate bias, reduce program credibility, and cause programs to miss deserving candidates. Understanding these mistakes is the first step toward preventing them and building more reliable evaluation systems.
-      </p>
-      <p>
-        Many scoring mistakes stem from how human brains process information. We're wired to make quick judgments based on limited information, to seek confirmation of our initial impressions, and to be influenced by irrelevant factors. While these cognitive shortcuts served our ancestors well, they undermine fair evaluation in modern contexts. Awareness and structured processes can help overcome these tendencies.
+        Use it in calibration sessions: pick one mistake, watch a sample clip or transcript,
+        score independently, then talk about the mismatch. Pair with{" "}
+        <Link href="/blog/evaluator-calibration-methods/" className="text-highlight-dark underline">
+          calibration methods
+        </Link>{" "}
+        and{" "}
+        <Link href="/blog/common-interview-scoring-mistakes/" className="text-highlight-dark underline">
+          scoring practices
+        </Link>
+        .
       </p>
 
       <h2 className="text-2xl font-bold text-secondary">Cognitive Biases in Scoring</h2>
@@ -68,107 +78,58 @@ export default function CommonInterviewScoringMistakes() {
         Calibration exercises where multiple evaluators score the same or similar candidates and discuss differences help identify bias and inconsistency. When evaluators see how their scores differ from colleagues' and discuss the reasons, they become more aware of their own patterns and can adjust accordingly.
       </p>
       <p>
-        Documentation requirements force evaluators to justify their scores. When evaluators must provide specific evidence for ratings, they're less likely to rely on vague impressions or biases. Documentation also creates records that can be reviewed for patterns.
+        Documentation requirements force evaluators to justify their scores. When evaluators must provide specific evidence for ratings, they're less likely to rely on vague impressions or biases.         Documentation also creates records that can be reviewed for patterns.
       </p>
 
-      <h2 className="text-2xl font-bold text-secondary">FAQs</h2>
+      <h2 className="text-2xl font-bold text-secondary">Score-sheet habits that prevent mistakes</h2>
+      <ul className="list-disc space-y-2 pl-6">
+        <li>Score independently before panel discussion—talk after numbers, not before.</li>
+        <li>Use behavioral anchors (“names a concrete tradeoff”) instead of vibe words (“strong”).</li>
+        <li>Require one evidence note per dimension; empty notes are a red flag.</li>
+        <li>If two raters differ by more than one point, reconcile before the total is locked.</li>
+      </ul>
+      <p>
+        For building the sheet itself, see{" "}
+        <Link href="/blog/building-evaluation-rubrics/" className="text-highlight-dark underline">
+          building evaluation rubrics
+        </Link>
+        . For calibration drills, see{" "}
+        <Link href="/blog/evaluator-calibration-methods/" className="text-highlight-dark underline">
+          evaluator calibration
+        </Link>
+        .
+      </p>
+
+      
+      <h2 className="text-2xl font-bold text-secondary">Common questions</h2>
       <div className="space-y-6">
-        <div>
+<div>
           <h3 className="font-bold text-secondary">What are the most common interview scoring mistakes?</h3>
           <p className="mt-2">
             Common mistakes include halo effect, confirmation bias, recency bias, similarity bias, inconsistent criteria application, insufficient documentation, rushed evaluation, ignoring context, overweighting credentials, and cultural misunderstanding.
           </p>
         </div>
-        <div>
+<div>
           <h3 className="font-bold text-secondary">How can programs reduce bias in interview scoring?</h3>
           <p className="mt-2">
-            Bias reduction requires structured evaluation with clear rubrics, evaluator training on bias, calibration exercises, diverse evaluation panels, and ongoing monitoring for patterns. Technology platforms like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> provide structured tools that reduce bias influence.
+            Bias reduction requires structured evaluation with clear rubrics, evaluator training on bias, calibration exercises, diverse evaluation panels, and ongoing monitoring for patterns. Structured rubrics, calibration, and documentation reduce bias influence more than good intentions alone.
           </p>
         </div>
-        <div>
+<div>
           <h3 className="font-bold text-secondary">Why is documentation important in interview scoring?</h3>
           <p className="mt-2">
             Documentation provides rationale for decisions, enables pattern identification, supports defensibility if challenged, and helps evaluators think more carefully about their judgments. Without documentation, evaluation becomes impressionistic and difficult to improve.
           </p>
         </div>
-        <div>
+<div>
           <h3 className="font-bold text-secondary">How can calibration exercises help avoid scoring mistakes?</h3>
           <p className="mt-2">
             Calibration exercises reveal differences in how evaluators apply criteria, identify bias patterns, and create shared understanding of standards. When evaluators discuss scoring differences, they become more aware of their own tendencies and can adjust.
           </p>
         </div>
-        <div>
-          <h3 className="font-bold text-secondary">What role do rubrics play in preventing scoring mistakes?</h3>
-          <p className="mt-2">
-            Rubrics provide structured criteria that focus evaluation on relevant factors, reduce reliance on impressions, ensure consistency across evaluators, and make bias more difficult to exercise. Well-designed rubrics are the most effective single prevention tool.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">How can programs address cultural bias in scoring?</h3>
-          <p className="mt-2">
-            Addressing cultural bias requires diverse evaluation panels, training on cultural competence, criteria that recognize diverse forms of excellence, and monitoring for disparate impacts. Programs should actively work to understand and accommodate cultural differences.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">What should evaluators do if they recognize bias in their own scoring?</h3>
-          <p className="mt-2">
-            Self-awareness is the first step. Evaluators should pause, reconsider their assessment, apply rubric criteria more carefully, and potentially seek colleague input. Programs should create safe channels for evaluators to acknowledge and address bias.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">How can technology help prevent scoring mistakes?</h3>
-          <p className="mt-2">
-            Technology platforms provide structured evaluation interfaces, embedded rubrics, automated scoring checks, analytics that identify patterns, and documentation requirements. These features reduce the opportunity for bias and error while improving consistency.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">How should programs handle evaluators who consistently make scoring mistakes?</h3>
-          <p className="mt-2">
-            Programs should provide additional training and support, monitor performance closely, and if issues persist, remove the evaluator from the process. Consistent errors undermine fairness and program credibility.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">What is the halo effect and how does it impact scoring?</h3>
-          <p className="mt-2">
-            The halo effect occurs when a single positive trait influences overall assessment. An evaluator impressed by one aspect may rate all dimensions favorably regardless of evidence. This causes scores to reflect impressions rather than balanced assessment.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">How can programs ensure evaluators have sufficient time for thorough evaluation?</h3>
-          <p className="mt-2">
-            Programs should schedule adequate evaluation time, limit the number of candidates per evaluator, provide realistic deadlines, and monitor for rushed evaluation. Quality requires investment in evaluator time.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">What role does context play in fair scoring?</h3>
-          <p className="mt-2">
-            Context includes educational opportunities, family responsibilities, disability status, cultural background, and other circumstances that affect achievement. Fair evaluation considers context to assess what candidates have accomplished relative to their opportunities.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">How can programs measure the prevalence of scoring mistakes?</h3>
-          <p className="mt-2">
-            Measurement includes analyzing score distributions, conducting inter-rater reliability studies, monitoring for disparate impacts across demographic groups, and reviewing documentation quality. Regular assessment identifies problems and tracks improvement.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">What ongoing practices help prevent scoring mistakes?</h3>
-          <p className="mt-2">
-            Ongoing practices include regular training, calibration exercises, quality monitoring, feedback to evaluators, and rubric refinement. Prevention requires continuous attention rather than one-time fixes.
-          </p>
-        </div>
       </div>
 
-      <h2 className="text-2xl font-bold text-secondary">Conclusion</h2>
-      <p>
-        Interview scoring mistakes are common but preventable. Through structured evaluation with clear rubrics, comprehensive evaluator training, regular calibration, and ongoing quality monitoring, programs can significantly reduce errors and improve decision quality. The investment in mistake prevention yields substantial returns in fairness, credibility, and selection effectiveness.
-      </p>
-      <p>
-        Awareness of common mistakes is the foundation of prevention. When evaluators understand the cognitive biases and procedural errors that can undermine their judgment, they're better equipped to avoid them. Combined with structured processes and technology support, this awareness enables more reliable, fair evaluation.
-      </p>
-      <p>
-        Ready to reduce scoring mistakes in your evaluation process? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform supports accurate, consistent evaluation with structured rubrics, bias reduction tools, calibration features, and analytics that identify and prevent scoring errors.
-      </p>
+      
     </div>
   );
 }

@@ -153,7 +153,10 @@ export default function ScholarshipDonorRelations() {
         The investment in donor relations yields substantial returns. Retained donors provide stable funding that reduces dependence on constant acquisition. Engaged donors become partners who contribute beyond financial support. Strong donor reputation attracts new supporters. As philanthropic expectations evolve toward greater transparency and engagement, programs that excel in donor relations will be well-positioned to thrive.
       </p>
       <p>
-        Ready to enhance your donor relations capabilities? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform supports donor engagement with impact tracking, communication tools, donor management, and reporting features. Our solution helps you build lasting donor relationships that sustain and grow your scholarship program.
+        Continue with related guides on this blog, or learn how{" "}
+        <Link href="/how-it-works/" className="text-highlight-dark underline">Fragments</Link>{" "}
+        supports rigorous classroom discussion. Questions about these articles:{" "}
+        <Link href="/contact/" className="text-highlight-dark underline">contact us</Link>.
       </p>
     </div>
   );

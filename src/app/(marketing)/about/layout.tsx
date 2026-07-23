@@ -2,14 +2,22 @@ import type { Metadata } from "next";
 import { canonicalUrl, hasPublicSiteUrl } from "@/lib/site";
 import BreadcrumbSchema from "../../components/BreadcrumbSchema";
 
-const title = "About Fragments";
+const title = "About FragmentTrails & Fragments";
 const description =
-  "Learn about Fragments: our mission to transform classroom discussions through AI-moderated fragment trails, educator recognition, and quality learning at scale.";
+  "FragmentTrails is home to Fragments, an AI-moderated classroom discussion platform, and publishes practical guides on fair scholarship interviews and educational evaluation.";
 
 export const metadata: Metadata = {
   title,
   description,
-  keywords: ["about fragments", "academic discussion platform", "education technology", "classroom discussion", "fragment trails", "educator recognition"],
+  keywords: [
+    "about FragmentTrails",
+    "about Fragments",
+    "academic discussion platform",
+    "education technology",
+    "classroom discussion",
+    "fragment trails",
+    "educator recognition",
+  ],
   alternates: hasPublicSiteUrl()
     ? { canonical: canonicalUrl("/about/") }
     : undefined,

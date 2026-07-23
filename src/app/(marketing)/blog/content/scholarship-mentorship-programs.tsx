@@ -153,7 +153,10 @@ export default function ScholarshipMentorshipPrograms() {
         The investment in mentorship yields substantial returns for recipients, programs, and society. Mentored recipients have better academic outcomes, stronger career trajectories, and deeper engagement with programs. Programs that invest in mentorship see improved retention, graduation rates, and alumni engagement. Society benefits when scholarship recipients achieve their potential and contribute their talents. Mentorship transforms scholarships from financial assistance into comprehensive life-changing support.
       </p>
       <p>
-        Ready to implement or enhance your scholarship mentorship program? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform supports mentorship with matching tools, communication features, tracking systems, and integration with broader scholarship management. Our solution helps you build mentorship programs that transform recipient success.
+        Continue with related guides on this blog, or learn how{" "}
+        <Link href="/how-it-works/" className="text-highlight-dark underline">Fragments</Link>{" "}
+        supports rigorous classroom discussion. Questions about these articles:{" "}
+        <Link href="/contact/" className="text-highlight-dark underline">contact us</Link>.
       </p>
     </div>
   );

@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { canonicalUrl, hasPublicSiteUrl } from "@/lib/site";
+import { NOINDEX_ROBOTS } from "@/lib/seo-constants";
+import ThinPageNotice from "@/app/components/ThinPageNotice";
 
 export const metadata: Metadata = {
+  robots: NOINDEX_ROBOTS,
   title: "Bias Free Candidate Evaluation | FragmentTrails",
   description: "Achieve bias-free candidate evaluation with AI-powered tools. Reduce unconscious bias in scholarship and admission interviews for fair, equitable selection processes.",
   keywords: [
@@ -20,6 +23,7 @@ export default function BiasFreeCandidateEvaluationPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-primary to-white">
       <div className="mx-auto max-w-7xl px-8 py-24 lg:px-16">
+        <ThinPageNotice variant="product" />
         <h1 className="text-4xl font-bold text-secondary sm:text-5xl lg:text-6xl">
           Bias-Free Candidate Evaluation
         </h1>

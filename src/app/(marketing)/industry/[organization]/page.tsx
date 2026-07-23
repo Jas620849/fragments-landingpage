@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { canonicalUrl, hasPublicSiteUrl } from "@/lib/site";
+import { NOINDEX_ROBOTS } from "@/lib/seo-constants";
+import ThinPageNotice from "@/app/components/ThinPageNotice";
 
 const INDUSTRIES = [
   { code: "universities", name: "Universities", description: "Higher education institutions conducting scholarship and admission interviews" },
@@ -23,10 +25,12 @@ export async function generateMetadata({ params }: { params: Promise<{ organizat
     return {
       title: "Scholarship Interview Platform",
       description: "Scholarship interview and candidate evaluation platform for education institutions.",
+      robots: NOINDEX_ROBOTS,
     };
   }
 
   return {
+    robots: NOINDEX_ROBOTS,
     title: `Scholarship Interview Software for ${industry.name} | FragmentTrails`,
     description: `Specialized scholarship interview and candidate evaluation platform for ${industry.name}. AI-powered assessment tools tailored for ${industry.description}.`,
     keywords: [
@@ -52,6 +56,7 @@ export default async function IndustryPage({ params }: { params: Promise<{ organ
   return (
     <div className="min-h-screen bg-gradient-to-b from-primary to-white">
       <div className="mx-auto max-w-7xl px-8 py-24 lg:px-16">
+        <ThinPageNotice variant="product" />
         <h1 className="text-4xl font-bold text-secondary sm:text-5xl lg:text-6xl">
           Scholarship Interview Software for {industry.name}
         </h1>

@@ -1,8 +1,9 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { CONTENT_CATEGORIES } from "@/lib/seo-constants";
+import { CONTENT_CATEGORIES, NOINDEX_ROBOTS } from "@/lib/seo-constants";
 import { generateCategoryMetadata } from "@/lib/metadata-generator";
 import BreadcrumbSchema from "@/app/components/BreadcrumbSchema";
+import ThinPageNotice from "@/app/components/ThinPageNotice";
 
 interface CategoryPageProps {
   params: Promise<{
@@ -82,15 +83,19 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   if (!category) {
     return {
       title: "Category Not Found | Fragment Trails",
+      robots: NOINDEX_ROBOTS,
     };
   }
 
-  return generateCategoryMetadata({
-    slug: slug,
-    name: category.name,
-    description: category.description,
-    topicCount: getCategoryTopics(slug).length,
-  });
+  return {
+    ...generateCategoryMetadata({
+      slug: slug,
+      name: category.name,
+      description: category.description,
+      topicCount: getCategoryTopics(slug).length,
+    }),
+    robots: NOINDEX_ROBOTS,
+  };
 }
 
 export function generateStaticParams() {
@@ -133,6 +138,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
       <BreadcrumbSchema items={breadcrumbItems} />
 
       <div className="max-w-6xl mx-auto px-4 py-8">
+        <ThinPageNotice variant="sample" />
         {/* Breadcrumb Navigation */}
         <nav className="flex items-center space-x-2 text-sm text-gray-600 mb-6">
           <Link href="/" className="hover:text-blue-600">Home</Link>

@@ -40,7 +40,7 @@ export default function ScholarshipProgramOptimization() {
         Eligibility screening automation uses technology to efficiently filter applications. Automated screening based on clear criteria reduces manual review burden while ensuring fair treatment of all applicants.
       </p>
       <p>
-        Application management platforms like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> provide tools for efficient application processing, tracking, and communication. Technology enables optimization at scale.
+        Application management platforms like <Link href="/blog/" className="text-blue-600 hover:underline">FragmentTrails</Link> provide tools for efficient application processing, tracking, and communication. Technology enables optimization at scale.
       </p>
 
       <h2 className="text-2xl font-bold text-secondary">Selection Process Optimization</h2>
@@ -118,7 +118,7 @@ export default function ScholarshipProgramOptimization() {
         <div>
           <h3 className="font-bold text-secondary">What technology supports program optimization?</h3>
           <p className="mt-2">
-            Technology platforms provide application management, evaluation tools, support coordination, progress tracking, and analytics. Platforms like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> enable optimization at scale.
+            Technology platforms provide application management, evaluation tools, support coordination, progress tracking, and analytics. Approaches covered in our <Link href="/blog/" className="text-highlight-dark underline">guides</Link> enable optimization at scale.
           </p>
         </div>
         <div>
@@ -149,7 +149,10 @@ export default function ScholarshipProgramOptimization() {
         The investment in optimization yields substantial returns in recipient success, donor confidence, and program effectiveness. Programs that commit to continuous improvement achieve better outcomes over time.
       </p>
       <p>
-        Ready to optimize your scholarship program? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform supports program optimization with application management, structured evaluation, support coordination, and analytics that drive continuous improvement.
+        Continue with related guides on this blog, or learn how{" "}
+        <Link href="/how-it-works/" className="text-highlight-dark underline">Fragments</Link>{" "}
+        supports rigorous classroom discussion. Questions about these articles:{" "}
+        <Link href="/contact/" className="text-highlight-dark underline">contact us</Link>.
       </p>
     </div>
   );

@@ -82,7 +82,7 @@ export default function FairCandidateAssessmentMethods() {
         <div>
           <h3 className="font-bold text-secondary">How can programs reduce bias in assessment?</h3>
           <p className="mt-2">
-            Bias reduction requires structured evaluation with clear rubrics, diverse evaluation panels, blind review where possible, bias awareness training, and ongoing monitoring for patterns. Technology platforms like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> provide structured tools that reduce bias.
+            Bias reduction requires structured evaluation with clear rubrics, diverse evaluation panels, blind review where possible, bias awareness training, and ongoing monitoring for patterns. Evaluation tooling and structured workflows (see our <Link href="/blog/" className="text-highlight-dark underline">guides</Link>) provide structured tools that reduce bias.
           </p>
         </div>
         <div>
@@ -148,7 +148,7 @@ export default function FairCandidateAssessmentMethods() {
         <div>
           <h3 className="font-bold text-secondary">What technology supports fair assessment?</h3>
           <p className="mt-2">
-            Technology platforms provide structured evaluation interfaces, bias reduction tools, analytics that identify disparate impacts, and accessible formats. Platforms like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> enhance fairness through design.
+            Technology platforms provide structured evaluation interfaces, bias reduction tools, analytics that identify disparate impacts, and accessible formats. Approaches covered in our <Link href="/blog/" className="text-highlight-dark underline">guides</Link> enhance fairness through design.
           </p>
         </div>
         <div>
@@ -167,7 +167,10 @@ export default function FairCandidateAssessmentMethods() {
         Achieving fairness requires ongoing commitment—training, monitoring, refinement, and adaptation are continuous processes. Programs that prioritize fairness build trust, expand opportunity, and identify talent that biased approaches miss. Fair assessment is both a moral imperative and a practical advantage.
       </p>
       <p>
-        Ready to implement fair assessment methods in your program? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform supports fair assessment with structured evaluation tools, bias reduction features, contextual assessment capabilities, and analytics that ensure equitable candidate evaluation.
+        Continue with related guides on this blog, or learn how{" "}
+        <Link href="/how-it-works/" className="text-highlight-dark underline">Fragments</Link>{" "}
+        supports rigorous classroom discussion. Questions about these articles:{" "}
+        <Link href="/contact/" className="text-highlight-dark underline">contact us</Link>.
       </p>
     </div>
   );

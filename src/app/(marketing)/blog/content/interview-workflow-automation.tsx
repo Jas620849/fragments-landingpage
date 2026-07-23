@@ -23,7 +23,7 @@ export default function InterviewWorkflowAutomation() {
         Communication automation sends notifications, confirmations, reminders, and follow-ups to all participants. Automated communication ensures that everyone receives timely information without manual effort. Consistent communication improves candidate experience.
       </p>
       <p>
-        Documentation automation captures interview notes, scores, and rationale automatically. Digital platforms like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> ensure that evaluation data is captured consistently and completely. Automated documentation reduces administrative burden.
+        Documentation automation captures interview notes, scores, and rationale automatically. Digital evaluation workflows covered in our <Link href="/blog/" className="text-highlight-dark underline">guides</Link> ensure that evaluation data is captured consistently and completely. Automated documentation reduces administrative burden.
       </p>
       <p>
         Scoring automation applies evaluation criteria consistently, calculates scores, and generates rankings. Automated scoring reduces human error, ensures consistent application of criteria, and speeds up decision-making.
@@ -88,7 +88,7 @@ export default function InterviewWorkflowAutomation() {
         <div>
           <h3 className="font-bold text-secondary">What platform features support interview automation?</h3>
           <p className="mt-2">
-            Key features include automated scheduling, communication templates, evaluation interfaces, scoring algorithms, and integration capabilities. Platforms like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> provide comprehensive automation.
+            Key features include automated scheduling, communication templates, evaluation interfaces, scoring algorithms, and integration capabilities. Approaches covered in our <Link href="/blog/" className="text-highlight-dark underline">guides</Link> provide comprehensive automation.
           </p>
         </div>
         <div>
@@ -149,7 +149,10 @@ export default function InterviewWorkflowAutomation() {
         Successful automation requires thoughtful process design, appropriate platform selection, effective change management, and ongoing monitoring. Organizations that invest in automation gain competitive advantages in efficiency and quality.
       </p>
       <p>
-        Ready to automate your interview workflows? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform provides comprehensive automation capabilities including scheduling, communication, evaluation, and scoring that streamline interview processes.
+        Continue with related guides on this blog, or learn how{" "}
+        <Link href="/how-it-works/" className="text-highlight-dark underline">Fragments</Link>{" "}
+        supports rigorous classroom discussion. Questions about these articles:{" "}
+        <Link href="/contact/" className="text-highlight-dark underline">contact us</Link>.
       </p>
     </div>
   );

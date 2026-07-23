@@ -153,7 +153,10 @@ export default function ScholarshipRenewalCriteria() {
         The investment in thoughtful renewal design yields substantial returns. Fair criteria maintain recipient trust and motivation. Support interventions improve outcomes and reduce attrition. Flexibility ensures equity for diverse circumstances. Clear communication reduces anxiety and helps recipients stay on track. As scholarship programs face increasing pressure to demonstrate impact and equity, well-designed renewal criteria become increasingly essential.
       </p>
       <p>
-        Ready to optimize your scholarship renewal processes? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform supports renewal management with tracking tools, early warning systems, communication features, and integration with support services. Our solution helps you implement renewal criteria that balance accountability with support.
+        Continue with related guides on this blog, or learn how{" "}
+        <Link href="/how-it-works/" className="text-highlight-dark underline">Fragments</Link>{" "}
+        supports rigorous classroom discussion. Questions about these articles:{" "}
+        <Link href="/contact/" className="text-highlight-dark underline">contact us</Link>.
       </p>
     </div>
   );

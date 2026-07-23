@@ -1,18 +1,18 @@
-/* eslint-disable react/no-unescaped-entities */
 import Link from "next/link";
-
+/* eslint-disable react/no-unescaped-entities */
 export default function ScholarshipEquityInclusion() {
   return (
     <div className="space-y-8">
-      <h2 className="text-2xl font-bold text-secondary">Advancing Equity and Inclusion in Scholarship Programs</h2>
+      <h2 className="text-2xl font-bold text-secondary">Equity shows up in the process—not the brochure</h2>
       <p>
-        Equity and inclusion are fundamental principles that should guide scholarship program design and implementation. Scholarships exist to expand opportunity, yet without intentional focus on equity, they may inadvertently reinforce existing disparities. Equity goes beyond equal treatment—it requires recognizing and addressing the different barriers and starting points that diverse candidates face. Inclusion ensures that scholarship programs create environments where all recipients feel they belong and can thrive. Programs that prioritize equity and inclusion not only advance social justice but also identify and support talent that might otherwise be overlooked.
-      </p>
-      <p>
-        The importance of equity and inclusion has gained increasing recognition in recent years. Movements for racial justice, growing awareness of socioeconomic disparities, and understanding of how traditional evaluation methods may disadvantage certain groups have prompted scholarship programs to examine their practices. Many programs have made significant strides, but sustained commitment requires ongoing attention, continuous learning, and willingness to change practices that may have been taken for granted.
-      </p>
-      <p>
-        Advancing equity and inclusion requires action across the scholarship lifecycle—from outreach and application design through selection, support services, and alumni engagement. It requires examining each stage for potential barriers and biases, implementing interventions to address them, and measuring outcomes to assess progress. Equity and inclusion are not one-time initiatives but ongoing commitments that must be embedded in program culture and operations.
+        Equity work in scholarship selection is concrete: which criteria you publish, who
+        sits on the panel, whether outreach reaches beyond the usual feeder schools, and
+        whether score gaps get reviewed after the cycle. Slogans do not change outcomes;
+        process design does. For interview-level bias controls, read{" "}
+        <Link href="/blog/how-to-reduce-bias-in-scholarship-interviews/" className="text-highlight-dark underline">
+          how to reduce bias in scholarship interviews
+        </Link>
+        .
       </p>
 
       <h2 className="text-2xl font-bold text-secondary">Understanding Equity vs. Equality</h2>
@@ -71,104 +71,36 @@ export default function ScholarshipEquityInclusion() {
         Inclusive policies and practices ensure that all recipients can participate fully. This might include accommodation for religious observances, support for parenting responsibilities, flexibility for students with disabilities, and policies that address microaggressions or discrimination. Inclusion requires ongoing attention to the day-to-day experiences of recipients.
       </p>
 
-      <h2 className="text-2xl font-bold text-secondary">FAQs</h2>
+      
+      <h2 className="text-2xl font-bold text-secondary">Common questions</h2>
       <div className="space-y-6">
-        <div>
+<div>
           <h3 className="font-bold text-secondary">What is the difference between equity and equality in scholarships?</h3>
           <p className="mt-2">
             Equality means treating everyone the same, while equity means providing different levels of support based on need to ensure fair outcomes. Equality fails to account for different starting points and barriers. Equity recognizes systemic disadvantages and provides additional support to level the playing field.
           </p>
         </div>
-        <div>
+<div>
           <h3 className="font-bold text-secondary">How can programs ensure scholarship opportunities reach diverse candidates?</h3>
           <p className="mt-2">
             Programs should use targeted outreach to underrepresented communities, partner with community organizations, communicate in multiple languages, and eliminate barriers such as application fees. Outreach should be strategic and sustained rather than one-time efforts.
           </p>
         </div>
-        <div>
+<div>
           <h3 className="font-bold text-secondary">How can selection processes be made more equitable?</h3>
           <p className="mt-2">
             Equitable selection requires diverse committees, structured evaluation processes, holistic review, and bias awareness training. Programs should examine criteria for potential bias and consider whether traditional metrics truly predict success or reflect advantages.
           </p>
         </div>
-        <div>
+<div>
           <h3 className="font-bold text-secondary">What role does holistic review play in equity?</h3>
           <p className="mt-2">
             Holistic review considers the whole candidate rather than over-relying on single metrics that may reflect advantages. It examines context, challenges overcome, and diverse forms of excellence. Holistic review helps identify talent that traditional metrics might overlook.
           </p>
         </div>
-        <div>
-          <h3 className="font-bold text-secondary">How can programs create inclusive support environments?</h3>
-          <p className="mt-2">
-            Inclusive environments require culturally responsive support, community building, mental health services, and inclusive policies. Representation among staff and mentors helps recipients feel they belong. Ongoing attention to day-to-day experiences is essential.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">How can programs measure progress toward equity and inclusion?</h3>
-          <p className="mt-2">
-            Measurement should track demographic composition of applicant pools and selected recipients, satisfaction and sense of belonging among diverse recipients, retention and graduation rates across demographic groups, and experiences of discrimination or exclusion. Regular assessment identifies areas for improvement.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">What common barriers do diverse candidates face?</h3>
-          <p className="mt-2">
-            Barriers include lack of information about opportunities, application complexity, financial constraints, imposter syndrome, stereotype threat, and lack of representation. Programs should identify and address specific barriers faced by the communities they seek to serve.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">How can programs address implicit bias in selection?</h3>
-          <p className="mt-2">
-            Addressing bias requires diverse committees, structured evaluation processes, blind review where possible, calibration exercises, and bias awareness training. Ongoing monitoring of outcomes across demographic groups identifies potential disparities.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">What is the role of affinity groups in inclusion?</h3>
-          <p className="mt-2">
-            Affinity groups provide spaces for recipients with shared identities to connect, support each other, and address common challenges. Affinity groups can reduce isolation and build community while also contributing to broader program inclusion efforts.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">How can small programs advance equity with limited resources?</h3>
-          <p className="mt-2">
-            Small programs can focus on high-impact interventions such as targeted outreach, application support, and inclusive support services. Partnerships with community organizations expand reach. Training existing staff on cultural competence builds capacity without major investment.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">How should programs handle resistance to equity initiatives?</h3>
-          <p className="mt-2">
-            Resistance should be addressed through education about the business and moral case for diversity, clear communication about goals, and engagement of skeptics in solution design. Data demonstrating disparities and the impact of interventions can build support. Leadership commitment is essential.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">What is the relationship between diversity, equity, and inclusion?</h3>
-          <p className="mt-2">
-            Diversity refers to representation, equity to fair treatment and access, and inclusion to creating environments where all can thrive. All three are necessary—diversity without inclusion leads to turnover, inclusion without equity is superficial, and equity without diversity may not address systemic issues.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">How can programs ensure equity extends beyond selection?</h3>
-          <p className="mt-2">
-            Equity must be embedded in support services, community building, policies, and alumni engagement. Programs should examine all stages of the recipient journey for barriers and bias. Equity is an ongoing commitment, not a one-time initiative.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">What role does leadership play in advancing equity?</h3>
-          <p className="mt-2">
-            Leadership sets the tone, allocates resources, holds programs accountable, and models commitment. Without leadership commitment, equity initiatives are unlikely to succeed or be sustained. Leaders should articulate clear goals, provide resources, and hold themselves and others accountable.
-          </p>
-        </div>
       </div>
 
-      <h2 className="text-2xl font-bold text-secondary">Conclusion</h2>
-      <p>
-        Advancing equity and inclusion in scholarship programs requires intentional action across the scholarship lifecycle—from outreach and access through selection, support, and alumni engagement. Equity recognizes different starting points and provides support based on need. Inclusion creates environments where all recipients belong and can thrive. Together, these principles ensure scholarships fulfill their promise of expanding opportunity.
-      </p>
-      <p>
-        The commitment to equity and inclusion yields substantial returns. Diverse recipient pools identify talent that might otherwise be overlooked. Inclusive environments improve retention and success. Equity advances social justice and program legitimacy. As expectations for diversity and inclusion grow, programs that prioritize these principles will be well-positioned to attract support and demonstrate impact.
-      </p>
-      <p>
-        Ready to advance equity and inclusion in your scholarship program? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform supports equity with structured evaluation processes, bias reduction tools, analytics for identifying disparities, and features that support inclusive program management. Our solution helps you build scholarship programs that truly expand opportunity for all.
-      </p>
+      
     </div>
   );
 }

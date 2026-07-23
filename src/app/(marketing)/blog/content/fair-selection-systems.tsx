@@ -68,7 +68,7 @@ export default function FairSelectionSystems() {
         Stakeholder feedback provides diverse perspectives on system fairness. Candidates, evaluators, and community members can identify issues that internal review may miss. Feedback should be gathered systematically and acted upon.
       </p>
       <p>
-        Technology platforms like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> provide tools for structured evaluation, bias detection, outcome tracking, and process monitoring. Technology enables fair selection at scale.
+        Evaluation tooling and structured workflows (see our <Link href="/blog/" className="text-highlight-dark underline">guides</Link>) provide tools for structured evaluation, bias detection, outcome tracking, and process monitoring. Technology enables fair selection at scale.
       </p>
 
       <h2 className="text-2xl font-bold text-secondary">FAQs</h2>
@@ -100,7 +100,7 @@ export default function FairSelectionSystems() {
         <div>
           <h3 className="font-bold text-secondary">What technology supports fair selection systems?</h3>
           <p className="mt-2">
-            Technology platforms provide structured evaluation tools, bias detection analytics, outcome tracking, and process monitoring. Platforms like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> enable fair selection at scale.
+            Technology platforms provide structured evaluation tools, bias detection analytics, outcome tracking, and process monitoring. Approaches covered in our <Link href="/blog/" className="text-highlight-dark underline">guides</Link> enable fair selection at scale.
           </p>
         </div>
         <div>
@@ -155,7 +155,10 @@ export default function FairSelectionSystems() {
         The investment in fairness yields substantial returns in program credibility, candidate trust, and selection quality. Programs that prioritize fairness create more equitable outcomes and demonstrate responsible stewardship.
       </p>
       <p>
-        Ready to build fair selection systems in your program? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform supports fair selection with structured evaluation tools, bias detection analytics, outcome tracking, and features that ensure equitable processes.
+        Continue with related guides on this blog, or learn how{" "}
+        <Link href="/how-it-works/" className="text-highlight-dark underline">Fragments</Link>{" "}
+        supports rigorous classroom discussion. Questions about these articles:{" "}
+        <Link href="/contact/" className="text-highlight-dark underline">contact us</Link>.
       </p>
     </div>
   );

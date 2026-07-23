@@ -1,9 +1,11 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { SITE_NAME, CONTENT_CATEGORIES } from "@/lib/seo-constants";
+import { SITE_NAME, CONTENT_CATEGORIES, NOINDEX_ROBOTS } from "@/lib/seo-constants";
 import BreadcrumbSchema from "@/app/components/BreadcrumbSchema";
+import ThinPageNotice from "@/app/components/ThinPageNotice";
 
 export const metadata: Metadata = {
+  robots: NOINDEX_ROBOTS,
   title: `Browse Categories | ${SITE_NAME}`,
   description: `Explore all academic discussion categories on ${SITE_NAME}. Find topics in Science, Technology, Engineering, Mathematics, and more.`,
   keywords: ["categories", "academic disciplines", "subjects", "browse topics", "discussion categories"],
@@ -46,6 +48,7 @@ export default function CategoriesPage() {
       <BreadcrumbSchema items={breadcrumbItems} />
 
       <div className="max-w-6xl mx-auto px-4 py-8">
+        <ThinPageNotice variant="sample" />
         {/* Breadcrumb Navigation */}
         <nav className="flex items-center space-x-2 text-sm text-gray-600 mb-6">
           <Link href="/" className="hover:text-blue-600">Home</Link>

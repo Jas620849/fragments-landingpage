@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { canonicalUrl, hasPublicSiteUrl } from "@/lib/site";
+import { NOINDEX_ROBOTS } from "@/lib/seo-constants";
+import ThinPageNotice from "@/app/components/ThinPageNotice";
 
 const USE_CASES = [
   { code: "reduce-interview-bias", name: "Reduce Interview Bias", description: "Eliminate unconscious bias in scholarship and admission interviews" },
@@ -24,10 +26,12 @@ export async function generateMetadata({ params }: { params: Promise<{ goal: str
     return {
       title: "Scholarship Interview Platform",
       description: "Scholarship interview and candidate evaluation platform for education institutions.",
+      robots: NOINDEX_ROBOTS,
     };
   }
 
   return {
+    robots: NOINDEX_ROBOTS,
     title: `${useCase.name} with FragmentTrails | Scholarship Interview Software`,
     description: `Learn how FragmentTrails helps ${useCase.description}. AI-powered scholarship interview and candidate evaluation platform for education institutions.`,
     keywords: [
@@ -53,6 +57,7 @@ export default async function UseCasePage({ params }: { params: Promise<{ goal: 
   return (
     <div className="min-h-screen bg-gradient-to-b from-primary to-white">
       <div className="mx-auto max-w-7xl px-8 py-24 lg:px-16">
+        <ThinPageNotice variant="product" />
         <h1 className="text-4xl font-bold text-secondary sm:text-5xl lg:text-6xl">
           {useCase.name} with FragmentTrails
         </h1>

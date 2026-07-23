@@ -54,7 +54,7 @@ export default function CandidateComparisonTechniques() {
         Documentation of comparison rationale is essential for defensibility. Evaluators should explain why they ranked candidates as they did, providing specific evidence for their assessments. Documentation supports learning and enables explanation of decisions.
       </p>
       <p>
-        Technology platforms enable efficient comparison of large candidate pools. Digital systems can process multiple assessments, apply scoring algorithms, and generate rankings automatically. Platforms like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> make systematic comparison feasible at scale.
+        Technology platforms enable efficient comparison of large candidate pools. Digital systems can process multiple assessments, apply scoring algorithms, and generate rankings automatically. Approaches covered in our <Link href="/blog/" className="text-highlight-dark underline">guides</Link> make systematic comparison feasible at scale.
       </p>
 
       <h2 className="text-2xl font-bold text-secondary">Common Pitfalls</h2>
@@ -100,7 +100,7 @@ export default function CandidateComparisonTechniques() {
         <div>
           <h3 className="font-bold text-secondary">What technology supports candidate comparison?</h3>
           <p className="mt-2">
-            Technology platforms provide structured evaluation interfaces, automated scoring, ranking algorithms, and analytics. Platforms like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> enable systematic comparison of large candidate pools.
+            Technology platforms provide structured evaluation interfaces, automated scoring, ranking algorithms, and analytics. Approaches covered in our <Link href="/blog/" className="text-highlight-dark underline">guides</Link> enable systematic comparison of large candidate pools.
           </p>
         </div>
         <div>
@@ -161,7 +161,10 @@ export default function CandidateComparisonTechniques() {
         Effective comparison requires clear criteria, trained evaluators, documentation, and ongoing validation. Programs that invest in systematic comparison improve decision quality, make more defensible choices, and identify candidates who will thrive.
       </p>
       <p>
-        Ready to implement systematic candidate comparison in your program? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform supports candidate comparison with structured evaluation tools, automated scoring, ranking algorithms, and analytics that ensure fair, effective selection.
+        Continue with related guides on this blog, or learn how{" "}
+        <Link href="/how-it-works/" className="text-highlight-dark underline">Fragments</Link>{" "}
+        supports rigorous classroom discussion. Questions about these articles:{" "}
+        <Link href="/contact/" className="text-highlight-dark underline">contact us</Link>.
       </p>
     </div>
   );

@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import Link from "next/link";
 
 export default function DigitalInterviewAssessment() {
@@ -71,98 +70,36 @@ export default function DigitalInterviewAssessment() {
         Continuous monitoring and improvement ensure digital assessment remains effective. Organizations should track platform performance, user satisfaction, evaluation quality, and outcomes. Regular assessment enables optimization and adaptation.
       </p>
 
-      <h2 className="text-2xl font-bold text-secondary">FAQs</h2>
+      
+      <h2 className="text-2xl font-bold text-secondary">Common questions</h2>
       <div className="space-y-6">
-        <div>
+<div>
           <h3 className="font-bold text-secondary">What are the main benefits of digital interview assessment?</h3>
           <p className="mt-2">
             Key benefits include improved efficiency through automation, enhanced consistency through standardized interfaces, expanded accessibility through remote participation, and data collection that enables analysis and improvement.
           </p>
         </div>
-        <div>
+<div>
           <h3 className="font-bold text-secondary">How should organizations select digital assessment platforms?</h3>
           <p className="mt-2">
-            Selection should consider feature fit with organizational needs, ease of use for evaluators and candidates, integration with existing systems, security and compliance, cost, and vendor reliability. Platforms like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> offer comprehensive solutions.
+            Selection should consider feature fit with organizational needs, ease of use for evaluators and candidates, integration with existing systems, security and compliance, cost, and vendor reliability. Approaches covered in our <Link href="/blog/" className="text-highlight-dark underline">guides</Link> offer comprehensive solutions.
           </p>
         </div>
-        <div>
+<div>
           <h3 className="font-bold text-secondary">What challenges do organizations face in digital implementation?</h3>
           <p className="mt-2">
             Common challenges include resistance to change, technical infrastructure requirements, security concerns, learning curves for users, and ensuring equitable access. Proactive planning and change management address these challenges.
           </p>
         </div>
-        <div>
+<div>
           <h3 className="font-bold text-secondary">How can organizations ensure digital assessment is fair?</h3>
           <p className="mt-2">
             Fairness requires ensuring all candidates have adequate technology access, providing technical support, using standardized evaluation criteria, monitoring for digital divides, and accommodating disabilities. Equity must be designed into digital approaches.
           </p>
         </div>
-        <div>
-          <h3 className="font-bold text-secondary">What role does AI play in digital assessment?</h3>
-          <p className="mt-2">
-            AI can analyze interview responses, assess communication patterns, provide objective scoring, and identify patterns humans might miss. AI assistance reduces bias and provides consistent analysis while complementing human judgment.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">How can organizations prepare evaluators for digital assessment?</h3>
-          <p className="mt-2">
-            Preparation includes training on platform use, digital evaluation best practices, technical troubleshooting, and maintaining evaluation quality in digital environments. Ongoing support and resources help evaluators adapt successfully.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">What security considerations are important for digital assessment?</h3>
-          <p className="mt-2">
-            Security includes protecting candidate data, ensuring platform security, complying with privacy regulations, managing access controls, and having breach response plans. Organizations should evaluate platform security thoroughly.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">How can small organizations implement digital assessment with limited resources?</h3>
-          <p className="mt-2">
-            Small organizations should start with essential features, leverage cloud-based solutions that don't require infrastructure investment, phase implementation gradually, and prioritize high-impact capabilities. Many platforms offer pricing scaled to organizational size.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">What hybrid approaches work well for digital assessment?</h3>
-          <p className="mt-2">
-            Effective hybrids include digital initial screening with in-person finals, recorded video for first review with live video for follow-up, and digital document review with in-person interviews. Hybrids leverage digital benefits while maintaining valuable traditional elements.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">How can organizations measure the success of digital assessment?</h3>
-          <p className="mt-2">
-            Success measures include evaluator satisfaction, candidate experience, time and cost savings, evaluation consistency, decision quality, and diversity of selected candidates. Regular assessment ensures digital approaches achieve intended benefits.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">What trends are shaping the future of digital assessment?</h3>
-          <p className="mt-2">
-            Trends include enhanced AI capabilities, virtual reality assessments, blockchain for credential verification, increased integration with broader systems, and more sophisticated analytics. Digital assessment continues to evolve rapidly.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">How can organizations address the digital divide in assessment?</h3>
-          <p className="mt-2">
-            Addressing the digital divide requires providing technology access where needed, offering flexible timing and formats, ensuring mobile-friendly platforms, and providing technical support. Equity must be proactively designed into digital approaches.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">What role does video assessment play in digital evaluation?</h3>
-          <p className="mt-2">
-            Video assessment enables remote evaluation, allows review and replay, provides rich behavioral data, and can be analyzed for patterns. Both recorded and live video formats offer advantages depending on organizational needs.
-          </p>
-        </div>
       </div>
 
-      <h2 className="text-2xl font-bold text-secondary">Conclusion</h2>
-      <p>
-        Digital interview assessment represents a transformative opportunity to improve evaluation efficiency, consistency, fairness, and insight. When implemented thoughtfully with attention to platform selection, change management, and continuous improvement, digital approaches can significantly enhance assessment quality and organizational effectiveness.
-      </p>
-      <p>
-        The transition to digital assessment requires investment in technology, training, and process redesign, but the returns justify the effort. Organizations that embrace digital assessment position themselves for long-term success in an increasingly digital world.
-      </p>
-      <p>
-        Ready to transform your assessment with digital tools? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform provides comprehensive digital assessment capabilities including video interviews, AI-assisted evaluation, structured rubrics, and analytics that optimize assessment quality.
-      </p>
+      
     </div>
   );
 }

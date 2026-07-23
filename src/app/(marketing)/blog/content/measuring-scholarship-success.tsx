@@ -40,7 +40,7 @@ export default function MeasuringScholarshipSuccess() {
         Qualitative methods such as interviews and focus groups provide rich insights into recipient experiences and outcomes that quantitative metrics cannot capture. These methods are particularly valuable for understanding how scholarships impact recipients' lives, what challenges they face, and what program elements are most valuable. While qualitative data is more resource-intensive to collect and analyze, it provides depth and context that complement quantitative metrics.
       </p>
       <p>
-        Technology platforms can streamline data collection and management. Systems like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> can provide dashboards that track key metrics, automate survey distribution and reminder systems, and integrate data from multiple sources. Technology reduces administrative burden, improves data quality, and enables more frequent and timely data collection. However, technology should be implemented thoughtfully, with attention to data privacy, security, and user experience.
+        Technology platforms can streamline data collection and management. Systems like <Link href="/blog/" className="text-blue-600 hover:underline">FragmentTrails</Link> can provide dashboards that track key metrics, automate survey distribution and reminder systems, and integrate data from multiple sources. Technology reduces administrative burden, improves data quality, and enables more frequent and timely data collection. However, technology should be implemented thoughtfully, with attention to data privacy, security, and user experience.
       </p>
 
       <h2 className="text-2xl font-bold text-secondary">Analyzing and Interpreting Data</h2>
@@ -173,7 +173,10 @@ export default function MeasuringScholarshipSuccess() {
         The investment in measurement yields substantial returns. Programs that measure effectively can demonstrate their value to stakeholders, secure funding, and continuously improve their impact. As expectations for accountability and evidence-based practice grow, scholarship programs that invest in robust measurement will be well-positioned to thrive and serve their missions effectively.
       </p>
       <p>
-        Ready to enhance your scholarship measurement capabilities? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform can support your outcome measurement efforts with automated data collection, real-time dashboards, analytics tools, and comprehensive reporting. Our solution helps you measure what matters, demonstrate impact, and continuously improve your scholarship program.
+        Continue with related guides on this blog, or learn how{" "}
+        <Link href="/how-it-works/" className="text-highlight-dark underline">Fragments</Link>{" "}
+        supports rigorous classroom discussion. Questions about these articles:{" "}
+        <Link href="/contact/" className="text-highlight-dark underline">contact us</Link>.
       </p>
     </div>
   );

@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import { canonicalUrl, hasPublicSiteUrl } from "@/lib/site";
 import FAQSchema from "../../components/FAQSchema";
+import { NOINDEX_ROBOTS } from "@/lib/seo-constants";
+import ThinPageNotice from "@/app/components/ThinPageNotice";
 
 export const metadata: Metadata = {
+  robots: NOINDEX_ROBOTS,
   title: "Scholarship Interview Software | FragmentTrails",
   description: "Streamline scholarship interviews with FragmentTrails. AI-powered interview scoring, structured evaluation, and bias reduction for education institutions and scholarship programs.",
   keywords: [
@@ -42,6 +45,7 @@ export default function ScholarshipInterviewSoftwarePage() {
       <FAQSchema faqs={scholarshipInterviewFAQs} />
       <div className="min-h-screen bg-gradient-to-b from-primary to-white">
         <div className="mx-auto max-w-7xl px-8 py-24 lg:px-16">
+          <ThinPageNotice variant="product" />
           <h1 className="text-4xl font-bold text-secondary sm:text-5xl lg:text-6xl">
             Scholarship Interview Software
           </h1>

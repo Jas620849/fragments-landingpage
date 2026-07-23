@@ -59,7 +59,7 @@ export default function ImprovingScholarshipDecisions() {
 
       <h2 className="text-2xl font-bold text-secondary">Technology Support</h2>
       <p>
-        Decision support platforms provide tools for structured evaluation, data collection, analytics, and reporting. Technology like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> enables data-driven decision-making at scale while reducing administrative burden.
+        Decision support platforms provide tools for structured evaluation, data collection, analytics, and reporting. Technology like <Link href="/blog/" className="text-blue-600 hover:underline">FragmentTrails</Link> enables data-driven decision-making at scale while reducing administrative burden.
       </p>
       <p>
         Analytics dashboards provide real-time insights into decision processes. Dashboards can show evaluator performance, score distributions, demographic outcomes, and other metrics that inform quality improvement. Visibility enables proactive management.
@@ -106,7 +106,7 @@ export default function ImprovingScholarshipDecisions() {
         <div>
           <h3 className="font-bold text-secondary">What technology supports data-driven decision making?</h3>
           <p className="mt-2">
-            Technology platforms provide structured evaluation tools, analytics dashboards, automated scoring, and integration with broader systems. Platforms like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> enable data-driven decisions at scale.
+            Technology platforms provide structured evaluation tools, analytics dashboards, automated scoring, and integration with broader systems. Approaches covered in our <Link href="/blog/" className="text-highlight-dark underline">guides</Link> enable data-driven decisions at scale.
           </p>
         </div>
         <div>
@@ -167,7 +167,10 @@ export default function ImprovingScholarshipDecisions() {
         The investment in decision improvement yields substantial returns in recipient success, donor confidence, and program impact. Programs that continuously enhance their decision-making create competitive advantages and demonstrate responsible stewardship.
       </p>
       <p>
-        Ready to improve your scholarship decision-making? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform supports data-driven decisions with structured evaluation tools, analytics dashboards, outcome tracking, and features that ensure fair, consistent, and defensible selection.
+        Continue with related guides on this blog, or learn how{" "}
+        <Link href="/how-it-works/" className="text-highlight-dark underline">Fragments</Link>{" "}
+        supports rigorous classroom discussion. Questions about these articles:{" "}
+        <Link href="/contact/" className="text-highlight-dark underline">contact us</Link>.
       </p>
     </div>
   );

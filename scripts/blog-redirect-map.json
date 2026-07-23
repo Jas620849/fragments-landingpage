@@ -1,0 +1,41 @@
+{
+  "MERGE": {
+    "fair-candidate-assessment-methods": "how-to-reduce-bias-in-scholarship-interviews",
+    "fair-selection-systems": "how-to-reduce-bias-in-scholarship-interviews",
+    "diversity-in-scholarship-selection": "scholarship-equity-inclusion",
+    "interview-rubrics-for-scholarship-programs": "building-evaluation-rubrics",
+    "candidate-evaluation-frameworks": "scholarship-selection-criteria",
+    "candidate-comparison-techniques": "applicant-ranking-systems",
+    "improving-scholarship-decisions": "applicant-ranking-systems",
+    "how-universities-evaluate-applicants": "university-selection-processes",
+    "digital-scholarship-assessment-guide": "digital-interview-assessment",
+    "scholarship-selection-committee": "interview-panel-best-practices"
+  },
+  "REMOVE_TO_BLOG": [
+    "measuring-scholarship-success",
+    "scholarship-program-management",
+    "scholarship-alumni-engagement",
+    "scholarship-recipient-support",
+    "scholarship-application-process",
+    "scholarship-outreach-strategies",
+    "scholarship-donor-relations",
+    "scholarship-financial-literacy",
+    "scholarship-mentorship-programs",
+    "scholarship-renewal-criteria",
+    "scholarship-interview-preparation",
+    "scholarship-technology-solutions",
+    "scholarship-impact-measurement",
+    "scholarship-collaboration-partnerships",
+    "scholarship-crisis-management",
+    "scholarship-sustainability-growth",
+    "scholarship-legal-compliance",
+    "scholarship-innovation-future",
+    "scholarship-global-perspectives",
+    "scholarship-best-practices-summary",
+    "scholarship-management-technology",
+    "modern-scholarship-platforms",
+    "higher-education-evaluation-trends",
+    "future-of-scholarship-assessments",
+    "interview-workflow-automation"
+  ]
+}

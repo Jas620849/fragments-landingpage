@@ -45,7 +45,7 @@ export default function ScholarshipBestPracticesSummary() {
 
       <h2 className="text-2xl font-bold text-secondary">Selection and Evaluation</h2>
       <p>
-        Structured evaluation processes ensure consistency and fairness. Programs should use clear criteria, scoring rubrics, blind review where possible, and multiple evaluators. Structured processes reduce bias and improve decision quality. Platforms like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> support structured evaluation.
+        Structured evaluation processes ensure consistency and fairness. Programs should use clear criteria, scoring rubrics, blind review where possible, and multiple evaluators. Structured processes reduce bias and improve decision quality. Approaches covered in our <Link href="/blog/" className="text-highlight-dark underline">guides</Link> support structured evaluation.
       </p>
       <p>
         Diverse selection committees bring varied perspectives. Committees should reflect the diversity of applicant populations in terms of background, experience, and expertise. Diversity reduces bias and recognizes diverse forms of excellence.
@@ -167,7 +167,10 @@ export default function ScholarshipBestPracticesSummary() {
         Implementing best practices requires commitment, resources, and ongoing learning. Programs that embrace professional standards achieve better outcomes and demonstrate greater impact. Excellence is not a destination but a journey of continuous improvement. As the scholarship field continues to evolve, programs must adapt while staying true to core principles.
       </p>
       <p>
-        Ready to implement best practices in your scholarship program? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform supports best practices with structured evaluation tools, recipient support features, impact measurement capabilities, and integrated technology that connects all program dimensions. Our solution helps you build a program that exemplifies excellence.
+        Continue with related guides on this blog, or learn how{" "}
+        <Link href="/how-it-works/" className="text-highlight-dark underline">Fragments</Link>{" "}
+        supports rigorous classroom discussion. Questions about these articles:{" "}
+        <Link href="/contact/" className="text-highlight-dark underline">contact us</Link>.
       </p>
     </div>
   );

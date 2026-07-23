@@ -20,7 +20,7 @@ export default function ScholarshipTechnologySolutions() {
         Application management systems streamline the collection and processing of applications. Online forms enable candidates to submit applications from anywhere, document upload features simplify submission of supporting materials, and automated workflows route applications through review processes. These systems reduce administrative burden, improve data quality, and provide better candidate experience.
       </p>
       <p>
-        Evaluation and selection platforms structure the review and decision-making process. These systems might include scoring rubrics, blind review features, multiple reviewer assignment, and decision tracking. Structured evaluation reduces bias, improves consistency, and provides documentation of selection processes. Platforms like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> integrate evaluation with broader scholarship management.
+        Evaluation and selection platforms structure the review and decision-making process. These systems might include scoring rubrics, blind review features, multiple reviewer assignment, and decision tracking. Structured evaluation reduces bias, improves consistency, and provides documentation of selection processes. Approaches covered in our <Link href="/blog/" className="text-highlight-dark underline">guides</Link> integrate evaluation with broader scholarship management.
       </p>
       <p>
         Communication tools facilitate regular, personalized outreach to candidates, recipients, alumni, and other stakeholders. Automated email sequences, text messaging, and notification systems ensure timely communication without requiring manual effort for routine messages. Personalization features allow tailored communication while maintaining efficiency.
@@ -153,7 +153,10 @@ export default function ScholarshipTechnologySolutions() {
         The investment in technology yields substantial returns for programs, recipients, and stakeholders. Administrative efficiency frees resources for program growth. Structured processes improve fairness and consistency. Data analytics enables continuous improvement and impact demonstration. Enhanced user experiences attract stronger applicant pools and improve recipient satisfaction.
       </p>
       <p>
-        Ready to transform your scholarship program with technology? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our integrated platform supports the full scholarship lifecycle with application management, evaluation tools, communication features, and powerful analytics. Our solution helps you leverage technology to enhance impact while maintaining the human connections that make scholarship programs meaningful.
+        Continue with related guides on this blog, or learn how{" "}
+        <Link href="/how-it-works/" className="text-highlight-dark underline">Fragments</Link>{" "}
+        supports rigorous classroom discussion. Questions about these articles:{" "}
+        <Link href="/contact/" className="text-highlight-dark underline">contact us</Link>.
       </p>
     </div>
   );

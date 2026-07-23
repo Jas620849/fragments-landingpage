@@ -31,7 +31,7 @@ export default function ScholarshipApplicationProcess() {
 
       <h2 className="text-2xl font-bold text-secondary">Technology in Application Processes</h2>
       <p>
-        Application management systems have transformed how scholarship programs collect and process applications. These systems enable online applications, document upload, recommendation submission, and application tracking in integrated platforms. They reduce administrative burden, improve data quality, and provide better candidate experience. Systems like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> can integrate applications with selection processes, creating seamless workflows from application through evaluation.
+        Application management systems have transformed how scholarship programs collect and process applications. These systems enable online applications, document upload, recommendation submission, and application tracking in integrated platforms. They reduce administrative burden, improve data quality, and provide better candidate experience. Systems like <Link href="/blog/" className="text-blue-600 hover:underline">FragmentTrails</Link> can integrate applications with selection processes, creating seamless workflows from application through evaluation.
       </p>
       <p>
         Online applications provide convenience and accessibility for candidates. They can be completed from anywhere, allow saving progress, and provide immediate confirmation of submission. Mobile-friendly designs ensure accessibility for candidates who primarily use smartphones. Online systems also facilitate data collection and analysis, enabling programs to track application trends and identify areas for process improvement.
@@ -153,7 +153,10 @@ export default function ScholarshipApplicationProcess() {
         The investment in thoughtful application design yields substantial returns. Strong applicant pools improve selection quality and program impact. Positive candidate experiences enhance reputation and attract future applicants. Fair, accessible processes advance equity goals. As scholarship programs compete for talent and face increasing expectations for accountability and equity, effective application design becomes increasingly essential.
       </p>
       <p>
-        Ready to transform your scholarship application process? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform supports application management with online forms, document collection, communication tools, and integration with selection processes. Our solution helps you create an application process that is efficient, accessible, and effective.
+        Continue with related guides on this blog, or learn how{" "}
+        <Link href="/how-it-works/" className="text-highlight-dark underline">Fragments</Link>{" "}
+        supports rigorous classroom discussion. Questions about these articles:{" "}
+        <Link href="/contact/" className="text-highlight-dark underline">contact us</Link>.
       </p>
     </div>
   );

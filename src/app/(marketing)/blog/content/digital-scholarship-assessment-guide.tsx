@@ -45,7 +45,7 @@ export default function DigitalScholarshipAssessmentGuide() {
 
       <h2 className="text-2xl font-bold text-secondary">Implementation Considerations</h2>
       <p>
-        Platform selection is a critical decision that requires careful consideration. Programs should evaluate platforms based on feature fit, ease of use, integration capabilities, security, cost, and vendor reliability. The right platform depends on program size, complexity, and specific needs. Platforms like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> offer comprehensive solutions designed specifically for scholarship assessment.
+        Platform selection is a critical decision that requires careful consideration. Programs should evaluate platforms based on feature fit, ease of use, integration capabilities, security, cost, and vendor reliability. The right platform depends on program size, complexity, and specific needs. Approaches covered in our <Link href="/blog/" className="text-highlight-dark underline">guides</Link> offer comprehensive solutions designed specifically for scholarship assessment.
       </p>
       <p>
         Change management is essential for successful digital implementation. Evaluators and staff may resist new approaches, especially if they're comfortable with existing processes. Effective change management includes clear communication about benefits, thorough training, phased implementation, and ongoing support. Addressing concerns proactively prevents resistance.
@@ -167,7 +167,10 @@ export default function DigitalScholarshipAssessmentGuide() {
         The transition to digital assessment requires investment in technology, training, and process redesign, but the returns justify the effort. Programs that embrace digital assessment position themselves for long-term success in an increasingly digital world while improving their ability to identify and support talented candidates.
       </p>
       <p>
-        Ready to transform your scholarship assessment with digital tools? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform provides comprehensive digital assessment capabilities including video interviews, structured evaluation, analytics, and workflow automation designed specifically for scholarship programs.
+        Continue with related guides on this blog, or learn how{" "}
+        <Link href="/how-it-works/" className="text-highlight-dark underline">Fragments</Link>{" "}
+        supports rigorous classroom discussion. Questions about these articles:{" "}
+        <Link href="/contact/" className="text-highlight-dark underline">contact us</Link>.
       </p>
     </div>
   );

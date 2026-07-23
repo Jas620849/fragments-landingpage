@@ -153,7 +153,7 @@ export default function ScholarshipInterviewPreparation() {
         The investment in interview preparation yields substantial returns. Well-prepared candidates present themselves more effectively, reduce anxiety, and make stronger impressions. Preparation that emphasizes authenticity over scripting helps candidates stand out for the right reasons. As competition for prestigious scholarships intensifies, thorough interview preparation becomes increasingly essential.
       </p>
       <p>
-        Scholarship programs that provide interview guidance as part of their outreach demonstrate commitment to equity and candidate success. <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> supports fair interview processes with structured evaluation tools that ensure all candidates are assessed consistently. Our platform helps programs create interview experiences that identify the most deserving candidates while providing a positive experience for all participants.
+        Scholarship programs that provide interview guidance as part of their outreach demonstrate commitment to equity and candidate success. <Link href="/blog/" className="text-blue-600 hover:underline">FragmentTrails</Link> supports fair interview processes with structured evaluation tools that ensure all candidates are assessed consistently. Our platform helps programs create interview experiences that identify the most deserving candidates while providing a positive experience for all participants.
       </p>
     </div>
   );

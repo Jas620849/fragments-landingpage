@@ -116,7 +116,7 @@ export default function ScholarshipImpactMeasurement() {
         <div>
           <h3 className="font-bold text-secondary">What technology supports impact measurement?</h3>
           <p className="mt-2">
-            Technology includes survey platforms, data management systems, analytics tools, and reporting dashboards. Integrated platforms like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> connect impact measurement with broader scholarship management. Technology should enhance efficiency without compromising data quality or respondent experience.
+            Technology includes survey platforms, data management systems, analytics tools, and reporting dashboards. Integrated platforms like <Link href="/blog/" className="text-blue-600 hover:underline">FragmentTrails</Link> connect impact measurement with broader scholarship management. Technology should enhance efficiency without compromising data quality or respondent experience.
           </p>
         </div>
         <div>
@@ -153,7 +153,10 @@ export default function ScholarshipImpactMeasurement() {
         The investment in impact measurement yields substantial returns. Demonstrated impact attracts and retains donors. Data-driven decisions improve program effectiveness. Stories engage stakeholders and build support. Continuous measurement enables ongoing improvement. As expectations for accountability and evidence grow, robust impact measurement becomes increasingly essential.
       </p>
       <p>
-        Ready to enhance your impact measurement capabilities? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform supports impact measurement with data collection tools, analytics dashboards, survey management, and integration with broader scholarship management. Our solution helps you demonstrate the transformative impact of your scholarship investments.
+        Continue with related guides on this blog, or learn how{" "}
+        <Link href="/how-it-works/" className="text-highlight-dark underline">Fragments</Link>{" "}
+        supports rigorous classroom discussion. Questions about these articles:{" "}
+        <Link href="/contact/" className="text-highlight-dark underline">contact us</Link>.
       </p>
     </div>
   );

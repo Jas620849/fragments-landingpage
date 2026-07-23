@@ -128,7 +128,7 @@ export default function ScholarshipSustainabilityGrowth() {
         <div>
           <h3 className="font-bold text-secondary">What technology investments support sustainability?</h3>
           <p className="mt-2">
-            Technology that integrates operations, automates routine tasks, and provides analytics yields long-term efficiency gains. Platforms like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> reduce administrative costs and improve capabilities. Technology should be viewed as investment rather than expense.
+            Technology that integrates operations, automates routine tasks, and provides analytics yields long-term efficiency gains. Approaches covered in our <Link href="/blog/" className="text-highlight-dark underline">guides</Link> reduce administrative costs and improve capabilities. Technology should be viewed as investment rather than expense.
           </p>
         </div>
         <div>
@@ -153,7 +153,10 @@ export default function ScholarshipSustainabilityGrowth() {
         The investment in sustainability yields substantial returns. Sustainable programs weather challenges, maintain recipient support, and attract continued funding. Operational efficiency directs more resources to impact. Strategic growth expands reach and influence. Programs that build sustainable foundations are positioned for long-term success and transformational impact.
       </p>
       <p>
-        Ready to build a more sustainable and growing scholarship program? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform supports sustainability with operational efficiency tools, impact measurement capabilities, donor management features, and scalable technology. Our solution helps you build a program that lasts and grows.
+        Continue with related guides on this blog, or learn how{" "}
+        <Link href="/how-it-works/" className="text-highlight-dark underline">Fragments</Link>{" "}
+        supports rigorous classroom discussion. Questions about these articles:{" "}
+        <Link href="/contact/" className="text-highlight-dark underline">contact us</Link>.
       </p>
     </div>
   );

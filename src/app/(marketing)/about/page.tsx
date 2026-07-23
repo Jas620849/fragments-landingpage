@@ -1,13 +1,14 @@
 "use client";
 
+import Link from "next/link";
 import {
   faBook,
   faCertificate,
   faChalkboardUser,
-  faCog,
   faComments,
   faDollarSign,
   faLock,
+  faRoute,
   faScaleBalanced,
   faUsers,
 } from "@fortawesome/free-solid-svg-icons";
@@ -22,71 +23,101 @@ export default function AboutPage() {
           aria-hidden
         />
         <div className="relative frag-container">
-          <div className="max-w-lg">
-            <p className="frag-hero-eyebrow">About us</p>
-            <h1 className="frag-hero-h1 mt-1.5">About Fragments</h1>
+          <div className="max-w-2xl">
+            <p className="frag-hero-eyebrow">About FragmentTrails</p>
+            <h1 className="frag-hero-h1 mt-1.5">Who we are and what we build</h1>
             <p className="frag-hero-lead max-w-none">
-              The only platform online that encourages scholarly discourse while
-              financially rewarding knowledgeable and dedicated educators.
+              FragmentTrails is the public home of Fragments—an AI-moderated discussion
+              platform for schools and serious learners—and a publishing space for practical
+              guides on fair educational evaluation.
             </p>
           </div>
         </div>
       </section>
 
       <section className="border-b border-slate-200/80 bg-white py-12 sm:py-16">
-        <div className="frag-container text-center">
-          <h2 className="frag-title">We invite…</h2>
-          <div className="mx-auto mt-8 grid max-w-5xl gap-6 md:grid-cols-3 md:gap-8">
-            <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-5 ring-1 ring-slate-100 sm:p-6">
-              <FontAwesomeIcon icon={faBook} className="mx-auto h-9 w-9 text-amber-500" />
-              <p className="mt-3 text-sm font-medium leading-relaxed text-slate-700">
-                <span className="font-bold text-amber-700">Educators</span> to share
-                their expertise with fragments of information.
-              </p>
-            </div>
-            <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-5 ring-1 ring-slate-100 sm:p-6">
-              <FontAwesomeIcon icon={faComments} className="mx-auto h-9 w-9 text-teal-600" />
-              <p className="mt-3 text-sm font-medium leading-relaxed text-slate-700">
-                <span className="font-bold text-teal-700">Learners</span> to ask
-                questions and participate in scholarly discussion to extend the
-                trail of fragments.
-              </p>
-            </div>
-            <div className="rounded-xl border border-slate-200/90 bg-slate-50/80 p-5 ring-1 ring-slate-100 sm:p-6">
-              <FontAwesomeIcon
-                icon={faChalkboardUser}
-                className="mx-auto h-9 w-9 text-blue-700"
-              />
-              <p className="mt-3 text-sm font-medium leading-relaxed text-slate-700">
-                <span className="font-bold text-blue-800">Reviewers</span> to provide
-                feedback in the spirit of knowledge sharing.
-              </p>
-            </div>
+        <div className="frag-container max-w-3xl">
+          <h2 className="frag-title">Why FragmentTrails exists</h2>
+          <div className="mt-6 space-y-4 text-base font-medium leading-relaxed text-slate-700">
+            <p>
+              Most online discussion tools were designed for attention, not instruction.
+              Threads scatter, quality is uneven, and educators who invest careful teaching time
+              rarely get durable credit for the work. Fragments was built to fix that shape of
+              problem: a <strong>fragment</strong> is a tight piece of teaching; a{" "}
+              <strong>trail</strong> is the cumulative path learners build from it.
+            </p>
+            <p>
+              We also publish long-form guides on scholarship interviews, rubrics, bias
+              reduction, and selection design. Those articles are written for program staff and
+              educators who need operational clarity—not keyword pages. They sit alongside the
+              product because fair evaluation and rigorous classroom discourse share the same
+              foundation: clear criteria, accountable process, and respect for people doing the
+              work.
+            </p>
+            <p>
+              We do not invent testimonials, ratings, or community statistics. Where we share
+              pilot themes, we label them as composite feedback. Where content is educational,
+              we mark it as guidance, not legal or admissions advice—see our{" "}
+              <Link href="/disclaimer/" className="font-semibold text-highlight-dark underline-offset-2 hover:underline">
+                disclaimer
+              </Link>
+              .
+            </p>
           </div>
         </div>
       </section>
 
       <section className="border-b border-slate-200/80 bg-slate-50 py-12 sm:py-16">
         <div className="frag-container text-center">
-          <h2 className="frag-title">Our mission</h2>
+          <h2 className="frag-title">Who Fragments is for</h2>
+          <div className="mx-auto mt-8 grid max-w-5xl gap-6 md:grid-cols-3 md:gap-8">
+            <div className="rounded-xl border border-slate-200/90 bg-white p-5 ring-1 ring-slate-100 sm:p-6">
+              <FontAwesomeIcon icon={faBook} className="mx-auto h-9 w-9 text-amber-500" />
+              <p className="mt-3 text-sm font-medium leading-relaxed text-slate-700">
+                <span className="font-bold text-amber-700">Educators</span> who want structured
+                discussion paths instead of scattered chat, with moderation that protects rigor.
+              </p>
+            </div>
+            <div className="rounded-xl border border-slate-200/90 bg-white p-5 ring-1 ring-slate-100 sm:p-6">
+              <FontAwesomeIcon icon={faComments} className="mx-auto h-9 w-9 text-teal-600" />
+              <p className="mt-3 text-sm font-medium leading-relaxed text-slate-700">
+                <span className="font-bold text-teal-700">Learners</span> who ask follow-ups,
+                bring sources, and extend a trail without competing for the loudest reply.
+              </p>
+            </div>
+            <div className="rounded-xl border border-slate-200/90 bg-white p-5 ring-1 ring-slate-100 sm:p-6">
+              <FontAwesomeIcon
+                icon={faChalkboardUser}
+                className="mx-auto h-9 w-9 text-blue-700"
+              />
+              <p className="mt-3 text-sm font-medium leading-relaxed text-slate-700">
+                <span className="font-bold text-blue-800">Reviewers</span> who help keep published
+                fragments accurate and on-standard through transparent human review.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-slate-200/80 bg-white py-12 sm:py-16">
+        <div className="frag-container text-center">
+          <h2 className="frag-title">How we approach quality</h2>
           <p className="frag-lead mx-auto mt-3 max-w-2xl">
-            Fragments is dedicated to creating an interactive educational platform
-            that bridges the gap between traditional learning and modern
-            collaboration. We believe in the power of user-generated content to
-            create meaningful educational experiences.
+            Quality is a process, not a slogan. Fragments screens contributions with automation
+            first, then human review, so classrooms can move quickly without abandoning standards.
           </p>
 
           <div className="mx-auto mt-10 grid max-w-4xl grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-5 lg:grid-cols-5">
             {[
-              { icon: faBook, title: "Learn", sub: "Access quality educational content.", color: "text-blue-700" },
-              { icon: faChalkboardUser, title: "Educate", sub: "Share your expertise.", color: "text-amber-600" },
-              { icon: faComments, title: "Discuss", sub: "Engage in meaningful dialogue.", color: "text-teal-700" },
-              { icon: faScaleBalanced, title: "Debate", sub: "Challenge ideas respectfully.", color: "text-slate-800" },
-              { icon: faDollarSign, title: "Reward", sub: "Receive payment for your expertise.", color: "text-amber-600" },
+              { icon: faBook, title: "Learn", sub: "Follow readable trails of sourced teaching.", color: "text-blue-700" },
+              { icon: faChalkboardUser, title: "Educate", sub: "Publish fragments that invite real thinking.", color: "text-amber-600" },
+              { icon: faComments, title: "Discuss", sub: "Extend ideas with evidence and questions.", color: "text-teal-700" },
+              { icon: faScaleBalanced, title: "Debate", sub: "Challenge claims without losing the thread.", color: "text-slate-800" },
+              { icon: faDollarSign, title: "Recognize", sub: "Credit educators who consistently raise quality.", color: "text-amber-600" },
             ].map((item) => (
               <div
                 key={item.title}
-                className="rounded-xl border border-white bg-white p-4 shadow-sm ring-1 ring-slate-100 sm:p-5"
+                className="rounded-xl border border-slate-200/90 bg-slate-50 p-4 shadow-sm ring-1 ring-slate-100 sm:p-5"
               >
                 <FontAwesomeIcon icon={item.icon} className={`mx-auto h-7 w-7 ${item.color}`} />
                 <h3 className={`mt-2 text-sm font-bold ${item.color}`}>{item.title}</h3>
@@ -97,39 +128,47 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-white py-12 sm:py-16">
+      <section className="border-b border-slate-200/80 bg-slate-50 py-12 sm:py-16">
         <div className="frag-container">
-          <h2 className="frag-title text-center">Platform features</h2>
+          <h2 className="frag-title text-center">What you will find on this site</h2>
           <div className="mx-auto mt-8 grid max-w-5xl gap-5 md:grid-cols-2">
             {[
               {
-                icon: faCog,
-                title: "Fragment trails",
-                body: "Create and follow educational paths curated by expert contributors.",
+                icon: faRoute,
+                title: "The Fragments product",
+                body: "How fragment trails, moderation, and educator recognition work—start with How it works and the classroom discussion service page.",
+                href: "/how-it-works/",
+                linkLabel: "See how it works",
                 border: "border-l-teal-500",
               },
               {
                 icon: faUsers,
-                title: "Community engagement",
-                body: "Connect with fellow learners and educators in your field of interest.",
+                title: "Practical evaluation guides",
+                body: "Blog articles on interview structure, rubrics, bias reduction, and scholarship program operations for people who run selection processes.",
+                href: "/blog/",
+                linkLabel: "Browse the blog",
                 border: "border-l-amber-500",
               },
               {
                 icon: faLock,
-                title: "Quality assurance",
-                body: "AI-powered moderation and expert review process.",
+                title: "Transparent policies",
+                body: "Privacy, cookies, terms, and a clear educational disclaimer so visitors know what we collect and what our content is—and is not.",
+                href: "/privacy/",
+                linkLabel: "Read the privacy policy",
                 border: "border-l-blue-600",
               },
               {
                 icon: faCertificate,
-                title: "Verified contributors",
-                body: "Content created by authenticated subject matter experts.",
+                title: "Direct contact",
+                body: "Questions about pilots, classrooms, press, or content corrections go through our contact form. We route messages to the right person.",
+                href: "/contact/",
+                linkLabel: "Contact us",
                 border: "border-l-amber-500",
               },
             ].map((f) => (
               <div
                 key={f.title}
-                className={`flex gap-3 rounded-xl border border-slate-200/90 border-l-[3px] bg-slate-50/50 p-4 shadow-sm ring-1 ring-slate-100 sm:gap-4 sm:p-5 ${f.border}`}
+                className={`flex gap-3 rounded-xl border border-slate-200/90 border-l-[3px] bg-white p-4 shadow-sm ring-1 ring-slate-100 sm:gap-4 sm:p-5 ${f.border}`}
               >
                 <FontAwesomeIcon icon={f.icon} className="mt-0.5 h-7 w-7 shrink-0 text-secondary" />
                 <div>
@@ -137,10 +176,32 @@ export default function AboutPage() {
                   <p className="mt-1 text-[13px] font-medium leading-relaxed text-textMuted sm:text-sm">
                     {f.body}
                   </p>
+                  <Link
+                    href={f.href}
+                    className="mt-3 inline-block text-sm font-semibold text-highlight-dark underline-offset-2 hover:underline"
+                  >
+                    {f.linkLabel} →
+                  </Link>
                 </div>
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-12 sm:py-16">
+        <div className="frag-container max-w-3xl text-center">
+          <h2 className="frag-title">Trust and corrections</h2>
+          <p className="mt-4 text-base font-medium leading-relaxed text-slate-700">
+            If you find an error in a guide, or need clarification about how Fragments handles
+            classroom data in a pilot, email{" "}
+            <span className="font-semibold text-secondary">support@fragments.com</span> or use
+            the{" "}
+            <Link href="/contact/" className="font-semibold text-highlight-dark underline-offset-2 hover:underline">
+              contact form
+            </Link>
+            . We update policies and educational pages when practices change.
+          </p>
         </div>
       </section>
     </>

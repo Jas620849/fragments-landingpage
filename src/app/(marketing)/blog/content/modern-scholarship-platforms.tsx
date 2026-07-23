@@ -20,7 +20,7 @@ export default function ModernScholarshipPlatforms() {
         Application management systems provide online portals, document upload, eligibility screening, and applicant tracking. These systems reduce administrative burden, improve applicant experience, and ensure that all applications are complete and properly organized.
       </p>
       <p>
-        Evaluation platforms provide structured tools for assessing candidates. These include rubric-based evaluation, interviewer management, calibration features, and scoring systems. Evaluation platforms like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> ensure consistent, fair assessment.
+        Evaluation platforms provide structured tools for assessing candidates. These include rubric-based evaluation, interviewer management, calibration features, and scoring systems. Evaluation platforms like <Link href="/blog/" className="text-blue-600 hover:underline">FragmentTrails</Link> ensure consistent, fair assessment.
       </p>
       <p>
         Selection and decision support tools help programs compare candidates and make selection decisions. These systems apply scoring algorithms, facilitate committee discussions, and document decision rationale. Decision support makes selection more defensible.
@@ -100,7 +100,7 @@ export default function ModernScholarshipPlatforms() {
         <div>
           <h3 className="font-bold text-secondary">What should programs consider when selecting a platform?</h3>
           <p className="mt-2">
-            Selection should consider feature fit with program needs, ease of use, integration capabilities, security, cost, and vendor reliability. Platforms like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> offer comprehensive solutions designed for scholarship programs.
+            Selection should consider feature fit with program needs, ease of use, integration capabilities, security, cost, and vendor reliability. Approaches covered in our <Link href="/blog/" className="text-highlight-dark underline">guides</Link> offer comprehensive solutions designed for scholarship programs.
           </p>
         </div>
         <div>
@@ -149,7 +149,10 @@ export default function ModernScholarshipPlatforms() {
         Successful platform implementation requires careful selection, thorough planning, comprehensive training, and effective change management. Programs that invest in modern platforms gain competitive advantages in operational efficiency and program quality.
       </p>
       <p>
-        Ready to transform your scholarship program with a modern platform? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform provides comprehensive scholarship management capabilities including application management, structured evaluation, disbursement tracking, and impact reporting.
+        Continue with related guides on this blog, or learn how{" "}
+        <Link href="/how-it-works/" className="text-highlight-dark underline">Fragments</Link>{" "}
+        supports rigorous classroom discussion. Questions about these articles:{" "}
+        <Link href="/contact/" className="text-highlight-dark underline">contact us</Link>.
       </p>
     </div>
   );

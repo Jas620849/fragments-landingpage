@@ -62,7 +62,7 @@ export default function CandidateEvaluationFrameworks() {
         Evaluator training is critical for framework success. Even the best frameworks fail if evaluators don't understand how to use them properly. Training should cover framework rationale, criteria interpretation, scoring methods, bias awareness, and practice with calibration exercises.
       </p>
       <p>
-        Technology integration can enhance framework implementation. Digital platforms like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> provide structured evaluation interfaces, automated scoring, data collection, and analytics. Technology reduces administrative burden while improving consistency and data availability.
+        Technology integration can enhance framework implementation. Digital evaluation workflows covered in our <Link href="/blog/" className="text-highlight-dark underline">guides</Link> provide structured evaluation interfaces, automated scoring, data collection, and analytics. Technology reduces administrative burden while improving consistency and data availability.
       </p>
       <p>
         Communication with candidates about evaluation approaches builds transparency and trust. Programs should explain what frameworks are used, how evaluations are conducted, and what criteria matter. Transparency helps candidates present themselves effectively and reduces anxiety.
@@ -142,7 +142,7 @@ export default function CandidateEvaluationFrameworks() {
         <div>
           <h3 className="font-bold text-secondary">What technology supports framework implementation?</h3>
           <p className="mt-2">
-            Technology platforms provide structured evaluation interfaces, automated scoring, calibration tools, data analytics, and reporting. Platforms like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> enhance consistency and efficiency while enabling data-driven improvement.
+            Technology platforms provide structured evaluation interfaces, automated scoring, calibration tools, data analytics, and reporting. Approaches covered in our <Link href="/blog/" className="text-highlight-dark underline">guides</Link> enhance consistency and efficiency while enabling data-driven improvement.
           </p>
         </div>
         <div>
@@ -167,7 +167,10 @@ export default function CandidateEvaluationFrameworks() {
         Effective frameworks require ongoing attention—training, monitoring, refinement, and adaptation are continuous processes. Programs that commit to framework excellence create evaluation systems that identify talent fairly, make defensible decisions, and achieve their mission.
       </p>
       <p>
-        Ready to implement a systematic evaluation framework in your program? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform supports framework implementation with customizable evaluation tools, automated scoring, calibration features, and analytics that ensure consistent, fair candidate assessment.
+        Continue with related guides on this blog, or learn how{" "}
+        <Link href="/how-it-works/" className="text-highlight-dark underline">Fragments</Link>{" "}
+        supports rigorous classroom discussion. Questions about these articles:{" "}
+        <Link href="/contact/" className="text-highlight-dark underline">contact us</Link>.
       </p>
     </div>
   );

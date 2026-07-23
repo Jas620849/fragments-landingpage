@@ -17,9 +17,9 @@ import { scrollToSection } from "../../utils/navigation";
 import { frontendAppBaseUrl } from "../../utils/frontendAppBaseUrl";
 
 const heroBullets = [
-  "Structured interview scoring with AI-powered moderation and bias reduction",
-  "Comprehensive candidate evaluation and comparison for scholarship selection",
-  "Fair, consistent assessment workflows for education institutions and scholarship programs",
+  "Guided fragment trails that keep classroom discussion cumulative and readable",
+  "Two-step quality checks: AI screening first, then human review",
+  "Recognition for educators who consistently raise the level of the room",
 ];
 
 const chips = [
@@ -189,23 +189,25 @@ export default function Hero() {
           {/* Left: 7 cols on large */}
           <div className="col-span-12 flex flex-col text-center lg:col-span-7 lg:pr-2 lg:text-left">
             <p className="mb-2 inline-flex items-center justify-center gap-2 self-center rounded-full border border-highlight/25 bg-white/80 px-3 py-1 text-[9px] font-bold uppercase tracking-[0.2em] text-highlight-dark shadow-sm sm:text-[10px] lg:self-start">
-              Scholarship interview & candidate evaluation platform
+              FragmentTrails · Home of Fragments
             </p>
 
             <h1 className="text-balance text-2xl font-bold tracking-tight text-secondary sm:text-3xl lg:text-[2rem] lg:leading-tight">
-              Scholarship Interview & <span className="text-highlight-dark">Candidate Evaluation Platform</span>
+              Classroom discussion that stays{" "}
+              <span className="text-highlight-dark">rigorous</span>
             </h1>
 
             <p className="mx-auto mt-3 max-w-[52ch] text-sm font-medium leading-snug text-textDark sm:text-[0.9375rem] lg:mx-0">
-              <strong className="font-bold text-secondary">FragmentTrails</strong> streamlines
-              scholarship interviews, candidate scoring, and evaluation workflows with
-              structured assessment tools for education institutions and scholarship programs.
+              <strong className="font-bold text-secondary">Fragments</strong> is an
+              AI-moderated discussion platform for schools and serious learners. Educators
+              open a trail; students extend it with evidence, questions, and counterpoints—
+              without the feed chaos of generic social tools.
             </p>
 
             <p className="mx-auto mt-2 max-w-[52ch] text-xs font-medium leading-relaxed text-textMuted sm:text-sm lg:mx-0">
-              Improve fairness, consistency, and decision-making with AI-powered moderation,
-              bias reduction, and comprehensive candidate comparison tools for scholarship
-              selection and admissions.
+              FragmentTrails also publishes practical guides on fair scholarship interviews,
+              rubrics, and evaluation design for educators and program staff who care about
+              consistent, bias-aware decisions.
             </p>
 
             <ul className="mx-auto mt-3 max-w-[52ch] space-y-2 text-left text-xs font-medium leading-snug text-textDark sm:text-sm lg:mx-0">

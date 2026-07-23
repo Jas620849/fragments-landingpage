@@ -68,7 +68,7 @@ export default function HigherEducationEvaluationTrends() {
         Blockchain credentials provide secure, verifiable records of learning achievements. Blockchain enables students to control their own credentials and share them selectively with employers and other institutions.
       </p>
       <p>
-        Integrated assessment platforms like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> connect admissions, learning, and program assessment into coherent systems. Integration provides comprehensive views of student and institutional performance.
+        Integrated assessment platforms like <Link href="/blog/" className="text-blue-600 hover:underline">FragmentTrails</Link> connect admissions, learning, and program assessment into coherent systems. Integration provides comprehensive views of student and institutional performance.
       </p>
 
       <h2 className="text-2xl font-bold text-secondary">FAQs</h2>
@@ -112,7 +112,7 @@ export default function HigherEducationEvaluationTrends() {
         <div>
           <h3 className="font-bold text-secondary">What technology supports modern assessment approaches?</h3>
           <p className="mt-2">
-            Technology provides digital assessment tools, learning analytics platforms, e-portfolio systems, AI-assisted evaluation, and integrated assessment platforms. Platforms like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> connect assessment across the student lifecycle.
+            Technology provides digital assessment tools, learning analytics platforms, e-portfolio systems, AI-assisted evaluation, and integrated assessment platforms. Approaches covered in our <Link href="/blog/" className="text-highlight-dark underline">guides</Link> connect assessment across the student lifecycle.
           </p>
         </div>
         <div>
@@ -149,7 +149,10 @@ export default function HigherEducationEvaluationTrends() {
         Institutions that embrace these trends can better identify talent, support student success, and demonstrate institutional quality. The future of evaluation is more personalized, equitable, and insightful than traditional approaches.
       </p>
       <p>
-        Ready to implement modern evaluation approaches in your institution? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform supports contemporary assessment with digital tools, analytics, and features that enable fair, effective evaluation.
+        Continue with related guides on this blog, or learn how{" "}
+        <Link href="/how-it-works/" className="text-highlight-dark underline">Fragments</Link>{" "}
+        supports rigorous classroom discussion. Questions about these articles:{" "}
+        <Link href="/contact/" className="text-highlight-dark underline">contact us</Link>.
       </p>
     </div>
   );

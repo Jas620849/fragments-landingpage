@@ -147,7 +147,10 @@ export default function ScholarshipFinancialLiteracy() {
         The investment in financial literacy yields substantial returns for recipients, programs, and society. Recipients with strong financial skills are better positioned to complete their education, launch successful careers, and achieve long-term financial stability. Programs that provide financial literacy see improved retention and graduation rates. Society benefits when scholarship recipients achieve their potential without being undermined by financial challenges.
       </p>
       <p>
-        Ready to enhance financial literacy support for your scholarship recipients? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform supports recipient success with financial literacy resources, tracking tools, and integration with broader support services. Our solution helps you provide comprehensive support that addresses both financial and academic needs.
+        Continue with related guides on this blog, or learn how{" "}
+        <Link href="/how-it-works/" className="text-highlight-dark underline">Fragments</Link>{" "}
+        supports rigorous classroom discussion. Questions about these articles:{" "}
+        <Link href="/contact/" className="text-highlight-dark underline">contact us</Link>.
       </p>
     </div>
   );

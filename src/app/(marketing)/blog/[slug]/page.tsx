@@ -7,36 +7,15 @@ import { SITE_NAME } from "@/lib/seo-constants";
 import { absoluteAsset, canonicalUrl, hasPublicSiteUrl } from "@/lib/site";
 import ArticleSchema from "../../../components/ArticleSchema";
 import BreadcrumbSchema from "../../../components/BreadcrumbSchema";
+import RelatedArticles from "../RelatedArticles";
 import HowToReduceBiasInScholarshipInterviews from "../content/how-to-reduce-bias-in-scholarship-interviews";
-import ScholarshipInterviewScoringBestPractices from "../content/scholarship-interview-scoring-best-practices";
 import StructuredVsUnstructuredInterviews from "../content/structured-vs-unstructured-interviews";
 import AIPoweredInterviewEvaluation from "../content/ai-powered-interview-evaluation";
-import InterviewerTrainingBestPractices from "../content/interviewer-training-best-practices";
-import DiversityInScholarshipSelection from "../content/diversity-in-scholarship-selection";
-import MeasuringScholarshipSuccess from "../content/measuring-scholarship-success";
-import VirtualScholarshipInterviews from "../content/virtual-scholarship-interviews";
-import ScholarshipProgramManagement from "../content/scholarship-program-management";
-import ScholarshipAlumniEngagement from "../content/scholarship-alumni-engagement";
-import ScholarshipRecipientSupport from "../content/scholarship-recipient-support";
-import ScholarshipApplicationProcess from "../content/scholarship-application-process";
-import ScholarshipOutreachStrategies from "../content/scholarship-outreach-strategies";
-import ScholarshipDonorRelations from "../content/scholarship-donor-relations";
-import ScholarshipFinancialLiteracy from "../content/scholarship-financial-literacy";
-import ScholarshipMentorshipPrograms from "../content/scholarship-mentorship-programs";
-import ScholarshipRenewalCriteria from "../content/scholarship-renewal-criteria";
-import ScholarshipSelectionCommittee from "../content/scholarship-selection-committee";
-import ScholarshipEssayEvaluation from "../content/scholarship-essay-evaluation";
-import ScholarshipInterviewPreparation from "../content/scholarship-interview-preparation";
-import ScholarshipTechnologySolutions from "../content/scholarship-technology-solutions";
-import ScholarshipImpactMeasurement from "../content/scholarship-impact-measurement";
-import ScholarshipEquityInclusion from "../content/scholarship-equity-inclusion";
-import ScholarshipCollaborationPartnerships from "../content/scholarship-collaboration-partnerships";
-import ScholarshipCrisisManagement from "../content/scholarship-crisis-management";
-import ScholarshipSustainabilityGrowth from "../content/scholarship-sustainability-growth";
-import ScholarshipLegalCompliance from "../content/scholarship-legal-compliance";
-import ScholarshipInnovationFuture from "../content/scholarship-innovation-future";
-import ScholarshipGlobalPerspectives from "../content/scholarship-global-perspectives";
-import ScholarshipBestPracticesSummary from "../content/scholarship-best-practices-summary";
+import CommonInterviewScoringMistakes from "../content/common-interview-scoring-mistakes";
+import BuildingEvaluationRubrics from "../content/building-evaluation-rubrics";
+import InterviewModerationExplained from "../content/interview-moderation-explained";
+import EvaluatorCalibrationMethods from "../content/evaluator-calibration-methods";
+import EducationalAssessmentTools from "../content/educational-assessment-tools";
 
 type PageProps = { params: Promise<{ slug: string }> };
 
@@ -56,11 +35,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     description: post.description,
     keywords: [
       post.title.toLowerCase(),
-      "fragments blog",
-      "education technology",
       "classroom discussion",
-      "teaching strategies",
-      "fragment trails",
+      "educational assessment",
+      "discussion moderation",
+      "evaluation rubrics",
+      "FragmentTrails",
     ],
     alternates: hasPublicSiteUrl()
       ? { canonical: canonicalUrl(`/blog/${slug}/`) }
@@ -70,6 +49,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title: post.title,
       description: post.description,
       publishedTime: post.publishedISO,
+      modifiedTime: post.updatedISO ?? post.publishedISO,
       url: hasPublicSiteUrl() ? canonicalUrl(`/blog/${slug}/`) : undefined,
       images: [
         {
@@ -97,12 +77,17 @@ function BlogPostingJsonLd({ post, slug }: { post: BlogPostMeta; slug: string })
     headline: post.title,
     description: post.description,
     datePublished: post.publishedISO,
+    dateModified: post.updatedISO ?? post.publishedISO,
     url: canonicalUrl(`/blog/${slug}/`),
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": canonicalUrl(`/blog/${slug}/`),
     },
-    author: { "@type": "Organization", name: SITE_NAME },
+    author: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: canonicalUrl("/"),
+    },
     publisher: {
       "@type": "Organization",
       name: SITE_NAME,
@@ -124,119 +109,22 @@ function PostBody({ slug }: { slug: string }) {
   switch (slug) {
     case "how-to-reduce-bias-in-scholarship-interviews":
       return <HowToReduceBiasInScholarshipInterviews />;
-    case "scholarship-interview-scoring-best-practices":
-      return <ScholarshipInterviewScoringBestPractices />;
     case "structured-vs-unstructured-interviews":
       return <StructuredVsUnstructuredInterviews />;
     case "ai-powered-interview-evaluation":
       return <AIPoweredInterviewEvaluation />;
-    case "interviewer-training-best-practices":
-      return <InterviewerTrainingBestPractices />;
-    case "diversity-in-scholarship-selection":
-      return <DiversityInScholarshipSelection />;
-    case "measuring-scholarship-success":
-      return <MeasuringScholarshipSuccess />;
-    case "virtual-scholarship-interviews":
-      return <VirtualScholarshipInterviews />;
-    case "scholarship-program-management":
-      return <ScholarshipProgramManagement />;
-    case "scholarship-alumni-engagement":
-      return <ScholarshipAlumniEngagement />;
-    case "scholarship-recipient-support":
-      return <ScholarshipRecipientSupport />;
-    case "scholarship-application-process":
-      return <ScholarshipApplicationProcess />;
-    case "scholarship-outreach-strategies":
-      return <ScholarshipOutreachStrategies />;
-    case "scholarship-donor-relations":
-      return <ScholarshipDonorRelations />;
-    case "scholarship-financial-literacy":
-      return <ScholarshipFinancialLiteracy />;
-    case "scholarship-mentorship-programs":
-      return <ScholarshipMentorshipPrograms />;
-    case "scholarship-renewal-criteria":
-      return <ScholarshipRenewalCriteria />;
-    case "scholarship-selection-committee":
-      return <ScholarshipSelectionCommittee />;
-    case "scholarship-essay-evaluation":
-      return <ScholarshipEssayEvaluation />;
-    case "scholarship-interview-preparation":
-      return <ScholarshipInterviewPreparation />;
-    case "scholarship-technology-solutions":
-      return <ScholarshipTechnologySolutions />;
-    case "scholarship-impact-measurement":
-      return <ScholarshipImpactMeasurement />;
-    case "scholarship-equity-inclusion":
-      return <ScholarshipEquityInclusion />;
-    case "scholarship-collaboration-partnerships":
-      return <ScholarshipCollaborationPartnerships />;
-    case "scholarship-crisis-management":
-      return <ScholarshipCrisisManagement />;
-    case "scholarship-sustainability-growth":
-      return <ScholarshipSustainabilityGrowth />;
-    case "scholarship-legal-compliance":
-      return <ScholarshipLegalCompliance />;
-    case "scholarship-innovation-future":
-      return <ScholarshipInnovationFuture />;
-    case "scholarship-global-perspectives":
-      return <ScholarshipGlobalPerspectives />;
-    case "scholarship-best-practices-summary":
-      return <ScholarshipBestPracticesSummary />;
-    case "welcome-to-fragments":
-      return (
-        <>
-          <p>
-            Class forums should not feel like social media with a syllabus stapled
-            on top. Fragments is built for the moment when a student finally asks
-            the right follow-up, and when an educator&apos;s careful explanation
-            deserves to be seen, extended, and credited.
-          </p>
-          <p>
-            We combine <strong>fragment trails</strong> (structured, cumulative
-            threads) with <strong>two-step moderation</strong> so rigor is the
-            default, not the exception. Educators who consistently raise the level
-            of the room get recognized, because sustainable learning cultures start
-            with respect for teaching time.
-          </p>
-          <p>
-            Whether you lead AP sections, graduate seminars, or independent cohorts,
-            Fragments is here to help you run discussions you are proud to show
-            families and administrators.
-          </p>
-        </>
-      );
-    case "fragment-trails-explained":
-      return (
-        <>
-          <p>
-            A <strong>fragment</strong> is a tight piece of teaching: sources in
-            line, context, and a question that invites the room to think, not a wall
-            of text or a drive-by hot take.
-          </p>
-          <p>
-            A <strong>trail</strong> is what happens next. Learners extend the thread
-            with follow-ups, counter-evidence, and clarifications. Because everything
-            stays in one readable path, you can see how understanding evolved, and who
-            contributed rigor along the way.
-          </p>
-          <p>
-            Trails pair naturally with rubrics: participation becomes observable, and
-            quality moderation means the conversation stays on standard without
-            constant instructor triage.
-          </p>
-        </>
-      );
+    case "common-interview-scoring-mistakes":
+      return <CommonInterviewScoringMistakes />;
+    case "building-evaluation-rubrics":
+      return <BuildingEvaluationRubrics />;
+    case "interview-moderation-explained":
+      return <InterviewModerationExplained />;
+    case "evaluator-calibration-methods":
+      return <EvaluatorCalibrationMethods />;
+    case "educational-assessment-tools":
+      return <EducationalAssessmentTools />;
     default:
-      return (
-        <div className="space-y-6">
-          <p className="text-lg font-semibold text-secondary">
-            Comprehensive 7000-word article coming soon. This blog post is being expanded to provide in-depth insights on {slug.replace(/-/g, " ")}.
-          </p>
-          <p>
-            We are currently enhancing our blog content to provide comprehensive, detailed articles that cover important topics in scholarship interviews, candidate evaluation, and educational assessment. Each article will include detailed analysis, practical strategies, FAQs, and actionable insights. Check back soon for the complete 7000-word article.
-          </p>
-        </div>
-      );
+      return notFound();
   }
 }
 
@@ -254,6 +142,7 @@ export default async function BlogPostPage({ params }: PageProps) {
         title={post.title}
         description={post.description}
         publishedDate={post.publishedISO}
+        modifiedDate={post.updatedISO}
         slug={slug}
       />
       <BreadcrumbSchema
@@ -272,7 +161,11 @@ export default async function BlogPostPage({ params }: PageProps) {
             ← Back to blog
           </Link>
           <p className="mt-6 text-xs font-semibold uppercase tracking-wide text-textMuted">
-            {post.date} · {post.read}
+            {post.date}
+            {post.updatedISO ? " · Updated July 23, 2026" : ""} · {post.read}
+          </p>
+          <p className="mt-2 text-xs font-medium text-textMuted">
+            Editorial guide by {SITE_NAME}
           </p>
           <h1 className="mt-2 text-2xl font-bold tracking-tight text-secondary sm:text-3xl">
             {post.title}
@@ -280,6 +173,7 @@ export default async function BlogPostPage({ params }: PageProps) {
           <div className="mt-8 max-w-none space-y-4 text-base font-medium leading-relaxed text-textDark">
             <PostBody slug={slug} />
           </div>
+          <RelatedArticles slug={slug} />
         </div>
       </div>
     </article>

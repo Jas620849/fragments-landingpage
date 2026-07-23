@@ -1,19 +1,26 @@
 import type { Metadata } from "next";
 import { canonicalUrl, hasPublicSiteUrl } from "@/lib/site";
 
-const title = "Fragments Blog";
+const title = "FragmentTrails Blog | Classroom Discussion & Fair Evaluation";
 const description =
-  "Product updates, teaching tips, and stories from educators building better class discussions with Fragments. Learn about fragment trails and AI-moderated learning.";
+  "Practical guides on moderated classroom discussion, discussion quality assessment, responsible AI checks, rubrics, and bias-aware evaluation—from FragmentTrails, home of Fragments.";
 
 export const metadata: Metadata = {
   title,
   description,
-  keywords: ["fragments blog", "education blog", "classroom discussion tips", "teaching strategies", "fragment trails", "AI moderation"],
+  keywords: [
+    "classroom discussion",
+    "discussion moderation",
+    "educational assessment",
+    "evaluation rubrics",
+    "bias reduction",
+    "FragmentTrails blog",
+  ],
   alternates: hasPublicSiteUrl()
     ? { canonical: canonicalUrl("/blog/") }
     : undefined,
   openGraph: {
-    title: `${title} | Fragments`,
+    title,
     description,
     type: "website",
     url: hasPublicSiteUrl() ? canonicalUrl("/blog/") : undefined,
@@ -22,13 +29,13 @@ export const metadata: Metadata = {
         url: "/logo-no-bg.png",
         width: 512,
         height: 512,
-        alt: "Fragments Logo",
+        alt: "FragmentTrails",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${title} | Fragments`,
+    title,
     description,
     images: ["/logo-no-bg.png"],
   },

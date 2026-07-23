@@ -48,7 +48,7 @@ export default function DiversityInScholarshipSelection() {
         Selection criteria should be reviewed to ensure they capture the full range of qualities that predict success, including resilience, leadership, community engagement, and the ability to overcome barriers. Contextual review of academic achievements—considering the opportunities and resources available to candidates—can help identify merit that might not be apparent from raw metrics alone. Some programs implement holistic review processes that consider the whole candidate rather than reducing them to a set of numbers.
       </p>
       <p>
-        Evaluation processes should be structured and bias-aware to ensure fair assessment across all demographic groups. This includes using standardized interview protocols, trained interviewers who are aware of common biases, diverse interview panels, and regular monitoring of outcomes across demographic groups. Technology platforms like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> can support bias-aware evaluation by providing standardized scoring, bias detection, and analytics that identify disparities.
+        Evaluation processes should be structured and bias-aware to ensure fair assessment across all demographic groups. This includes using standardized interview protocols, trained interviewers who are aware of common biases, diverse interview panels, and regular monitoring of outcomes across demographic groups. Evaluation tooling and structured workflows (see our <Link href="/blog/" className="text-highlight-dark underline">guides</Link>) can support bias-aware evaluation by providing standardized scoring, bias detection, and analytics that identify disparities.
       </p>
       <p>
         Support systems for scholarship recipients are essential for ensuring that diversity goals translate into actual success. Many students from underrepresented backgrounds face challenges once enrolled, including financial pressures beyond tuition, lack of mentorship, or feeling isolated in predominantly white or affluent institutions. Scholarship programs should provide comprehensive support including mentorship, networking opportunities, academic support, and community building to ensure recipients can thrive.
@@ -167,7 +167,10 @@ export default function DiversityInScholarshipSelection() {
         The investment in diversity yields substantial returns for scholarship programs, educational institutions, and society as a whole. Diverse cohorts enhance learning, improve decision-making, and prepare all students for success in a diverse world. Scholarship programs that achieve diversity demonstrate their commitment to equal opportunity and social justice, enhancing their reputation and impact. As society becomes increasingly diverse, scholarship programs must continue to evolve their approaches to ensure they identify and support talent from all communities.
       </p>
       <p>
-        Ready to enhance diversity in your scholarship program? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform can support your diversity efforts with bias-aware evaluation tools, analytics that identify disparities, and features that support inclusive selection processes. Our solution helps you achieve your diversity goals while maintaining high standards and fair processes.
+        Continue with related guides on this blog, or learn how{" "}
+        <Link href="/how-it-works/" className="text-highlight-dark underline">Fragments</Link>{" "}
+        supports rigorous classroom discussion. Questions about these articles:{" "}
+        <Link href="/contact/" className="text-highlight-dark underline">contact us</Link>.
       </p>
     </div>
   );

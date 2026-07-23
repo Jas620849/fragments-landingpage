@@ -2,7 +2,7 @@ import { DEFAULT_DESCRIPTION, SITE_NAME } from "@/lib/seo-constants";
 import { absoluteAsset, canonicalUrl, hasPublicSiteUrl } from "@/lib/site";
 
 /**
- * Site-wide Organization + WebSite + LocalBusiness structured data for rich results.
+ * Site-wide Organization + WebSite + SoftwareApplication structured data.
  */
 export default function JsonLd() {
   if (!hasPublicSiteUrl()) return null;
@@ -29,12 +29,8 @@ export default function JsonLd() {
           contactType: "customer service",
           areaServed: "US",
           availableLanguage: "English",
+          url: canonicalUrl("/contact/"),
         },
-        sameAs: [
-          "https://twitter.com/fragments",
-          "https://facebook.com/fragments",
-          "https://linkedin.com/company/fragments",
-        ],
       },
       {
         "@type": "WebSite",
@@ -44,16 +40,11 @@ export default function JsonLd() {
         description: DEFAULT_DESCRIPTION,
         publisher: { "@id": `${url}#organization` },
         inLanguage: "en-US",
-        potentialAction: {
-          "@type": "SearchAction",
-          target: `${url}?search={search_term_string}`,
-          "query-input": "required name=search_term_string",
-        },
       },
       {
         "@type": "SoftwareApplication",
         "@id": `${url}#software`,
-        name: SITE_NAME,
+        name: "Fragments",
         applicationCategory: "EducationalApplication",
         operatingSystem: "Web",
         offers: {
@@ -62,34 +53,9 @@ export default function JsonLd() {
           priceCurrency: "USD",
           description: "Free tier available for educators and learners",
         },
-        description: DEFAULT_DESCRIPTION,
+        description:
+          "AI-moderated classroom discussion platform with guided fragment trails, two-step review, and educator recognition.",
         publisher: { "@id": `${url}#organization` },
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: "4.8",
-          ratingCount: "42",
-          bestRating: "5",
-          worstRating: "1",
-        },
-      },
-      {
-        "@type": "LocalBusiness",
-        "@id": `${url}#localbusiness`,
-        name: SITE_NAME,
-        description: DEFAULT_DESCRIPTION,
-        url,
-        telephone: "+1-555-555-5555",
-        address: {
-          "@type": "PostalAddress",
-          addressCountry: "US",
-        },
-        openingHoursSpecification: {
-          "@type": "OpeningHoursSpecification",
-          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          opens: "09:00",
-          closes: "17:00",
-        },
-        priceRange: "$$",
       },
     ],
   };

@@ -153,7 +153,10 @@ export default function ScholarshipOutreachStrategies() {
         The investment in outreach yields substantial returns. Diverse applicant pools improve selection quality and program impact. Strong relationships with schools and community organizations create ongoing access to talent. Effective outreach advances equity goals by ensuring all qualified candidates can compete. As scholarship competition increases and expectations for diversity grow, strategic outreach becomes increasingly essential.
       </p>
       <p>
-        Ready to enhance your scholarship outreach strategies? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform supports outreach with applicant tracking, communication tools, analytics, and integration with your broader scholarship management processes. Our solution helps you reach the right candidates and build strong applicant pools.
+        Continue with related guides on this blog, or learn how{" "}
+        <Link href="/how-it-works/" className="text-highlight-dark underline">Fragments</Link>{" "}
+        supports rigorous classroom discussion. Questions about these articles:{" "}
+        <Link href="/contact/" className="text-highlight-dark underline">contact us</Link>.
       </p>
     </div>
   );

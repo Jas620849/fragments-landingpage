@@ -153,7 +153,10 @@ export default function ScholarshipCollaborationPartnerships() {
         The investment in partnerships yields substantial returns. Partnerships expand reach and resources without proportionally increasing program costs. Comprehensive support improves recipient outcomes. Diverse funding sources enhance sustainability. Networks of collaboration position programs for long-term success and growth.
       </p>
       <p>
-        Ready to build strategic partnerships for your scholarship program? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform supports partnership management with tools for tracking partner relationships, coordinating services, and measuring collaborative impact. Our solution helps you build partnerships that amplify your scholarship program's impact.
+        Continue with related guides on this blog, or learn how{" "}
+        <Link href="/how-it-works/" className="text-highlight-dark underline">Fragments</Link>{" "}
+        supports rigorous classroom discussion. Questions about these articles:{" "}
+        <Link href="/contact/" className="text-highlight-dark underline">contact us</Link>.
       </p>
     </div>
   );

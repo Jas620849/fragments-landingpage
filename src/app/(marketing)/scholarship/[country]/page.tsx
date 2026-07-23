@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { canonicalUrl, hasPublicSiteUrl } from "@/lib/site";
+import { NOINDEX_ROBOTS } from "@/lib/seo-constants";
+import ThinPageNotice from "@/app/components/ThinPageNotice";
 
 const COUNTRIES = [
   { code: "pakistan", name: "Pakistan", region: "South Asia" },
@@ -27,10 +29,12 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
     return {
       title: "Scholarship Interview Platform",
       description: "Scholarship interview and candidate evaluation platform for education institutions.",
+      robots: NOINDEX_ROBOTS,
     };
   }
 
   return {
+    robots: NOINDEX_ROBOTS,
     title: `Scholarship Interview Software in ${countryData.name} | FragmentTrails`,
     description: `Leading scholarship interview and candidate evaluation platform for ${countryData.name}. AI-powered assessment tools for universities, colleges, and scholarship programs in ${countryData.region}.`,
     keywords: [
@@ -56,6 +60,7 @@ export default async function ScholarshipCountryPage({ params }: { params: Promi
   return (
     <div className="min-h-screen bg-gradient-to-b from-primary to-white">
       <div className="mx-auto max-w-7xl px-8 py-24 lg:px-16">
+        <ThinPageNotice variant="product" />
         <h1 className="text-4xl font-bold text-secondary sm:text-5xl lg:text-6xl">
           Scholarship Interview Software in {countryData.name}
         </h1>

@@ -1,5 +1,4 @@
 /* eslint-disable react/no-unescaped-entities */
-import Link from "next/link";
 
 export default function MeasuringCandidatePotential() {
   return (
@@ -71,104 +70,36 @@ export default function MeasuringCandidatePotential() {
         Diversity considerations may favor potential assessment. Traditional achievement metrics often reflect existing advantages and may disadvantage underrepresented groups. Potential assessment that considers context can identify diverse talent that achievement-focused approaches might miss.
       </p>
 
-      <h2 className="text-2xl font-bold text-secondary">FAQs</h2>
+      
+      <h2 className="text-2xl font-bold text-secondary">Common questions</h2>
       <div className="space-y-6">
-        <div>
+<div>
           <h3 className="font-bold text-secondary">What is the difference between achievement and potential?</h3>
           <p className="mt-2">
             Achievement represents what candidates have already accomplished—grades, awards, completed work. Potential represents what candidates might accomplish given opportunity—capacity for growth, ability to overcome challenges, drive to achieve more. Both are important but different.
           </p>
         </div>
-        <div>
+<div>
           <h3 className="font-bold text-secondary">How can programs accurately measure potential?</h3>
           <p className="mt-2">
             Potential measurement requires multiple indicators including growth trajectory, resilience, curiosity, initiative, and contextual factors. No single measure captures potential. Programs should use evidence-based indicators and acknowledge uncertainty in predictions.
           </p>
         </div>
-        <div>
+<div>
           <h3 className="font-bold text-secondary">What behavioral questions reveal potential?</h3>
           <p className="mt-2">
             Effective questions ask about times candidates faced challenges, took initiative, demonstrated growth, or overcame obstacles. Questions should require specific examples and reveal patterns of behavior that predict future performance.
           </p>
         </div>
-        <div>
+<div>
           <h3 className="font-bold text-secondary">How should programs balance achievement and potential?</h3>
           <p className="mt-2">
             Balance depends on program goals, timeline, and risk tolerance. Programs focused on immediate impact may weight achievement more heavily, while those investing in long-term development may prioritize potential. The right balance varies by context.
           </p>
         </div>
-        <div>
-          <h3 className="font-bold text-secondary">What role does context play in potential assessment?</h3>
-          <p className="mt-2">
-            Context is crucial—candidates who achieve despite significant obstacles may demonstrate greater potential than those who achieve similar things with abundant support. Programs must consider opportunities and constraints when assessing potential.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">How can programs avoid bias in potential assessment?</h3>
-          <p className="mt-2">
-            Bias reduction requires structured evaluation with clear criteria, training on bias awareness, diverse evaluation panels, and monitoring for disparate impacts. Technology platforms like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> provide structured tools that reduce bias.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">What situational judgment tests work best for potential assessment?</h3>
-          <p className="mt-2">
-            Effective tests present realistic scenarios relevant to the program context, require candidates to explain their reasoning, and assess multiple dimensions of decision-making. Tests should be validated for predictive validity.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">How can programs measure growth trajectory?</h3>
-          <p className="mt-2">
-            Growth measurement requires examining performance over time, increasing responsibility taken, challenges overcome, and accelerating achievement. Patterns of improvement matter more than current absolute achievement.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">What indicators predict leadership potential?</h3>
-          <p className="mt-2">
-            Leadership potential indicators include initiative, influence without authority, ability to motivate others, ethical decision-making, and learning from experience. Past leadership roles provide evidence but aren't sufficient alone.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">How can programs assess potential in limited interview time?</h3>
-          <p className="mt-2">
-            Limited time requires focused questions that reveal multiple indicators, efficient use of behavioral examples, and pre-interview review of materials. Prioritize high-impact questions and use structured evaluation to maximize information gained.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">What role does resilience play in potential assessment?</h3>
-          <p className="mt-2">
-            Resilience—the ability to overcome challenges and persist through difficulties—is a strong predictor of long-term success. Candidates who have bounced back from setbacks demonstrate the resilience that predicts future achievement.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">How can programs validate their potential assessment methods?</h3>
-          <p className="mt-2">
-            Validation requires tracking selected candidates over time, measuring their actual outcomes, and comparing those outcomes to predictions. Regular validation ensures assessment methods remain predictive and identifies areas for improvement.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">How does potential assessment support diversity goals?</h3>
-          <p className="mt-2">
-            Potential assessment that considers context can identify talent from underrepresented groups who may have had fewer opportunities to demonstrate traditional achievement. Context-aware evaluation promotes equity while identifying high-potential candidates.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">What technology supports potential assessment?</h3>
-          <p className="mt-2">
-            Technology platforms provide structured evaluation interfaces, behavioral question banks, situational judgment test delivery, and analytics that track predictions against outcomes. Platforms like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> enhance potential assessment capabilities.
-          </p>
-        </div>
       </div>
 
-      <h2 className="text-2xl font-bold text-secondary">Conclusion</h2>
-      <p>
-        Measuring candidate potential is challenging but essential for programs seeking to identify future leaders and high-impact individuals. Effective potential assessment requires multiple evidence-based indicators, attention to context, and acknowledgment of uncertainty. When done well, potential assessment complements achievement assessment to provide comprehensive candidate evaluation.
-      </p>
-      <p>
-        Programs that master potential assessment gain significant advantages in identifying talent that traditional metrics might miss. The investment in understanding and measuring potential yields returns in the form of exceptional recipients who exceed expectations and drive program impact.
-      </p>
-      <p>
-        Ready to enhance your potential assessment capabilities? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform supports potential assessment with behavioral question banks, situational judgment tests, structured evaluation tools, and analytics that validate predictions against outcomes.
-      </p>
+      
     </div>
   );
 }

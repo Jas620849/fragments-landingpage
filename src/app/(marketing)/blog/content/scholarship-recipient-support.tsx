@@ -48,7 +48,7 @@ export default function ScholarshipRecipientSupport() {
 
       <h2 className="text-2xl font-bold text-secondary">Technology in Support Services</h2>
       <p>
-        Technology platforms can significantly enhance the delivery and effectiveness of support services. Success coaching platforms enable regular check-ins, goal setting, and progress tracking. Academic support platforms connect recipients with tutoring and resources. Career services platforms provide job listings, internship opportunities, and networking tools. Integrated platforms like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> can connect support services with selection and alumni engagement, creating comprehensive lifecycle management.
+        Technology platforms can significantly enhance the delivery and effectiveness of support services. Success coaching platforms enable regular check-ins, goal setting, and progress tracking. Academic support platforms connect recipients with tutoring and resources. Career services platforms provide job listings, internship opportunities, and networking tools. Integrated platforms like <Link href="/blog/" className="text-blue-600 hover:underline">FragmentTrails</Link> can connect support services with selection and alumni engagement, creating comprehensive lifecycle management.
       </p>
       <p>
         Communication tools facilitate regular contact between recipients and support providers. Text messaging, email, video calls, and chat platforms enable different modes of communication that accommodate different preferences and circumstances. Automated communication can provide reminders, resources, and check-ins at scale while still allowing for personalization. Communication tools should be used thoughtfully to avoid overwhelming recipients.
@@ -156,7 +156,10 @@ export default function ScholarshipRecipientSupport() {
         The investment in recipient support yields substantial returns for programs, recipients, and society. Successful recipients become engaged alumni who give back to the program and their communities. Improved outcomes enhance program reputation and attract stronger applicant pools. Society benefits when scholarship recipients achieve their potential and contribute their talents. Support services are not optional add-ons but essential components of effective scholarship programs.
       </p>
       <p>
-        Ready to enhance your recipient support services? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform supports recipient success with success coaching tools, analytics for identifying at-risk students, communication features, and integration with support services. Our solution helps you provide comprehensive support that maximizes the impact of your scholarship investments.
+        Continue with related guides on this blog, or learn how{" "}
+        <Link href="/how-it-works/" className="text-highlight-dark underline">Fragments</Link>{" "}
+        supports rigorous classroom discussion. Questions about these articles:{" "}
+        <Link href="/contact/" className="text-highlight-dark underline">contact us</Link>.
       </p>
     </div>
   );

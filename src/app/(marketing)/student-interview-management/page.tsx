@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { canonicalUrl, hasPublicSiteUrl } from "@/lib/site";
+import { NOINDEX_ROBOTS } from "@/lib/seo-constants";
+import ThinPageNotice from "@/app/components/ThinPageNotice";
 
 export const metadata: Metadata = {
+  robots: NOINDEX_ROBOTS,
   title: "Student Interview Management System | FragmentTrails",
   description: "Complete student interview management for universities and scholarship programs. Schedule, conduct, and evaluate interviews with AI-powered tools.",
   keywords: [
@@ -20,6 +23,7 @@ export default function StudentInterviewManagementPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-primary to-white">
       <div className="mx-auto max-w-7xl px-8 py-24 lg:px-16">
+        <ThinPageNotice variant="product" />
         <h1 className="text-4xl font-bold text-secondary sm:text-5xl lg:text-6xl">
           Student Interview Management System
         </h1>

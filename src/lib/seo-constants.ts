@@ -1,74 +1,50 @@
 export const SITE_NAME = "FragmentTrails";
 
+export const PRODUCT_NAME = "Fragments";
+
 export const DEFAULT_TITLE =
-  "FragmentTrails | Scholarship Interview & Candidate Evaluation Platform";
+  "FragmentTrails | Fragments — AI-Moderated Classroom Discussion Platform";
 
 export const DEFAULT_DESCRIPTION =
-  "Streamline scholarship interviews, candidate scoring, and evaluation workflows with FragmentTrails. Improve fairness, consistency, and decision-making using structured assessment tools for education institutions and scholarship programs.";
+  "FragmentTrails is home to Fragments, an AI-moderated discussion platform for schools and serious learners. Follow guided fragment trails, keep discourse rigorous, and credit educators who teach with care. Our blog covers fair evaluation practices for scholarships, interviews, and admissions.";
 
 export const DEFAULT_KEYWORDS = [
-  "scholarship interview platform",
-  "scholarship interview software",
-  "scholarship assessment platform",
-  "candidate evaluation software",
-  "applicant scoring system",
-  "scholarship selection software",
-  "student interview platform",
-  "admissions interview software",
-  "interview evaluation platform",
-  "interview moderation software",
-  "bias free candidate evaluation",
-  "structured interview assessment",
-  "scholarship review process",
-  "interview panel management",
-  "education technology",
-  "higher education",
-  "scholarship programs",
-  "admissions workflow",
-  "AI moderation",
   "classroom discussion platform",
-  "student engagement software",
-  "educator recognition platform",
+  "AI moderated learning",
+  "fragment trails",
+  "academic discussion software",
+  "student engagement platform",
+  "educator recognition",
   "cohort based learning",
-  "AI interview assistant",
-  "automated interview scoring",
-  "fair candidate assessment",
-  "interview standardization",
-  "panel calibration",
-  "data driven selection",
-  "scholarship committee tools",
-  "academic interview management",
-  "university admissions software",
-  "college interview platform",
-  "grant selection software",
-  "fellowship interview tools",
-  "education assessment platform",
-  "learning management system",
-  "online discussion platform",
-  "student evaluation tools",
-  "teacher recognition software",
+  "scholarship interview guides",
+  "fair candidate evaluation",
+  "structured interview practices",
+  "education technology",
   "FragmentTrails",
+  "Fragments",
 ];
 
-// Target countries for international SEO
 export const TARGET_LOCALES = [
   { code: "en-US", name: "United States", priority: 1 },
   { code: "en-CA", name: "Canada", priority: 1 },
   { code: "en-GB", name: "United Kingdom", priority: 1 },
   { code: "en-AU", name: "Australia", priority: 1 },
-  { code: "en-NZ", name: "New Zealand", priority: 1 },
-  { code: "de-DE", name: "Germany", priority: 0.8 },
-  { code: "nl-NL", name: "Netherlands", priority: 0.8 },
-  { code: "sv-SE", name: "Sweden", priority: 0.8 },
-  { code: "no-NO", name: "Norway", priority: 0.8 },
-  { code: "fr-FR", name: "France", priority: 0.8 },
-  { code: "en-SG", name: "Singapore", priority: 0.8 },
-  { code: "en-PK", name: "Pakistan", priority: 0.6 },
-  { code: "en-IN", name: "India", priority: 0.6 },
-  { code: "en-AE", name: "UAE", priority: 0.6 },
 ];
 
-// Content categories for silos
+/** Shared robots directive for thin / doorway / sample pages */
+export const NOINDEX_ROBOTS = {
+  index: false,
+  follow: false,
+  googleBot: {
+    index: false,
+    follow: false,
+  },
+} as const;
+
+/**
+ * Legacy sample forum categories. Routes that use these are noindexed and
+ * excluded from the sitemap — they are not primary site content.
+ */
 export const CONTENT_CATEGORIES = [
   {
     slug: "science",

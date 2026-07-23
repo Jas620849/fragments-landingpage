@@ -140,7 +140,7 @@ export default function ScholarshipLegalCompliance() {
         <div>
           <h3 className="font-bold text-secondary">How can technology support compliance efforts?</h3>
           <p className="mt-2">
-            Technology can automate compliance tasks, maintain secure records, provide audit trails, and facilitate required reporting. Platforms like <Link href="/candidate-evaluation-platform/" className="text-blue-600 hover:underline">FragmentTrails</Link> include features for data security, privacy management, and compliance tracking. Technology should be selected with compliance requirements in mind.
+            Technology can automate compliance tasks, maintain secure records, provide audit trails, and facilitate required reporting. Approaches covered in our <Link href="/blog/" className="text-highlight-dark underline">guides</Link> include features for data security, privacy management, and compliance tracking. Technology should be selected with compliance requirements in mind.
           </p>
         </div>
       </div>
@@ -153,7 +153,10 @@ export default function ScholarshipLegalCompliance() {
         The investment in compliance yields substantial returns. Compliance protects programs from legal and financial risks. Recipients are protected through proper handling of their information and fair treatment. Donors have confidence that programs operate legally and ethically. Compliance becomes part of program culture rather than a burden.
       </p>
       <p>
-        Ready to strengthen your program's compliance framework? <Link href="/pricing/" className="text-blue-600 hover:underline">Explore FragmentTrails</Link> to discover how our platform supports compliance with data security features, privacy management tools, audit trails, and reporting capabilities. Our solution helps you meet legal requirements while focusing on your mission.
+        Continue with related guides on this blog, or learn how{" "}
+        <Link href="/how-it-works/" className="text-highlight-dark underline">Fragments</Link>{" "}
+        supports rigorous classroom discussion. Questions about these articles:{" "}
+        <Link href="/contact/" className="text-highlight-dark underline">contact us</Link>.
       </p>
     </div>
   );

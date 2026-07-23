@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import { NOINDEX_ROBOTS } from "@/lib/seo-constants";
+import ThinPageNotice from "@/app/components/ThinPageNotice";
 
 const PLATFORMS: Record<string, { name: string; category: string; description: string }> = {
   "product-hunt": {
@@ -122,10 +124,12 @@ export async function generateMetadata({ params }: { params: Promise<{ platform:
   if (!platformData) {
     return {
       title: "Platform Not Found",
+      robots: NOINDEX_ROBOTS,
     };
   }
 
   return {
+    robots: NOINDEX_ROBOTS,
     title: `${platformData.name} - FragmentTrails Integration`,
     description: `Discover how FragmentTrails integrates with ${platformData.name}. ${platformData.description}. Streamline your scholarship interview and classroom discussion management.`,
     keywords: [
@@ -166,6 +170,7 @@ export default async function PlatformPage({ params }: { params: Promise<{ platf
     <div className="min-h-screen">
       <section className="border-b border-slate-200/80 bg-slate-900 py-16 sm:py-20">
         <div className="frag-container">
+          <ThinPageNotice variant="product" />
           <p className="frag-hero-eyebrow">{platformData.category}</p>
           <h1 className="frag-hero-h1 mt-2">
             {platformData.name} Integration

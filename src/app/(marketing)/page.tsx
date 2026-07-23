@@ -3,7 +3,6 @@ import { DEFAULT_DESCRIPTION, DEFAULT_TITLE, DEFAULT_KEYWORDS } from "@/lib/seo-
 import { canonicalUrl, hasPublicSiteUrl } from "@/lib/site";
 import MarketingHomeClient from "./MarketingHomeClient";
 import BreadcrumbSchema from "../components/BreadcrumbSchema";
-import ScholarshipPlatformSchema from "../components/ScholarshipPlatformSchema";
 
 export const metadata: Metadata = {
   title: { absolute: DEFAULT_TITLE },
@@ -23,7 +22,7 @@ export const metadata: Metadata = {
             url: "/logo-no-bg.png",
             width: 512,
             height: 512,
-            alt: "Fragments Logo",
+            alt: "FragmentTrails — Fragments discussion platform",
           },
         ]
       : undefined,
@@ -40,7 +39,6 @@ export default function HomePage() {
   return (
     <>
       <BreadcrumbSchema items={[{ name: "Home", path: "/" }]} />
-      <ScholarshipPlatformSchema />
       <MarketingHomeClient />
     </>
   );

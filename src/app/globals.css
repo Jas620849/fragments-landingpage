@@ -63,15 +63,15 @@ html {
 
   /* Section labels — matches How it works scale */
   .frag-eyebrow {
-    @apply text-[9px] font-bold uppercase tracking-[0.2em] text-highlight-dark sm:text-[10px];
+    @apply text-[10px] font-bold uppercase tracking-[0.18em] text-highlight-dark sm:text-[11px];
   }
 
   .frag-title {
-    @apply text-lg font-bold tracking-tight text-secondary sm:text-xl;
+    @apply text-2xl font-bold tracking-tight text-secondary sm:text-3xl;
   }
 
   .frag-lead {
-    @apply text-xs font-medium leading-relaxed text-textMuted sm:text-sm;
+    @apply mt-2 max-w-2xl text-sm font-medium leading-relaxed text-textMuted sm:text-base;
   }
 
   /* Dark hero bands (blog, about, contact, etc.) */

@@ -9,6 +9,7 @@ import WebVitals from "./components/WebVitals";
 import GoogleAnalytics from "./components/GoogleAnalytics";
 import GoogleTagManager from "./components/GoogleTagManager";
 import MicrosoftClarity from "./components/MicrosoftClarity";
+import AdSenseLoader from "./components/AdSenseLoader";
 import {
   DEFAULT_DESCRIPTION,
   DEFAULT_KEYWORDS,
@@ -138,6 +139,7 @@ export default function RootLayout({
         <GoogleTagManager />
         <MicrosoftClarity />
         <GoogleAnalytics />
+        <AdSenseLoader />
         <DeferredChatWidget />
       </body>
     </html>

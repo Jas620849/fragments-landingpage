@@ -8,7 +8,9 @@ import { SITE_NAME } from "@/lib/seo-constants";
 import { absoluteAsset, canonicalUrl, hasPublicSiteUrl } from "@/lib/site";
 import ArticleSchema from "../../../components/ArticleSchema";
 import BreadcrumbSchema from "../../../components/BreadcrumbSchema";
-import RelatedArticles from "../RelatedArticles";
+import BlogTopicsRail from "../../../components/blog/BlogTopicsRail";
+import BlogPostRail from "../../../components/blog/BlogPostRail";
+import AdSenseUnit from "../../../components/AdSenseUnit";
 import HowToReduceBiasInScholarshipInterviews from "../content/how-to-reduce-bias-in-scholarship-interviews";
 import StructuredVsUnstructuredInterviews from "../content/structured-vs-unstructured-interviews";
 import AIPoweredInterviewEvaluation from "../content/ai-powered-interview-evaluation";
@@ -50,7 +52,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title: post.title,
       description: post.description,
       publishedTime: post.publishedISO,
-      modifiedTime: post.updatedISO ?? post.publishedISO,
+      modifiedTime: post.publishedISO,
       url: hasPublicSiteUrl() ? canonicalUrl(`/blog/${slug}/`) : undefined,
       images: [
         {
@@ -78,7 +80,7 @@ function BlogPostingJsonLd({ post, slug }: { post: BlogPostMeta; slug: string })
     headline: post.title,
     description: post.description,
     datePublished: post.publishedISO,
-    dateModified: post.updatedISO ?? post.publishedISO,
+    dateModified: post.publishedISO,
     url: canonicalUrl(`/blog/${slug}/`),
     mainEntityOfPage: {
       "@type": "WebPage",
@@ -129,6 +131,10 @@ function PostBody({ slug }: { slug: string }) {
   }
 }
 
+function categorySlug(category: string) {
+  return category.toLowerCase().replace(/\s+/g, "-");
+}
+
 export default async function BlogPostPage({ params }: PageProps) {
   const { slug } = await params;
   const post = getBlogPost(slug);
@@ -137,13 +143,12 @@ export default async function BlogPostPage({ params }: PageProps) {
   }
 
   return (
-    <article className="border-b border-slate-200/80 bg-white">
+    <article className="border-b border-slate-200/80 bg-gradient-to-b from-primary/30 via-bgAlt/50 to-white">
       <BlogPostingJsonLd post={post} slug={slug} />
       <ArticleSchema
         title={post.title}
         description={post.description}
         publishedDate={post.publishedISO}
-        modifiedDate={post.updatedISO}
         slug={slug}
       />
       <BreadcrumbSchema
@@ -153,41 +158,97 @@ export default async function BlogPostPage({ params }: PageProps) {
           { name: post.title, path: `/blog/${slug}/` },
         ]}
       />
-      <div className="frag-container">
-        <div className="mx-auto max-w-3xl py-12 sm:py-16">
+
+      <div className="frag-container py-6 sm:py-8 lg:py-10">
+        {/* Mobile / tablet topic chips */}
+        <div className="mb-5 flex gap-2 overflow-x-auto pb-1 xl:hidden">
           <Link
             href="/blog/"
-            className="text-sm font-bold text-highlight-dark transition hover:text-secondary"
+            className="shrink-0 rounded-lg border border-slate-200/80 bg-white px-3 py-1.5 text-xs font-semibold text-secondary shadow-sm"
           >
-            ← Back to blog
+            All
           </Link>
-          
-          {/* Featured Image */}
-          <div className="relative mt-6 aspect-video overflow-hidden rounded-2xl bg-slate-100">
-            <Image
-              src={post.image}
-              alt={post.title}
-              fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 800px"
-              className="object-cover"
-              priority
-            />
+          <Link
+            href={`/blog/category/${categorySlug(post.category)}/`}
+            className="shrink-0 rounded-lg bg-primary px-3 py-1.5 text-xs font-bold text-secondary ring-1 ring-highlight/25"
+          >
+            {post.category}
+          </Link>
+        </div>
+
+        <div className="lg:grid lg:grid-cols-12 lg:items-start lg:gap-6 xl:gap-8">
+          {/* Left: topics (Reddit-style communities rail) */}
+          <aside className="hidden xl:col-span-2 xl:block">
+            <div className="sticky top-24 rounded-xl border border-slate-200/80 bg-white/90 p-3 shadow-sm ring-1 ring-slate-100/80 backdrop-blur-sm">
+              <BlogTopicsRail activeCategory={post.category} />
+            </div>
+          </aside>
+
+          {/* Center: discussion post */}
+          <div className="lg:col-span-8 xl:col-span-7">
+            <div className="overflow-hidden rounded-xl border border-slate-200/80 bg-white shadow-sm ring-1 ring-slate-100/80">
+              <div className="relative aspect-[2/1] bg-slate-100 sm:aspect-video">
+                <Image
+                  src={post.image}
+                  alt={post.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1280px) 60vw, 720px"
+                  className="object-cover"
+                  priority
+                />
+              </div>
+
+              <div className="px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
+                <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+                  <Link
+                    href={`/blog/category/${categorySlug(post.category)}/`}
+                    className="text-xs font-bold uppercase tracking-wide text-accent-dark transition hover:text-accent"
+                  >
+                    {post.category}
+                  </Link>
+                  <span className="text-slate-300" aria-hidden>
+                    ·
+                  </span>
+                  <Link
+                    href="/blog/"
+                    className="text-xs font-semibold text-textMuted transition hover:text-highlight-dark"
+                  >
+                    ← Back to blog
+                  </Link>
+                </div>
+
+                <h1 className="mt-3 text-2xl font-bold tracking-tight text-secondary sm:text-3xl lg:text-[2rem] lg:leading-tight">
+                  {post.title}
+                </h1>
+                <p className="mt-3 text-base font-medium leading-relaxed text-textMuted">
+                  {post.description}
+                </p>
+                <p className="mt-3 text-xs font-semibold text-textMuted">
+                  {post.date} · {post.read}
+                  <span className="mx-1.5 text-slate-300">·</span>
+                  Editorial by {SITE_NAME}
+                </p>
+
+                <div className="mt-8 space-y-4 border-t border-slate-100 pt-8 text-base font-medium leading-relaxed text-textDark">
+                  <PostBody slug={slug} />
+                </div>
+
+                {process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG ? (
+                  <AdSenseUnit
+                    slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG}
+                    className="border-t border-slate-100 pt-2"
+                  />
+                ) : null}
+              </div>
+            </div>
           </div>
 
-          <p className="mt-6 text-xs font-semibold uppercase tracking-wide text-textMuted">
-            {post.date}
-            {post.updatedISO ? " · Updated July 23, 2026" : ""} · {post.read}
-          </p>
-          <p className="mt-2 text-xs font-medium text-textMuted">
-            Editorial guide by {SITE_NAME}
-          </p>
-          <h1 className="mt-2 text-2xl font-bold tracking-tight text-secondary sm:text-3xl">
-            {post.title}
-          </h1>
-          <div className="mt-8 max-w-none space-y-4 text-base font-medium leading-relaxed text-textDark">
-            <PostBody slug={slug} />
-          </div>
-          <RelatedArticles slug={slug} />
+          {/* Right: about / related / join (Quora-style rail) */}
+          <aside className="mt-6 lg:col-span-4 lg:mt-0 xl:col-span-3">
+            <div className="lg:sticky lg:top-24">
+              <BlogPostRail post={post} />
+            </div>
+          </aside>
         </div>
       </div>
     </article>

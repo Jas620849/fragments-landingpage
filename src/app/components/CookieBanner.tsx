@@ -2,29 +2,17 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-
-const STORAGE_KEY = "fragments_cookie_consent_v1";
-
-type ConsentChoice = "all" | "essential";
-
-function readStored(): ConsentChoice | null {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) return null;
-    const parsed = JSON.parse(raw) as { choice?: ConsentChoice };
-    return parsed.choice === "all" || parsed.choice === "essential"
-      ? parsed.choice
-      : null;
-  } catch {
-    return null;
-  }
-}
+import {
+  readCookieConsent,
+  writeCookieConsent,
+  type CookieConsentChoice,
+} from "@/lib/cookie-consent";
 
 export default function CookieBanner() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    setVisible(readStored() === null);
+    setVisible(readCookieConsent() === null);
   }, []);
 
   useEffect(() => {
@@ -39,15 +27,8 @@ export default function CookieBanner() {
     };
   }, [visible]);
 
-  const save = (choice: ConsentChoice) => {
-    try {
-      localStorage.setItem(
-        STORAGE_KEY,
-        JSON.stringify({ choice, at: Date.now() })
-      );
-    } catch {
-      /* private mode / blocked storage */
-    }
+  const save = (choice: CookieConsentChoice) => {
+    writeCookieConsent(choice);
     setVisible(false);
   };
 
@@ -74,10 +55,11 @@ export default function CookieBanner() {
               id="cookie-banner-desc"
               className="mt-2 text-xs leading-relaxed text-slate-600 sm:text-sm"
             >
-              We use cookies and similar technologies to run the site and measure
-              traffic. By clicking &quot;Accept all&quot;, you agree to optional cookies for
-              those purposes. &quot;Essential only&quot; keeps required cookies for
-              security and basic functionality. See our{" "}
+              We use cookies and similar technologies to run the site, measure
+              traffic, and—when enabled—show relevant ads (for example Google
+              AdSense). By clicking &quot;Accept all&quot;, you agree to optional cookies
+              for analytics and advertising. &quot;Essential only&quot; keeps required
+              cookies for security and basic functionality. See our{" "}
               <Link
                 href="/cookies/"
                 className="font-semibold text-highlight-dark underline decoration-highlight/30 underline-offset-2 hover:text-secondary"

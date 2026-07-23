@@ -81,6 +81,19 @@ export const NOINDEX_ROBOTS = {
 } as const;
 
 /**
+ * Demo discussion platform (static preview). Not primary publisher content —
+ * keep out of AdSense/index inventory while still allowing link equity out.
+ */
+export const PLATFORM_DEMO_ROBOTS = {
+  index: false,
+  follow: true,
+  googleBot: {
+    index: false,
+    follow: true,
+  },
+} as const;
+
+/**
  * Legacy sample forum categories. Routes that use these are noindexed and
  * excluded from the sitemap — they are not primary site content.
  */

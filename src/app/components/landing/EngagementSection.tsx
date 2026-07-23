@@ -13,21 +13,21 @@ const items = [
     icon: faFlagCheckered,
     title: "Themed discussion challenges",
     body:
-      "Educators launch focused discussion trails around specific texts, current events, or weekly themes. These structured challenges give cohorts clear objectives and defined endpoints, making participation purposeful rather than open-ended. Themed challenges can be aligned with curriculum schedules, current events, or preparation timelines for standardized tests and scholarship applications. Educators can set specific learning objectives for each challenge, such as analyzing primary sources, evaluating argument structures, or practicing evidence-based reasoning. The platform tracks participation and completion rates, providing educators with data on student engagement and identifying students who may need additional support. Challenges can be designed with varying difficulty levels, allowing educators to scaffold learning experiences and progressively increase complexity as students develop their skills.",
+      "Launch focused trails around texts, events, or weekly themes—clear objectives and endpoints, not open-ended scroll.",
     iconBg: "bg-primary text-secondary ring-1 ring-border-light",
   },
   {
     icon: faArrowTrendUp,
     title: "Visible conversation momentum",
     body:
-      "Replies appear sequentially within each fragment trail, allowing participants to see where discussion energy is concentrated within their specific cohort. This visibility helps identify engaging topics without relying on external algorithmic trending from unrelated content. The momentum visualization shows which trails are actively developing, which have reached natural conclusions, and which may benefit from additional educator intervention. Unlike social media platforms where trending content is determined by engagement metrics across the entire user base, FragmentTrails surfaces momentum within specific cohorts and disciplines, ensuring that visibility remains relevant to educational objectives. Educators can use momentum data to identify topics that particularly engage students, adjust their teaching strategies based on demonstrated interests, and recognize when discussions have achieved sufficient depth or require additional prompting.",
+      "See where energy concentrates inside your cohort—not algorithmic trending from unrelated feeds.",
     iconBg: "bg-primary text-highlight-dark ring-1 ring-border-light",
   },
   {
     icon: faUserPlus,
     title: "Controlled community expansion",
     body:
-      "Institutional administrators manage cohort invitations through controlled access links, ensuring that new participants join with appropriate context and moderation oversight. This approach supports growth while maintaining discussion quality and institutional standards. The invitation system allows administrators to set specific permissions for different user roles, ensuring that new participants have appropriate access levels based on their relationship to the institution. Cohort-based organization prevents the fragmentation that occurs in open platforms where discussions can become overwhelmed by participants without relevant background or context. Administrators can monitor growth patterns, identify optimal cohort sizes for effective discussion, and manage transitions as students progress through programs. This controlled expansion ensures that quality standards are maintained even as the user base grows, supporting scalability without sacrificing the intimate, focused environment essential for meaningful academic discourse.",
+      "Invite with moderated access so new participants arrive with context and institutional standards intact.",
     iconBg: "bg-accent/15 text-accent-darker ring-1 ring-accent/25",
   },
 ] as const;
@@ -36,32 +36,33 @@ export default function EngagementSection() {
   return (
     <section
       id="engagement"
-      className="relative scroll-mt-24 border-b border-slate-200/60 bg-gradient-to-b from-bgLight/80 via-white to-primary/25 py-20 sm:scroll-mt-28 sm:py-24 lg:py-28"
+      className="relative scroll-mt-24 border-b border-slate-200/60 bg-gradient-to-b from-bgLight/80 via-white to-primary/25 py-16 sm:scroll-mt-28 sm:py-20 lg:py-24"
     >
       <div className="frag-container">
-        <AnimateOnScroll className="mx-auto max-w-2xl text-center">
+        <AnimateOnScroll className="max-w-2xl">
           <p className="frag-eyebrow">Engagement</p>
-          <h2 className="frag-title mt-3">
-            Engagement features that maintain academic focus
+          <h2 className="frag-title mt-2">
+            Structured engagement without social noise
           </h2>
-          <p className="frag-lead mt-4">
-            FragmentTrails provides structured engagement tools that keep discussions purposeful, visible within cohorts, and under institutional control—avoiding the distraction and unpredictability of open social platforms.
+          <p className="frag-lead">
+            Challenges, in-cohort momentum, and controlled invites—purposeful
+            discussion under institutional oversight.
           </p>
         </AnimateOnScroll>
 
-        <div className="mt-14 grid gap-6 lg:grid-cols-3">
+        <div className="mt-12 grid gap-10 md:grid-cols-3 md:gap-8">
           {items.map((item, i) => (
-            <AnimateOnScroll key={item.title} delayMs={i * 100}>
-              <article className="frag-card-interactive flex h-full flex-col p-5 sm:p-6">
+            <AnimateOnScroll key={item.title} delayMs={i * 80}>
+              <article>
                 <div
-                  className={`mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl ${item.iconBg}`}
+                  className={`inline-flex h-11 w-11 items-center justify-center rounded-xl ${item.iconBg}`}
                 >
                   <FontAwesomeIcon icon={item.icon} className="h-5 w-5" />
                 </div>
-                <h3 className="text-lg font-bold text-secondary sm:text-xl">
+                <h3 className="mt-4 text-lg font-bold text-secondary">
                   {item.title}
                 </h3>
-                <p className="mt-2 flex-1 text-sm font-medium leading-relaxed text-textMuted">
+                <p className="mt-2 text-sm font-medium leading-relaxed text-textMuted sm:text-[0.9375rem]">
                   {item.body}
                 </p>
               </article>

@@ -11,6 +11,9 @@ import {
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import { scrollToSection } from "../utils/navigation";
+import { frontendAppBaseUrl } from "../utils/frontendAppBaseUrl";
+
+const appBase = frontendAppBaseUrl || "https://app.fragmenttrails.com";
 
 const navLinkClass =
   "rounded-lg px-3 py-2 text-xs font-medium text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 sm:text-sm";
@@ -25,12 +28,12 @@ export default function Navbar() {
   const router = useRouter();
   const pathname = usePathname();
 
-  const goExplore = () => {
+  const goProductTour = () => {
     setOpen(false);
     if (pathname === "/") {
-      scrollToSection("explore", router);
+      scrollToSection("workflow", router);
     } else {
-      router.push("/#explore");
+      router.push("/#workflow");
     }
   };
 
@@ -78,7 +81,27 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <button type="button" onClick={goExplore} className={navLinkClass}>
+              <Link
+                href="/explore/"
+                className={`${navLinkClass}${
+                  pathname.startsWith("/explore") ||
+                  pathname.startsWith("/trending") ||
+                  pathname.startsWith("/discussions") ||
+                  pathname.startsWith("/questions") ||
+                  pathname.startsWith("/communities") ||
+                  pathname.startsWith("/discover") ||
+                  pathname.startsWith("/following") ||
+                  pathname.startsWith("/saved") ||
+                  pathname.startsWith("/profiles")
+                    ? " bg-slate-100 font-semibold text-slate-900"
+                    : ""
+                }`}
+              >
+                Preview
+              </Link>
+            </li>
+            <li>
+              <button type="button" onClick={goProductTour} className={navLinkClass}>
                 Product tour
               </button>
             </li>
@@ -136,6 +159,26 @@ export default function Navbar() {
                       Contact
                     </Link>
                   </li>
+                  <li role="none">
+                    <Link
+                      href="/privacy/"
+                      className={moreItemClass}
+                      role="menuitem"
+                      onClick={() => setMoreOpen(false)}
+                    >
+                      Privacy
+                    </Link>
+                  </li>
+                  <li role="none">
+                    <Link
+                      href="/terms/"
+                      className={moreItemClass}
+                      role="menuitem"
+                      onClick={() => setMoreOpen(false)}
+                    >
+                      Terms
+                    </Link>
+                  </li>
                 </ul>
               ) : null}
             </li>
@@ -143,13 +186,13 @@ export default function Navbar() {
 
           <div className="flex items-center gap-2 border-l border-slate-200/90 pl-4 xl:gap-3 xl:pl-5">
             <a
-              href='https://app.fragmenttrails.com/auth/login'
+              href={`${appBase}/auth/login`}
               className="rounded-xl px-3 py-2 text-sm font-semibold text-slate-700 ring-1 ring-slate-200/90 transition hover:bg-slate-50 xl:px-4"
             >
               Sign in
             </a>
             <a
-              href='https://app.fragmenttrails.com/auth/register'
+              href={`${appBase}/auth/register`}
               className="rounded-xl bg-accent px-3 py-2 text-sm font-bold text-white shadow-md shadow-orange-500/25 transition hover:bg-accent-dark xl:px-4"
             >
               Get started
@@ -181,10 +224,19 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
+              <Link
+                href="/explore/"
+                className="block rounded-xl px-3 py-3 text-sm font-medium text-slate-800 hover:bg-slate-50"
+                onClick={() => setOpen(false)}
+              >
+                Preview discussions
+              </Link>
+            </li>
+            <li>
               <button
                 type="button"
                 className="block w-full rounded-xl px-3 py-3 text-left text-sm font-medium text-slate-800 hover:bg-slate-50"
-                onClick={goExplore}
+                onClick={goProductTour}
                 aria-label="View product tour"
               >
                 Product tour
@@ -238,13 +290,13 @@ export default function Navbar() {
           </ul>
           <div className="mt-4 flex flex-col gap-2 border-t border-slate-100 pt-4">
             <a
-              href='https://app.fragmenttrails.com/auth/login'
+              href={`${appBase}/auth/login`}
               className="block rounded-xl py-3 text-center text-sm font-semibold text-slate-800 ring-1 ring-slate-200"
             >
               Sign in
             </a>
             <a
-              href='https://app.fragmenttrails.com/auth/register'
+              href={`${appBase}/auth/register`}
               className="block rounded-xl bg-accent py-3 text-center text-sm font-bold text-white shadow-md shadow-orange-500/20 transition hover:bg-accent-dark"
             >
               Get started

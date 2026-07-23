@@ -53,11 +53,11 @@ export default function DemoVideoSection() {
         <AnimateOnScroll className="mx-auto max-w-2xl text-center">
           <p className="frag-eyebrow">Watch</p>
           <h2 id="demo-video-heading" className="frag-title mt-3">
-            See how it works
+            A two-minute product walkthrough
           </h2>
           <p className="frag-lead mt-4">
-            A short walkthrough beats a long scroll. Turn sound on for narration, or
-            follow along with captions on YouTube or Vimeo.
+            Turn sound on for narration, or follow along with captions on YouTube
+            or Vimeo.
           </p>
         </AnimateOnScroll>
 

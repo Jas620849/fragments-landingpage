@@ -4,8 +4,6 @@ import { useEffect } from "react";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import Hero from "../components/landing/Hero";
 import TrustStrip from "../components/landing/TrustStrip";
-import WhyJoinSection from "../components/landing/WhyJoinSection";
-import EngagementSection from "../components/landing/EngagementSection";
 import DemoVideoSection from "../components/landing/DemoVideoSection";
 import WorkflowSection from "../components/landing/WorkflowSection";
 import FeaturesSection from "../components/landing/FeaturesSection";
@@ -13,7 +11,6 @@ import ComparisonSection from "../components/landing/ComparisonSection";
 import PilotVoicesSection from "../components/landing/PilotVoicesSection";
 import DisciplinesSection from "../components/landing/DisciplinesSection";
 import FAQSection from "../components/landing/FAQSection";
-import SuggestDisciplineSection from "../components/landing/SuggestDisciplineSection";
 import FinalCtaSection from "../components/landing/FinalCtaSection";
 
 config.autoAddCss = false;
@@ -22,8 +19,10 @@ export default function MarketingHomeClient() {
   useEffect(() => {
     const id = window.location.hash.replace(/^#/, "");
     if (!id) return;
+    // Legacy deep link: /#explore → product tour / workflow
+    const target = id === "explore" ? "workflow" : id;
     const t = window.setTimeout(() => {
-      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+      document.getElementById(target)?.scrollIntoView({ behavior: "smooth" });
     }, 100);
     return () => window.clearTimeout(t);
   }, []);
@@ -32,16 +31,13 @@ export default function MarketingHomeClient() {
     <>
       <Hero />
       <TrustStrip />
-      <WhyJoinSection />
-      <EngagementSection />
-      <DemoVideoSection />
       <WorkflowSection />
+      <DemoVideoSection />
       <FeaturesSection />
       <ComparisonSection />
       <PilotVoicesSection />
       <DisciplinesSection />
       <FAQSection />
-      <SuggestDisciplineSection />
       <FinalCtaSection />
     </>
   );

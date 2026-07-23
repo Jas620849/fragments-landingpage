@@ -44,6 +44,8 @@ All public variables use the `NEXT_PUBLIC_` prefix. See `.env.example` for the f
 | `NEXT_PUBLIC_GA_MEASUREMENT_ID` | No | Google Analytics 4 measurement ID. |
 | `NEXT_PUBLIC_GTM_ID` | No | Google Tag Manager container ID. |
 | `NEXT_PUBLIC_CLARITY_ID` | No | Microsoft Clarity project ID. |
+| `NEXT_PUBLIC_ADSENSE_CLIENT` | No | Google AdSense client ID (`ca-pub-…`). Loads only after “Accept all” cookie consent. |
+| `NEXT_PUBLIC_ADSENSE_SLOT_BLOG` | No | AdSense unit slot for blog article pages. Leave unset to hide units. |
 | `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` | No | Google Search Console verification code. |
 | `NEXT_PUBLIC_BING_SITE_VERIFICATION` | No | Bing Webmaster Tools verification code. |
 | `NEXT_PUBLIC_HOMEPAGE_DEMO_VIDEO_URL` | No | Demo video URL shown on the homepage. |

@@ -1,60 +1,33 @@
 "use client";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGraduationCap,
-  faShieldHalved,
-  faUserCheck,
-  faWandMagicSparkles,
-} from "@fortawesome/free-solid-svg-icons";
-import AnimateOnScroll from "./AnimateOnScroll";
-
-const items = [
-  {
-    icon: faShieldHalved,
-    title: "Academic integrity first",
-    sub: "AI + human review on every fragment",
-  },
-  {
-    icon: faUserCheck,
-    title: "Built for real classrooms",
-    sub: "K–12, higher ed, and independent experts",
-  },
-  {
-    icon: faGraduationCap,
-    title: "Educators get credit",
-    sub: "Quality teaching is recognized, not buried.",
-  },
-  {
-    icon: faWandMagicSparkles,
-    title: "Signal over noise",
-    sub: "Threaded trails that stay on topic",
-  },
+const proofs = [
+  "AI + human review on every fragment",
+  "Built for K–12, higher ed, and experts",
+  "Educator credit for quality, not volume",
+  "Threaded trails that stay on topic",
 ];
 
+/** Slim proof line under the hero — one job, minimal height. */
 export default function TrustStrip() {
   return (
     <section
-      aria-label="Trust and product highlights"
-      className="relative z-0 -mt-px border-b border-slate-200/70 bg-gradient-to-b from-white via-primary/30 to-bgAlt/80 py-12 sm:py-14"
+      aria-label="Product highlights"
+      className="border-b border-slate-200/70 bg-white py-4 sm:py-5"
     >
       <div className="frag-container">
-        <ul className="grid gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4 lg:gap-6">
-          {items.map((item, i) => (
-            <li key={item.title}>
-              <AnimateOnScroll delayMs={i * 75} className="h-full">
-                <div className="frag-card-interactive flex h-full gap-4 p-4 sm:p-5">
-                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-highlight to-secondary text-white shadow-md shadow-teal-900/15">
-                    <FontAwesomeIcon icon={item.icon} className="h-5 w-5" />
-                  </span>
-                  <div>
-                    <p className="text-xs font-bold text-secondary sm:text-sm">{item.title}</p>
-                    <p className="mt-1 text-[11px] leading-snug text-textMuted sm:text-sm">
-                      {item.sub}
-                    </p>
-                  </div>
-                </div>
-              </AnimateOnScroll>
+        <ul className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between sm:gap-x-6 sm:gap-y-2 lg:justify-start lg:gap-x-0">
+          {proofs.map((line, i) => (
+            <li
+              key={line}
+              className="flex items-center text-sm font-medium text-textMuted sm:text-[0.9375rem]"
+            >
+              {i > 0 && (
+                <span
+                  className="mx-4 hidden h-3 w-px shrink-0 bg-slate-200 lg:block"
+                  aria-hidden
+                />
+              )}
+              <span className="text-secondary/90">{line}</span>
             </li>
           ))}
         </ul>

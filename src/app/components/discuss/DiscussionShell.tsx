@@ -138,7 +138,8 @@ export default function DiscussionShell({
               <span className="sr-only">Search discussions</span>
               <FontAwesomeIcon
                 icon={faMagnifyingGlass}
-                className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-xs text-slate-400"
+                className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-slate-400"
+                style={{ width: '1rem', height: '1rem', fontSize: '1rem' }}
                 aria-hidden
               />
               <input
@@ -153,10 +154,10 @@ export default function DiscussionShell({
           <div className="ml-auto flex items-center gap-2">
             <Link
               href="/discover/"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-lg text-slate-600 transition hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-highlight md:hidden"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-lg text-slate-600 hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-highlight md:hidden"
               aria-label="Search and discover"
             >
-              <FontAwesomeIcon icon={faMagnifyingGlass} />
+              <FontAwesomeIcon icon={faMagnifyingGlass} style={{ width: '1rem', height: '1rem', fontSize: '1rem' }} />
             </Link>
 
             <div className="relative hidden sm:block" ref={createRef}>

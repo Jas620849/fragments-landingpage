@@ -62,7 +62,7 @@ export default function Navbar() {
           <span className="relative flex h-9 w-9 items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br from-slate-100 to-white ring-1 ring-slate-200/80">
             <Image
               src="/logo-no-bg.png"
-              alt="Fragments Logo"
+              alt="FragmentTrails Logo - AI-moderated classroom discussion platform"
               width={36}
               height={36}
               sizes="36px"

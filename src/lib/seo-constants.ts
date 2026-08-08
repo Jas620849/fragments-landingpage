@@ -6,7 +6,7 @@ export const DEFAULT_TITLE =
   "FragmentTrails | Fragments — AI-Moderated Classroom Discussion Platform";
 
 export const DEFAULT_DESCRIPTION =
-  "FragmentTrails is home to Fragments, an AI-moderated discussion platform for schools and serious learners. Follow guided fragment trails, keep discourse rigorous, and credit educators who teach with care. Our blog covers fair evaluation practices for scholarships, interviews, and admissions.";
+  "Transform your classroom with FragmentTrails - the AI-moderated discussion platform that keeps student discourse rigorous and engaging. Get structured fragment trails, transparent moderation, and educator recognition tools. Trusted by schools for fair scholarship evaluation and collaborative learning.";
 
 export const DEFAULT_KEYWORDS = [
   "scholarship tracking and review system",

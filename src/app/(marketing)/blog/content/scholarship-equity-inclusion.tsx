@@ -1,5 +1,4 @@
 import Link from "next/link";
-/* eslint-disable react/no-unescaped-entities */
 export default function ScholarshipEquityInclusion() {
   return (
     <div className="space-y-8">

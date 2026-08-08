@@ -9,6 +9,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { frontendAppBaseUrl } from "../../utils/frontendAppBaseUrl";
 import FAQSchema from "../../components/FAQSchema";
+import BreadcrumbSchema from "../../components/BreadcrumbSchema";
 
 type Plan = {
   id: string;
@@ -291,6 +292,12 @@ export default function PricingPage() {
 
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Pricing", path: "/pricing/" },
+        ]}
+      />
       <FAQSchema
         faqs={faqs.map((faq) => ({
           question: faq.q,

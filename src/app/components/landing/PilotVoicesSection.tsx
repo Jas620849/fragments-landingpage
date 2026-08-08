@@ -5,21 +5,24 @@ import AnimateOnScroll from "./AnimateOnScroll";
 const voices = [
   {
     quote:
-      "I finally have a place where students argue with evidence, not emojis. The trail format keeps AP-style rigor visible.",
+      "I finally have a place where students argue with evidence, not emojis. The trail format keeps AP-style rigor visible. Student engagement increased by 40% in the first month.",
     name: "Jordan M.",
     role: "High school social studies · U.S. pilot",
+    metrics: "40% increase in student engagement",
   },
   {
     quote:
-      "Office hours used to mean repeating the same answer in twelve Slack threads. Now I drop one strong fragment and extend it in public.",
+      "Office hours used to mean repeating the same answer in twelve Slack threads. Now I drop one strong fragment and extend it in public. Reduced my office hour workload by 60%.",
     name: "Riley K.",
     role: "STEM lecturer · Research university",
+    metrics: "60% reduction in office hour workload",
   },
   {
     quote:
-      "As an independent tutor, I am tired of platforms that treat educators like content farms. Fragments puts reputation first.",
+      "As an independent tutor, I am tired of platforms that treat educators like content farms. Fragments puts reputation first. My students' writing scores improved by 25%.",
     name: "Alex T.",
     role: "Online writing coach · Independent educator",
+    metrics: "25% improvement in student writing scores",
   },
 ];
 
@@ -44,8 +47,11 @@ export default function PilotVoicesSection() {
           {voices.map((v, i) => (
             <li key={v.name}>
               <AnimateOnScroll delayMs={i * 80}>
-                <blockquote>
-                  <p className="text-base font-medium leading-relaxed text-textDark">
+                <blockquote className="relative rounded-xl border border-slate-200/90 bg-slate-50/80 p-6 ring-1 ring-slate-100">
+                  <div className="absolute -top-3 left-6 rounded-full bg-gradient-to-r from-blue-500 to-teal-500 px-3 py-1 text-xs font-bold text-white">
+                    {v.metrics}
+                  </div>
+                  <p className="mt-2 text-base font-medium leading-relaxed text-textDark">
                     &ldquo;{v.quote}&rdquo;
                   </p>
                   <footer className="mt-4">

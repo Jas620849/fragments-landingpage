@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import type { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import { faEnvelope, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import Loader from "../../components/Loader";
+import BreadcrumbSchema from "../../components/BreadcrumbSchema";
 import axios from "axios";
 import { toast } from "react-toastify";
 
@@ -89,6 +90,12 @@ export default function ContactPage() {
 
   return (
     <React.Fragment>
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Contact", path: "/contact/" },
+        ]}
+      />
       {loading && <Loader />}
       <section className="border-b border-slate-200/80 bg-slate-900 py-10 sm:py-14">
         <div className="frag-container">

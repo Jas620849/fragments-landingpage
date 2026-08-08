@@ -16,6 +16,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { frontendAppBaseUrl } from "../../utils/frontendAppBaseUrl";
 import HowToSchema from "../../components/HowToSchema";
+import BreadcrumbSchema from "../../components/BreadcrumbSchema";
 
 export default function HowItWorks() {
   const rules = [
@@ -153,6 +154,12 @@ export default function HowItWorks() {
 
   return (
     <div>
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", path: "/" },
+          { name: "How it works", path: "/how-it-works/" },
+        ]}
+      />
       <HowToSchema
         name="How Fragments Works"
         description="Rules and mechanisms that keep Fragments trustworthy for scholarly discourse in classrooms and cohorts"

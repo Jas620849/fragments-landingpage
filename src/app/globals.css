@@ -48,6 +48,19 @@ html {
   body {
     @apply bg-background font-sans text-[15px] leading-normal text-textDark antialiased sm:text-[0.9375rem];
   }
+
+  /* Improved focus indicators for accessibility */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-blue-500 ring-offset-2;
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible {
+    @apply outline-none ring-2 ring-blue-500 ring-offset-2;
+  }
 }
 
 ::selection {

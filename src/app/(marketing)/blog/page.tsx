@@ -4,6 +4,7 @@ import BreadcrumbSchema from "../../components/BreadcrumbSchema";
 import BlogCard from "../../components/blog/BlogCard";
 import Pagination from "../../components/blog/Pagination";
 import Link from "next/link";
+import BlogSearch from "./BlogSearch";
 
 export const metadata: Metadata = {
   title: "Blog | FragmentTrails - Scholarship Interview & Evaluation Insights",
@@ -63,6 +64,9 @@ export default function BlogIndexPage() {
       {/* Blog Grid Section */}
       <section className="py-12 sm:py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          {/* Search */}
+          <BlogSearch />
+
           {/* Category Filter */}
           <div className="mb-10 flex flex-wrap gap-3">
             <Link

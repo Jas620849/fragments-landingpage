@@ -28,7 +28,7 @@ export default function Footer() {
               <span className="flex h-9 w-9 items-center justify-center overflow-hidden rounded-xl bg-white/10 ring-1 ring-white/10">
                 <Image
                   src="/logo-no-bg.png"
-                  alt={`${SITE_NAME} Logo`}
+                  alt={`${SITE_NAME} Logo - AI-moderated classroom discussion platform for schools`}
                   width={36}
                   height={36}
                   sizes="36px"

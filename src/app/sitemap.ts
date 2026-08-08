@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { BLOG_POSTS } from "./(marketing)/blog/_data";
+import { getCategories } from "./(marketing)/blog/_data";
 
 export const dynamic = "force-static";
 
@@ -20,15 +21,14 @@ const STATIC_PATHS = [
   { path: "/how-it-works/", priority: 1, changeFreq: "monthly" as const },
   { path: "/pricing/", priority: 1, changeFreq: "monthly" as const },
   { path: "/faq/", priority: 0.9, changeFreq: "monthly" as const },
-  { path: "/testimonials/", priority: 0.85, changeFreq: "monthly" as const },
-  { path: "/research/", priority: 0.85, changeFreq: "monthly" as const },
-  { path: "/developers/", priority: 0.85, changeFreq: "monthly" as const },
-  { path: "/security/", priority: 0.85, changeFreq: "monthly" as const },
-  { path: "/case-studies/", priority: 0.9, changeFreq: "monthly" as const },
-  { path: "/compare/", priority: 0.9, changeFreq: "monthly" as const },
-  { path: "/resources/", priority: 0.9, changeFreq: "monthly" as const },
   { path: "/features/", priority: 0.9, changeFreq: "monthly" as const },
-  { path: "/solutions/", priority: 0.9, changeFreq: "monthly" as const },
+  { path: "/case-studies/", priority: 0.85, changeFreq: "monthly" as const },
+  { path: "/compare/", priority: 0.85, changeFreq: "monthly" as const },
+  { path: "/developers/", priority: 0.8, changeFreq: "monthly" as const },
+  { path: "/research/", priority: 0.8, changeFreq: "monthly" as const },
+  { path: "/resources/", priority: 0.8, changeFreq: "monthly" as const },
+  { path: "/solutions/", priority: 0.85, changeFreq: "monthly" as const },
+  { path: "/testimonials/", priority: 0.8, changeFreq: "monthly" as const },
   { path: "/scholarship-tracking-and-review-system/", priority: 0.95, changeFreq: "weekly" as const },
   { path: "/scholarship-interview-software/", priority: 0.95, changeFreq: "weekly" as const },
   { path: "/candidate-evaluation-platform/", priority: 0.95, changeFreq: "weekly" as const },
@@ -50,6 +50,8 @@ const STATIC_PATHS = [
   { path: "/services/student-engagement-software/", priority: 0.9, changeFreq: "monthly" as const },
   { path: "/services/educator-recognition-platform/", priority: 0.9, changeFreq: "monthly" as const },
   { path: "/services/cohort-based-learning/", priority: 0.9, changeFreq: "monthly" as const },
+  { path: "/cookie-policy/", priority: 0.4, changeFreq: "yearly" as const },
+  { path: "/security/", priority: 0.4, changeFreq: "yearly" as const },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -76,5 +78,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
-  return [...staticEntries, ...blogPosts];
+  const blogCategories: MetadataRoute.Sitemap = getCategories().map((category) => ({
+    url: makeUrl(`/blog/category/${category.toLowerCase().replace(/\s+/g, "-")}/`),
+    lastModified: lastmod,
+    changeFrequency: "weekly" as const,
+    priority: 0.8,
+  }));
+
+  return [...staticEntries, ...blogPosts, ...blogCategories];
 }

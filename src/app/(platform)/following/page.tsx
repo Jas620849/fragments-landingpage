@@ -7,11 +7,13 @@ import {
   getTrendingDiscussions,
 } from "@/lib/discussions/data";
 import { frontendAppBaseUrl } from "@/app/utils/frontendAppBaseUrl";
+import { PLATFORM_DEMO_ROBOTS } from "@/lib/seo-constants";
 
 export const metadata: Metadata = {
   title: "Following",
   description:
     "Follow communities and people on FragmentTrails to build a personalized knowledge feed.",
+  robots: PLATFORM_DEMO_ROBOTS,
   alternates: { canonical: "/following/" },
 };
 

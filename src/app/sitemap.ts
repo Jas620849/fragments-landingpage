@@ -7,7 +7,7 @@ export const dynamic = "force-static";
 /**
  * AdSense / publisher sitemap: marketing pages + original blog only.
  * Static discussion demo (/explore, /discussions, …) and thin keyword
- * landings are intentionally excluded.
+ * landings are intentionally excluded to comply with AdSense low-value content policy.
  */
 const STATIC_PATHS = [
   { path: "/", priority: 1, changeFreq: "weekly" as const },
@@ -30,26 +30,6 @@ const STATIC_PATHS = [
   { path: "/solutions/", priority: 0.85, changeFreq: "monthly" as const },
   { path: "/testimonials/", priority: 0.8, changeFreq: "monthly" as const },
   { path: "/scholarship-tracking-and-review-system/", priority: 0.95, changeFreq: "weekly" as const },
-  { path: "/scholarship-interview-software/", priority: 0.95, changeFreq: "weekly" as const },
-  { path: "/candidate-evaluation-platform/", priority: 0.95, changeFreq: "weekly" as const },
-  { path: "/student-interview-management/", priority: 0.9, changeFreq: "weekly" as const },
-  { path: "/scholarship-selection-software/", priority: 0.95, changeFreq: "weekly" as const },
-  { path: "/interview-scoring-system/", priority: 0.9, changeFreq: "weekly" as const },
-  { path: "/interview-moderation-platform/", priority: 0.95, changeFreq: "weekly" as const },
-  { path: "/admissions-interview-software/", priority: 0.9, changeFreq: "weekly" as const },
-  { path: "/bias-free-candidate-evaluation/", priority: 0.85, changeFreq: "weekly" as const },
-  { path: "/scholarship-review-process/", priority: 0.85, changeFreq: "weekly" as const },
-  { path: "/interview-panel-management/", priority: 0.85, changeFreq: "weekly" as const },
-  { path: "/applicant-assessment-software/", priority: 0.9, changeFreq: "weekly" as const },
-  { path: "/student-evaluation-platform/", priority: 0.9, changeFreq: "weekly" as const },
-  { path: "/candidate-ranking-system/", priority: 0.9, changeFreq: "weekly" as const },
-  { path: "/fair-selection-platform/", priority: 0.85, changeFreq: "weekly" as const },
-  { path: "/structured-interview-software/", priority: 0.9, changeFreq: "weekly" as const },
-  { path: "/services/classroom-discussion-platform/", priority: 0.9, changeFreq: "monthly" as const },
-  { path: "/services/ai-moderated-learning/", priority: 0.9, changeFreq: "monthly" as const },
-  { path: "/services/student-engagement-software/", priority: 0.9, changeFreq: "monthly" as const },
-  { path: "/services/educator-recognition-platform/", priority: 0.9, changeFreq: "monthly" as const },
-  { path: "/services/cohort-based-learning/", priority: 0.9, changeFreq: "monthly" as const },
   { path: "/cookie-policy/", priority: 0.4, changeFreq: "yearly" as const },
   { path: "/security/", priority: 0.4, changeFreq: "yearly" as const },
 ];

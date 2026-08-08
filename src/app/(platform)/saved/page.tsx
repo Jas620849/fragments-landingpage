@@ -4,10 +4,12 @@ import DiscussionCard from "@/app/components/discuss/DiscussionCard";
 import { getLatestDiscussions } from "@/lib/discussions/data";
 import { frontendAppBaseUrl } from "@/app/utils/frontendAppBaseUrl";
 import Link from "next/link";
+import { PLATFORM_DEMO_ROBOTS } from "@/lib/seo-constants";
 
 export const metadata: Metadata = {
   title: "Saved",
   description: "Saved discussions and questions on FragmentTrails.",
+  robots: PLATFORM_DEMO_ROBOTS,
   alternates: { canonical: "/saved/" },
 };
 

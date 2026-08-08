@@ -2,11 +2,13 @@ import type { Metadata } from "next";
 import DiscussionCard from "@/app/components/discuss/DiscussionCard";
 import FeedTabs from "@/app/components/discuss/FeedTabs";
 import { getLatestDiscussions } from "@/lib/discussions/data";
+import { PLATFORM_DEMO_ROBOTS } from "@/lib/seo-constants";
 
 export const metadata: Metadata = {
   title: "Discussions",
   description:
     "Browse discussions on FragmentTrails—structured conversations that become lasting knowledge.",
+  robots: PLATFORM_DEMO_ROBOTS,
   alternates: { canonical: "/discussions/" },
 };
 

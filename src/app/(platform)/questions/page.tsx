@@ -2,11 +2,13 @@ import type { Metadata } from "next";
 import DiscussionCard from "@/app/components/discuss/DiscussionCard";
 import FeedTabs from "@/app/components/discuss/FeedTabs";
 import { getQuestions } from "@/lib/discussions/data";
+import { PLATFORM_DEMO_ROBOTS } from "@/lib/seo-constants";
 
 export const metadata: Metadata = {
   title: "Questions",
   description:
     "Ask and answer high-signal questions on FragmentTrails—knowledge that lasts beyond the thread.",
+  robots: PLATFORM_DEMO_ROBOTS,
   alternates: { canonical: "/questions/" },
 };
 

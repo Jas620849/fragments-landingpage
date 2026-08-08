@@ -59,7 +59,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   const blogCategories: MetadataRoute.Sitemap = getCategories().map((category) => ({
-    url: makeUrl(`/blog/category/${category.toLowerCase().replace(/\s+/g, "-")}/`),
+    url: makeUrl(`/blog/category/${category.toLowerCase().replace(/\s+/g, "-").replace(/&/g, "and")}/`),
     lastModified: lastmod,
     changeFrequency: "weekly" as const,
     priority: 0.8,

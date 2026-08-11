@@ -1,26 +1,25 @@
 import type { Metadata } from "next";
 import DiscussionShell from "@/app/components/discuss/DiscussionShell";
-import { PLATFORM_DEMO_ROBOTS, SITE_NAME } from "@/lib/seo-constants";
+import { SITE_NAME } from "@/lib/seo-constants";
 
 export const metadata: Metadata = {
   title: {
-    default: `Discussion preview | ${SITE_NAME}`,
+    default: `Discussions | ${SITE_NAME}`,
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    "Static product preview of FragmentTrails discussions. Sample content only—not the live product.",
-  robots: PLATFORM_DEMO_ROBOTS,
+    "Structured discussions on scholarship evaluation, interview assessment, and educational technology. Join conversations that become lasting knowledge.",
   openGraph: {
-    title: `Discussion preview | ${SITE_NAME}`,
+    title: `Discussions | ${SITE_NAME}`,
     description:
-      "Static product preview of FragmentTrails discussions. Sample content only.",
+      "Structured discussions on scholarship evaluation, interview assessment, and educational technology.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: `Discussion preview | ${SITE_NAME}`,
+    title: `Discussions | ${SITE_NAME}`,
     description:
-      "Static product preview of FragmentTrails discussions. Sample content only.",
+      "Structured discussions on scholarship evaluation, interview assessment, and educational technology.",
   },
 };
 

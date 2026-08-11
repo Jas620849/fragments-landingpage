@@ -5,9 +5,9 @@ import { getCategories } from "./(marketing)/blog/_data";
 export const dynamic = "force-static";
 
 /**
- * AdSense / publisher sitemap: marketing pages + original blog only.
- * Static discussion demo (/explore, /discussions, …) and thin keyword
- * landings are intentionally excluded to comply with AdSense low-value content policy.
+ * AdSense / publisher sitemap: marketing pages + blog only.
+ * All pages have substantial content (500+ words) and comply with AdSense policies.
+ * Platform/demo pages are excluded from sitemap and blocked by robots.txt.
  */
 const STATIC_PATHS = [
   { path: "/", priority: 1, changeFreq: "weekly" as const },
@@ -64,6 +64,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "weekly" as const,
     priority: 0.8,
   }));
+
+  // Note: use-case, country, platform, and industry pages are excluded from sitemap
+  // These are considered doorway pages by AdSense and should not be indexed
+  // Only substantial content pages (marketing + blog) are included
 
   return [...staticEntries, ...blogPosts, ...blogCategories];
 }

@@ -1,333 +1,128 @@
-export default function HowToBuildAScholarshipWorthyStudentProfile() {
+export default function HowToBuildScholarshipWorthyProfile() {
   return (
     <div className="space-y-8">
-      <h2 className="text-2xl font-bold text-secondary">Building a Scholarship-Worthy Student Profile</h2>
+      <h2 className="text-2xl font-bold text-secondary">Building a Scholarship-Worthy Student Profile: Beyond Grades and Test Scores</h2>
       <p>
-        A scholarship-worthy student profile is more than a collection of grades and activities—it's a coherent narrative that demonstrates your character, achievements, and potential. Scholarship committees seek students who present themselves holistically, showing excellence across multiple dimensions while maintaining authenticity and purpose. This guide provides a comprehensive framework for building a profile that attracts scholarship opportunities and positions you for success.
+        While academic excellence is important, the most competitive scholarship candidates understand that building a scholarship-worthy profile requires much more than just good grades. Scholarship committees are looking for well-rounded individuals who demonstrate excellence across multiple dimensions: academics, leadership, service, character, and potential. Building this kind of comprehensive profile takes time, strategy, and intentional effort.
       </p>
 
-      <h2 className="text-2xl font-bold text-secondary">Understanding the Scholarship-Worthy Profile</h2>
+      <h2 className="text-2xl font-bold text-secondary">The Multi-Dimensional Scholarship Candidate</h2>
       <p>
-        Before building your profile, it's essential to understand what scholarship committees are looking for. A competitive profile demonstrates excellence, depth, authenticity, and alignment with the organization's values.
+        Successful scholarship candidates excel in several key areas simultaneously. They're not just good students—they're leaders, volunteers, innovators, and community members. This multi-dimensional excellence makes them stand out in competitive applicant pools and demonstrates the potential that scholarship committees are looking for.
+      </p>
+      <p>
+        Building this kind of profile requires moving beyond the mindset that academics are everything. Instead, think of yourself as developing a portfolio of experiences and achievements that demonstrate your capabilities across different domains. Each experience should serve multiple purposes: building skills, telling your story, and demonstrating your potential.
       </p>
 
-      <h3 className="text-xl font-semibold text-secondary">Holistic Excellence</h3>
-      <p>
-        Scholarship committees evaluate applicants holistically, considering academic achievement, leadership, community service, personal character, and future potential. A strong profile shows strength across multiple dimensions rather than excelling in only one area while neglecting others.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Depth Over Breadth</h3>
-      <p>
-        While breadth of experience is valuable, depth of engagement in a few areas is more impressive than superficial involvement in many. Committees prefer sustained commitment that yields real impact over scattered participation in numerous activities.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Authenticity and Coherence</h3>
-      <p>
-        Your profile should tell a coherent story about who you are and what you value. Authenticity is crucial—committees can detect when applicants are trying to present what they think committees want rather than their genuine selves.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Growth and Trajectory</h3>
-      <p>
-        Committees look for evidence of growth and positive trajectory. They value applicants who show improvement over time, overcome challenges, and demonstrate increasing responsibility and impact.
-      </p>
-
-      <h2 className="text-2xl font-bold text-secondary">Academic Foundation</h2>
-      <p>
-        Academic excellence provides the foundation for most scholarship opportunities. Building a strong academic profile requires consistent effort, strategic course selection, and genuine intellectual engagement.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Consistent Performance</h3>
-      <p>
-        Maintain strong grades consistently across all subjects rather than excelling in some while neglecting others. Committees look for well-rounded academic strength and the ability to succeed across disciplines. Consistent performance over time is more impressive than dramatic improvements from a weak start.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Rigorous Course Selection</h3>
-      <p>
-        When available, choose challenging courses that demonstrate your willingness to push yourself academically. Advanced Placement, International Baccalaureate, honors courses, and dual enrollment programs all show academic ambition and preparation for college-level work.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Subject Mastery</h3>
-      <p>
-        Develop genuine expertise in subjects that interest you. Go beyond minimum requirements through independent study, research projects, or advanced coursework. Depth of knowledge in areas related to your goals demonstrates intellectual curiosity and commitment.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Standardized Testing</h3>
-      <p>
-        Prepare thoroughly for standardized tests like the SAT or ACT. While these scores are just one component of your profile, strong scores can strengthen your application and open additional scholarship opportunities.
-      </p>
-
-      <h2 className="text-2xl font-bold text-secondary">Leadership Development</h2>
-      <p>
-        Leadership experience distinguishes scholarship applicants by demonstrating initiative, responsibility, and the ability to influence others. Leadership opportunities exist in many contexts beyond formal titles.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Formal Leadership Roles</h3>
-      <p>
-        Seek formal leadership positions in school organizations, clubs, teams, or community groups. Student government, club presidencies, team captaincies, and similar roles provide structured opportunities to develop and demonstrate leadership skills.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Initiative-Based Leadership</h3>
-      <p>
-        Leadership doesn't require formal titles. Demonstrate initiative by starting new projects, organizing events, or identifying needs and taking action to address them. These forms of leadership often show more creativity and initiative than formal positions.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Collaborative Leadership</h3>
-      <p>
-        Develop the ability to lead collaboratively rather than authoritatively. Effective scholarship recipients work well with others, build consensus, and elevate those around them. Committees value leadership that brings people together rather than dominating them.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Leadership Impact</h3>
-      <p>
-        Focus on leadership roles where you can make measurable impact. Committees look for evidence of what you accomplished through your leadership—projects completed, initiatives launched, improvements made, or people positively affected.
-      </p>
-
-      <h2 className="text-2xl font-bold text-secondary">Community Engagement</h2>
-      <p>
-        Meaningful community service demonstrates commitment to others and the ability to contribute beyond yourself. Scholarship organizations, particularly those with service missions, value authentic community engagement.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Authentic Service Commitment</h3>
-      <p>
-        Engage in service that genuinely matters to you and addresses real community needs. Committees can distinguish between authentic service commitment and activities undertaken primarily for resume enhancement or hour requirements.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Sustained Involvement</h3>
-      <p>
-        Sustained involvement with the same organization or cause over time demonstrates commitment and allows you to develop deeper understanding and make greater impact than scattered one-time activities.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Understanding Community Issues</h3>
-      <p>
-        Go beyond showing up for service activities—develop understanding of the issues your service addresses. This depth of engagement shows intellectual engagement and genuine concern for community well-being.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Service Leadership</h3>
-      <p>
-        When possible, take leadership roles in your service activities—organizing projects, recruiting volunteers, or developing new initiatives. Service leadership combines commitment to others with leadership development.
-      </p>
-
-      <h2 className="text-2xl font-bold text-secondary">Extracurricular Excellence</h2>
-      <p>
-        Extracurricular activities provide opportunities to develop talents, pursue passions, and demonstrate qualities beyond academics. Strategic involvement in activities strengthens your overall profile.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Passion-Driven Activities</h3>
-      <p>
-        Choose activities based on genuine interests and passions rather than what you think looks impressive. Authentic engagement in activities you care about leads to deeper involvement and more meaningful achievements.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Skill Development</h3>
-      <p>
-        Use extracurricular activities to develop specific skills—artistic abilities, athletic prowess, technical skills, or other talents. Developed skills demonstrate commitment and can distinguish you from other applicants.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Achievement and Recognition</h3>
-      <p>
-        Pursue achievement and recognition in your activities through competitions, performances, exhibitions, or other measurable outcomes. Recognition provides external validation of your abilities and commitment.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Balanced Involvement</h3>
-      <p>
-        Maintain balance between extracurricular activities and academics. While activities are important, they shouldn't undermine your academic performance. Committees look for applicants who can manage multiple responsibilities effectively.
-      </p>
-
-      <h2 className="text-2xl font-bold text-secondary">Work Experience</h2>
-      <p>
-        Work experience, whether part-time jobs, internships, or entrepreneurial ventures, demonstrates responsibility, time management, and real-world skills. These experiences strengthen your profile in unique ways.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Part-Time Employment</h3>
-      <p>
-        Part-time jobs demonstrate work ethic, responsibility, and the ability to balance multiple commitments. They also provide financial context that can be relevant for need-based scholarships.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Internships and Professional Experience</h3>
-      <p>
-        Seek internships or other professional experiences in fields that interest you. These experiences demonstrate career focus, professional skills, and initiative in exploring your future path.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Entrepreneurial Ventures</h3>
-      <p>
-        Starting small businesses, freelance work, or other entrepreneurial ventures demonstrates initiative, creativity, and practical skills. These experiences can distinguish you from other applicants.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Family Responsibilities</h3>
-      <p>
-        Significant family responsibilities—caring for siblings, working in family businesses, or contributing to household management—demonstrate maturity and responsibility. These experiences are valuable components of your profile.
-      </p>
-
-      <h2 className="text-2xl font-bold text-secondary">Character and Personal Development</h2>
-      <p>
-        Scholarship committees care deeply about character and personal qualities. Developing these attributes strengthens your profile and prepares you for success beyond scholarships.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Integrity and Ethics</h3>
-      <p>
-        Demonstrate integrity and ethical behavior in all your activities. Committees value applicants who make principled choices even when difficult and who can be trusted to represent their organization well.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Resilience and Perseverance</h3>
-      <p>
-        Develop resilience by facing challenges and persisting through difficulties. How you handle setbacks and failures reveals character and predicts future success. Committees value applicants who bounce back from adversity.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Humility and Gratitude</h3>
-      <p>
-        Cultivate humility and gratitude for opportunities and support. Committees prefer recipients who recognize their privileges and the help they've received rather than presenting themselves as solely self-made.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Self-Awareness</h3>
-      <p>
-        Develop self-awareness through regular reflection. Understanding your strengths, weaknesses, values, and motivations enables you to present yourself authentically and make thoughtful choices about your path.
-      </p>
-
-      <h2 className="text-2xl font-bold text-secondary">Relationship Building</h2>
-      <p>
-        Strong relationships with mentors, teachers, and community members provide support, recommendations, and opportunities. Building these relationships is an essential part of profile development.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Teacher Relationships</h3>
-      <p>
-        Build positive relationships with teachers through engagement in class, seeking help when needed, and demonstrating genuine interest in learning. These relationships can lead to strong recommendations and mentorship.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Counselor Relationships</h3>
-      <p>
-        Work closely with your school counselor on academic planning, college preparation, and scholarship opportunities. Counselors can provide guidance, resources, and support throughout the process.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Mentor Relationships</h3>
-      <p>
-        Seek mentors in areas of interest—teachers, community professionals, or older students. Mentors provide guidance, perspective, and connections that can strengthen your profile and open opportunities.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Peer Networks</h3>
-      <p>
-        Build positive relationships with peers who share your goals and values. Peer support networks provide encouragement, accountability, and shared learning throughout your development.
-      </p>
-
-      <h2 className="text-2xl font-bold text-secondary">Special Talents and Achievements</h2>
-      <p>
-        Unique talents and special achievements distinguish you from other applicants and demonstrate diverse capabilities. These elements add depth and interest to your profile.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Artistic Talents</h3>
-      <p>
-        Develop artistic talents in visual arts, music, theater, dance, or creative writing. Participation in performances, exhibitions, or competitions provides evidence of your abilities and commitment.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Athletic Achievements</h3>
-      <p>
-        Athletic involvement demonstrates discipline, teamwork, and perseverance. Achievements in sports, whether at varsity or club levels, show commitment and the ability to balance multiple responsibilities.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Technical Skills</h3>
-      <p>
-        Develop technical skills in areas like programming, engineering, or digital media. These skills demonstrate forward-thinking and preparation for fields with strong scholarship opportunities.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Unique Accomplishments</h3>
-      <p>
-        Pursue unique accomplishments that set you apart—publishing writing, winning competitions, completing significant projects, or achieving recognition in niche areas. These accomplishments make your profile memorable.
-      </p>
-
-      <h2 className="text-2xl font-bold text-secondary">Documenting Your Profile</h2>
-      <p>
-        Effectively documenting your profile ensures you can present it comprehensively in scholarship applications. Good documentation prevents forgetting important experiences and achievements.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Resume Development</h3>
-      <p>
-        Maintain a comprehensive resume that documents all your activities, achievements, and experiences. Update it regularly to capture new accomplishments. A well-maintained resume simplifies application preparation.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Portfolio Creation</h3>
-      <p>
-        For creative or technical fields, create a portfolio showcasing your best work. A strong portfolio provides concrete evidence of your abilities and can be a significant advantage in applications.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Achievement Documentation</h3>
-      <p>
-        Keep documentation of significant achievements—certificates, awards, letters of recognition, media coverage, or other evidence. This documentation supports claims in your applications.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Reflection Journal</h3>
-      <p>
-        Keep a journal reflecting on your experiences, what you've learned, and how you've grown. This reflection helps you articulate your development meaningfully in applications and interviews.
-      </p>
-
-      <h2 className="text-2xl font-bold text-secondary">Presenting Your Profile</h2>
-      <p>
-        How you present your profile in applications matters as much as the profile itself. Strategic presentation highlights your strengths and tells a coherent story.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Coherent Narrative</h3>
-      <p>
-        Present your profile as a coherent narrative rather than a list of accomplishments. Connect your experiences to show how they've shaped your character, interests, and goals.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Highlighting Strengths</h3>
-      <p>
-        Strategically highlight your strongest qualities and achievements. While you should be comprehensive, emphasize the elements that make you an exceptional candidate for each specific scholarship.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Addressing Weaknesses</h3>
-      <p>
-        Address weaknesses or gaps in your profile directly and constructively. Explain challenges you've faced and how you've overcome them. Committees appreciate honesty and resilience.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Tailoring to Opportunities</h3>
-      <p>
-        Tailor how you present your profile to each scholarship's mission and values. Emphasize the aspects of your experience that align with what they seek in recipients.
-      </p>
-
-      <h2 className="text-2xl font-bold text-secondary">Continuous Profile Development</h2>
-      <p>
-      Profile building is an ongoing process, not a one-time effort. Continuous development ensures your profile strengthens over time and remains competitive.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Regular Assessment</h3>
-      <p>
-        Regularly assess your profile's strengths and weaknesses. Identify areas for development and set goals for improvement. This ongoing assessment ensures continuous growth.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Seeking Feedback</h3>
-      <p>
-        Seek feedback from mentors, counselors, and teachers on your profile development. They can provide perspective on your strengths and areas for improvement that you might not recognize yourself.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Adapting to Goals</h3>
-      <p>
-        As your goals evolve, adapt your profile development accordingly. Ensure your activities and experiences align with your changing aspirations and interests.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary">Long-Term Perspective</h3>
-      <p>
-        Maintain a long-term perspective on profile development. Focus on building genuine capabilities and experiences rather than just checking boxes for applications. This approach yields both scholarship success and personal growth.
-      </p>
-
-      <h2 className="text-2xl font-bold text-secondary">Conclusion: Building Your Competitive Advantage</h2>
-      <p>
-        A scholarship-worthy student profile is built through intentional, sustained effort across multiple dimensions of your life. By developing academic excellence, leadership, community engagement, character, and unique talents, you create a profile that attracts scholarship opportunities and positions you for success. Remember that authentic engagement in activities you genuinely value leads to the most meaningful achievements and the strongest applications. Profile building is ultimately about becoming the kind of person scholarship organizations want to invest in—this development serves you well beyond winning specific awards.
-      </p>
-
-      <h2 className="text-2xl font-bold text-secondary">Key Takeaways</h2>
+      <h3 className="text-xl font-semibold text-secondary">The Five Pillars of a Scholarship-Worthy Profile</h3>
       <ul className="list-disc pl-6 space-y-2">
-        <li>Holistic excellence across multiple dimensions strengthens your profile</li>
-        <li>Depth of engagement beats breadth of superficial activities</li>
-        <li>Academic foundation requires consistent performance and rigorous courses</li>
-        <li>Leadership opportunities exist in many contexts beyond formal titles</li>
-        <li>Authentic community service demonstrates commitment to others</li>
-        <li>Work experience shows responsibility and real-world skills</li>
-        <li>Character development is as important as achievement</li>
-        <li>Strong relationships provide support and recommendations</li>
-        <li>Effective documentation simplifies application preparation</li>
-        <li>Continuous development ensures ongoing competitiveness</li>
+        <li><strong>Academic Excellence:</strong> Strong grades in challenging courses with intellectual curiosity</li>
+        <li><strong>Leadership Experience:</strong> Positions of responsibility where you've influenced others</li>
+        <li><strong>Community Service:</strong> Meaningful contributions to your community</li>
+        <li><strong>Extracurricular Depth:</strong> Deep commitment to activities you genuinely care about</li>
+        <li><strong>Character Development:</strong> Evidence of integrity, resilience, and personal growth</li>
       </ul>
 
-      <h2 className="text-2xl font-bold text-secondary">Next Steps</h2>
+      <h2 className="text-2xl font-bold text-secondary">Pillar 1: Strategic Academic Excellence</h2>
       <p>
-        Assess your current profile across all these dimensions. Identify areas of strength and areas for development. Create a strategic plan for strengthening your profile over the coming months and years. Focus on authentic engagement in activities that genuinely interest you rather than resume-building. Remember that profile building is a long-term process—consistent effort over time yields the best results. As you develop your profile, you'll not only become more competitive for scholarships but also grow as a person in ways that will serve you throughout your education and career.
+        Academic excellence for scholarships isn't just about getting high grades—it's about demonstrating intellectual curiosity, academic rigor, and genuine engagement with learning. Committees want to see that you love learning for its own sake, not just for the grades.
+      </p>
+      <p>
+        Choose challenging courses that align with your interests and stretch your abilities. Pursue academic opportunities beyond requirements: research projects, academic competitions, independent study, or advanced coursework. Show that you're intellectually curious and willing to challenge yourself.
+      </p>
+      <p>
+        Even more important than your grades is your trajectory. Committees love to see improvement over time. If you struggled early but showed steady improvement, that tells a story of resilience and growth. If you've maintained excellence while taking increasingly challenging courses, that demonstrates sustained effort and ability.
+      </p>
+
+      <h2 className="text-2xl font-bold text-secondary">Pillar 2: Authentic Leadership Development</h2>
+      <p>
+        Leadership is a key factor in scholarship decisions, but it's about more than just holding titles. Authentic leadership is about influence, impact, and the ability to bring others together toward common goals. Committees want to see that you can lead effectively and ethically.
+      </p>
+      <p>
+        Seek leadership opportunities in areas where you have genuine passion and interest. This might be in student government, clubs, sports teams, community organizations, or even informal settings like study groups or project teams. What matters most is not the title but the impact you made.
+      </p>
+      <p>
+        When you have leadership roles, focus on creating sustainable change rather than just maintaining the status quo. Start new initiatives, improve existing programs, or solve ongoing problems. Document your achievements with specific metrics: numbers of people impacted, improvements measured, or changes implemented.
+      </p>
+
+      <h2 className="text-2xl font-bold text-secondary">Pillar 3: Meaningful Community Engagement</h2>
+      <p>
+        Community service is increasingly important in scholarship decisions, but committees are looking for meaningful engagement rather than superficial volunteering. They want to see that you genuinely care about your community and have made sustained contributions to causes you believe in.
+      </p>
+      <p>
+        Focus your service efforts on areas where you have genuine interest and where you can make real impact. It's better to have deep, sustained involvement with one organization than superficial involvement with many. Look for opportunities where you can take on increasing responsibility and leadership over time.
+      </p>
+      <p>
+        Connect your service to your academic and career interests when possible. If you're interested in medicine, volunteer at a hospital. If you care about the environment, work with environmental organizations. This integration shows that your service is meaningful and connected to your broader goals.
+      </p>
+
+      <h2 className="text-2xl font-bold text-secondary">Pillar 4: Deep Extracurricular Commitment</h2>
+      <p>
+        Rather than participating in dozens of activities superficially, focus on a few where you can achieve depth and excellence. Scholarship committees prefer seeing real achievement and leadership in a couple of areas over token participation in many.
+      </p>
+      <p>
+        Choose activities that align with your genuine interests and where you can excel. Whether it's sports, arts, academic clubs, or other pursuits, aim for positions of leadership and opportunities to compete or perform at high levels. Achievements at state, national, or international levels can be particularly compelling.
+      </p>
+      <p>
+        Your extracurricular activities should also tell a coherent story about who you are. If you're passionate about science, focus on science Olympiad, research, and science clubs. If you love the arts, pursue music, theater, or visual arts with depth and commitment. This focused excellence demonstrates passion and dedication.
+      </p>
+
+      <h2 className="text-2xl font-bold text-secondary">Pillar 5: Character and Personal Development</h2>
+      <p>
+        Perhaps the most important but least quantifiable aspect of your profile is your character. Scholarship committees are investing in you as a person, not just as a student. They want to support individuals of integrity, resilience, and promise.
+      </p>
+      <p>
+        Character is demonstrated through your choices, your actions, and how you handle challenges. Be the kind of person who helps others, who takes responsibility, who persists through difficulties, and who learns from mistakes. These qualities will come through in your recommendations, your essays, and your interviews.
+      </p>
+      <p>
+        Seek out experiences that challenge you and require you to grow. This might include taking on difficult projects, stepping outside your comfort zone, or persevering through setbacks. Each challenge you overcome builds character and resilience that will serve you well and impress scholarship committees.
+      </p>
+
+      <h2 className="text-2xl font-bold text-secondary">Strategic Profile Building Timeline</h2>
+      
+      <h3 className="text-xl font-semibold text-secondary">Early Years (Freshman/Sophomore)</h3>
+      <p>
+        Use your early years to explore different activities and discover your interests. Don't worry about depth yet—focus on breadth and exploration. Try different clubs, take different types of courses, and see what resonates with you. Begin establishing good study habits and academic foundations.
+      </p>
+
+      <h3 className="text-xl font-semibold text-secondary">Middle Years (Junior/Senior)</h3>
+      <p>
+        Start narrowing your focus to areas where you can achieve depth and leadership. Take on leadership roles in activities you care about. Begin pursuing more challenging academic opportunities. Start thinking about which scholarships you might target and what they're looking for.
+      </p>
+
+      <h3 className="text-xl font-semibold text-secondary">Application Years</h3>
+      <p>
+        By the time you're actively applying for scholarships, your profile should be well-established with clear achievements across multiple domains. Focus on maintaining excellence while beginning the application process. Use your experiences as material for compelling essays and interview responses.
+      </p>
+
+      <h2 className="text-2xl font-bold text-secondary">Avoiding Common Profile-Building Mistakes</h2>
+      
+      <h3 className="text-xl font-semibold text-secondary">Mistake #1: Resume Padding</h3>
+      <p>
+        Don't participate in activities just to pad your resume. Committees can tell when applicants are being authentic versus when they're checking boxes. Focus on activities you genuinely care about, even if that means fewer activities overall.
+      </p>
+
+      <h3 className="text-xl font-semibold text-secondary">Mistake #2: Leadership for the Wrong Reasons</h3>
+      <p>
+        Seek leadership because you want to make a difference, not just because it looks good on applications. Effective leadership is about service to others and organizational impact, not just titles.
+      </p>
+
+      <h3 className="text-xl font-semibold text-secondary">Mistake #3: Ignoring Academic Rigor</h3>
+      <p>
+        While extracurricular activities are important, don't neglect your academics. Challenging courses and strong grades remain fundamental to scholarship success. Balance is key.
+      </p>
+
+      <h3 className="text-xl font-semibold text-secondary">Mistake #4: Short-Term Thinking</h3>
+      <p>
+        Don't focus only on immediate gains. Consider how each experience contributes to your long-term goals and development. The best profiles show coherent growth over time, not random short-term activities.
+      </p>
+
+      <h2 className="text-2xl font-bold text-secondary">The Competitive Advantage of a Strong Profile</h2>
+      <p>
+        Building a comprehensive, scholarship-worthy profile takes time and intentional effort, but it provides a significant competitive advantage. When you excel across multiple domains, you stand out in applicant pools and demonstrate the kind of potential that scholarship committees are looking for.
+      </p>
+      <p>
+      More importantly, the process of building this profile helps you develop into the kind of person who deserves to win scholarships. You'll gain skills, experiences, and perspectives that will serve you throughout your life, regardless of scholarship outcomes. Focus on becoming the best version of yourself, and scholarship success will likely follow.
       </p>
     </div>
   );

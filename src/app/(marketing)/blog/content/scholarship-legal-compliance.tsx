@@ -3,153 +3,107 @@ import Link from "next/link";
 export default function ScholarshipLegalCompliance() {
   return (
     <div className="space-y-8">
-      <h2 className="text-2xl font-bold text-secondary">Legal and Compliance Considerations for Scholarship Programs</h2>
+      <h2 className="text-2xl font-bold text-secondary">Legal and Compliance Requirements for Scholarship Programs</h2>
       <p>
-        Scholarship programs operate within a complex legal and regulatory landscape that varies by jurisdiction, program type, and funding sources. Compliance requirements may include tax regulations, reporting obligations, anti-discrimination laws, data privacy rules, and specific regulations for educational institutions. Failure to understand and comply with legal requirements can result in financial penalties, loss of tax-exempt status, reputational damage, and harm to recipients. Proactive legal compliance is essential for program sustainability and recipient protection.
+        Scholarship programs operate within complex legal and regulatory frameworks that govern tax treatment, privacy obligations, anti-discrimination requirements, and other compliance matters. Navigating these requirements is essential for protecting programs, recipients, and stakeholders from legal risks while ensuring ethical and fair operations. This guide provides an overview of key legal and compliance considerations for scholarship programs and strategies for maintaining compliance.
       </p>
       <p>
-        The legal environment for scholarships has evolved significantly in recent years. Increased scrutiny of tax-exempt organizations, heightened attention to data privacy, growing awareness of anti-discrimination requirements, and complex international regulations have all increased compliance burdens. Programs must stay informed about regulatory changes and adapt practices accordingly. Legal compliance is not a one-time effort but an ongoing commitment.
+        The importance of legal compliance cannot be overstated. Non-compliance can result in financial penalties, loss of tax-exempt status, reputational damage, and harm to recipients. Programs that maintain strong compliance demonstrate professionalism, protect their stakeholders, and build trust with donors and regulatory authorities. Compliance should be integrated into program operations rather than treated as an afterthought.
       </p>
       <p>
-        Effective compliance requires understanding applicable laws, implementing appropriate policies and procedures, training staff and stakeholders, and regular review and audit. While compliance may seem burdensome, it protects programs, recipients, and donors. Well-designed compliance processes become part of program culture rather than add-on requirements.
+        However, legal requirements vary significantly by jurisdiction, program type, and funding sources. This guide provides general information but cannot substitute for specific legal advice. Programs should consult with qualified legal counsel to understand their specific obligations and develop appropriate compliance strategies. Compliance is an ongoing responsibility that requires regular attention and updates as laws and regulations evolve.
       </p>
 
       <h2 className="text-2xl font-bold text-secondary">Tax Compliance</h2>
       <p>
-        Tax-exempt status is fundamental for many scholarship programs. Organizations must maintain compliance with IRS requirements including filing annual returns, avoiding prohibited activities, and ensuring funds are used for charitable purposes. Loss of tax-exempt status has severe financial consequences. Regular consultation with tax professionals ensures ongoing compliance.
+        Scholarship tax treatment determines whether awards are taxable income for recipients. In many jurisdictions, scholarships used for qualified educational expenses like tuition, fees, and required materials are tax-exempt, while amounts used for room, board, or other expenses may be taxable. Programs should understand tax rules in their jurisdiction and communicate tax implications clearly to recipients.
       </p>
       <p>
-        Scholarship taxability affects recipients and requires clear communication. Scholarships used for qualified education expenses (tuition, fees, books, supplies) are generally tax-free, while funds used for room, board, or other expenses may be taxable. Programs should provide recipients with clear information about tax implications and appropriate documentation such as Form 1098-T when required.
+        Reporting requirements may apply to scholarship programs and recipients. Programs may need to report awards to tax authorities, provide documentation to recipients, or withhold taxes in certain circumstances. Recipients may need to report scholarship income on tax returns. Programs should understand their reporting obligations and provide recipients with necessary documentation.
       </p>
       <p>
-        Donor tax deductions require proper documentation and acknowledgment. Programs must provide donors with written acknowledgments for contributions over certain thresholds and ensure that donations meet requirements for deductibility. Improper acknowledgment can jeopardize donors' ability to claim deductions and damage donor relationships.
+        Tax-exempt status for scholarship programs depends on program structure and operations. Programs seeking tax-exempt status must meet specific requirements regarding purpose, operations, and compliance with applicable laws. Maintaining tax-exempt status requires ongoing compliance with IRS regulations and other requirements.
       </p>
       <p>
-        Reporting obligations include annual information returns, state charity registrations, and other required filings. Deadlines must be tracked carefully and filings completed accurately. Late or inaccurate filings can result in penalties. Calendar systems and professional support help ensure compliance.
+        International considerations apply to programs serving recipients across borders. Cross-border scholarship payments may trigger tax obligations in multiple jurisdictions. Programs serving international recipients should understand tax treaties, withholding requirements, and reporting obligations for international payments.
       </p>
 
-      <h2 className="text-2xl font-bold text-secondary">Anti-Discrimination and Equity</h2>
+      <h2 className="text-2xl font-bold text-secondary">Privacy and Data Protection</h2>
       <p>
-        Civil rights laws prohibit discrimination based on protected characteristics including race, color, national origin, sex, religion, age, and disability. Programs must ensure selection processes and eligibility criteria comply with these laws. While scholarships can target specific populations, restrictions must be carefully crafted to avoid illegal discrimination.
+        Data collection practices must comply with applicable privacy laws. Programs should collect only information necessary for program operations, obtain appropriate consent, and provide clear disclosures about data use. Privacy laws like GDPR, CCPA, and FERPA impose specific requirements on educational data handling.
       </p>
       <p>
-        Eligibility criteria must be reviewed for potential discrimination. Requirements that appear neutral may have discriminatory impact. Programs should conduct regular reviews of criteria and selection processes with legal counsel to ensure compliance. Documentation of business necessity for any criteria that might be challenged is essential.
+        Data security measures protect sensitive applicant and recipient information. Programs should implement appropriate technical and administrative safeguards to prevent unauthorized access, use, or disclosure of personal information. Security measures should be proportionate to data sensitivity and regulatory requirements.
       </p>
       <p>
-        Accommodation requirements under disability laws must be honored. Programs must provide reasonable accommodations for applicants and recipients with disabilities. This might include alternative application formats, additional time for interviews, or support services. Failure to accommodate violates legal requirements and undermines program values.
+        Data retention policies establish how long information is kept and when it is destroyed. Programs should retain records as required by law and for legitimate business purposes, then securely dispose of information when no longer needed. Retention policies should balance legal requirements with privacy principles.
       </p>
       <p>
-        International programs face additional legal considerations including visa requirements, export controls, and foreign regulations. Programs operating across borders must understand legal requirements in each jurisdiction. International legal expertise is essential for global programs.
-      </p>
-
-      <h2 className="text-2xl font-bold text-secondary">Data Privacy and Security</h2>
-      <p>
-        Privacy regulations such as FERPA, GDPR, and state privacy laws govern how programs handle personal information. Programs must understand applicable regulations, implement appropriate policies, and ensure staff training. Privacy compliance is particularly important for programs handling student educational records.
-      </p>
-      <p>
-        Data security measures protect sensitive information from unauthorized access. Programs should implement appropriate technical and administrative safeguards including encryption, access controls, and security protocols. Security breaches can have legal consequences and harm recipients.
-      </p>
-      <p>
-        Consent and disclosure requirements govern how programs collect and use personal information. Programs must obtain appropriate consent before collecting data, disclose how information will be used, and honor requests for access or deletion. Privacy policies should be clear, accessible, and regularly updated.
-      </p>
-      <p>
-        Third-party data sharing requires careful consideration. When programs share data with partners, vendors, or other organizations, they must ensure appropriate agreements are in place and that sharing complies with privacy regulations. Data sharing should be limited to what is necessary for legitimate purposes.
+        Data sharing requires appropriate safeguards and legal bases. Programs may need to share information with educational institutions, donors, or other partners. Data sharing should be limited to what is necessary, appropriately disclosed, and protected by agreements or legal authority.
       </p>
 
-      <h2 className="text-2xl font-bold text-secondary">FAQs</h2>
-      <div className="space-y-6">
-        <div>
-          <h3 className="font-bold text-secondary">What are the key legal compliance areas for scholarship programs?</h3>
-          <p className="mt-2">
-            Key areas include tax compliance (tax-exempt status, scholarship taxability, donor deductions), anti-discrimination laws, data privacy regulations, reporting obligations, and for international programs, visa and export controls. Programs should identify all applicable requirements based on their specific context.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">How can programs maintain tax-exempt status?</h3>
-          <p className="mt-2">
-            Maintenance requires filing annual returns accurately and on time, avoiding prohibited activities such as private benefit or political campaigning, ensuring funds are used for charitable purposes, and maintaining proper governance. Regular consultation with tax professionals is essential.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">What are recipients' tax obligations for scholarships?</h3>
-          <p className="mt-2">
-            Scholarships used for qualified education expenses (tuition, fees, books, supplies) are generally tax-free. Funds used for room, board, or other expenses may be taxable. Programs should provide clear information to recipients and appropriate documentation such as Form 1098-T when required.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">How can programs ensure compliance with anti-discrimination laws?</h3>
-          <p className="mt-2">
-            Compliance requires regular legal review of eligibility criteria and selection processes, training for decision-makers, documentation of business necessity for any potentially problematic criteria, and accommodation for disabilities. Programs should work with legal counsel to ensure compliance.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">What privacy regulations apply to scholarship programs?</h3>
-          <p className="mt-2">
-            Applicable regulations depend on program context but may include FERPA for educational records, GDPR for programs handling EU data, and state privacy laws. Programs must identify applicable regulations and implement appropriate policies and procedures.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">How should programs handle data security?</h3>
-          <p className="mt-2">
-            Security requires implementing technical safeguards (encryption, access controls, secure systems) and administrative safeguards (policies, training, monitoring). Regular security assessments and breach response plans are essential. Security measures should be proportionate to data sensitivity.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">What reporting obligations do scholarship programs have?</h3>
-          <p className="mt-2">
-            Obligations may include annual information returns (Form 990), state charity registrations, donor acknowledgment requirements, and specific reports to funding sources. Deadlines and requirements vary by jurisdiction and program type. Calendar tracking and professional support ensure compliance.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">How can small programs with limited resources manage compliance?</h3>
-          <p className="mt-2">
-            Small programs should prioritize high-risk areas, seek pro bono legal assistance when possible, use templates and resources from professional associations, and invest in basic compliance infrastructure. Compliance is cheaper than addressing violations after they occur.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">What are the risks of non-compliance?</h3>
-          <p className="mt-2">
-            Risks include financial penalties, loss of tax-exempt status, legal liability, reputational damage, loss of funding, and harm to recipients. Non-compliance can threaten program sustainability. Proactive compliance is far less costly than addressing violations.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">How should programs handle international legal requirements?</h3>
-          <p className="mt-2">
-            International programs need expertise in each jurisdiction where they operate. This includes visa requirements, data transfer regulations, local charity registration, and tax compliance. Local legal counsel is essential for international operations.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">What role does staff training play in compliance?</h3>
-          <p className="mt-2">
-            Training ensures staff understand requirements and can implement compliant practices. Training should cover privacy, anti-discrimination, data security, and any program-specific requirements. Regular training reinforces compliance as part of program culture.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">How can programs stay informed about regulatory changes?</h3>
-          <p className="mt-2">
-            Staying informed requires subscribing to regulatory updates, participating in professional associations, maintaining relationships with legal counsel, and conducting regular compliance reviews. Proactive monitoring enables adaptation to changes before violations occur.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">What documentation should programs maintain for compliance?</h3>
-          <p className="mt-2">
-            Documentation includes policies, procedures, decision records, communications, filings, and training records. Documentation provides evidence of compliance and is essential if programs face audits or legal challenges. Records should be retained according to regulatory requirements.
-          </p>
-        </div>
-        <div>
-          <h3 className="font-bold text-secondary">How can technology support compliance efforts?</h3>
-          <p className="mt-2">
-            Technology can automate compliance tasks, maintain secure records, provide audit trails, and facilitate required reporting. Approaches covered in our <Link href="/blog/" className="text-highlight-dark underline">guides</Link> include features for data security, privacy management, and compliance tracking. Technology should be selected with compliance requirements in mind.
-          </p>
-        </div>
-      </div>
+      <h2 className="text-2xl font-bold text-secondary">Anti-Discrimination Requirements</h2>
+      <p>
+        Eligibility criteria must comply with anti-discrimination laws. Programs cannot discriminate based on protected characteristics like race, gender, religion, national origin, or disability unless specific exceptions apply. Eligibility criteria should be job-related or consistent with program mission and legal requirements.
+      </p>
+      <p>
+        Targeted programs may serve specific populations if legally permissible. Programs serving particular demographic groups must ensure such targeting is legally permissible and properly structured. Some jurisdictions allow targeted programs for underrepresented groups under specific circumstances.
+      </p>
+      <p>
+        Accommodation requirements apply to recipients with disabilities. Programs may need to provide reasonable accommodations for application processes, selection activities, and recipient support. Understanding disability rights obligations ensures inclusive and compliant programs.
+      </p>
+      <p>
+        Selection processes must be free from discriminatory practices. Criteria, processes, and decision-making should be designed and implemented to avoid discrimination on protected characteristics. Regular monitoring can identify and address potential discriminatory patterns.
+      </p>
+
+      <h2 className="text-2xl font-bold text-secondary">Contractual and Financial Compliance</h2>
+      <p>
+        Award agreements establish legal terms and conditions for scholarships. Agreements should specify award amounts, conditions, recipient obligations, and program terms. Clear agreements protect both programs and recipients by establishing mutual expectations.
+      </p>
+      <p>
+        Financial accountability ensures proper handling of funds. Programs should maintain appropriate financial controls, separation of duties, and documentation for all financial transactions. Financial accountability protects against fraud, errors, and mismanagement.
+      </p>
+      <p>
+        Donor restrictions may apply to how scholarship funds can be used. Programs must honor donor-imposed restrictions on fund use while ensuring compliance with legal requirements. Conflicts between donor restrictions and legal requirements must be resolved appropriately.
+      </p>
+      <p>
+        Procurement requirements may apply to program spending. Programs spending significant funds on goods or services may need to follow competitive procurement processes or other requirements. Understanding procurement rules ensures compliant purchasing practices.
+      </p>
+
+      <h2 className="text-2xl font-bold text-secondary">Institutional Compliance</h2>
+      <p>
+        Educational institution requirements apply when programs are affiliated with colleges or universities. Programs must comply with institutional policies, procedures, and requirements. Institutional alignment ensures smooth operations and avoids conflicts.
+      </p>
+      <p>
+        Accreditation considerations may apply for programs associated with accredited institutions. Programs should understand how their operations affect institutional accreditation and ensure compliance with accreditation standards.
+      </p>
+      <p>
+        State regulations vary significantly and may impose specific requirements on scholarship programs. Programs operating across state lines must understand requirements in each jurisdiction where they operate. State compliance requires regular monitoring of regulatory changes.
+      </p>
+      <p>
+        Federal requirements may apply depending on program structure and funding sources. Programs receiving federal funds or operating in certain contexts may be subject to federal regulations. Understanding applicable federal requirements is essential for compliance.
+      </p>
+
+      <h2 className="text-2xl font-bold text-secondary">Compliance Management</h2>
+      <p>
+        Compliance planning should identify applicable requirements and establish processes for meeting them. Programs should conduct regular compliance assessments, update processes as requirements change, and assign responsibility for compliance functions.
+      </p>
+      <p>
+        Training ensures staff and committee members understand compliance obligations. Regular training on legal requirements, ethical standards, and program policies promotes compliance culture. Training should be ongoing and updated as requirements change.
+      </p>
+      <p>
+        Monitoring and auditing verify ongoing compliance. Regular reviews of processes, documentation, and practices identify compliance gaps before they become problems. External audits may provide additional assurance and credibility.
+      </p>
+      <p>
+        Legal counsel provides guidance on complex compliance matters. Programs should establish relationships with qualified legal advisors who understand scholarship program operations. Regular consultation prevents compliance issues and addresses emerging concerns.
+      </p>
 
       <h2 className="text-2xl font-bold text-secondary">Conclusion</h2>
       <p>
-        Legal compliance is essential for scholarship program sustainability and recipient protection. Key areas include tax compliance, anti-discrimination laws, data privacy regulations, and reporting obligations. Effective compliance requires understanding applicable laws, implementing appropriate policies, training stakeholders, and regular review. Compliance is an ongoing commitment, not a one-time effort.
+        Legal and compliance requirements are fundamental to responsible scholarship program operation. Understanding and meeting these requirements protects programs, recipients, and stakeholders while building trust and credibility. Compliance should be integrated into program design and operations rather than treated as a separate function.
       </p>
       <p>
-        The investment in compliance yields substantial returns. Compliance protects programs from legal and financial risks. Recipients are protected through proper handling of their information and fair treatment. Donors have confidence that programs operate legally and ethically. Compliance becomes part of program culture rather than a burden.
+        However, compliance is not just about avoiding legal risk—it's about operating ethically and responsibly. Programs that embrace compliance as part of their commitment to excellence create stronger, more sustainable operations. Compliance supports program quality and integrity.
       </p>
       <p>
         Continue with related guides on this blog, or learn how{" "}

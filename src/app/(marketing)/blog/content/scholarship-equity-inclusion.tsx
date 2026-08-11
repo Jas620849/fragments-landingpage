@@ -1,105 +1,102 @@
 import Link from "next/link";
+
 export default function ScholarshipEquityInclusion() {
   return (
     <div className="space-y-8">
-      <h2 className="text-2xl font-bold text-secondary">Equity shows up in the process—not the brochure</h2>
+      <h2 className="text-2xl font-bold text-secondary">Advancing Equity and Inclusion in Scholarship Programs</h2>
       <p>
-        Equity work in scholarship selection is concrete: which criteria you publish, who
-        sits on the panel, whether outreach reaches beyond the usual feeder schools, and
-        whether score gaps get reviewed after the cycle. Slogans do not change outcomes;
-        process design does. For interview-level bias controls, read{" "}
-        <Link href="/blog/how-to-reduce-bias-in-scholarship-interviews/" className="text-highlight-dark underline">
-          how to reduce bias in scholarship interviews
-        </Link>
-        .
+        Scholarship programs have tremendous potential to advance educational equity by providing opportunities to students from underrepresented and disadvantaged backgrounds. However, programs must be intentionally designed and operated to realize this potential. Without deliberate attention to equity and inclusion, scholarship programs may inadvertently perpetuate existing disparities or fail to reach the students who could benefit most. This guide explores strategies for building scholarship programs that advance equity, create inclusive environments, and expand educational opportunity for all students.
+      </p>
+      <p>
+        The importance of equity and inclusion in scholarship programs stems from both moral and practical considerations. From a moral perspective, scholarship programs should advance educational opportunity and reduce rather than reinforce disparities. From a practical perspective, diverse scholarship recipient pools strengthen programs, contribute to institutional diversity goals, and demonstrate program relevance to changing student populations. Programs that succeed in equity and inclusion achieve broader impact and stronger stakeholder support.
+      </p>
+      <p>
+        Achieving equity and inclusion requires examining every aspect of program design and operation—from outreach and eligibility criteria to selection processes and recipient support. It requires recognizing and addressing systemic barriers that disadvantage certain groups while ensuring that programs don't create new barriers through their own processes and requirements. Equity and inclusion must be intentional, not incidental.
       </p>
 
-      <h2 className="text-2xl font-bold text-secondary">Understanding Equity vs. Equality</h2>
+      <h2 className="text-2xl font-bold text-secondary">Equity in Program Design</h2>
       <p>
-        Equality means treating everyone the same, providing identical resources and opportunities to all. While equality sounds fair, it fails to account for different starting points and barriers. Candidates who have faced systemic disadvantages need additional support to achieve equal outcomes. Equality without equity can perpetuate existing disparities.
+        Eligibility criteria should advance rather than limit equity. Criteria that unnecessarily restrict eligibility based on factors correlated with disadvantage can perpetuate disparities. Programs should examine whether criteria like citizenship status, GPA thresholds, or institutional enrollment requirements create barriers for underrepresented groups. Criteria should be aligned with program goals while being as inclusive as possible.
       </p>
       <p>
-        Equity means providing different levels of support based on need to ensure fair outcomes. Equity recognizes that candidates start from different places and face different barriers. It might include targeted outreach to underrepresented communities, application support for first-generation students, or additional financial assistance for those with greater need. Equity aims to level the playing field.
+        Application processes should be accessible to students from diverse backgrounds. Complex applications, extensive documentation requirements, and technical barriers can disproportionately disadvantage students with limited support or resources. Programs should simplify processes, provide assistance, and offer multiple pathways for application completion.
       </p>
       <p>
-        Inclusion ensures that all recipients feel welcomed, respected, and able to participate fully. Inclusion goes beyond diversity numbers to create environments where diverse perspectives are valued and all individuals can thrive. Inclusion requires attention to culture, communication, and the day-to-day experiences of recipients.
+        Outreach strategies should intentionally reach underrepresented communities. Traditional outreach through high school guidance offices and college financial aid offices may not effectively reach all communities. Programs should partner with community organizations, use diverse communication channels, and conduct targeted outreach to populations that have been historically underserved.
       </p>
       <p>
-        Belonging represents the deepest level of inclusion—the sense that one is an integral part of the community. When recipients feel they belong, they are more likely to engage fully, persist through challenges, and ultimately succeed. Belonging is fostered through intentional community building, representation, and validation of diverse identities.
-      </p>
-
-      <h2 className="text-2xl font-bold text-secondary">Equity in Outreach and Access</h2>
-      <p>
-        Targeted outreach ensures scholarship opportunities reach communities that have been historically underrepresented. This might include partnerships with community organizations serving specific populations, outreach to high schools in underserved areas, or communication in multiple languages. Targeted outreach addresses information gaps that may prevent qualified candidates from applying.
-      </p>
-      <p>
-        Application design can create or reduce barriers. Applications should be accessible to candidates with disabilities, available in multiple languages when appropriate, and free of jargon or cultural references that might disadvantage certain groups. Application fees should be eliminated or waivers readily available. Support resources should help candidates navigate the process.
-      </p>
-      <p>
-        Eligibility criteria should be examined for potential bias. Requirements that may seem neutral—such as minimum GPA thresholds, citizenship status, or specific extracurricular activities—may disadvantage certain groups. Programs should consider whether criteria are truly necessary for success or whether they reflect unexamined assumptions about merit.
-      </p>
-      <p>
-        Financial support beyond tuition addresses the full cost of attendance. Many scholarships cover tuition but leave recipients responsible for housing, food, books, and other expenses. These costs can be prohibitive for low-income students. Comprehensive financial support ensures that scholarships truly enable access rather than creating financial stress that undermines success.
+        Award amounts should consider the full financial context of recipients. Awards that cover only a fraction of costs may still leave substantial barriers for students with greatest need. Programs should consider cost of attendance, family financial circumstances, and other factors when determining award amounts to ensure awards make meaningful differences in recipients' educational access.
       </p>
 
       <h2 className="text-2xl font-bold text-secondary">Inclusive Selection Processes</h2>
       <p>
-        Diverse selection committees bring varied perspectives that reduce bias and recognize diverse forms of excellence. Committees should reflect the diversity of applicant populations in terms of race, ethnicity, gender, socioeconomic background, and professional experience. Homogeneous committees may unconsciously favor candidates who resemble committee members.
+        Selection criteria should recognize diverse forms of excellence and potential. Traditional criteria like GPA and test scores may reflect educational advantages rather than raw potential. Programs should consider factors like resilience, leadership in challenging circumstances, community contributions, and overcoming obstacles. Holistic evaluation enables recognition of excellence across diverse backgrounds.
       </p>
       <p>
-        Structured evaluation processes reduce the influence of unconscious bias. Clear criteria, scoring rubrics, blind review where possible, and calibration exercises help ensure consistent application of standards. Structured processes don't eliminate bias but create guardrails that reduce its impact.
+        Selection committees should reflect the diversity of applicant populations. Homogeneous committees may unconsciously favor candidates who resemble committee members. Diverse committees bring varied perspectives, reduce bias, and enhance the program's credibility with diverse applicant communities. Committee diversity includes demographic, professional, and institutional diversity.
       </p>
       <p>
-        Holistic review considers the whole candidate rather than over-relying on any single metric. Traditional metrics such as GPA and test scores may reflect advantages rather than ability. Holistic review considers context, challenges overcome, leadership potential, and other qualities that predict success but aren't captured by traditional metrics.
+        Evaluation processes should include bias awareness and mitigation. Training on unconscious biases, structured evaluation processes, calibration exercises, and blind review where feasible all help reduce bias in selection. Regular monitoring of selection patterns can identify disparities that require attention.
       </p>
       <p>
-        Bias awareness training helps selection committee members recognize and mitigate unconscious biases. Training should cover common biases such as affinity bias, halo effect, and confirmation bias, and provide strategies for reducing bias influence. Regular training reinforces awareness and helps committees make fairer decisions.
+        Contextual evaluation considers applicants' achievements in light of their opportunities and circumstances. The same GPA may represent different levels of achievement depending on educational context, family responsibilities, work obligations, and other factors. Contextual evaluation enables fair comparison across diverse backgrounds.
       </p>
 
-      <h2 className="text-2xl font-bold text-secondary">Inclusive Support Environments</h2>
+      <h2 className="text-2xl font-bold text-secondary">Inclusive Recipient Support</h2>
       <p>
-        Culturally responsive support services recognize and respect recipients' diverse backgrounds and experiences. Support staff should be trained in cultural competence, and services should be adaptable to different cultural norms and communication styles. Support should address the specific challenges that different groups may face.
+        Onboarding and orientation should welcome recipients into inclusive communities. Early messaging should emphasize that recipients belong and contribute valuable perspectives. Programs should create opportunities for recipients to connect across differences and build inclusive peer networks.
       </p>
       <p>
-        Community building creates environments where all recipients feel they belong. Cohort programs, peer support groups, social events, and affinity groups help recipients build connections. Representation among staff, mentors, and leaders helps recipients see themselves reflected in the program.
+        Support services should address the specific needs of diverse recipients. First-generation college students, students from low-income backgrounds, and students from underrepresented groups may face particular challenges. Programs should provide targeted support while avoiding assumptions or stereotypes about what different groups need.
       </p>
       <p>
-        Mental health support acknowledges the stress and isolation that recipients from underrepresented backgrounds may experience. Imposter syndrome, stereotype threat, and the pressure to represent one's community can take a toll. Culturally competent mental health services help recipients thrive.
+        Mentorship programs can connect recipients with mentors who share similar backgrounds or experiences. Mentors who understand recipients' contexts can provide particularly relevant guidance and support. Programs should recruit diverse mentors and facilitate thoughtful mentor-mentee matching.
       </p>
       <p>
-        Inclusive policies and practices ensure that all recipients can participate fully. This might include accommodation for religious observances, support for parenting responsibilities, flexibility for students with disabilities, and policies that address microaggressions or discrimination. Inclusion requires ongoing attention to the day-to-day experiences of recipients.
+        Community building should foster inclusion across differences. Program events, communications, and activities should create spaces where recipients from diverse backgrounds feel valued and included. Programs should actively address dynamics that might make some recipients feel marginalized.
       </p>
 
-      
-      <h2 className="text-2xl font-bold text-secondary">Common questions</h2>
-      <div className="space-y-6">
-<div>
-          <h3 className="font-bold text-secondary">What is the difference between equity and equality in scholarships?</h3>
-          <p className="mt-2">
-            Equality means treating everyone the same, while equity means providing different levels of support based on need to ensure fair outcomes. Equality fails to account for different starting points and barriers. Equity recognizes systemic disadvantages and provides additional support to level the playing field.
-          </p>
-        </div>
-<div>
-          <h3 className="font-bold text-secondary">How can programs ensure scholarship opportunities reach diverse candidates?</h3>
-          <p className="mt-2">
-            Programs should use targeted outreach to underrepresented communities, partner with community organizations, communicate in multiple languages, and eliminate barriers such as application fees. Outreach should be strategic and sustained rather than one-time efforts.
-          </p>
-        </div>
-<div>
-          <h3 className="font-bold text-secondary">How can selection processes be made more equitable?</h3>
-          <p className="mt-2">
-            Equitable selection requires diverse committees, structured evaluation processes, holistic review, and bias awareness training. Programs should examine criteria for potential bias and consider whether traditional metrics truly predict success or reflect advantages.
-          </p>
-        </div>
-<div>
-          <h3 className="font-bold text-secondary">What role does holistic review play in equity?</h3>
-          <p className="mt-2">
-            Holistic review considers the whole candidate rather than over-relying on single metrics that may reflect advantages. It examines context, challenges overcome, and diverse forms of excellence. Holistic review helps identify talent that traditional metrics might overlook.
-          </p>
-        </div>
-      </div>
+      <h2 className="text-2xl font-bold text-secondary">Measuring Equity and Inclusion</h2>
+      <p>
+        Applicant demographics should be tracked to understand who is applying. Disparities in application rates may indicate outreach barriers or accessibility issues. Programs should analyze application patterns by race, ethnicity, gender, socioeconomic status, first-generation status, and other relevant factors.
+      </p>
+      <p>
+        Selection outcomes should be analyzed for equity concerns. Disparities in selection rates across demographic groups may indicate bias in processes or criteria. Programs should examine selection patterns and investigate concerning disparities. However, programs should also recognize that equitable processes may still yield different selection rates due to differential preparation and opportunity.
+      </p>
+      <p>
+        Retention and success rates should be monitored across demographic groups. Differences in retention, graduation, or other outcomes may indicate that the program environment or support structures are not equally serving all recipients. Programs should investigate and address outcome disparities.
+      </p>
+      <p>
+        Recipient feedback should be sought on experiences of inclusion. Surveys and conversations can reveal whether recipients feel valued, included, and supported. Programs should create safe channels for feedback and respond constructively to concerns about inclusion.
+      </p>
 
-      
+      <h2 className="text-2xl font-bold text-secondary">Continuous Improvement</h2>
+      <p>
+        Regular equity audits should examine all aspects of program operation. Periodic reviews of outreach, application, selection, and support processes can identify barriers and biases. Equity audits should involve diverse stakeholders and lead to concrete action plans.
+      </p>
+      <p>
+        Stakeholder engagement should include voices from underrepresented communities. Programs should seek input from community organizations, current and past recipients from diverse backgrounds, and experts in educational equity. Diverse perspectives inform more equitable program design.
+      </p>
+      <p>
+        Professional development should build staff and committee capacity for equity work. Training on cultural competence, implicit bias, and equitable practices enables more effective program operation. Equity should be an ongoing area of learning and development for program leadership.
+      </p>
+      <p>
+        Accountability mechanisms should hold programs responsible for equity commitments. Public reporting on diversity metrics, equity goals, and progress toward goals creates accountability. Programs should communicate their equity commitments and progress to stakeholders.
+      </p>
+
+      <h2 className="text-2xl font-bold text-secondary">Conclusion</h2>
+      <p>
+        Advancing equity and inclusion in scholarship programs requires intentional design, inclusive processes, and ongoing commitment to improvement. Programs that succeed in equity and inclusion expand educational opportunity, strengthen their impact, and build stronger stakeholder support. Equity and inclusion should be core program values, not add-ons.
+      </p>
+      <p>
+        However, equity work is complex and requires humility. Programs must recognize that they may inadvertently perpetuate disparities despite good intentions. They must be willing to examine their practices critically, make changes when necessary, and learn from diverse stakeholders. The most successful programs approach equity as an ongoing journey rather than a destination.
+      </p>
+      <p>
+        Continue with related guides on this blog, or learn how{" "}
+        <Link href="/how-it-works/" className="text-highlight-dark underline">Fragments</Link>{" "}
+        supports rigorous classroom discussion. Questions about these articles:{" "}
+        <Link href="/contact/" className="text-highlight-dark underline">contact us</Link>.
+      </p>
     </div>
   );
 }

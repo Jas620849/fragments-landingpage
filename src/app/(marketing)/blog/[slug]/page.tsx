@@ -21,6 +21,34 @@ import BuildingEvaluationRubrics from "../content/building-evaluation-rubrics";
 import InterviewModerationExplained from "../content/interview-moderation-explained";
 import EvaluatorCalibrationMethods from "../content/evaluator-calibration-methods";
 import EducationalAssessmentTools from "../content/educational-assessment-tools";
+import WhyMostScholarshipApplicationsGetRejected from "../content/why-most-scholarship-applications-get-rejected";
+import ScholarshipInterviews15Questions from "../content/scholarship-interviews-15-questions-you-should-practice-today";
+import HowToIncreaseChancesOfWinningScholarship from "../content/how-to-increase-your-chances-of-winning-a-scholarship-in-2026";
+import SevenSkillsContent from "../content/7-skills-every-scholarship-winner-has-in-common";
+import ScholarshipSuccessStartsBefore from "../content/scholarship-success-starts-before-you-submit-your-application";
+import HowToBuildScholarshipWorthyProfile from "../content/how-to-build-a-scholarship-worthy-student-profile";
+import WhyMostStudentsForgetWhatTheyLearn from "../content/why-most-students-forget-what-they-learn-online";
+import OnlineLearningIsntBroken from "../content/online-learning-isnt-broken-traditional-teaching-methods-are";
+import HowActiveLearningImproves from "../content/how-active-learning-improves-student-success";
+import TheSecretBehindHighlyEngaged from "../content/the-secret-behind-highly-engaged-online-students";
+import WhyDiscussionBasedLearning from "../content/why-discussion-based-learning-outperforms-traditional-quizzes";
+import TheFutureOfOnlineEducation from "../content/the-future-of-online-education-is-more-than-ai";
+import AreOnlineExamsReallyMeasuring from "../content/are-online-exams-really-measuring-student-knowledge";
+import HowDiscussionSkillsCanImprove from "../content/how-discussion-skills-can-improve-your-scholarship-interviews";
+import TheHiddenFactorsScholarshipCommittees from "../content/the-hidden-factors-scholarship-committees-look-for";
+import ScholarshipSelectionCommittee from "../content/scholarship-selection-committee";
+import ScholarshipEssayEvaluation from "../content/scholarship-essay-evaluation";
+import ScholarshipInterviewPreparation from "../content/scholarship-interview-preparation";
+import ScholarshipTechnologySolutions from "../content/scholarship-technology-solutions";
+import ScholarshipImpactMeasurement from "../content/scholarship-impact-measurement";
+import ScholarshipEquityInclusion from "../content/scholarship-equity-inclusion";
+import ScholarshipCollaborationPartnerships from "../content/scholarship-collaboration-partnerships";
+import ScholarshipCrisisManagement from "../content/scholarship-crisis-management";
+import ScholarshipSustainabilityGrowth from "../content/scholarship-sustainability-growth";
+import ScholarshipLegalCompliance from "../content/scholarship-legal-compliance";
+import ScholarshipInnovationFuture from "../content/scholarship-innovation-future";
+import ScholarshipGlobalPerspectives from "../content/scholarship-global-perspectives";
+import ScholarshipBestPracticesSummary from "../content/scholarship-best-practices-summary";
 
 type PageProps = { params: Promise<{ slug: string }> };
 
@@ -111,44 +139,47 @@ function BlogPostingJsonLd({ post, slug }: { post: BlogPostMeta; slug: string })
 }
 
 function PostBody({ slug }: { slug: string }) {
-  switch (slug) {
-    case "how-to-reduce-bias-in-scholarship-interviews":
-    case "why-most-scholarship-applications-get-rejected":
-      return <HowToReduceBiasInScholarshipInterviews />;
-    case "structured-vs-unstructured-interviews":
-    case "scholarship-interviews-15-questions-you-should-practice-today":
-      return <StructuredVsUnstructuredInterviews />;
-    case "ai-powered-interview-evaluation":
-    case "how-to-increase-your-chances-of-winning-a-scholarship-in-2026":
-      return <AIPoweredInterviewEvaluation />;
-    case "common-interview-scoring-mistakes":
-    case "7-skills-every-scholarship-winner-has-in-common":
-      return <CommonInterviewScoringMistakes />;
-    case "building-evaluation-rubrics":
-    case "how-discussion-skills-can-improve-your-scholarship-interviews":
-      return <BuildingEvaluationRubrics />;
-    case "interview-moderation-explained":
-    case "the-hidden-factors-scholarship-committees-look-for":
-      return <InterviewModerationExplained />;
-    case "evaluator-calibration-methods":
-    case "scholarship-success-starts-before-you-submit-your-application":
-      return <EvaluatorCalibrationMethods />;
-    case "educational-assessment-tools":
-    case "the-complete-guide-to-preparing-for-scholarship-applications":
-      return <EducationalAssessmentTools />;
-    default:
-      // For new blog posts without specific content yet, show a placeholder
-      return (
-        <div className="space-y-6">
-          <p className="text-lg text-textDark">
-            This article is coming soon. We're working on creating comprehensive content for this topic.
-          </p>
-          <p className="text-textMuted">
-            In the meantime, explore our other articles on scholarships, online learning, and educational strategies.
-          </p>
-        </div>
-      );
-  }
+  // Direct import mapping for all blog posts to ensure unique content
+  const contentMap: Record<string, React.ReactNode> = {
+    "how-to-reduce-bias-in-scholarship-interviews": <HowToReduceBiasInScholarshipInterviews />,
+    "why-most-scholarship-applications-get-rejected": <WhyMostScholarshipApplicationsGetRejected />,
+    "structured-vs-unstructured-interviews": <StructuredVsUnstructuredInterviews />,
+    "scholarship-interviews-15-questions-you-should-practice-today": <ScholarshipInterviews15Questions />,
+    "ai-powered-interview-evaluation": <AIPoweredInterviewEvaluation />,
+    "how-to-increase-your-chances-of-winning-a-scholarship-in-2026": <HowToIncreaseChancesOfWinningScholarship />,
+    "common-interview-scoring-mistakes": <CommonInterviewScoringMistakes />,
+    "7-skills-every-scholarship-winner-has-in-common": <SevenSkillsContent />,
+    "building-evaluation-rubrics": <BuildingEvaluationRubrics />,
+    "how-discussion-skills-can-improve-your-scholarship-interviews": <HowDiscussionSkillsCanImprove />,
+    "interview-moderation-explained": <InterviewModerationExplained />,
+    "the-hidden-factors-scholarship-committees-look-for": <TheHiddenFactorsScholarshipCommittees />,
+    "evaluator-calibration-methods": <EvaluatorCalibrationMethods />,
+    "scholarship-success-starts-before-you-submit-your-application": <ScholarshipSuccessStartsBefore />,
+    "educational-assessment-tools": <EducationalAssessmentTools />,
+    "how-to-build-a-scholarship-worthy-student-profile": <HowToBuildScholarshipWorthyProfile />,
+    "why-most-students-forget-what-they-learn-online": <WhyMostStudentsForgetWhatTheyLearn />,
+    "online-learning-isnt-broken-traditional-teaching-methods-are": <OnlineLearningIsntBroken />,
+    "how-active-learning-improves-student-success": <HowActiveLearningImproves />,
+    "the-secret-behind-highly-engaged-online-students": <TheSecretBehindHighlyEngaged />,
+    "why-discussion-based-learning-outperforms-traditional-quizzes": <WhyDiscussionBasedLearning />,
+    "the-future-of-online-education-is-more-than-ai": <TheFutureOfOnlineEducation />,
+    "are-online-exams-really-measuring-student-knowledge": <AreOnlineExamsReallyMeasuring />,
+    "scholarship-selection-committee": <ScholarshipSelectionCommittee />,
+    "scholarship-essay-evaluation": <ScholarshipEssayEvaluation />,
+    "scholarship-interview-preparation": <ScholarshipInterviewPreparation />,
+    "scholarship-technology-solutions": <ScholarshipTechnologySolutions />,
+    "scholarship-impact-measurement": <ScholarshipImpactMeasurement />,
+    "scholarship-equity-inclusion": <ScholarshipEquityInclusion />,
+    "scholarship-collaboration-partnerships": <ScholarshipCollaborationPartnerships />,
+    "scholarship-crisis-management": <ScholarshipCrisisManagement />,
+    "scholarship-sustainability-growth": <ScholarshipSustainabilityGrowth />,
+    "scholarship-legal-compliance": <ScholarshipLegalCompliance />,
+    "scholarship-innovation-future": <ScholarshipInnovationFuture />,
+    "scholarship-global-perspectives": <ScholarshipGlobalPerspectives />,
+    "scholarship-best-practices-summary": <ScholarshipBestPracticesSummary />,
+  };
+
+  return contentMap[slug] || <HowToReduceBiasInScholarshipInterviews />;
 }
 
 function categorySlug(category: string) {
